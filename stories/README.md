@@ -1,0 +1,33 @@
+# Agent-Ready Testimonials
+
+This dataset is organized for AI-agent use: descriptive filenames, one OCR text file per image, structured JSON manifests, and markdown indexes by testimonial type.
+
+## Categories
+
+- Self-Reported Wins: 51 files
+  Folder: 01-self-reported-wins
+  Index: 01-self-reported-wins/INDEX.md
+- Preston-Posted Student Wins: 48 files
+  Folder: 02-preston-posted-student-wins
+  Index: 02-preston-posted-student-wins/INDEX.md
+- Other Posted Student Wins: 1 files
+  Folder: 03-other-posted-student-wins
+  Index: 03-other-posted-student-wins/INDEX.md
+
+## Master Manifest
+
+- `manifest.json`: all files with renamed paths, OCR text paths, descriptions, and metadata
+- `README.md`: this overview
+
+## Quick Reference
+
+- 001-5-500-month-net-profit.png: Self-reported testimonial captured as an iMessage or text-message screenshot. Key hook: $5,500/month net profit. OCR content indicates: Jus...
+- 002-alvaro-cortes-testimonial.png: Self-reported testimonial captured as a testimonial screenshot. It centers on Alvaro Cortes. Key hook: testimonial. OCR content indicates:...
+- 003-signed-the-lease-cash-cow.jpeg: Self-reported testimonial captured as a testimonial screenshot. Key hook: signed the lease cash cow. OCR content indicates: Brol!!!!! Locke...
+- 004-first-property.png: Self-reported testimonial captured as a testimonial screenshot. The headline or lead is "first property!". Key hook: first property. OCR co...
+- 005-june-booked-out-at-4k.png: Self-reported testimonial captured as an iMessage or text-message screenshot. Key hook: june booked out at 4k. OCR content indicates: Let m...
+- 006-1-800-cash-flow.jpeg: Self-reported testimonial captured as a testimonial screenshot. Key hook: $1,800 cash flow. OCR content indicates: "Hi Preston, THANK YOU c...
+- 007-monique-avery-testimonial.png: Self-reported testimonial captured as a testimonial screenshot. It centers on Monique Avery. Key hook: testimonial. OCR content indicates:...
+- 008-booked-out.png: Self-reported testimonial captured as a testimonial screenshot. Key hook: booked out. OCR content indicates: PL ttcmoy Pereira 8:27pm Damn...
+- 009-nicholas-dunseith-testimonial.png: Self-reported testimonial captured as a testimonial screenshot. It centers on Nicholas Dunseith. Key hook: testimonial. OCR content indicat...
+- 010-matthew-ellis-got-my-first-deal-got-my-1st-one.png: Self-reported testimonial captured as a community post screenshot. It centers on Matthew Ellis. The headline or lead is "Got my 1st one". K...
