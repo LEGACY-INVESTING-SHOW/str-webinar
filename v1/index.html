@@ -32,12 +32,12 @@ head.appendChild(script);
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
 :root{
---black:#000000;
+--black:#0F172A;
 --white:#FFFFFF;
---gold:#C9A227;
---gold-dark:#B8941D;
---green:#22C55E;
---green-dark:#16A34A;
+--green:#10B981;
+--green-dark:#059669;
+--green-light:#34D399;
+--green-muted:#065F46;
 --gray-100:#F5F5F5;
 --gray-200:#E5E5E5;
 --gray-300:#D4D4D4;
@@ -57,17 +57,16 @@ img{max-width:100%;display:block}
 
 /* --- HEADER --- */
 .header{background:var(--black);padding:16px 0;text-align:center}
-.header-logo{display:inline-flex;align-items:center;gap:12px;color:var(--gold);font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:1px;text-transform:uppercase}
-.header-logo-icon{width:40px;height:40px;border:2px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
+.header-logo{display:inline-flex;align-items:center;gap:12px;color:var(--green);font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:1px;text-transform:uppercase}
+.header-logo-icon{width:40px;height:40px;border:2px solid var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
 
 /* --- BANNER --- */
-.banner{background:var(--gold);color:var(--black);text-align:center;padding:12px 16px;font-size:14px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase}
+.banner{background:var(--green);color:var(--white);text-align:center;padding:12px 16px;font-size:14px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase}
 
 /* --- HERO --- */
 .hero{background:var(--white);padding:60px 0 40px;text-align:center}
-.hero-pre{font-size:16px;font-weight:600;color:var(--gray-600);margin-bottom:16px;font-style:italic}
 .hero-title{font-family:var(--font-display);font-size:clamp(32px,5vw,52px);line-height:1.15;letter-spacing:-0.5px;margin-bottom:20px;font-weight:800;color:var(--gray-900);max-width:900px;margin-left:auto;margin-right:auto}
-.hero-title .highlight{color:var(--gold);font-style:italic}
+.hero-title .highlight{color:var(--green);font-weight:800}
 .hero-sub{font-size:clamp(18px,2vw,22px);color:var(--gray-600);max-width:700px;margin:0 auto 32px;line-height:1.5;font-weight:400}
 
 /* --- CTA BUTTON --- */
@@ -82,7 +81,7 @@ img{max-width:100%;display:block}
 
 /* --- HOST BIO COMPACT --- */
 .host-compact{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:40px;padding-top:40px;border-top:1px solid var(--gray-200);max-width:600px;margin-left:auto;margin-right:auto}
-.host-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.host-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--green);box-shadow:0 4px 12px rgba(0,0,0,0.1)}
 .host-info{text-align:left}
 .host-name{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gray-900);margin-bottom:4px}
 .host-desc{font-size:14px;color:var(--gray-600);line-height:1.5}
@@ -91,25 +90,25 @@ img{max-width:100%;display:block}
 .preview-section{background:var(--gray-100);padding:80px 0;text-align:center}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 .preview-title{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-weight:700;color:var(--gray-900);margin-bottom:48px}
-.preview-title .gold{color:var(--gold);font-style:italic}
+.preview-title .accent{color:var(--green);font-weight:700}
 .preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
 .preview-box{background:var(--white);border-radius:12px;padding:32px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.05);border:1px solid var(--gray-200);transition:all 0.2s ease}
 .preview-box:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
-.preview-icon{width:48px;height:48px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--white);font-size:24px}
+.preview-icon{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--white);font-size:24px}
 .preview-box h3{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--gray-900);margin-bottom:12px;line-height:1.4}
 .preview-box p{font-size:14px;color:var(--gray-600);line-height:1.6}
 
 /* --- TESTIMONIALS --- */
 .testimonials-section{background:var(--white);padding:80px 0}
 .testimonials-title{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-weight:700;color:var(--gray-900);text-align:center;margin-bottom:16px}
-.testimonials-title .gold{color:var(--gold);font-style:italic}
+.testimonials-title .accent{color:var(--green);font-weight:700}
 .testimonials-sub{text-align:center;font-size:16px;color:var(--gray-600);margin-bottom:48px}
 .testimonials-grid{column-count:2;column-gap:24px;max-width:1000px;margin:0 auto}
 .testimonial-card{display:inline-block;width:100%;margin:0 0 24px;background:var(--gray-100);border-radius:12px;overflow:hidden;border:1px solid var(--gray-200);break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;vertical-align:top}
 .testimonial-card img{width:100%;height:auto;display:block}
 .testimonial-caption{padding:20px 20px 16px}
 .testimonial-name{font-size:14px;font-weight:700;color:var(--gray-900)}
-.testimonial-highlight{font-size:13px;color:var(--gold);font-weight:700;margin-top:2px}
+.testimonial-highlight{font-size:13px;color:var(--green);font-weight:700;margin-top:2px}
 .testimonial-quote{font-size:13px;color:var(--gray-600);line-height:1.5;margin-top:8px}
 
 /* --- ABOUT HOST EXPANDED --- */
@@ -118,7 +117,7 @@ img{max-width:100%;display:block}
 .about-image{border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.1)}
 .about-image img{width:100%;height:auto;display:block}
 .about-content{text-align:left}
-.about-tag{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.about-tag{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:12px}
 .about-name{font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--gray-900);margin-bottom:16px}
 .about-text{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:16px}
 .about-text strong{color:var(--gray-900)}
@@ -129,7 +128,7 @@ img{max-width:100%;display:block}
 
 /* --- FOOTER --- */
 .footer{background:var(--black);color:var(--gray-400);padding:40px 0;text-align:center;font-size:13px}
-.footer a{color:var(--gold);text-decoration:none}
+.footer a{color:var(--green);text-decoration:none}
 
 /* --- RESPONSIVE --- */
 @media(max-width:900px){
@@ -162,9 +161,8 @@ FREE LIVE WORKSHOP WITH PRESTON SEO | 7M+ Followers
 <!-- HERO -->
 <section class="hero">
 <div class="container">
-<p class="hero-pre">FREE Live Workshop This Week Reveals..</p>
 <h1 class="hero-title">
-The STR Tax <span class="highlight">Loophole</span> That Saves You $40K/Year
+The STR Tax Loophole That Saves You <span class="highlight">$40K/Year</span>
 </h1>
 <p class="hero-sub">How to legally slash your tax bill using short-term rentals — even if you've never owned one.</p>
 
@@ -191,7 +189,7 @@ Save My Spot — It's Free
 <section class="preview-section">
 <div class="container">
 <h2 class="preview-title">
-Here's A Preview Of What You'll Learn <span class="gold">For FREE</span>
+Here's A Preview Of What You'll Learn <span class="accent">For FREE</span>
 </h2>
 
 <div class="preview-grid">
@@ -217,7 +215,7 @@ Here's A Preview Of What You'll Learn <span class="gold">For FREE</span>
 <section class="testimonials-section">
 <div class="container">
 <h2 class="testimonials-title">
-Here's Some Results From<br><span class="gold">My Students</span>
+Here's Some Results From<br><span class="accent">My Students</span>
 </h2>
 
 <div class="testimonials-grid">
