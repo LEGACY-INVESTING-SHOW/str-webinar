@@ -244,7 +244,7 @@ And in that moment, I looked at my son and I thought: is this what his life is g
 
 That was my breaking point.
 
-So I started doing something about it. Every night after work I was researching, having conversations, going to meetups, reading everything I could get my hands on. Me and my wife Bridget eventually realized that we had to learn how the money game worked because no one was coming to save us.
+So I started doing something about it. Every night after work I was researching, having conversations, going to meetups, reading everything I could get my hands on. Me and my wife eventually realized that we had to learn how the money game worked because no one was coming to save us.
 
 And that's what led me to real estate.
 
@@ -428,7 +428,7 @@ Does anyone think these people are some special snowflakes? No. When you're in t
 
 ---
 
-##### Slide #22
+##### Slide #23
 
 **On-slide: Checkpoint — The Deal**
 
@@ -442,7 +442,7 @@ Put a 1 in the chat if you are actually going to implement what we talk about to
 
 ---
 
-##### Slide #23
+##### Slide #24
 
 And one more deal. If we don't hold up our end, and you don't leave here with the full roadmap, call us out in the Q&A. Deal?
 
@@ -604,7 +604,7 @@ Here's what the calculator spits out. Gross monthly revenue: $6,643. Monthly exp
 
 Now look at the ROI number. Cash-on-Cash: 124.56%. Break-even occupancy: 48.56%. You recoup your full $19,600 investment in under 10 months. Over 10 years, cumulative cash flow is $219,281 from this one unit.
 
-That's the Bridge Method. Fast cash flow. Low barrier. You don't own the property — but you own the income.
+That's the Bridge Method. Fast cash flow. Low barrier. You don't own the property, but you own the income.
 
 ---
 
@@ -689,13 +689,11 @@ Do you think it's possible to find a property that profits $2,000 a month if you
 ---
 
 
-# SECTION 7: THE A.C.R.E.S. FRAMEWORK — EDUCATION
-
 # STEP 2: CLOSE — Secure the Deal
 
 ---
 
-##### Slide #35
+##### Slide #37
 
 **On-slide: C — Close**
 
@@ -709,7 +707,7 @@ I'm going to remove that excuse right now.
 
 ---
 
-##### Slide #36
+##### Slide #38
 
 **On-slide: Bridge Method — Landlord Negotiation**
 
@@ -723,7 +721,7 @@ Same with landlords. Don't just say, "I want to Airbnb your property." Solve the
 
 ---
 
-##### Slide #37
+##### Slide #39
 
 Now, I'm a landlord myself. I own over 40 traditional rental units. So I've been on both sides of this conversation.
 
@@ -745,7 +743,7 @@ Your goal is to make them feel crazy for saying no.
 
 ---
 
-##### Slide #38
+##### Slide #40
 
 Here's the step-by-step process.
 
@@ -759,7 +757,7 @@ Step 4: Negotiate freebies after agreement. Push your lease start date out by 3 
 
 ---
 
-##### Slide #39
+##### Slide #41
 
 This is Kayla. Full-time dentist. She wanted extra income but the big upfront costs of traditional real estate held her back. Then she found the Bridge Method.
 
@@ -769,7 +767,7 @@ Her coach actually got on the phone with the landlord as a reference. That's the
 
 ---
 
-##### Slide #40
+##### Slide #42
 
 Then there's Jenna. She approached a landlord whose property had received over 400 offers. The odds were heavily stacked against her.
 
@@ -779,7 +777,7 @@ She used the exact scripts and pitch framework her coach gave her. 400 people ap
 
 ---
 
-##### Slide #41
+##### Slide #43
 
 **On-slide: Ownership — The Acquisition Process**
 
@@ -793,7 +791,7 @@ Financing options: DSCR loans, conventional, second home loans at 10% down in va
 
 ---
 
-##### Slide #42
+##### Slide #44
 
 Do you agree it's possible to close deals using the systems I showed you? Type YES.
 
@@ -802,8 +800,6 @@ Do you agree it's possible to close deals using the systems I showed you? Type Y
 
 ---
 
-
-# SECTION 7: THE A.C.R.E.S. FRAMEWORK — EDUCATION
 
 # STEP 3: READY — Set Up and Launch Remotely
 
@@ -937,13 +933,11 @@ Do you believe you could get a property guest-ready remotely with the right temp
 ---
 
 
-# SECTION 7: THE A.C.R.E.S. FRAMEWORK — EDUCATION
-
 # STEP 4: EARN — Maximize What You Keep Through the STR Tax Advantage
 
 ---
 
-##### Slide #51
+##### Slide #56
 
 **On-slide: E — Earn**
 
@@ -955,7 +949,7 @@ This is especially important if you're a W-2 earner making $100K, $200K, $300K o
 
 ---
 
-##### Slide #52
+##### Slide #57
 
 **On-slide: Strategy 1 — The STR Loophole**
 
@@ -969,7 +963,7 @@ This is the ONLY way a W-2 earner can offset their active income with real estat
 
 ---
 
-##### Slide #53
+##### Slide #58
 
 Here's the example. You make $200K from your job. Your Airbnb shows a $50K paper loss after deductions and depreciation. You subtract $50K from your taxable income. That saves $15K to $20K in taxes depending on your bracket.
 
@@ -981,7 +975,7 @@ I'm not a CPA and this isn't tax advice. Every situation is different. But this 
 
 ---
 
-##### Slide #54
+##### Slide #59
 
 **On-slide: Strategy 2 — Cost Segregation + Bonus Depreciation**
 
@@ -993,11 +987,11 @@ Items that get separated out: furniture, appliances, lighting fixtures, flooring
 
 Once those short-life items are identified, Bonus Depreciation lets you deduct a large percentage immediately in year one.
 
-Thanks to the One Big Beautiful Bill Act signed in July 2025, bonus depreciation is permanently at 100% for qualifying property acquired and placed in service after January 19, 2025. Full write-off, year one.
+Thanks to the One Big Beautiful Bill Act signed in July 2025, bonus depreciation is permanently at 100% for qualifying property acquired and placed in service after January 19, 2025. Full write-off, year one. Still in effect right now in 2026.
 
 ---
 
-##### Slide #55
+##### Slide #60
 
 **On-slide: The Math**
 
@@ -1009,7 +1003,7 @@ You could go from paying $50,000 in taxes to under $5,000. That's potentially $4
 
 ---
 
-##### Slide #56
+##### Slide #61
 
 **On-slide: Full Year-One Ownership Breakdown**
 
@@ -1023,7 +1017,7 @@ For someone in a high tax bracket, the depreciation benefit alone can exceed you
 
 ---
 
-##### Slide #57
+##### Slide #62
 
 **On-slide: Why "Earn" Matters**
 
@@ -1035,13 +1029,13 @@ Actually structuring this correctly is where people mess it up on their own. Tha
 
 ---
 
-##### Slide #58
+##### Slide #63
 
 Now if you're starting with Bridge and ownership isn't where you're beginning, that's completely fine. You build cash flow first, build your skills, build your capital. But now you can see where you're headed. This is the graduation path. Cash flow first, then the full wealth-building stack.
 
 ---
 
-##### Slide #59
+##### Slide #64
 
 I know the last few minutes might have felt like a lot. STR Loophole, cost segregation, bonus depreciation, material participation.
 
@@ -1059,13 +1053,11 @@ That's Step 4, Earn. Now let's close it out with Step 5.
 ---
 
 
-# SECTION 7: THE A.C.R.E.S. FRAMEWORK — EDUCATION
-
 # STEP 5: SCALE — Automate So It Runs Without You
 
 ---
 
-##### Slide #63
+##### Slide #65
 
 **On-slide: S — Scale**
 
@@ -1081,7 +1073,7 @@ And now, we've successfully replaced 100% of the income we used to make from our
 
 ---
 
-##### Slide #64
+##### Slide #66
 
 Many people tell me, "Preston, you should scale your business to 50 or 100 Airbnbs. You can easily make x amount per month." But right now, I don't care.
 
@@ -1095,7 +1087,7 @@ That's what this step is about. Building a business that runs without you.
 
 ---
 
-##### Slide #65
+##### Slide #67
 
 **On-slide: The Automation System**
 
@@ -1107,7 +1099,7 @@ Having a business is not about working from the beach. It's about not having to 
 
 ---
 
-##### Slide #66
+##### Slide #68
 
 Here's the exact process.
 
@@ -1125,7 +1117,7 @@ I give you the exact hiring scripts, the interview questions, the training SOPs,
 
 ---
 
-##### Slide #67
+##### Slide #69
 
 **On-slide: Scaling the Portfolio**
 
@@ -1139,7 +1131,7 @@ The graduation path: start with bridge, build cash flow and skills, and graduate
 
 ---
 
-##### Slide #68
+##### Slide #70
 
 This is Monique. She's in her 50s. 16 grandkids. Making $1,800 a month from her Airbnb. She didn't let age or a busy life stop her. Her coach helped her build a system that works around her life, not the other way around.
 
@@ -1161,7 +1153,7 @@ That's the A.C.R.E.S. Framework. Analyze. Close. Ready. Earn. Scale. Five steps 
 
 ---
 
-##### Slide #69
+##### Slide #71
 
 **On-slide: Checkpoint — Recap**
 
@@ -1169,7 +1161,7 @@ Alright. Let me bring it back to what you just learned. We covered a lot. Let's 
 
 ---
 
-##### Slide #70
+##### Slide #72
 
 **On-slide: A — Analyze**
 
@@ -1185,7 +1177,7 @@ Step 1 was Analyze. How to find profitable markets, run the numbers, evaluate de
 
 ---
 
-##### Slide #71
+##### Slide #73
 
 **On-slide: C — Close**
 
@@ -1205,7 +1197,7 @@ For Ownership: our acquisition team finds, underwrites, and presents 5 to 10 dea
 
 ---
 
-##### Slide #72
+##### Slide #74
 
 **On-slide: R — Ready**
 
@@ -1223,7 +1215,7 @@ Professional photos. Optimized listings. Dynamic pricing. All plug and play.
 
 ---
 
-##### Slide #73
+##### Slide #75
 
 **On-slide: E — Earn**
 
@@ -1237,7 +1229,7 @@ W-2 earners can legally offset their active income and put five figures back in 
 
 ---
 
-##### Slide #74
+##### Slide #76
 
 **On-slide: S — Scale**
 
@@ -1253,7 +1245,7 @@ Once everything is running, a single property takes about 1 hour per week. 2 VAs
 
 ---
 
-##### Slide #75
+##### Slide #77
 
 Once you follow these steps, you can have an Airbnb cash flowing $2,000 a month consistently. At this point, you know more than 95% of people, even those already on Airbnb. You know how to run the numbers, negotiate, automate, and set up properties remotely.
 
@@ -1287,7 +1279,7 @@ Type YES if you believe that.
 
 ---
 
-##### Slide #76
+##### Slide #78
 
 Everything you just learned, the A.C.R.E.S. Framework, that's the same system I used to scale my Airbnb portfolio from zero to over $400,000 a year. Same principles. Same process.
 
@@ -1303,7 +1295,7 @@ Dustin did it. Kirk did it. Rob did it. Monique did it. They were all sitting wh
 
 ---
 
-##### Slide #77
+##### Slide #79
 
 **On-slide: Future Pace**
 
@@ -1313,11 +1305,15 @@ Picture this. One year from now. You have 2 or 3 Airbnbs generating $4,000 to $6
 ---
 
 
-##### Slide #90: TRANSITION TO PITCH — The Reset
+# SECTION 9: TRANSITION TO PITCH
+
+---
+
+##### Slide #80
 
 [PAUSE.]
 
-So here's what we just did over the last 90 minutes. We walked through the A.C.R.E.S. Framework. You watched me run real numbers through both the Airbnb Arbitrage Calculator and the STR Purchase Calculator. I showed you exactly how a property that costs $3,300 a month to rent turns into $6,643 a month in Airbnb revenue. And I showed you how a $295,000 purchase turns into $28,000 a year in cash flow plus another $7,000 back on your taxes. 
+So here's what we just did over the last 90 minutes. We walked through the A.C.R.E.S. Framework. You watched me run real numbers through both the Airbnb Arbitrage Calculator and the STR Purchase Calculator. I showed you exactly how a property that costs $3,300 a month to rent turns into $6,643 a month in Airbnb revenue. And I showed you how a $295,000 purchase turns into $28,000 a year in cash flow plus another $7,000 back on your taxes.
 
 You also saw the STR Purchase Calculator model a 10-year ownership play with depreciation, tax shields, the whole thing.
 
@@ -1327,10 +1323,11 @@ And if you're sitting here thinking, "Preston, this makes sense. I see the math.
 
 The second milestone is harder. Because the gap between the people in this room who actually build wealth through Airbnb and the people who nod along and go back to their W-2s has nothing to do with intelligence.
 
-##### Slide #91: There Is No Perfect Time
+---
 
+##### Slide #81: There Is No Perfect Time
 
-Let me tell you a personal story that changed how look at timing...
+Let me tell you a personal story that changed how I look at timing...
 
 I got married at what everyone would call the wrong time. We were living in my parents' basement, barely had enough money to think about getting our own place, and the idea of affording a wedding on top of that was honestly kind of ridiculous. Every logical reason said wait.
 
@@ -1338,9 +1335,9 @@ We got married anyway.
 
 Our dream destination for our honeymoon was Maldives. We couldn't afford it. So our honeymoon wasn't anything fancy, but it was ours, and my wife and I made a choice to move forward instead of sitting around waiting for the stars to align.
 
-Then we had a family. And the timing was wrong for that too because while my wife was giving birth to our first kid, I was still on laptop answering emails in the hospital. Basically, I was on track to become a father who was providing for his family but not able to present with them.
+Then we had a family. And the timing was wrong for that too because while my wife was giving birth to our first kid, I was still on laptop answering emails in the hospital. Basically, I was on track to become a father who was providing for his family but not able to be present with them.
 
-We had them anyway. Fast forward to today, I don't have to choose between working to provide OR being present with my 2 sons. 
+We had them anyway. Fast forward to today, I don't have to choose between working to provide OR being present with my 2 sons.
 
 And here's what I learned through all of that: the people who wait for perfect conditions spend their entire lives in that waiting room. Meanwhile, the people who move forward with imperfect information and a good framework are the ones who actually build something real.
 
@@ -1350,7 +1347,9 @@ Today's workshop is your permission to move forward when you still have the info
 
 So if you're sitting here thinking about an Airbnb strategy, a second property, a system that generates $2K, $6K, maybe $10K a month in income while you keep your W-2, you need to know: there is no perfect time. There's only the time you decide to move.
 
-##### Slide #92: The Dabbler
+---
+
+##### Slide #82: The Dabbler
 
 Some tough love incoming. I'm going to keep it real with you.
 
@@ -1364,7 +1363,11 @@ Then they see something shiny. Crypto. Dropshipping. Amazon. Whatever the next Y
 
 If you've been a dabbler before, that's okay. We all have. But if you recognize that pattern, the question is: are you willing to break it tonight?
 
-##### Slide #93: The Achiever
+And for the dabblers who are already telling themselves "now is not a good time," let me say this straight. Sure, you can wait. Whether you join today or not, it's not going to change my life. But it will absolutely impact yours. We had a student attend my first workshop back in 2022. He loved the model but didn't join right away. Two years later, he finally joined and just signed his first lease. Great for him. But compare that to Dustin, who also attended in 2022. Dustin signed up immediately, got his first lease within a month, and just hit $56,000 a month in net profit. He quit his 9 to 5 to go all in. I'm not promising you Dustin's results. But every year you wait, the opportunity cost stacks up. Two properties cash flowing $2,500 a month each is $60,000 a year. Every year you delay, that's $60K left on the table.
+
+---
+
+##### Slide #83: The Achiever
 
 Path number two is the achiever.
 
@@ -1376,11 +1379,13 @@ The good news is this. It does not matter if you've been a dabbler your entire l
 
 Type ACHIEVER in the chat if that's the path you're choosing tonight.
 
-[Pause 5-8 seconds. Read responses.]
+[Pause 5-8 seconds. Read responses and name 3-5 real chat names as they come in.]
 
-That's what I thought. I see Terrence. Angela. Marcus. A lot of achievers in this room tonight.
+That's what I thought. A lot of achievers in this room tonight.
 
-##### Slide #94: The Iceberg
+---
+
+##### Slide #84: The Iceberg
 
 Now I want to frame something before we go further.
 
@@ -1400,7 +1405,14 @@ Before I get into it, do I have your permission to show you what I've put togeth
 
 Appreciate that. I'm glad I asked first instead of assuming I've earned the right to pitch you. What I'm about to show you is going to help you implement everything from tonight, and more. When you see the resources I'm about to walk through, you'll understand why I'm excited for you.
 
-##### Slide #95: The Airbnb Arbitrage Roadmap
+---
+
+
+# SECTION 10: THE PROGRAM
+
+---
+
+##### Slide #85: The Airbnb Arbitrage Roadmap
 
 I want to introduce you to the Airbnb Arbitrage Roadmap.
 
@@ -1422,11 +1434,13 @@ And the program is a compilation of ready-made SOPs, scripts, templates, and che
 
 Here's what's inside.
 
-##### Slide #96: Phase 1 — Finding Profitable Properties
+---
+
+##### Slide #86: Phase 1 — Finding Profitable Properties
 
 Phase 1 is about finding markets and properties that actually make money. You'll learn:
 
-How to pull real occupancy rates, average nightly rates, and seasonal demand for any zip code in the country, so you're picking markets based on data, not a YouTube video or Reddit thread.
+How to pull real occupancy rates, average nightly rates, and seasonal demand for any zip code in the country, so you're picking markets based on hard data.
 
 How to spot submarkets inside a city that most investors completely overlook, which is where the best deals are hiding.
 
@@ -1434,21 +1448,25 @@ How to run the numbers on any property using the same math inside the calculator
 
 This phase alone saves you from signing a lease on a property that looks good on paper but bleeds money in reality. Most people who try this on their own make that $30K to $50K mistake on deal number one because they never learned how to analyze correctly.
 
-##### Slide #97: Phase 2 — Closing the Deal
+---
 
-Phase 2 covers everything from the first phone call with a landlord to the signed lease or purchase agreement. You'll get:
+##### Slide #87: Phase 2 — Closing the Deal
 
-The exact landlord pitch scripts my team uses, word for word. These are the same scripts that have gotten our clients below-market rent, one to two months of free rent, and landlords saying yes to Airbnb when they've said no to everyone else who asked.
+Phase 2 gives you everything from the first phone call with a landlord to the signed lease or purchase agreement. You'll get:
 
-For ownership plays, how to find lenders who actually understand short-term rental income, how to structure a down payment without draining your savings, and how to negotiate closing costs across conventional loans, portfolio loans, and creative financing.
+The exact landlord pitch scripts my team uses, word for word. Same scripts that have gotten our clients below-market rent, one to two months of free rent, and landlords saying yes to Airbnb when they've said no to everyone else who asked.
 
-Entity structure guidance, so you know when to set up an LLC, which state to register in, and how to keep your personal assets completely separate from your Airbnb business. Most people get this wrong and don't find out until a lawsuit or a tax bill forces them to redo everything from scratch.
+For ownership plays, you'll learn how to find lenders who actually understand short-term rental income, how to structure a down payment without draining your savings, and how to negotiate closing costs across conventional loans, portfolio loans, and creative financing.
 
-##### Slide #98: Phase 3 — Setup and Operations
+Entity structure guidance. You'll know when to set up an LLC, which state to register in, and how to keep your personal assets completely separate from your Airbnb business. Most people get this wrong and don't find out until a lawsuit or a tax bill forces them to redo everything from scratch.
 
-Phase 3 is about turning a property into a business that runs without you being there. This includes:
+---
 
-Furnishing on a budget using vendor relationships that cut costs to less than half of retail. You'll get the exact furnishing checklist my team uses every time we set up a new property, down to the specific items, where to source them, and how much to spend.
+##### Slide #88: Phase 3 — Setup and Operations
+
+Phase 3 turns a property into a business that runs without you being there. You get:
+
+Furnishing on a budget using vendor relationships that cut costs to less than half of retail. The exact furnishing checklist my team uses every time we set up a new property, down to the specific items, where to source them, and how much to spend.
 
 Remote setup systems so you never have to be on-site. Automated guest messaging, smart locks, cameras, noise monitors, cleaning team coordination, check-in and checkout flows that run without you touching anything.
 
@@ -1456,21 +1474,25 @@ Listing optimization so your property actually gets booked. Title structures tha
 
 By the time you're done with Phase 3, your property is live, bookings are coming in, and the entire operation runs on autopilot while you're still at your W-2.
 
-##### Slide #99: Phase 4 — Maximizing Revenue
+---
+
+##### Slide #89: Phase 4 — Maximizing Revenue
 
 Phase 4 is where you go from "the property is running" to "the property is making real money."
 
-Most new Airbnb hosts leave 20% to 30% of their revenue on the table because they don't know how to price correctly. Inside Phase 4, you'll learn:
+You'll learn:
 
-Dynamic pricing strategy, how to adjust rates for weekends, holidays, local events, and seasonal shifts, so you know when to raise prices and when to drop them to keep occupancy high.
+Dynamic pricing strategy. How to adjust rates for weekends, holidays, local events, and seasonal shifts, so you know when to raise prices and when to drop them to keep occupancy high.
 
 Guest experience optimization, the small touches that turn a 4.5-star review into a 5-star review. That matters because Airbnb's algorithm rewards consistent 5-star properties with higher search placement, which means more bookings without spending a dollar on ads.
 
 Revenue tracking dashboards that show you exactly where your money is going, what your margins look like month over month, and when a property is underperforming so you catch it early instead of six months later.
 
-This phase is the difference between a property that cash flows $2,000 a month and the same property cash flowing $3,500 a month.
+This phase is the difference between a property that cash flows $2,000 a month and the same property cash flowing $3,500 a month. Most new Airbnb hosts leave 20% to 30% of their revenue on the table because they don't know how to price correctly.
 
-##### Slide #100: Phase 5 — Scaling
+---
+
+##### Slide #90: Phase 5 — Scaling
 
 Phase 5. Once your first property is stable and cash flowing, you learn how to do it again without starting from zero.
 
@@ -1480,7 +1502,9 @@ Operational scaling. How to manage three, five, ten properties without it becomi
 
 By the end of Phase 5, you're not running an Airbnb. You're running a real estate portfolio.
 
-##### Slide #101: 100% Tax-Free Airbnb Income Stream Masterclass
+---
+
+##### Slide #91: 100% Tax-Free Airbnb Income Stream Masterclass
 
 You'll also get access to my 100% Tax-Free Airbnb Income Stream masterclass.
 
@@ -1496,7 +1520,9 @@ We'll show you exactly how to structure this so you can potentially run your Air
 
 So, that's just the core curriculum and the SOPs.
 
-##### Slide #102: The Full System
+---
+
+##### Slide #92: The Full System
 
 That's the Airbnb Arbitrage Roadmap. Five phases covering everything from finding your first property to scaling a full portfolio, plus a masterclass on making the whole thing tax-free.
 
@@ -1504,13 +1530,13 @@ Start to finish, everything you need to go from "I've never done Airbnb" to gene
 
 Type READY in the chat if you're starting to see how all of these pieces fit together.
 
-[Pause 3-4 seconds. Read names.]
-
-I see you, Terrence. Angela, yes. Rohan, I see that. Marcus, let's go.
+[Pause 3-4 seconds. Read real chat names as they come in.]
 
 Here's what happens when people actually run this system.
 
-##### Slide #103: Client Proof — The System in Action
+---
+
+##### Slide #93: Client Proof — The System in Action
 
 These results came from people who went through the exact five phases I just walked you through.
 
@@ -1522,13 +1548,15 @@ Gary does $35,000 a month across his portfolio. Corporate background, no real es
 
 Christina and Rijoy are a couple. Combined W-2 income, $120K a year. Three Airbnbs generating an extra $60K a year in net income. They kept their jobs and diversified intelligently.
 
-Kiana is a solo parent with a full-time job running four Airbnbs simultaneously.
+Kiana is a solo parent with a full-time job running four Airbnbs simultaneously. Remember her from Step 3, Ready. She's now expanded from Scottsdale into two additional markets.
 
 I've tested this system across seven years, multiple market cycles, and four states. People from completely different backgrounds have run it. Corporate employees, nurses, marketing directors, couples, single parents, people who had never touched real estate in their lives. Different cities, different income levels, different starting capital.
 
 The system produced results every time. Because the five phases don't depend on who you are. They depend on the math. And the math works when you follow the process.
 
-##### Slide #104: The Value of Proof
+---
+
+##### Slide #94: The Value of Proof
 
 So when I say the value of this program is over $100,000, I'm not exaggerating. You just saw the numbers.
 
@@ -1536,7 +1564,9 @@ Dustin went from a corporate job to $56,000 a month. Wendy did $744,000 in gross
 
 These are the results of a proven system. And I want you to keep those numbers in your head for the next few minutes.
 
-##### Slide #105: Before the Program Came the SOPs
+---
+
+##### Slide #95: Before the Program Came the SOPs
 
 Before this program existed, there were my SOPs.
 
@@ -1546,7 +1576,9 @@ Every process I use to scale my Airbnb portfolio to $400K a year in net profit, 
 
 The Airbnb Arbitrage Roadmap is a compilation of those SOPs and processes. This is the exact playbook my team uses every day. I turned it into a program so other people could follow the same steps and get the same outcomes.
 
-##### Slide #106: The Offer Stack
+---
+
+##### Slide #96: The Offer Stack
 
 So let's look at what you're actually getting.
 
@@ -1556,7 +1588,9 @@ The 100% Tax-Free Airbnb Income Stream Masterclass. Self-directed IRA setup, cus
 
 Total value of the core education: $4,500.
 
-##### Slide #107: The Math
+---
+
+##### Slide #97: The Math
 
 Now think about this.
 
@@ -1572,7 +1606,9 @@ And think about it this way. Five years from now, if you don't take action, you'
 
 This business gives back your time. The time you spend with your loved ones, your partner, your kids. That's priceless. And that's what a second income stream actually buys you. Not just money. Freedom to be present.
 
-##### Slide #108: The Price Drop
+---
+
+##### Slide #98: The Price Drop
 
 So I'm not going to charge you $4,500.
 
@@ -1588,9 +1624,11 @@ You don't pay me a dollar for the program.
 
 Now I can already see the questions forming. "Preston, why would you give this away?" There is no catch. But there is a reason. And I think it'll make a lot more sense once you understand where I'm coming from.
 
-##### Slide #109: Why Free
+---
 
-I became financially free by 28. My portfolio is worth eight figures at this point. My wife Bridget used to work as a respiratory therapist. She doesn't anymore. I left my corporate job. We have two sons. Neither of us trades our time for our living anymore.
+##### Slide #99: Why Free
+
+I became financially free by 28. My portfolio is worth eight figures at this point. My wife used to work as a respiratory therapist. She doesn't anymore. I left my corporate job. We have two sons. Neither of us trades our time for our living anymore.
 
 I don't need to be here for the money. That's just the truth of it.
 
@@ -1598,15 +1636,15 @@ I already have over 6.5 million people following me across social media. And whi
 
 I want 100,000 people who actually implement this and change their family's financial trajectory.
 
-And yes, once in a while I buy a nice car. I enjoy that stuff too. But that dopamine fades in a couple of days. I like building things. I like helping people who are in the place I once was. I was in corporate, grinding, trading time for money, feeling like I was doing everything right and still not getting ahead.
+And look, I enjoy the nicer things too. I buy a nice car once in a while, take my family somewhere beautiful. But that kind of dopamine fades in a couple of days. What actually fills me up is building things with my family and helping people who are sitting exactly where I once was. Working 60 hours a week, watching taxes eat half my income, knowing there had to be a better way but not knowing where to look.
 
 My wife and I have complete freedom to do whatever we want, whenever we want. That's the life we built. And what we're chasing at this point is fulfillment, not more money.
 
-That's the whole reason I'm here. I remember what it was like to be on the other side. Working 60 hours a week, watching taxes eat half my income, knowing there had to be a better way but not knowing where to look.
+That's the whole reason I'm here. I remember what it was like on the other side. That's why I built this. That's why I'm still doing these trainings. Now let me tell you how I'm able to give you the entire program for free. Because this is important.
 
-That's why I built this. That's why I'm still doing these trainings. Now let me tell you how I'm able to give you the entire program for free. Because this is important.
+---
 
-##### Slide #110: Base44 — What It Is
+##### Slide #100: Base44 — What It Is
 
 A few months ago I started using a platform called Base44 to build tools for my business. Base44 is basically this... you type what you want in plain English, and it builds it for you. You don't have to know how to code, you don't need any technical background at all. You just describe what you need and it creates it.
 
@@ -1614,21 +1652,23 @@ That's how I built the Airbnb Arbitrage Calculator and the STR Purchase Calculat
 
 Now Base44 is owned by Wix. Wix is a publicly traded company valued at over a billion dollars. Most of you have probably already heard of them. Wix is one of the biggest website and app-building platforms in the world. Hundreds of millions of people have used Wix. Base44 is their app-building platform.
 
-##### Slide #111: The Partnership
+---
 
-And because of Base44, you are getting the entire Airbnb Arbitrage Roadmap for free.
+##### Slide #101: The Partnership
 
-Wix, through Base44, is paying for your education today. I reached out to them because the only way I can make this program available to everybody is by partnering with someone else. I can't absorb the cost of giving a full program away for free to thousands of people on my own.
+Here's why you can get the entire Airbnb Arbitrage Roadmap at no additional cost. Base44 is paying for your education today because I partnered with them. That's it. Screenshots you're seeing on screen right now are people who've paid $2,500 for this exact same program. Tonight, it's covered.
+
+I reached out to Base44 because the only way I can make this program available to everybody is by partnering with someone else. I can't absorb the cost of giving a full program away for free to thousands of people on my own.
 
 So I went to Base44 and we built a partnership. They cover the cost of the program, and in return, they get new users on their platform.
 
-And remember why this works. Base44 isn't just sponsoring the program. It's the actual tool the system runs on. The same platform I built every calculator on. The Arbitrage Calculator, the Purchase Calculator, all of it.
-
-Without Base44, you've got strategies sitting in a notebook. With it, you've got the environment to run your own numbers the same way I ran them on those deals tonight.
+And Base44 isn't a passive sponsor. It's the actual tool the system runs on. It's the same platform I built every calculator on. The Arbitrage Calculator, the Purchase Calculator, all of it. Without Base44, you've got strategies sitting in a notebook. With it, you've got the environment to run your own numbers the same way I ran them on those deals tonight.
 
 That's why $20 gets you access to over $4,500 worth of training and tools.
 
-##### Slide #112: Why Base44 Is Doing This
+---
+
+##### Slide #102: Why Base44 Is Doing This
 
 Two reasons.
 
@@ -1638,29 +1678,33 @@ Second, and this is the one that actually got me on the phone with them. Wix wan
 
 So the partnership made sense for both sides. They get serious users. I get to put the Airbnb Arbitrage Roadmap in front of a much bigger audience without price being a constraint.
 
-##### Slide #113: The $20 CTA
+---
 
-So here's what I want you to do right now. My team is dropping the link in the chat.
+##### Slide #103: The $20 CTA
 
-Click it, sign up for Base44 at the cheapest tier, that's all you need, and the entire Airbnb Arbitrage Roadmap unlocks for you today. $20 to get started. Grab your spot now while I keep going, because I've still got a lot to walk you through.
+So here is what I want you to do if you want access to the program. My team is dropping the link in the chat.
+
+You can sign up for Base44 for $20, which is currently the cheapest tier. That's all you need. Click the link, get your Base44 account live, and the entire Airbnb Arbitrage Roadmap unlocks for you today. Grab your spot now while I keep going, because I've still got a lot to walk you through.
 
 And I know what some of you are thinking. "Preston, why can't I just get the program without signing up for Base44?"
 
-Because that would give you the information without the tool you need to build with it. The program teaches the system. Base44 is where you build it. That's why the two come together.
+Because the program teaches the system, and Base44 is where you actually build with it. The calculators, the AI STR Advisor, the deal pipeline — they all live on Base44. Without it, you've got strategies sitting in a PDF.
 
-And I want to be upfront about something. This partnership is not permanent. We don't know how long Base44 will subsidize access at this level. Terms change. Partnerships evolve. What I can tell you is what's in front of you tonight. $20 gets you the entire Airbnb Arbitrage Roadmap plus every bonus, locked in for life. If you've been sitting on the fence through any of this, this is the moment the math stops being abstract.
+And I want to be upfront about something. This partnership is not permanent. We don't know how long Base44 will subsidize access at this level. Terms change. Partnerships evolve. What's in front of you tonight is clear. $20 gets you the entire Airbnb Arbitrage Roadmap plus every bonus, locked in for life. If you've been sitting on the fence through any of this, this is the moment the math stops being abstract.
 
 The link is in the chat. Go ahead and grab your spot.
 
-##### Slide #114: Step-by-Step Signup
+---
+
+##### Slide #104: Step-by-Step Signup
 
 Let me walk you through exactly what this looks like so there's zero confusion.
 
 Step one. Click the link my team just dropped in the chat. When you land on the page, you're going to see a button that says "Build Now." Click that. It's going to take you to a login page. You can sign in through your Google account or enter your email and create a free account. Takes about 10 seconds.
 
-Once you're logged in, you're going to see an orange banner at the top of the screen. Click on that. You'll see a few plan options. You want the Starter account. Click "Subscribe to Starter."
+Once you're logged in, you're going to see an orange banner at the top of the screen. Click on that. You'll see a few plan options. You want the Starter plan at $20. Click "Subscribe to Starter."
 
-Now you've got two choices here. Option one is the yearly plan, that saves you $48, and that's what most people go with. Option two is the monthly plan at $20 a month. Either one works. Pick whichever makes sense for you.
+Now you've got two choices. Option one is the yearly plan, that saves you $48, and that's what most people go with. Option two is the monthly plan at $20 a month. Either one works. Pick whichever makes sense for you.
 
 Once you've picked your plan, click "Continue to checkout," fill out your payment info, and that's it. Step one is done. Takes maybe 60 seconds.
 
@@ -1670,33 +1714,11 @@ Step three. Within 24 hours, we send you full access to the Airbnb Arbitrage Roa
 
 Now I want to see who's already moving. Drop DONE in the chat the second you're signed up.
 
-[Pause 3-4 seconds. Then start reading names with pace and energy. Don't rush through these. Give each name a beat. This section should run 90 seconds to 2 minutes.]
-
-OK here we go. I'm already seeing people come in.
-
-Reyes, you're locked in. Let's go.
-
-DeAndre, welcome in, you're locked in.
-
-Sung-Min Park is in.
-
-Latoya, I see you, locked in.
-
-Stephanie Chen just signed up.
-
-Torres from Texas, let's go.
-
-Marcus is in. Rodriguez, welcome.
-
-Keep them coming. This is how I know who's serious.
-
-Priya K. just signed up. Rodney, welcome in. Kamara, you're locked in.
-
-Hold on, more coming in. Jamal just locked in. Keisha, yes. Zhang. Hassan. Sarah. Michael.
+[STAGE DIRECTION: Preston calls out real chat names as DONEs come in. Read names with pace and energy. Don't rush. Give each name a beat. Keep this running 90 seconds to 2 minutes. No scripted names — only real signups from the live chat.]
 
 And every single person I just called out made a decision in the last 60 seconds that could be worth six figures over the next decade. We ran the math together tonight. You saw the numbers on the Arbitrage deal. $2,034 a month in cash flow from one unit. That's over $24,000 a year. And on the ownership side, $2,345 a month, almost $28,000 a year, plus thousands back on your taxes. And these are conservative numbers. A lot of you are going to do better than that.
 
-More names coming in. Thompson, you're locked in. Vanessa, welcome in. Crawford, let's go. Sanchez just signed up. Okafor, welcome in. Gutierrez is in. Chang. Washington. Harris.
+[STAGE DIRECTION: Continue reading real DONE names as they come in.]
 
 The signups are coming in fast right now. That's what happens when the training is real and the math actually works. People don't sit on it.
 
@@ -1704,7 +1726,9 @@ So if you're still watching and you haven't clicked the link, the link is right 
 
 And once you've done that, stay locked in. Because I'm about to show you how to get my team looking at your specific numbers.
 
-##### Slide #115: Results at Different Levels
+---
+
+##### Slide #105: Results at Different Levels
 
 Because the Airbnb Arbitrage Roadmap isn't one-size-fits-all. People come in at different starting points.
 
@@ -1724,7 +1748,9 @@ Now, you're not going to go from wherever you are right now to $758K in year one
 
 And here's what matters: you have all the data points. You can see what others are building. You can model what's realistic for your situation, your capital, your time availability.
 
-##### Slide #116: Bonus 1 — 1-on-1 Personal and Business Wealth Concierge Session
+---
+
+##### Slide #106: Bonus 1 — 1-on-1 Personal and Business Wealth Concierge Session
 
 Okay, so you're getting the program for $20. But that's not where it ends.
 
@@ -1746,7 +1772,9 @@ Most firms charge $500 to $1,000 just for the strategy session. Most charge anot
 
 For you, all fees are waived. It's included.
 
-##### Slide #117: Bonus 2 — AI STR Advisor
+---
+
+##### Slide #107: Bonus 2 — AI STR Advisor
 
 Bonus number two. You get access to the AI STR Advisor.
 
@@ -1762,7 +1790,9 @@ This is worth another $400, $500 a month if you hired a consultant on retainer.
 
 It's included.
 
-##### Slide #118: Bonus 3 — Base44 Setup Kit
+---
+
+##### Slide #108: Bonus 3 — Base44 Setup Kit + The Value Stack
 
 Bonus number three. The Base44 Setup Kit.
 
@@ -1772,13 +1802,7 @@ You get this, and you can build your own Airbnb Arbitrage Calculator customized 
 
 That means you're not dependent on me to run the numbers. You own the system. You can make it your own in minutes.
 
-This is worth, honestly, whatever someone charged you for a custom spreadsheet. People pay $1,000 to $3,000 for bespoke real estate analysis tools.
-
-You get the blueprints to build it yourself.
-
-That's included.
-
-##### Slide #119: The Value Stack
+This is worth, honestly, whatever someone charged you for a custom spreadsheet. People pay $1,000 to $3,000 for bespoke real estate analysis tools. You get the blueprints to build it yourself.
 
 So let's do the math on everything you're getting tonight.
 
@@ -1792,17 +1816,16 @@ The AI STR Advisor. If this were a subscription service, $4,000 to $6,000 a year
 
 The Base44 Setup Kit, custom calculator templates and prompts. Worth $1,000 to $3,000.
 
-Full value stack: over $11,000.
+Full value stack: over $11,000. All included in your access tonight for $20. Because Base44 is subsidizing the model, and because I'm betting that once you see results, you'll want more support as you scale. That's when we talk about coaching.
 
-And all of this is included in your access tonight for $20.
+---
 
-[Pause.]
 
-I'm not doing this because I'm generous. I'm doing this because Base44 subsidizes the model, because I'm betting that you're going to see results, you're going to want more support as you scale, and that's when we talk about the advanced coaching and done-for-you services.
+# SECTION 11: STAGES + COACHING PATHS
 
-But tonight, in this room, everyone who says yes to this system gets the whole thing.
+---
 
-##### Slide #120: The Stage Framework
+##### Slide #109: The Stage Framework
 
 Now, before I show you the two paths for mentorship, I want to frame something.
 
@@ -1822,21 +1845,19 @@ Stage Two is what we're giving you tonight. The $20 gets you the program, the ca
 
 Stage Two is the difference between "I know this is possible" and "I'm actively building this."
 
-But here's the catch with Stage Two: you can do it alone, and a lot of people do. You can watch the videos, read the templates, join the community, and figure it out yourself.
+Here's the catch with Stage Two: you can do it alone, and a lot of people do. Some people make it work that way. Most people don't.
 
-Some people make it work that way.
-
-Most people don't.
-
-So for those of you in Stage Two right now, you've got everything you need. Go through the Airbnb Arbitrage Roadmap at your own pace. Build your deal pipeline on Base44. Start executing. You'll see results, close a deal, and start cash flowing.
+For those of you in Stage Two right now, you've got everything you need. Go through the Airbnb Arbitrage Roadmap at your own pace. Build your deal pipeline on Base44. Start executing. You'll see results, close a deal, and start cash flowing.
 
 But there's another group of people on this call right now. People who already know themselves. Who know they don't need more information. They need sequence, accountability, and someone to help them avoid a $50K mistake on their first deal. People who've watched trainings before, gotten courses before, done the self-study thing, and three months later nothing changed. They're still sitting in the same spot.
 
-If that's you, is it cool if I take a few minutes and show you what Stage Three actually looks like? Just type YES in the chat if you want me to keep going.
+If that's you, and only if that's you, it makes sense to look at Stage Three. That's when you actually need more hands-on coaching. When you'd rather have someone do the deal reviews, the lender introductions, the cost segregation coordination, the landlord reference calls for you. If you're stuck, or you know yourself well enough to know you move faster with a team, that's when we should talk about it.
 
-[Pause 5-8 seconds. Read responses.]
+Is it cool if I take a few minutes and show you what Stage Three actually looks like? Just type YES in the chat.
 
-Terrence, yes. Angela, yes. Rohan, I see you. A lot of yeses. Cool. Here's what it looks like.
+[STAGE DIRECTION: Pause 5-8 seconds. Read responses and name 3-5 real chat names as they come in.]
+
+Cool. Here's what it looks like.
 
 Stage Three is having a team execute with you. Not in the community chat, not theoretically. Literally working on your deals. Telling you when to move and when to wait. Getting on the phone with your landlord as a reference. Analyzing a property you're looking at and telling you yes or no within 24 hours.
 
@@ -1844,13 +1865,15 @@ That's the difference between Stage Two and Stage Three.
 
 And here's what I'm about to show you: the two different paths to Stage Three, because not everyone needs the same thing.
 
-##### Slide #121: Where Real Risk Lives
+---
 
-Before I do that, I want to be brutally honest about where real risk actually lives.
+##### Slide #110: Where Real Risk Lives
+
+Before I do that, I want to be honest about where risk actually lives.
 
 Most people think the risk is the market. A bad property. Interest rates climbing. A recession.
 
-The real risk is execution. Doing the right things in the wrong way and losing more than the profit you're trying to make.
+The bigger risk is execution. Doing the right things in the wrong way and losing more than the profit you're trying to make.
 
 An LLC in the wrong state saves you $0 in taxes and costs you $2,000 a year in compliance. Multiple properties registered under your personal name instead of separate entities, and now a lawsuit on one property reaches all of them. That's a million-dollar mistake.
 
@@ -1862,7 +1885,9 @@ Those are the real risks. Execution risk, not market risk.
 
 The team exists to kill that risk. The coaching exists to make sure you never make those mistakes.
 
-##### Slide #122: Gym vs. Personal Trainer
+---
+
+##### Slide #111: Gym vs. Personal Trainer
 
 I'll give you an analogy.
 
@@ -1882,7 +1907,9 @@ The Airbnb Arbitrage Roadmap at Stage Two is the gym. You have everything you ne
 
 The mentorship tracks we're about to show you, that's the trainer. That's where Stage Three happens.
 
-##### Slide #123: Who This Is For — And Who Should Leave
+---
+
+##### Slide #112: Who This Is For — And Who Should Leave
 
 Okay, I want to be direct here, because not everyone in this room should do this.
 
@@ -1906,7 +1933,9 @@ You want a system that's proven. Frameworks that aren't being made up as we go. 
 
 If you're in that camp, let's go.
 
-##### Slide #124: Why This Works Across Markets
+---
+
+##### Slide #113: Why This Works Across Markets
 
 I used this system across four states. Arizona, California, Texas, Florida. $400K a year in net revenue. Four completely different markets, different regulations, different seasonality. The math worked in every single one.
 
@@ -1918,7 +1947,9 @@ The system runs on math. You model the deal, you stress-test the assumptions, an
 
 It doesn't matter who's running it. What matters is whether the math checks out.
 
-##### Slide #125: Two Paths to Stage Three
+---
+
+##### Slide #114: Two Paths to Stage Three
 
 Okay, so you're getting Stage Two for $20. The program, the tools, the community, the AI advisor, the strategy session. That's available to everyone in this room.
 
@@ -1928,7 +1959,9 @@ There are two paths to that: STR Concierge and Airbnb Ascension.
 
 They serve different situations. I'm going to walk through both.
 
-##### Slide #126: Path One — STR Concierge (Ownership Track)
+---
+
+##### Slide #115: Path One — STR Concierge (Ownership Track)
 
 STR Concierge is for people who have the capital and want to go the ownership route. You want the property on your balance sheet. You want the cash flow, the depreciation, and the equity at the same time. And you want a team doing the heavy lifting while you make the final decisions.
 
@@ -1948,7 +1981,9 @@ The property gets set up. You collect the income. STR Concierge clients typicall
 
 Because this is done-for-you, capacity is limited. My team is doing the deal sourcing, the underwriting, and the setup. About 10 STR Concierge clients per month. That's it. Application-based.
 
-##### Slide #127: Path Two — Airbnb Ascension (Bridge Method)
+---
+
+##### Slide #116: Path Two — Airbnb Ascension (Bridge Method)
 
 Airbnb Ascension is for people who want the cash flow but don't have the capital to buy a property yet. This is the Bridge Method. It's how I got started, and it's how most of our students get started.
 
@@ -1968,7 +2003,9 @@ Weekly group coaching calls with the full team covering current market condition
 
 Ascension clients typically land their first property in 30 to 60 days. By month 18 to 24, they've got two to three properties running and they're cash flowing without ever touching a mortgage.
 
-##### Slide #128: What Both Paths Include
+---
+
+##### Slide #117: What Both Paths Include
 
 Real quick, because both of these paths overlap in some ways.
 
@@ -1986,9 +2023,11 @@ And if your spouse or partner wants to be involved, we can discuss that on the c
 
 The difference between the paths is the level of done-for-you (Concierge) vs. the depth of hands-on coaching (Ascension), and the price reflects that.
 
-But both paths are legitimate paths to Stage Three.
+Both paths are legitimate paths to Stage Three.
 
-##### Slide #129: Dustin's Story — Full Version
+---
+
+##### Slide #118: Dustin's Story — Full Version
 
 Let me tell you about Dustin, because he represents the transformation we're actually creating here.
 
@@ -2030,37 +2069,22 @@ That 31-day first deal, that changed his entire life trajectory.
 
 And that's available to you tonight.
 
-##### Slide #130: Cost of Doing This Alone
+---
 
-I want you to understand the financial opportunity cost of trying to do this completely alone.
 
-Building this yourself, without coaching, starts with education. Courses, books, podcasts, hours that could be billable. Call it $2,000 in direct costs.
+# SECTION 12: THE OFFER — BOOK THE CALL
 
-Then come the first-deal mistakes. Furnishing costs too much because you don't know where to source. Pricing is wrong because you haven't been in a community where people talk about actual booking rates and margins. Entity structure is off because you did it yourself without an accountant. Those mistakes cost $3,000 to $8,000 on your first deal alone.
+---
 
-And the pace kills you. Three months to find a deal that our coaches would source in three weeks. That's $4,000 in lost opportunity cost right there.
-
-Your first deal takes you 20 to 30 hours to set up instead of 10, because you don't have templates, you don't have SOPs, you're rebuilding wheels.
-
-And when you hit obstacles, you don't have anyone to call. So you end up on Reddit, scrolling Facebook groups, asking people who are also figuring it out for the first time. The advice is varied. Contradictory sometimes. You have no way to tell good advice from bad advice.
-
-The real cost of doing this alone? $40,000 to $55,000 in direct costs, lost time, and lost opportunity on your first property.
-
-That's before you think about the mental cost. The stress. The fear of making the wrong decision.
-
-The mentorship, the coaching, the team, that's not an expense. The team saves you $20,000 to $45,000 on every deal through better negotiation, under-market rent, free rent months, and sourcing furniture at half the retail cost. Two properties deep and the coaching has already paid for itself three times over in savings alone, before you count a dollar of revenue.
-
-##### Slide #131: The Offer — Book the Call
+##### Slide #119: The Offer — Book the Call
 
 Okay, so here's what we're actually offering.
 
-You get Stage Two for $20. That's live immediately. Program, tools, calculators, AI advisor, strategy session, everything.
+You get Stage Two for $20. That's live as soon as your access is delivered within 24 hours. Program, tools, calculators, AI advisor, strategy session, everything.
 
 You can decide right now that $20 is enough, that you want to own the system yourself, that you want to move at your own pace. That's legitimate. You'll have everything you need to succeed.
 
-But if you want Stage Three, if you want a coach, if you want a team, if you want to move at the speed we're talking about, the next step is a call.
-
-Not a sales call. Application call. We talk to you about your situation. Your capital, your goals, your timeline, and your market.
+If you want Stage Three, if you want a coach, if you want a team, if you want to move at the speed we're talking about, the next step is a call. You apply, we talk to you about your situation. Your capital, your goals, your timeline, and your market.
 
 If you're a fit for Airbnb Ascension, we talk about what that looks like, what it costs, what the investment is.
 
@@ -2072,11 +2096,11 @@ But if you are a fit, we explain the program. We answer your questions. We tell 
 
 And we make an offer specific to tonight.
 
-If you're here, live in this room, you get $2,000 off the entry price for either path.
+If you're here, live in this room, you get $2,000 off the entry price for either path. That's $2,000 off the price because you showed up and you invested in your education tonight.
 
-That's real money. That's not a fake discount. That's actual cash off the price because you showed up and you invested in your education tonight.
+---
 
-##### Slide #132: Pay-As-You-Implement, Zero Interest
+##### Slide #120: Pay-As-You-Implement, Zero Interest
 
 And here's how we structure it.
 
@@ -2090,15 +2114,15 @@ And there's zero interest. No financing fees, no points, nothing.
 
 Why? Because the deal is funding the coaching. Your first property's cash flow is funding the tools and the guidance that helped you build it.
 
-We make money when you make money. We're not lending you money at 18% APR and taking the spread. We're building with you.
+We make money when you make money. We're not lending you money at 18% APR and taking the spread. We're building with you, which means we don't want you to fail, we don't want you to struggle with monthly payments, and we want you to make the cash flow and fund the next deal.
 
 [Pause.]
 
-That changes the entire dynamic. We don't want you to fail. We don't want you to struggle with monthly payments. We want you to be successful, make the cash flow, and then fund the next deal.
-
 That's a partnership, not a financing arrangement.
 
-##### Slide #133: Name Callouts — Booking Surge
+---
+
+##### Slide #121: Booking Surge
 
 Okay, so here's what I need from you.
 
@@ -2112,45 +2136,21 @@ So who's in?
 
 Let's go.
 
-[PAUSE. Read names as they come in. Read 30+ names over 90 seconds.]
+[STAGE DIRECTION: Pause. Preston reads real I'M BOOKED names from the live chat. Read 30+ real names over 90 seconds. Give each name a beat, acknowledge location or context where visible, keep energy high. No scripted placeholder names — only real chat entries.]
 
-David from Colorado. Booked.
-
-Michelle. Michelle with one L. Let's go.
-
-James and Jennifer, husband and wife, both booking the call. That's what I like to see.
-
-Tony. Could be Anthony, could be just Tony, you're in either way.
-
-Shanice from Atlanta. Tell me about Atlanta, you've got great markets there.
-
-Darnell Walker just booked his strategy call. Christina R., you just locked in your spot. Welcome.
-
-Reyes just signed up. DeAndre, welcome in. Sung-Min Park is in. Latoya, yes.
-
-More coming. Jerome, you're booked. Anika Brooks, let's go. Sanchez, welcome. Okafor just applied.
-
-Keep them coming. I'm seeing them. Everyone who types I'M BOOKED is getting a call slot.
-
-Stephanie Chen just booked. Isaiah Booker, welcome. Gutierrez, you're locked in. Thompson from Texas, yes.
+[Continue reading names in waves with brief commentary between batches.]
 
 This is what momentum looks like. This is what commitment looks like.
 
-Rodriguez just applied. Chang, welcome in. Washington, you're booked. Hassan, yes. Patel, let's go.
+[Continue reading real names.]
 
 Okay, for the rest of you reading this, get into the chat. Type I'M BOOKED. Make this real.
 
-[Wait 15-20 seconds. Continue reading names rapidly.]
-
-More yeses coming in. Torres just booked. Nguyen, you're in. Keisha just applied. Marcus, welcome. Braun, yes.
-
-Young just booked. Harris, you're locked in. Bailey, welcome. Pierce, yes. Wood just applied.
-
-Anderson, you're booked. Bennett, welcome in. Crawford, yes. Williams, let's go. Lopez just signed up.
+[STAGE DIRECTION: Wait 15-20 seconds. Continue reading names rapidly as they come in.]
 
 [Pause.]
 
-And that's it. Everyone in this room who typed I'M BOOKED is making a move right now that your future self is going to thank you for. You understand that, right? You're not just filling out a form. You're deciding that you're serious. You're telling yourself: I'm going to be different 12 months from now.
+And that's it. Everyone in this room who typed I'M BOOKED is making a move right now that your future self is going to thank you for. You're not just filling out a form. You're deciding that you're serious. You're telling yourself: I'm going to be different 12 months from now.
 
 I'm going to have dealt with this, worked through this, and I'm going to be on the other side of it with cash flowing, with a portfolio, with real equity, with tax savings.
 
@@ -2158,7 +2158,9 @@ You're going to get contacted tomorrow. You're going to have a conversation abou
 
 That conversation is the next step.
 
-##### Slide #134: What Happens After You Book
+---
+
+##### Slide #122: What Happens After You Book
 
 Real quick, what to expect.
 
@@ -2180,25 +2182,25 @@ Not pressure. We'll ask you questions. We want to make sure you're committed. Be
 
 But if you are ready, if you've got the capital and the willingness to move, the call is how you get started.
 
-##### Slide #135: Track Record and Scale
+---
+
+##### Slide #123: Track Record and Scale
 
 Before we get to the details of what you're actually getting, I want to put a number in front of you.
 
-4,700+ people are actively in the Airbnb Arbitrage Roadmap right now. That's 4,700 people learning, executing, building.
+4,700+ people are actively in the Airbnb Arbitrage Roadmap right now. 4,700 people learning, executing, building.
 
-Collectively, they've built over fifty million dollars in net worth. And that number is based on property valuations, portfolio values, and net worth assessments from our annual reviews.
+Collectively, across this community, hundreds of millions of dollars in property value, bookings, and portfolio equity have been built. That's based on property valuations, portfolio values, and net worth assessments from our annual reviews.
 
-Fifty million.
+Individual people in this community are hitting the numbers we talked about. $2,000 a month. $35,000 a month. Hundreds of thousands of dollars a year. Those are real results happening right now, and we can't guarantee them for you, but they're representative of what's possible.
 
-Individual people in this community are hitting the numbers we talked about. $2,000 a month. $35,000 a month. Hundreds of thousands of dollars a year.
+That data is live in the community. You can see it. You can talk to the people doing it. You can ask them questions.
 
-Those are real results happening right now.
+When you see proof at that scale, the risk calculation changes.
 
-And that data is live in the community. You can see it. You can talk to the people doing it. You can ask them questions.
+---
 
-That's proof. And when you see proof at that scale, the risk calculation changes.
-
-##### Slide #136: Two Guarantees
+##### Slide #124: Two Guarantees
 
 I'm going to give you two guarantees.
 
@@ -2210,7 +2212,7 @@ You find a property, run the numbers, and send it to your coach. Within 24 hours
 
 If a deal doesn't meet the profitability threshold, we tell you no. We reject it. You don't take it.
 
-That's how we can stand behind this: you will not lose money on a bad deal under our mentorship. Because we're not letting you take a bad deal in the first place. The team is reviewing every single property before you commit.
+That's how we can stand behind this. You will not lose money on a bad deal under our mentorship, because we're not letting you take a bad deal in the first place. The team is reviewing every single property before you commit.
 
 Our underwriting team has modeled over 400 deals. They know what makes a property profitable and what makes it a disaster. When they flag something, it saves you $20,000 to $45,000 in mistakes you would have made on your own. Under-market rent negotiations, free rent months, furnishing costs cut in half through our vendor network. Those savings come directly from the team being involved in every deal.
 
@@ -2232,7 +2234,9 @@ We'll walk you through the specific terms on your application call so you know e
 
 Two guarantees stacked together. One protects you from ever taking a bad deal. The other protects you from a bad outcome even on a good deal.
 
-##### Slide #137: Testimonial Video Cue
+---
+
+##### Slide #125: Testimonial Video Cue
 
 [PLAY VIDEO — 3-4 minute compilation of 5-6 different testimonials, fast cuts, high energy. Different people, different results, different paths. Mix Concierge and Ascension clients.]
 
@@ -2244,7 +2248,9 @@ Some of those are Concierge clients. Some are Ascension. Some are people who sta
 
 That's what's available.
 
-##### Slide #138: Coaching Breakdown — What You Actually Get
+---
+
+##### Slide #126: Coaching Breakdown — What You Actually Get
 
 Coaching is abstract until you see the actual deliverables. So let me break down what's inside each path beyond the $20 program.
 
@@ -2308,19 +2314,21 @@ Here's what a typical 12 months looks like once your plan is built.
 
 Month one, you're setting up your entity structure and getting your first deal pipeline going. For most Ascension clients, that single month is when the system clicks. You're running deals through the calculator. You're talking to your coach about what you're seeing in your market. You're getting clear on your first target. Your Concierge clients are getting their sourcing team on the hunt.
 
-Month three, you're closing your first deal or deep in negotiation. Your coach is reviewing every number. You're sourcing furnishings through the vendor network. You're setting up your listing with optimized photos, descriptions, and pricing strategy. The operational playbook is running. You're not making this up as you go. You're executing the system.
+Month three, you're closing your first deal or deep in negotiation. Your coach is reviewing every number. You're sourcing furnishings through the vendor network. You're setting up your listing with optimized photos, descriptions, and pricing strategy. The operational playbook is running. You're executing the system.
 
-Month six, your first property is cash flowing. You're seeing real bookings. Real revenue hitting your account. You're optimizing based on actual data instead of projections. You're seeing whether your market assumptions were right or if you need to adjust pricing or positioning. And you're starting to think about deal number two. What market should you expand into? Should you stay in arbitrage or move to ownership? Your coach is helping you model that out.
+Month six, your first property is cash flowing. You're seeing real bookings. Real revenue hitting your account. You're optimizing based on actual data instead of projections. You're starting to think about deal number two. What market should you expand into? Should you stay in arbitrage or move to ownership? Your coach is helping you model that out.
 
-Month nine, you're expanding. Second deal in pipeline or closed. Your entity structure and tax strategy are dialed in. Cost segregation is being discussed with your CPA. Depreciation is being captured. The tax savings alone are funding part of your next move. You're not paying for this from your W-2 anymore. The portfolio is paying for itself to grow.
+Month nine, you're expanding. Second deal in pipeline or closed. Your entity structure and tax strategy are dialed in. Cost segregation is being discussed with your CPA. Depreciation is being captured. The tax savings alone are funding part of your next move. The portfolio is paying for itself to grow.
 
-Month twelve, you're operating a real portfolio. Two to three properties, cash flowing, tax-optimized. And you're running almost entirely on your own. The coach is there when you need feedback on a new market or when you want to explore a new strategy, but you own the system. You could run this without the coach now, but the coach is still there for the advanced moves.
+Month twelve, you're operating a real portfolio. Two to three properties, cash flowing, tax-optimized. You're running almost entirely on your own. The coach is there when you need feedback on a new market or when you want to explore a new strategy.
 
-And the entire time, you're not figuring any of this out alone. Every month you know exactly what you're working on. Exactly who's helping you do it and exactly what comes next. The guessing disappears. The paralysis disappears. And the cost of mistakes drops to almost nothing.
+The entire time, you're not figuring any of this out alone. Every month you know exactly what you're working on. Exactly who's helping you do it and exactly what comes next. The guessing disappears. The paralysis disappears. And the cost of mistakes drops to almost nothing.
 
 That's what 12 months in the coaching looks like.
 
-##### Slide #139: Coach Credentials and Proof
+---
+
+##### Slide #127: Coach Credentials and Proof
 
 I want you to know who's coaching you.
 
@@ -2336,7 +2344,9 @@ Alex runs deal underwriting and has modeled over 400 STR deals. He knows what ma
 
 These are the people behind the program. No celebrities, no Instagram gurus. Just people who've done the work and know how to help others do it.
 
-##### Slide #140: Cost of Inaction Math
+---
+
+##### Slide #128: Cost of Inaction Math
 
 Now let's talk about what it costs you to wait.
 
@@ -2346,7 +2356,7 @@ Let's say you decide not to move tonight. You don't book the call. You say you'l
 
 That one property, the one you would have sourced and closed in the next 90 days, the one that would be generating $4,000 to $5,000 a month by month six... you don't get that.
 
-That's $24,000 a year you don't make. That's five years of waiting and you're at $120,000 in missed revenue.
+That's $24,000 a year you don't make. Five years of waiting and you're at $120,000 in missed revenue.
 
 But that's just one property.
 
@@ -2364,9 +2374,11 @@ And it's a tax-deductible cost. When you're paying for coaching, for mentorship,
 
 So the real cost of the coaching isn't what you pay. It's what you pay minus your tax savings.
 
-##### Slide #141: Tax-Deductible Investment
+---
 
-One more thing on the math, because this changes the equation for a lot of you.
+##### Slide #129: Tax-Deductible Investment
+
+One more thing on the math.
 
 Depending on your situation, your investment in the coaching program qualifies as a tax-deductible business expense. I'm not a CPA, so I won't tell you exactly how it applies to your specific tax return. But I can tell you what our clients have done.
 
@@ -2380,7 +2392,9 @@ The real net cost of this coaching, after tax deductions and deal savings, is cl
 
 Your advisor on the call can walk you through this in more detail. And our CPA partners can confirm the specifics for your situation.
 
-##### Slide #142: The Six-Month Comparison
+---
+
+##### Slide #130: The Six-Month Comparison
 
 Here's a different way to think about it.
 
@@ -2396,11 +2410,17 @@ Six months apart, and Scenario B is infinitely ahead.
 
 That's the difference between knowing and doing.
 
-##### Slide #143: Multiple Closes — Guarantee Stack
+
+---
+
+
+# SECTION 13: CLOSES
+
+---
+
+##### Slide #131: Close 1 — Guarantee Stack
 
 So let me reframe this whole thing, because I want you to understand what you're actually committing to here.
-
-This isn't a course you'll forget about. And it's not a gym membership collecting dust.
 
 You're committing to an outcome. You're saying: I want to build wealth through Airbnb. I want this to be real. I'm willing to execute.
 
@@ -2408,7 +2428,9 @@ And in exchange, we're guaranteeing two things. One, you'll never take a bad dea
 
 That's two layers of protection. One on the front end, one on the back end. There's no scenario where you lose if you show up.
 
-##### Slide #144: Multiple Closes — Flipped Risk
+---
+
+##### Slide #132: Close 2 — Flipped Risk
 
 Here's the flip on risk.
 
@@ -2420,61 +2442,9 @@ That flips the incentive. We need you to succeed and we need the property to per
 
 That changes everything about the coaching dynamic.
 
-##### Slide #145: Multiple Closes — Cost of Inaction
+---
 
-You can sit here tonight and decide this isn't for you.
-
-That's fine. I mean that. Not everyone wants to build real estate. Some people want to stay in their W-2 forever. That's a valid choice.
-
-But if you're sitting here thinking about it, if you're thinking about three Airbnbs generating an extra $70,000 a year while you keep your job, if you're thinking about depreciation and tax savings and building a portfolio that eventually funds a sabbatical or an early retirement... you're thinking about action.
-
-The question is when. Now or later.
-
-Later is always going to feel more convenient. But later is also $120,000 in lost revenue per property.
-
-Now is uncomfortable. Now requires a phone call and a conversation and a decision. Now requires commitment.
-
-But now is also the difference between building wealth and thinking about building wealth.
-
-The cost of inaction isn't zero. It's massive.
-
-##### Slide #146: Multiple Closes — Behavioral Proof
-
-And here's what we know from behavioral psychology: commitment happens in real time.
-
-Everyone in this room who typed DONE, who typed I'M BOOKED, who engaged with the chat, you just committed. You're not sitting on this passively. You're engaging.
-
-That engagement is predictive. People who engage during a workshop, who type in chat, who respond to calls to action, those are the people who execute.
-
-Not all of them. But statistically, way more of them than people who sit passive and think "I'll figure it out later."
-
-So if you engaged with the chat, if you moved when we asked you to move, you're signaling to yourself that you're ready for action. That's behavioral data. And it's predictive.
-
-##### Slide #147: Multiple Closes — Identity and Crossroads
-
-Here's the deeper piece, though.
-
-You're at a crossroads right now, and it's bigger than Airbnb. It's about your life.
-
-You're the person who keeps their W-2 forever and hopes their net worth grows through 401k contributions. Or you're the person who builds multiple income streams, owns assets, controls their tax situation.
-
-Those are two different people. Two different futures.
-
-The Airbnb system is real. The framework works. But it only works if you're the kind of person who takes action when opportunity shows up.
-
-Tonight is opportunity. You either are that person or you're not.
-
-And it's not about judgment. Some people prefer stability and simplicity, and that's fine.
-
-But if you're sitting here thinking about $4K a month in extra income, if you're daydreaming about quitting your job someday, if you want to be the one controlling your financial destiny instead of the stock market controlling it for you... you're the other kind of person.
-
-The one who moves.
-
-[PAUSE.]
-
-The question is: are you going to be that person tonight?
-
-##### Slide #148: Multiple Closes — Two Voices
+##### Slide #133: Close 3 — Two Voices
 
 There are two voices in your head right now.
 
@@ -2496,17 +2466,29 @@ So which voice are you listening to?
 
 The answer to that question determines whether your life is different one year from now.
 
-##### Slide #149: Segment — FAQs
+
+---
+
+
+# SECTION 14: FAQs
+
+---
+
+##### Slide #134: Segment — FAQs
 
 Okay, I know you have questions. Let me run through the ones that come up every time.
 
-##### Slide #150: FAQ — Do You Offer Support If I Get Stuck?
+---
+
+##### Slide #135: FAQ — Do You Offer Support If I Get Stuck?
 
 "Do you offer support if I get stuck?"
 
 Of course. You can message your 1-on-1 coach any time throughout the day. You can also message me and the team inside our community. We run live weekly group coaching calls where you can ask any question you have. And you've got access to the full community where people post questions, share deals, and share wins around the clock. You're never doing this alone.
 
-##### Slide #151: FAQ — Does This Work If I Want to Buy a Property?
+---
+
+##### Slide #136: FAQ — Does This Work If I Want to Buy a Property?
 
 "Does this program work for those who want to buy a property?"
 
@@ -2516,9 +2498,11 @@ If you're buying, this becomes even more valuable because you're spending hundre
 
 I can also connect you to my team of real estate agents and lenders who specialize in short-term rentals in any state. And if you don't have time to source your own deals, we have pre-vetted deals with financing already set up, so you don't need months of searching. We'll show you exactly how much cash you need and how the numbers pencil out.
 
-If you're a higher earner, the tax benefits, especially with bonus depreciation and cost segregation, make these deals even more attractive. So you're not just buying a property. You're getting a clear path to cash flow, tax savings, and long-term equity.
+If you're a higher earner, the tax benefits, especially with 100% bonus depreciation and cost segregation under the current tax code, make these deals even more attractive. So you're not just buying a property. You're getting a clear path to cash flow, tax savings, and long-term equity.
 
-##### Slide #152: FAQ — I've Never Done This Before
+---
+
+##### Slide #137: FAQ — I've Never Done This Before
 
 "I've never done this before. Will this work for me?"
 
@@ -2526,7 +2510,33 @@ Yes. This is a beginner-friendly business. Anybody can run it even with no prior
 
 The program lays out my exact process step-by-step, so you can follow it and make $2,500 a month from your first Airbnb. You've seen a sneak peek of my systems and guides earlier today. I have SOPs and templates for every step of the process. There's no guesswork. These are the same SOPs I'm using to run my own Airbnb business. And because you've got a 1-on-1 coach, they'll always keep you on track.
 
-##### Slide #153: FAQ — Which Program Is Right For Me?
+---
+
+##### Slide #138: FAQ — Do I Need to Be Technical?
+
+"Do I need to be technical to use Base44 and run this?"
+
+No. If you can log into your email account, you have enough technical skill to do this. If you found a way to sign up for this workshop and show up to this workshop, that's enough. Everything inside Base44 is pre-built and simple. The calculators are already built. The AI STR Advisor is already running. You just log in and use them. No coding, no setup, nothing technical on your end.
+
+---
+
+##### Slide #139: FAQ — What Happens If I Cancel Base44?
+
+"What happens if I cancel my Base44 subscription later?"
+
+Straightforward answer. If you cancel Base44, the things that live inside Base44 turn off. That's the calculators I built on the platform, the AI STR Advisor, and the deal pipeline tools. Those run on Base44, so if your subscription isn't active, you lose access to those specific tools.
+
+Here's what actually matters though. Everything you learned is yours. Permanently.
+
+The Airbnb Arbitrage Roadmap — all five phases, every module, every video — yours forever. The 100% Tax-Free Masterclass — yours forever. Every SOP, every script, every template, every checklist — yours forever. The community — yours. Your 1-on-1 Wealth Concierge session and every note from it — yours. The frameworks, the vendor lists, the landlord scripts, the entity setup playbook — yours.
+
+You keep the education. You keep the business you built. You keep the landlord relationships. You keep the property. You keep the cash flow. None of that depends on Base44 being active.
+
+So the worst-case scenario if you ever cancel is that you'd run your math in a spreadsheet instead of a calculator on Base44. That's it. The business keeps running. The money keeps coming in. You keep everything that actually builds wealth.
+
+---
+
+##### Slide #140: FAQ — Which Program Is Right For Me?
 
 "Should I do Airbnb Ascension or STR Concierge?"
 
@@ -2536,7 +2546,9 @@ If you have $50,000 to $100,000 or more in capital and you want the property on 
 
 You don't have to figure out which one is right before the call. Book the call, tell us your situation, and we'll tell you exactly what makes sense.
 
-##### Slide #154: FAQ — What About My Spouse?
+---
+
+##### Slide #141: FAQ — What About My Spouse?
 
 "This is a big decision. What if my spouse isn't fully on board?"
 
@@ -2544,7 +2556,9 @@ Bring them to the call. Some of the best real estate partnerships I've seen are 
 
 When your spouse sees the actual numbers, when they see what other couples like Christina and Rijoy are doing with the system, it stops being abstract. We can talk through on the call how to get your partner involved and what that looks like for your household.
 
-##### Slide #155: FAQ — I Have a Full-Time Job
+---
+
+##### Slide #142: FAQ — I Have a Full-Time Job
 
 "I have a full-time job. Will I be able to do this?"
 
@@ -2554,17 +2568,9 @@ You only need to dedicate 1 to 2 hours per day about 4 to 5 days a week until yo
 
 The average person spends 2 hours and 24 minutes on social media per day. It's a matter of priorities. If Kirk, a full-time nurse, can make this work, so can you.
 
-##### Slide #156: FAQ — Now Is Not a Good Time
+---
 
-"Now is not a good time. Can I join later?"
-
-Sure, you can. But I'll be blunt. Whether you join today or not, it's not going to change my life. But it will absolutely impact yours.
-
-Let me give you an example. We had a student attend my first workshop back in 2022. He loved the model but didn't join right away. Two years later, he finally joined and just signed his first lease. Great for him. But compare that to Dustin, who also attended in 2022. Dustin signed up immediately, got his first lease within a month, and just hit $56,000 a month in net profit. He quit his 9 to 5 to go all in. That's the difference between acting and waiting.
-
-I'm not promising you Dustin's results. But every year you wait, the opportunity cost stacks up. If you just land 2 properties cash flowing $2,500 a month each, that's $5,000 a month, $60,000 a year. Every year you delay, that's $60K left on the table.
-
-##### Slide #157: FAQ — Aren't Your Students Competing With Each Other?
+##### Slide #143: FAQ — Aren't Your Students Competing With Each Other?
 
 "Isn't the market saturated? Aren't your students all competing with each other?"
 
@@ -2572,11 +2578,13 @@ No. Most people don't realize how big the Airbnb market really is.
 
 March 2023 saw more than 21.4 million nights booked for future travel on Airbnb, the highest of any month on record. July 2023 hit 35.4 million nights stayed in a single month, beating July 2022 by 9.4%. The short-term rental market is projected to reach $149 billion in 2025 and $121 billion by 2030, growing at 11.4% annually. People are traveling. They're choosing short-term rentals.
 
-And here's the thing. You're not competing with the people in this community. You're competing with the 10 other Airbnbs in the same location at the same price point as yours. Those are your competitors. The people inside this program are sharing strategies, dividing up markets, and figuring out how to win together.
+You're not competing with the people in this community. You're competing with the 10 other Airbnbs in the same location at the same price point as yours. Those are your competitors. The people inside this program are sharing strategies, dividing up markets, and figuring out how to win together.
 
 One of our students, Nicole, just posted in our community offering her fully furnished Airbnb with the lease done and furniture in place for half what she paid. Turnkey. That's the kind of opportunity you only get when you're inside the community, not outside of it.
 
-##### Slide #158: FAQ — I'm Not Sure I'm Ready
+---
+
+##### Slide #144: FAQ — I'm Not Sure I'm Ready
 
 "I'm not sure I'm ready to commit yet. Can I just get the program for $20 and decide later?"
 
@@ -2588,7 +2596,14 @@ Most people who get in at $20 and spend two weeks with it want to book the call.
 
 Start with the $20. Let the program prove itself to you.
 
-##### Slide #159: Expanded Offer Detail — What Day One Actually Looks Like
+---
+
+
+# SECTION 15: WHAT YOUR FIRST 90 DAYS LOOK LIKE
+
+---
+
+##### Slide #145: Day One
 
 Okay, let's say you book the call, you get into Airbnb Ascension, and you're ready to start.
 
@@ -2604,15 +2619,17 @@ You read the first module. It's about 45 minutes. Video-based. It covers Analyze
 
 You get access to the Airbnb Arbitrage Calculator. You plug in your numbers. Your market, your capital, what you think you can source. You start modeling.
 
-That's day one. You're not doing everything or becoming an expert overnight. You're starting the process.
+That's day one. You're not becoming an expert overnight. You're starting the process.
 
-##### Slide #160: Expanded Offer Detail — First 30 Days
+---
+
+##### Slide #146: First 30 Days
 
 The first 30 days are about foundation.
 
 Week one, you're in onboarding. Learning the portal. Understanding the A.C.R.E.S. Framework. Getting oriented.
 
-Week two, you're diving into modules, watching content about Analyze and Capitalize, running numbers through the calculators. Your coach is available for questions.
+Week two, you're diving into modules, watching content about Analyze and Close, running numbers through the calculators. Your coach is available for questions.
 
 Week three, you've got your first group coaching call. You're hearing from other Ascension clients. You're seeing what a real week looks like for someone who's further along.
 
@@ -2620,9 +2637,11 @@ Week four, you're identifying your first target market. You've narrowed down whe
 
 By end of month one, you have a market. You have baseline data. You know what $1,500 a night looks like versus $2,000 a night in your market. You've run 10 to 15 properties through the calculator.
 
-You're not scary yet. You're learning.
+You're learning.
 
-##### Slide #161: Expanded Offer Detail — Typical Week in Month Two
+---
+
+##### Slide #147: Typical Week in Month Two
 
 Month two is when things accelerate.
 
@@ -2630,7 +2649,7 @@ You're coming to group coaching. Once a week, live, with your coach and the othe
 
 You're messaging your coach deal opportunities you're finding. "Found this property in Austin. Rents for $1,600. Think we can get $3,500 on Airbnb?" Coach comes back in 24 hours. "Yeah, that market is strong, but check the reviews on the neighboring properties. You're missing that there's a festival season in March." You adjust.
 
-You're reading the advanced modules. You've finished Analyze and Capitalize. You're in Run. Operational stuff. How to actually furnish. How to source vendors. How to handle guests.
+You're reading the advanced modules. You've finished Analyze and Close. You're in Ready. Operational stuff. How to actually furnish. How to source vendors. How to handle guests.
 
 You're still working your day job. This is 5 to 10 hours a week of real estate work.
 
@@ -2638,13 +2657,15 @@ You're maybe two weeks into finding your first deal. You've sent offers on two p
 
 That's a typical week.
 
-##### Slide #162: Expanded Offer Detail — STR Concierge Experience
+---
+
+##### Slide #148: STR Concierge Experience
 
 If you're in STR Concierge, it's different.
 
 You get onboarded. Same thing. You learn the portal, you get your contact person, you do intake.
 
-But then, instead of you finding deals, we're finding deals for you.
+Then, instead of you finding deals, we're finding deals for you.
 
 Our sourcing team goes to work, looking in your market, talking to landlords, running deals through the calculator.
 
@@ -2664,7 +2685,9 @@ And you've done maybe four hours of work. You've made decisions. You've signed p
 
 That's the Concierge experience.
 
-##### Slide #163: Expanded Offer Detail — Value Math
+---
+
+##### Slide #149: Value Math
 
 Real quick, here's what the investment actually looks like in terms of ROI.
 
@@ -2690,11 +2713,19 @@ The $8,000 paid for itself before the first year was up. The coaching accelerate
 
 And that's not even including tax savings. That's just cash flow.
 
-##### Slide #164: FINAL CTA — Two Steps
+
+---
+
+
+# SECTION 16: FINAL CTA
+
+---
+
+##### Slide #150: FINAL CTA — Two Steps
 
 Alright, before we open it up for Q&A, here's exactly what I want you to do right now. Two steps.
 
-Step One. If you haven't signed up for Base44 yet, do that right now. My team has the link in the chat. Get started for $20, claim the full Airbnb Arbitrage Roadmap, the Tax-Free Real Estate Masterclass, the community, the AI STR advisor, the Wealth Concierge session, and all three bonuses. That's step one and everyone on this call should be doing that.
+Step One. If you haven't signed up for Base44 yet, do that right now. My team has the link in the chat. You can sign up for Base44 for $20, claim the full Airbnb Arbitrage Roadmap, the Tax-Free Real Estate Masterclass, the community, the AI STR advisor, the Wealth Concierge session, and all three bonuses. Everyone on this call should be doing step one.
 
 Step Two. Book the strategy call. Click the link in the chat, fill out the application, and book the call.
 
@@ -2708,41 +2739,21 @@ So step one, Base44, claim the program. Step two, book the call. Link is in the 
 
 Drop DONE in the chat when you've signed up for Base44. Drop I'M BOOKED when you've booked the call. I want to see both.
 
-[Pause 3-4 seconds. Start reading names.]
-
-Reyes just signed up. DeAndre, welcome in. Sung-Min Park is in. Latoya, let's go.
-
-Hold on, I'm seeing call bookings too. Darnell Walker just booked his strategy call. Christina R., you just locked in your spot. Welcome.
-
-More signups coming in. Stephanie Chen just signed up. Isaiah Booker, welcome. Gutierrez is in. Keep them coming.
-
-And more bookings. Okafor just applied. Jerome, you're in. Anika Brooks just booked. Sanchez, welcome.
-
-Rodriguez just signed up. Change just booked. Patel is in. Washington, you're booked.
-
-Torres just signed up. Hassan just applied. Keisha is in. Marcus just booked.
-
-[Continue reading mixed DONE and I'M BOOKED names for 60-90 seconds.]
-
-Braun just signed up. Young just booked. Harris is in. Bailey just applied.
-
-Pierce is booked. Wood just signed up. Anderson is in. Bennett just applied.
-
-Crawford is booked. Williams just signed up. Lopez is in. Chen just applied.
-
-Johnson is booked. Davis just signed up. Miller is in. Wilson just applied.
+[STAGE DIRECTION: Preston reads real DONE and I'M BOOKED names from the live chat. Mix them together as they come in. Run 60-90 seconds of real name callouts with pace and energy. No scripted placeholder names.]
 
 The people signing up are the ones who are going to be in a completely different financial position 12 months from now. Every person I just called out was sitting exactly where you're sitting five minutes ago. The only difference between them and you right now is they clicked the link.
 
 If you haven't done that yet, the links are right there in the chat. Drop DONE for Base44. Drop I'M BOOKED for the call.
 
-##### Slide #165: Closing Message — I Wish I Had Started Sooner
+---
+
+##### Slide #151: Closing Message — I Wish I Had Started Sooner
 
 I want to share one more thing before we open it up for Q&A.
 
 After working with thousands of students in this program, there's one thing I hear more than anything else in the first few months. It's not "I wish I had waited." It's not "I wish I had thought about it longer." It's "I wish I had started sooner."
 
-Every person I called out tonight who booked their call, Darnell, Christina, Anika, Sanchez, Marcus, they stopped listening to that second voice in their head today. The one that says "yeah but what if the timing isn't right, what if I should wait."
+Every person who booked their call tonight stopped listening to that second voice in their head. The one that says "yeah but what if the timing isn't right, what if I should wait."
 
 I know that voice. That voice kept me working a corporate job I didn't want for years. I had the education. I had the work ethic. But the voice kept telling me to wait. That voice cost me years of my life. The day I stopped listening to it and invested in someone who could walk me through it, everything changed within months.
 
@@ -2750,11 +2761,13 @@ Most people who attend trainings like this walk away knowing exactly what to do 
 
 If the math makes sense to you, if you saw strategies today that apply to your situation, the smart move is to get on a call with my team and let us show you what that looks like for your specific numbers. It's a free call. Zero risk. The link is in the chat.
 
-##### Slide #166: Final CTA — Direct Link
+---
+
+##### Slide #152: Final CTA — Direct Link
 
 So here's the recap.
 
-Step one, go to [URL] right now. $20. That gets you the full Airbnb Arbitrage Roadmap, the Tax-Free Real Estate Masterclass, the AI STR advisor, the community, the Wealth Concierge session, all three bonuses. You get your portal login tonight and you can start immediately.
+Step one, go to [URL] right now. $20. That gets you the full Airbnb Arbitrage Roadmap, the Tax-Free Real Estate Masterclass, the AI STR advisor, the community, the Wealth Concierge session, all three bonuses. You get your portal login and you can start immediately within 24 hours.
 
 Step two, if you want a coach helping you execute, fill out the application and book the strategy call. The link is in the chat. Show up to your call and join while we're live, you save $2,000.
 
@@ -2767,4 +2780,3 @@ Now let's get into Q&A. Drop your questions in the chat.
 ---
 
 ## END OF SCRIPT
-
