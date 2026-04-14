@@ -32,9 +32,9 @@ head.appendChild(script);
 --text-primary:#111111;
 --text-secondary:#4A4A4A;
 --text-muted:#7A7A7A;
---accent:#C5252A;
---accent-hover:#A91D21;
---accent-light:#FDE8E8;
+--accent:#007a52;
+--accent-hover:#005c3e;
+--accent-light:#E0F2EB;
 --gold:#B8860B;
 --gold-light:#FFF8E7;
 --border:#E5E5E0;
@@ -49,7 +49,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 
 /* --- HERO CONFIRMATION --- */
 .hero-confirm{background:var(--surface);padding:60px 0 40px;border-bottom:2px solid var(--accent);position:relative;overflow:hidden}
-.hero-confirm::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(to right,var(--accent),#F97316)}
+.hero-confirm::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(to right,var(--accent),#00996b)}
 .confirm-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);border:2px solid var(--accent);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:800;letter-spacing:0.5px;color:var(--accent);margin-bottom:24px;text-transform:uppercase}
 .confirm-badge .check{width:20px;height:20px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px}
 .hero-confirm h1{font-family:var(--font-display);font-size:clamp(40px,6vw,64px);line-height:0.95;letter-spacing:1px;margin-bottom:16px}
@@ -72,9 +72,9 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 /* Video Side */
 .video-container{background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:2px solid var(--border);box-shadow:0 4px 20px rgba(0,0,0,0.08)}
 .video-placeholder{aspect-ratio:16/9;background:linear-gradient(135deg,var(--text-primary) 0%,#2a2a2a 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;position:relative}
-.video-placeholder::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(197,37,42,0.1) 0%,transparent 70%)}
+.video-placeholder::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0,122,82,0.1) 0%,transparent 70%)}
 .play-button{width:80px;height:80px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;position:relative;z-index:1}
-.play-button:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(197,37,42,0.4)}
+.play-button:hover{transform:scale(1.05);box-shadow:0 8px 30px rgba(0,122,82,0.4)}
 .play-button::after{content:'';width:0;height:0;border-left:24px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
 .video-label{font-size:14px;font-weight:600;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px;position:relative;z-index:1}
 .video-caption{padding:20px 24px;background:var(--surface)}
@@ -85,7 +85,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 .video-warning-text{font-size:13px;font-weight:600;color:var(--accent);line-height:1.4}
 
 /* Calendar Side */
-.calendar-card{background:var(--surface);border-radius:var(--radius-lg);padding:32px;border:2px solid var(--accent);box-shadow:0 8px 30px rgba(197,37,42,0.15);position:relative}
+.calendar-card{background:var(--surface);border-radius:var(--radius-lg);padding:32px;border:2px solid var(--accent);box-shadow:0 8px 30px rgba(0,122,82,0.15);position:relative}
 .calendar-card::before{content:'STEP 2';position:absolute;top:-12px;left:24px;background:var(--accent);color:#fff;font-family:var(--font-display);font-size:14px;letter-spacing:2px;padding:4px 16px;border-radius:100px}
 .calendar-header{display:flex;align-items:center;gap:12px;margin-bottom:24px;padding-bottom:20px;border-bottom:2px solid var(--border)}
 .calendar-icon{width:48px;height:48px;background:var(--accent-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:24px}
@@ -122,7 +122,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 .video-card{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;width:100%;max-width:420px;flex:0 0 calc(33.333% - 16px);min-width:340px}
 .video-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,0.1)}
 .video-thumb{aspect-ratio:16/10;background:linear-gradient(135deg,#2a2a2a 0%,var(--text-primary) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:200px}
-.video-thumb::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(197,37,42,0.15) 0%,transparent 70%)}
+.video-thumb::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0,122,82,0.15) 0%,transparent 70%)}
 .video-num{position:absolute;top:16px;left:16px;width:40px;height:40px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:22px;font-weight:600;z-index:1}
 .video-play{width:72px;height:72px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform 0.2s;z-index:1;position:relative}
 .video-play:hover{transform:scale(1.1)}
