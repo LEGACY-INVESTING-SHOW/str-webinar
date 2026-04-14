@@ -66,8 +66,8 @@ Webinar registration and confirmation pages for Preston Seo's Airbnb STR Worksho
 
 ```
 str webinar/
-├── webinar-registration-v1-bold-urgent.html  # Main registration page
-├── webinar-confirmation.html                  # Post-registration confirmation
+├── index.html                                 # Main registration page (root)
+├── registered.html                            # Post-registration confirmation
 ├── preston fam rail.avif                      # Hero image
 ├── preston-family.webp                        # About section image
 ├── af204c7a353d959657f10645474ff2c1.webp     # Media logos
