@@ -13,6 +13,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 var head = document.head;
 var script = document.createElement('script');
 script.type = 'text/javascript';
+script.async = true;
+script.fetchPriority = 'low';
 script.src = "https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257ae8a5117ba5d7b516261da603bc86a49c0c42f398c619e251026c05&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
 head.appendChild(script);
 </script>
@@ -20,6 +22,9 @@ head.appendChild(script);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Airbnb STR Workshop — Learn the A.C.R.E.S. Framework | Legacy Investing Show</title>
 <meta name="description" content="Join Preston Seo's free workshop and learn the 5-step system to build a profitable Airbnb business generating $2K+/month — even with a full-time job.">
+<link rel="preload" as="image" href="preston%20fam%20rail.avif" fetchpriority="high">
+<link rel="dns-prefetch" href="//tracking.managemoney101.com">
+<link rel="dns-prefetch" href="//t.managemoney101.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -45,6 +50,7 @@ head.appendChild(script);
 }
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
+img{max-width:100%}
 .container{max-width:1120px;margin:0 auto;padding:0 24px}
 
 /* --- HERO --- */
@@ -56,63 +62,18 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 .hero h1{font-family:var(--font-display);font-size:clamp(48px,8vw,88px);line-height:0.95;letter-spacing:1px;margin-bottom:20px}
 .hero h1 span{color:var(--accent)}
 .hero-sub{font-size:clamp(18px,2.5vw,22px);font-weight:500;color:rgba(255,255,255,0.75);max-width:580px;margin-bottom:40px;line-height:1.5}
-.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px}
-.hero-stat{text-align:center;padding:20px 12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius)}
-.hero-stat .num{font-family:var(--font-display);font-size:clamp(32px,5vw,48px);color:#fff;line-height:1}
-.hero-stat .label{font-size:13px;color:rgba(255,255,255,0.55);margin-top:4px;font-weight:600}
-
-/* --- FORM CARD --- */
-.form-card{background:var(--surface);border:2px solid var(--accent);border-radius:var(--radius-lg);padding:36px 32px;max-width:480px;position:relative;box-shadow:0 20px 60px rgba(0,0,0,0.25)}
-.form-card::before{content:'RESERVE YOUR SPOT';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-family:var(--font-display);font-size:18px;letter-spacing:2px;padding:6px 28px;border-radius:100px;white-space:nowrap}
-.form-card h3{font-size:20px;font-weight:800;margin-bottom:4px;margin-top:8px}
-.form-card .sub{font-size:14px;color:var(--text-muted);margin-bottom:20px}
-.form-group{margin-bottom:14px}
-.form-group label{display:block;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-secondary);margin-bottom:6px}
-.form-group input,.form-group select{width:100%;padding:12px 14px;border:2px solid var(--border);border-radius:var(--radius);font-family:var(--font-body);font-size:15px;font-weight:500;background:var(--bg);color:var(--text-primary)}
-.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--accent)}
 .btn-primary{width:100%;padding:16px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-family:var(--font-body);font-size:17px;font-weight:800;cursor:pointer;letter-spacing:0.3px;text-transform:uppercase}
 .btn-primary:hover{background:var(--accent-hover)}
 .form-urgency{text-align:center;margin-top:14px;font-size:13px;color:var(--text-muted);display:flex;align-items:center;justify-content:center;gap:6px}
 .form-urgency strong{color:var(--accent)}
 .seats-bar{width:100%;height:6px;background:var(--bg-deep);border-radius:3px;margin-top:10px;overflow:hidden}
 .seats-bar .fill{height:100%;background:linear-gradient(to right,var(--accent),#F97316);border-radius:3px;width:78%}
-.form-proof{display:none;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);font-size:12px;color:var(--text-muted)}
-.form-proof strong{color:var(--text-primary)}
 
 /* --- SECTION BASE --- */
 section{padding:80px 0}
 .section-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
 .section-title{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);line-height:1;letter-spacing:0.5px;margin-bottom:16px}
 .section-sub{font-size:17px;color:var(--text-secondary);max-width:640px;line-height:1.65;margin-bottom:0}
-
-/* --- ACRES FRAMEWORK --- */
-.acres-section{background:var(--surface)}
-.acres-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:48px}
-.acres-card{background:var(--bg);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:28px 24px}
-.acres-letter{font-family:var(--font-display);font-size:56px;line-height:1;color:var(--accent);margin-bottom:4px}
-.acres-card h4{font-size:18px;font-weight:800;margin-bottom:6px}
-.acres-card p{font-size:14px;color:var(--text-secondary);line-height:1.55}
-
-/* --- RESULTS --- */
-.results-section{background:var(--text-primary);color:#fff}
-.results-section .section-tag{color:#F87171}
-.results-section .section-title{color:#fff}
-.results-section .section-sub{color:rgba(255,255,255,0.65)}
-.results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:48px}
-.result-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-lg);padding:28px 24px}
-.result-card .metric{font-family:var(--font-display);font-size:clamp(36px,5vw,52px);color:#F87171;line-height:1;margin-bottom:4px}
-.result-card h4{font-size:16px;font-weight:700;margin-bottom:4px}
-.result-card p{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.5}
-
-/* --- TAX ADVANTAGE --- */
-.tax-section{background:var(--gold-light)}
-.tax-section .section-tag{color:var(--gold)}
-.tax-highlight{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
-.tax-card{background:var(--surface);border-radius:var(--radius-lg);padding:32px 28px;border:1px solid var(--border)}
-.tax-card h4{font-size:18px;font-weight:800;margin-bottom:8px}
-.tax-card .big-num{font-family:var(--font-display);font-size:clamp(48px,7vw,72px);color:var(--accent);line-height:1;margin:12px 0}
-.tax-card p{font-size:15px;color:var(--text-secondary);line-height:1.55}
-.tax-card .arrow{font-size:32px;color:var(--gold);margin:12px 0;font-weight:800}
 
 /* --- AS FEATURED IN --- */
 .as-featured{background:var(--bg);padding:24px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -126,10 +87,6 @@ section{padding:80px 0}
 .trustpilot-mini .star{width:20px;height:20px;background:#00B67A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border-radius:2px}
 .trustpilot-mini .logo{font-weight:700;color:#00B67A}
 .media-logos{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;padding:12px 20px}
-.media-logo{height:28px;opacity:0.6;filter:grayscale(100%);transition:opacity 0.2s}
-.media-logo:hover{opacity:1;filter:grayscale(0%)}
-.ft-logo{font-family:serif;font-weight:700;font-size:22px;color:var(--text-secondary)}
-.ft-logo span{font-size:10px;text-transform:uppercase;letter-spacing:0.5px;display:block;line-height:1;margin-top:-4px}
 
 /* --- WHAT YOU'LL LEARN --- */
 .learn-grid{display:grid;gap:16px;margin-top:48px}
@@ -137,14 +94,6 @@ section{padding:80px 0}
 .learn-item .num{flex-shrink:0;width:36px;height:36px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
 .learn-item h4{font-size:15px;font-weight:700;margin-bottom:2px}
 .learn-item p{font-size:14px;color:var(--text-secondary);line-height:1.5}
-
-/* --- GUARANTEE --- */
-.guarantee-section{background:var(--bg-deep)}
-.guarantee-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:48px}
-.guarantee-card{background:var(--surface);border:2px solid var(--border);border-radius:var(--radius-lg);padding:32px 28px;position:relative;overflow:hidden}
-.guarantee-card::after{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:var(--accent)}
-.guarantee-card h4{font-size:17px;font-weight:800;margin-bottom:8px}
-.guarantee-card p{font-size:14px;color:var(--text-secondary);line-height:1.6}
 
 /* --- TESTIMONIALS --- */
 .testimonials-section{background:var(--bg)}
@@ -172,10 +121,6 @@ section{padding:80px 0}
 .about-image img{width:100%;height:auto;display:block}
 .about-text p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
 .about-text p strong{color:var(--text-primary)}
-.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.about-stat{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center}
-.about-stat .num{font-family:var(--font-display);font-size:36px;color:var(--accent);line-height:1}
-.about-stat .label{font-size:12px;color:var(--text-muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-top:4px}
 
 /* --- FINAL CTA --- */
 .final-cta{background:var(--text-primary);color:#fff;text-align:center;padding:80px 0}
@@ -187,36 +132,19 @@ section{padding:80px 0}
 
 /* --- FOOTER --- */
 footer{background:var(--text-primary);color:rgba(255,255,255,0.4);padding:40px 0;text-align:center;font-size:13px;border-top:1px solid rgba(255,255,255,0.1)}
-footer a{color:rgba(255,255,255,0.6);text-decoration:none}
 
 /* --- RESPONSIVE --- */
-
-/* Tablet landscape and below */
-@media(max-width:1024px){
-.acres-grid{grid-template-columns:repeat(3,1fr)}
-}
 
 /* Tablet portrait and below */
 @media(max-width:768px){
 .hero{padding:48px 0 40px}
 .hero-layout{flex-direction:column}
 .hero-layout .hero-left{max-width:100%}
-.hero-stats{display:none}
-.form-proof{display:flex}
-.hero-stat{padding:14px 10px}
-.hero-stat .num{font-size:clamp(24px,5vw,36px)}
-.hero-stat .label{font-size:11px}
 .hero h1{font-size:clamp(40px,10vw,60px)}
 section{padding:56px 0}
 .section-title{font-size:clamp(32px,7vw,44px)}
 .section-sub{font-size:15px}
 .container{padding:0 20px}
-
-.acres-grid{grid-template-columns:1fr 1fr}
-.acres-card{padding:20px 16px}
-.acres-letter{font-size:40px}
-.acres-card h4{font-size:16px}
-.acres-card p{font-size:13px}
 
 .as-featured{padding:20px 16px}
 .as-featured-heading{font-size:15px;margin-bottom:12px}
@@ -226,7 +154,6 @@ section{padding:56px 0}
 
 .about-content{grid-template-columns:1fr;gap:32px}
 .about-image{max-width:100%}
-.about-stats{grid-template-columns:1fr 1fr;gap:10px}
 
 .hero-image{width:100%;max-width:480px;margin:32px auto 0}
 .hero-image img{width:100%;height:auto;border-radius:var(--radius)}
@@ -249,22 +176,12 @@ section{padding:56px 0}
 /* Small phones */
 @media(max-width:480px){
 .hero{padding:36px 0 32px}
-.hero-stats{grid-template-columns:1fr 1fr 1fr;gap:8px}
-.hero-stat{padding:10px 6px}
-.hero-stat .num{font-size:clamp(22px,8vw,30px)}
-.hero-stat .label{font-size:10px}
 .hero h1{font-size:clamp(36px,12vw,52px)}
 .hero-sub{font-size:16px}
 .hero-badge{font-size:11px;padding:5px 12px}
 section{padding:40px 0}
 .section-title{font-size:clamp(28px,8vw,38px)}
 .container{padding:0 16px}
-
-.acres-grid{grid-template-columns:1fr}
-
-.about-stats{grid-template-columns:1fr 1fr;gap:10px}
-.about-stat{padding:14px 8px}
-.about-stat .num{font-size:28px}
 
 .learn-item{padding:16px;gap:12px}
 .learn-item .num{width:32px;height:32px;font-size:13px}
@@ -320,7 +237,7 @@ section{padding:40px 0}
 
 <!-- IMAGE ON RIGHT -->
 <div class="hero-image">
-<img src="preston fam rail.avif" alt="Preston with family at a train station">
+<img src="preston fam rail.avif" alt="Preston with family at a train station" width="1000" height="750" fetchpriority="high" decoding="async">
 </div>
 </div>
 
@@ -364,11 +281,11 @@ section{padding:40px 0}
 <p class="as-featured-heading">As Featured In:</p>
 <div class="as-featured-row">
 <div class="user-avatars">
-<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy">
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy">
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy">
-<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy">
-<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy">
+<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
+<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
 </div>
 <div class="trustpilot-mini">
 <span>Excellent</span>
@@ -383,7 +300,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="media-logos">
-<img src="af204c7a353d959657f10645474ff2c1.webp" alt="Featured in major media outlets" style="max-height:48px;width:auto;object-fit:contain">
+<img src="af204c7a353d959657f10645474ff2c1.webp" alt="Featured in major media outlets" width="746" height="82" decoding="async" style="max-height:48px;width:auto;object-fit:contain">
 </div>
 </div>
 </section>
@@ -412,7 +329,7 @@ section{padding:40px 0}
 </div>
 <div class="testimonials-grid">
 <div class="testimonial-card">
-<img src="testimonial-01.png" alt="$5,500/month net profit" loading="lazy">
+<img src="testimonial-01.png" alt="$5,500/month net profit" loading="lazy" width="480" height="326" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$5,500/month net profit</div>
@@ -420,7 +337,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-02.png" alt="Matthew Ellis — first deal, first week" loading="lazy">
+<img src="testimonial-02.png" alt="Matthew Ellis — first deal, first week" loading="lazy" width="1488" height="578" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Matthew Ellis</div>
 <div class="testimonial-highlight">First deal in 1 week — $3-4K/month</div>
@@ -428,7 +345,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-03.png" alt="Johnny Abarra — first Airbnb Arbitrage property" loading="lazy">
+<img src="testimonial-03.png" alt="Johnny Abarra — first Airbnb Arbitrage property" loading="lazy" width="1504" height="858" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Johnny Abarra</div>
 <div class="testimonial-highlight">$1,500/month from first property</div>
@@ -436,7 +353,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-04.png" alt="$11K booking, $8,500 profit" loading="lazy">
+<img src="testimonial-04.png" alt="$11K booking, $8,500 profit" loading="lazy" width="436" height="498" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$11,000 booking — $8,500 profit</div>
@@ -444,7 +361,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-05.png" alt="Josh Szentes — $9K cashflow" loading="lazy">
+<img src="testimonial-05.png" alt="Josh Szentes — $9K cashflow" loading="lazy" width="976" height="607" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Josh Szentes</div>
 <div class="testimonial-highlight">$9,000/month cash flow</div>
@@ -452,7 +369,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-06.png" alt="Chad Grecsek — $10K gross in 2 months" loading="lazy">
+<img src="testimonial-06.png" alt="Chad Grecsek — $10K gross in 2 months" loading="lazy" width="1166" height="188" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Chad Grecsek</div>
 <div class="testimonial-highlight">$10K gross revenue in 2 months</div>
@@ -460,7 +377,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-07.png" alt="Sam Becze — bookings in <24 hours" loading="lazy">
+<img src="testimonial-07.png" alt="Sam Becze — bookings in <24 hours" loading="lazy" width="1510" height="390" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Sam Becze</div>
 <div class="testimonial-highlight">Bookings covering rent in under 24 hours</div>
@@ -468,7 +385,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-08.png" alt="Dustin Cotten — nearly $60K best month" loading="lazy">
+<img src="testimonial-08.png" alt="Dustin Cotten — nearly $60K best month" loading="lazy" width="1619" height="943" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Dustin Cotten</div>
 <div class="testimonial-highlight">Almost $60K in a single month, 7 properties</div>
@@ -476,7 +393,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-09.png" alt="Brian O'Leary — $3,000/mo, 450% cash on cash" loading="lazy">
+<img src="testimonial-09.png" alt="Brian O'Leary — $3,000/mo, 450% cash on cash" loading="lazy" width="1510" height="510" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Brian O'Leary</div>
 <div class="testimonial-highlight">$3,000/month — 450%+ cash on cash return</div>
@@ -484,7 +401,7 @@ section{padding:40px 0}
 </div>
 </div>
 <div class="testimonial-card">
-<img src="testimonial-10.jpeg" alt="$10K/month cash flow on first property" loading="lazy">
+<img src="testimonial-10.jpeg" alt="$10K/month cash flow on first property" loading="lazy" width="1466" height="362" decoding="async" fetchpriority="low">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$10,000/month cash flow — first property</div>
@@ -503,7 +420,7 @@ section{padding:40px 0}
 <p class="section-sub">From his parents' basement to a multi-million dollar Airbnb portfolio across 4 states.</p>
 <div class="about-content">
 <div class="about-image">
-<img src="preston-family.webp" alt="Preston Seo with his family" loading="lazy">
+<img src="preston-family.webp" alt="Preston Seo with his family" loading="lazy" width="1800" height="2400" decoding="async" fetchpriority="low">
 </div>
 <div class="about-text">
 <p>Preston Seo is a Korean-American entrepreneur and real estate investor who built an <strong>8-figure portfolio</strong> using the exact A.C.R.E.S. Framework he teaches in this workshop.</p>
@@ -543,7 +460,6 @@ function updateCountdown() {
     const now = new Date();
     const currentDay = now.getDay();
     const currentHour = now.getHours();
-    const currentMinute = now.getMinutes();
     
     // Workshop day: Friday (5) at 7 PM EST
     // For simplicity, we'll use local time (assuming user is in EST or they understand the time)
