@@ -18,302 +18,199 @@ script.fetchPriority = 'low';
 script.src = "https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257ae8a5117ba5d7b516261da603bc86a49c0c42f398c619e251026c05&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
 head.appendChild(script);
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Airbnb STR Workshop — Learn the A.C.R.E.S. Framework | Legacy Investing Show</title>
-<meta name="description" content="Join Preston Seo's free workshop and learn the 5-step system to build a profitable Airbnb business generating $2K+/month — even with a full-time job.">
-<link rel="preload" as="image" href="preston%20fam%20rail.avif" fetchpriority="high">
-<link rel="dns-prefetch" href="//tracking.managemoney101.com">
-<link rel="dns-prefetch" href="//t.managemoney101.com">
+<title>Free STR Tax Workshop — The $40K/Year Loophole | Legacy Investing Show</title>
+<meta name="description" content="Join Preston Seo's free workshop and learn the STR tax loophole that can save you $40K+ per year. Register now — it's free.">
+
+<link rel="canonical" href="https://str.managemoney101.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
 :root{
---bg:#FAFAF8;
---bg-deep:#F0EFEB;
---surface:#FFFFFF;
---text-primary:#111111;
---text-secondary:#4A4A4A;
---text-muted:#7A7A7A;
---accent:#1e8449;
---accent-hover:#166a3b;
---accent-light:#E0F2EB;
---gold:#B8860B;
---gold-light:#FFF8E7;
---border:#E5E5E0;
---radius:8px;
---radius-lg:16px;
+--black:#0F172A;
+--white:#FFFFFF;
+--green:#10B981;
+--green-dark:#059669;
+--green-light:#34D399;
+--green-muted:#065F46;
+--orange:#F97316;
+--orange-dark:#EA580C;
+--orange-light:#FB923C;
+--gray-100:#F5F5F5;
+--gray-200:#E5E5E5;
+--gray-300:#D4D4D4;
+--gray-400:#A3A3A3;
+--gray-500:#737373;
+--gray-600:#525252;
+--gray-700:#404040;
+--gray-800:#262626;
+--gray-900:#171717;
 --font-display:'Poppins',sans-serif;
 --font-body:'Inter',system-ui,sans-serif;
 }
+
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
-img{max-width:100%}
-.container{max-width:1120px;margin:0 auto;padding:0 24px}
-.hero .container{max-width:1400px;padding:0 32px}
+body{font-family:var(--font-body);background:var(--white);color:var(--gray-900);line-height:1.6}
+img{max-width:100%;display:block}
 
-/* --- HIGHLIGHT STYLING --- */
-.hl-green{background-color:var(--accent);color:#fff;padding:2px 12px;border-radius:6px;display:inline-block;line-height:1.3;white-space:nowrap}
-.hl-yellow{background:linear-gradient(135deg,#ffd505 0%,#ffb700 100%);color:#0b132b;padding:2px 12px;border-radius:6px;display:inline-block;line-height:1.3;white-space:nowrap;font-weight:800}
+/* --- HEADER --- */
+.header{background:var(--black);padding:16px 0;text-align:center}
+.header-logo{display:inline-flex;align-items:center;gap:12px;color:var(--green);font-family:var(--font-display);font-weight:700;font-size:20px;letter-spacing:1px;text-transform:uppercase}
+.header-logo-icon{width:40px;height:40px;border:2px solid var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
 
-/* --- TOP STRIP --- */
-.top-strip{background:var(--accent);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;position:relative;z-index:100}
+/* --- BANNER --- */
+.banner{background:var(--green);color:var(--white);text-align:center;padding:12px 16px;font-size:14px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase}
 
 /* --- HERO --- */
-.hero{background:var(--text-primary);color:#fff;padding:80px 0 20px;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(0,122,82,0.15) 0%,transparent 70%);pointer-events:none}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,122,82,0.2);border:1px solid rgba(0,122,82,0.4);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:700;letter-spacing:0.5px;color:#007a52;margin-bottom:24px;text-transform:uppercase}
-.hero-badge .pulse{width:8px;height:8px;background:#007a52;border-radius:50%}
+.hero{background:var(--white);padding:60px 0 40px;text-align:center}
+.hero-title{font-family:var(--font-display);font-size:clamp(32px,5vw,52px);line-height:1.15;letter-spacing:-0.5px;margin-bottom:20px;font-weight:800;color:var(--gray-900);max-width:900px;margin-left:auto;margin-right:auto}
+.hero-title .highlight{color:var(--green);font-weight:800}
+.hero-sub{font-size:clamp(18px,2vw,22px);color:var(--gray-600);max-width:700px;margin:0 auto 32px;line-height:1.5;font-weight:400}
 
-.hero h1{font-family:var(--font-display);font-size:clamp(35px,5.6vw,64px);line-height:1.2;letter-spacing:-0.5px;margin-bottom:20px;font-weight:800;text-align:center}
-.hero h1 .hl-green{color:#fff}
-.hero h1 .hl-yellow{color:#0b132b}
-.hero h2{font-family:var(--font-display);color:#fff;margin-bottom:0;line-height:1.3}
-.hero h2 .hl-green{color:#fff}
-.hero-sub{font-size:clamp(18px,2.5vw,22px);font-weight:500;color:rgba(255,255,255,0.75);max-width:900px;margin:0 auto 40px;line-height:1.5;text-align:center}
-.btn-primary{width:100%;padding:20px 48px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-family:var(--font-body);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-width:320px}
-.btn-primary:hover{background:var(--accent-hover)}
-.btn-primary .btn-main{font-size:20px;font-weight:800;letter-spacing:0.3px;text-transform:uppercase;line-height:1.1}
-.btn-primary .btn-sub{font-size:15px;font-weight:500;opacity:0.9;line-height:1.1}
-.form-urgency{text-align:center;margin-top:14px;font-size:13px;color:var(--text-muted);display:flex;align-items:center;justify-content:center;gap:6px}
-.form-urgency strong{color:var(--accent)}
-.seats-bar{width:100%;height:6px;background:var(--bg-deep);border-radius:3px;margin-top:10px;overflow:hidden}
-.seats-bar .fill{height:100%;background:linear-gradient(to right,var(--accent),#00996b);border-radius:3px;width:78%}
+/* --- CTA BUTTON --- */
+.cta-button{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:var(--orange);color:var(--white);border:none;border-radius:8px;padding:20px 48px;cursor:pointer;text-decoration:none;transition:all 0.2s ease;box-shadow:0 4px 14px rgba(249,115,22,0.35)}
+.cta-button:hover{background:var(--orange-dark);transform:translateY(-2px);box-shadow:0 6px 20px rgba(249,115,22,0.45)}
+.cta-button-main{font-family:var(--font-display);font-size:22px;font-weight:700;letter-spacing:0.3px;display:flex;align-items:center;gap:10px}
+.cta-button-main svg{width:24px;height:24px}
+.cta-button-sub{font-size:14px;font-weight:500;opacity:0.9}
 
-/* --- SECTION BASE --- */
-section{padding:80px 0}
-.section-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-.section-title{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);line-height:1;letter-spacing:0.5px;margin-bottom:16px}
-.section-sub{font-size:17px;color:var(--text-secondary);max-width:640px;line-height:1.65;margin-bottom:0}
+/* --- DATE --- */
+.hero-date{margin-top:20px;font-size:15px;color:var(--gray-500);font-weight:500}
 
-/* --- AS FEATURED IN --- */
-.as-featured{background:var(--bg);padding:24px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.as-featured-heading{text-align:center;font-size:18px;color:var(--text-secondary);margin-bottom:16px;font-weight:500}
-.as-featured-row{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
-.user-avatars{display:flex;align-items:center}
-.avatar{width:48px;height:48px;border-radius:50%;border:3px solid var(--surface);margin-left:-12px;object-fit:cover;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
-.avatar:first-child{margin-left:0}
-.trustpilot-mini{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--text-primary)}
-.trustpilot-mini .stars{display:flex;gap:2px}
-.trustpilot-mini .star{width:20px;height:20px;background:#00B67A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border-radius:2px}
-.trustpilot-mini .logo{font-weight:700;color:#00B67A}
-.media-logos{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;padding:12px 20px}
+/* --- HOST BIO COMPACT --- */
+.host-compact{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:40px;padding-top:40px;border-top:1px solid var(--gray-200);max-width:600px;margin-left:auto;margin-right:auto}
+.host-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--green);box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+.host-info{text-align:left}
+.host-name{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--gray-900);margin-bottom:4px}
+.host-desc{font-size:14px;color:var(--gray-600);line-height:1.5}
 
-/* --- WHAT YOU'LL LEARN --- */
-.learn-grid{display:grid;gap:16px;margin-top:48px;max-width:800px;margin-left:auto;margin-right:auto}
-.learn-item{display:flex;gap:16px;align-items:flex-start;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
-.learn-item .num{flex-shrink:0;width:36px;height:36px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
-.learn-item h4{font-size:15px;font-weight:700;margin-bottom:2px}
-.learn-item p{font-size:14px;color:var(--text-secondary);line-height:1.5}
+/* --- PREVIEW SECTION --- */
+.preview-section{background:var(--gray-100);padding:80px 0;text-align:center}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.preview-title{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-weight:700;color:var(--gray-900);margin-bottom:48px}
+.preview-title .accent{color:var(--green);font-weight:700}
+.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
+.preview-box{background:var(--white);border-radius:12px;padding:32px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.05);border:1px solid var(--gray-200);transition:all 0.2s ease}
+.preview-box:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
+.preview-icon{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--white);font-size:24px}
+.preview-box h3{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--gray-900);margin-bottom:12px;line-height:1.4}
+.preview-box p{font-size:14px;color:var(--gray-600);line-height:1.6}
 
 /* --- TESTIMONIALS --- */
-.testimonials-section{background:var(--bg)}
-.testimonials-header{text-align:center;margin-bottom:48px}
-.testimonials-grid{column-count:2;column-gap:24px}
-.testimonial-card{display:inline-block;width:100%;margin:0 0 24px;background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;vertical-align:top}
+.testimonials-section{background:var(--white);padding:80px 0}
+.testimonials-title{font-family:var(--font-display);font-size:clamp(28px,4vw,40px);font-weight:700;color:var(--gray-900);text-align:center;margin-bottom:16px}
+.testimonials-title .accent{color:var(--green);font-weight:700}
+.testimonials-sub{text-align:center;font-size:16px;color:var(--gray-600);margin-bottom:48px}
+.testimonials-grid{column-count:2;column-gap:24px;max-width:1000px;margin:0 auto}
+.testimonial-card{display:inline-block;width:100%;margin:0 0 24px;background:var(--gray-100);border-radius:12px;overflow:hidden;border:1px solid var(--gray-200);break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;vertical-align:top}
 .testimonial-card img{width:100%;height:auto;display:block}
-.testimonial-card .testimonial-caption{padding:20px 20px 16px}
-.testimonial-card .testimonial-name{font-size:14px;font-weight:700;color:var(--text-primary)}
-.testimonial-card .testimonial-highlight{font-size:13px;color:var(--accent);font-weight:700;margin-top:2px}
-.testimonial-card .testimonial-quote{font-size:13px;color:var(--text-secondary);line-height:1.5;margin-top:8px}
+.testimonial-caption{padding:20px 20px 16px}
+.testimonial-name{font-size:14px;font-weight:700;color:var(--gray-900)}
+.testimonial-highlight{font-size:13px;color:var(--green);font-weight:700;margin-top:2px}
+.testimonial-quote{font-size:13px;color:var(--gray-600);line-height:1.5;margin-top:8px}
 
-@media(max-width:768px){
-.testimonials-grid{column-count:1}
-.testimonial-card .testimonial-caption{padding:16px}
-}
-@media(min-width:769px) and (max-width:1024px){
-.testimonials-grid{column-count:2}
-}
-
-/* --- ABOUT --- */
-.about-section{background:var(--bg)}
-.about-content{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:start;margin-top:48px;max-width:900px;margin-left:auto;margin-right:auto}
-.about-image{border-radius:var(--radius-lg);overflow:hidden;background:var(--bg-deep);max-width:420px;width:100%}
+/* --- ABOUT HOST EXPANDED --- */
+.about-section{background:var(--gray-100);padding:80px 0}
+.about-container{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;max-width:1000px;margin:0 auto}
+.about-image{border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,0.1)}
 .about-image img{width:100%;height:auto;display:block}
-.about-text p{font-size:15px;line-height:1.7;color:var(--text-secondary);margin-bottom:16px}
-.about-text p strong{color:var(--text-primary)}
+.about-content{text-align:left}
+.about-tag{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.about-name{font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--gray-900);margin-bottom:16px}
+.about-text{font-size:15px;color:var(--gray-600);line-height:1.8;margin-bottom:16px}
+.about-text strong{color:var(--gray-900)}
 
-/* --- FINAL CTA --- */
-.final-cta{background:var(--text-primary);color:#fff;text-align:center;padding:80px 0}
-.final-cta .section-tag{color:#007a52}
-.final-cta .section-title{color:#fff}
-.final-cta .section-sub{color:rgba(255,255,255,0.65);margin:0 auto}
-.final-cta .btn-primary{display:inline-flex;margin-top:32px;padding:22px 56px;min-width:340px}
+/* --- SECOND CTA --- */
+.second-cta{background:var(--white);padding:60px 0;text-align:center}
+.second-cta-question{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--gray-900);margin-bottom:24px}
 
 /* --- FOOTER --- */
-footer{background:var(--text-primary);color:rgba(255,255,255,0.4);padding:40px 0;text-align:center;font-size:13px;border-top:1px solid rgba(255,255,255,0.1)}
+.footer{background:var(--black);color:var(--gray-400);padding:40px 0;text-align:center;font-size:13px}
+.footer a{color:var(--green);text-decoration:none}
 
 /* --- RESPONSIVE --- */
-
-/* Tablet portrait and below */
-@media(max-width:768px){
-.hero{padding:48px 0 40px}
-.hero h1{font-size:clamp(32px,8vw,48px)}
-section{padding:56px 0}
-.section-title{font-size:clamp(32px,7vw,44px)}
-.section-sub{font-size:15px}
-.container{padding:0 20px}
-
-.as-featured{padding:20px 16px}
-.as-featured-heading{font-size:15px;margin-bottom:12px}
-.avatar{width:36px;height:36px}
-.media-logos{gap:16px;padding:10px 14px}
-.media-logos span{font-size:13px!important}
-
-.about-content{grid-template-columns:1fr;gap:32px}
-.about-image{max-width:100%}
-
-.hero-image{width:100%;max-width:600px;margin:0 auto 32px}
-.hero-image img{width:100%;height:auto;border-radius:var(--radius)}
-
-.hero-cta{margin-top:32px;padding-bottom:32px}
-.hero-cta .register-btn{width:100%;max-width:400px}
-.hero-cta .seats-bar{width:100%;max-width:400px}
-
-.as-featured{padding:16px 12px}
-.as-featured-heading{font-size:13px;margin-bottom:10px}
-.as-featured-row{gap:8px}
-.avatar{width:28px;height:28px;border-width:2px;margin-left:-6px}
-.trustpilot-mini{font-size:11px}
-.trustpilot-mini .star{width:12px;height:12px;font-size:8px}
-.media-logos{gap:10px;padding:8px}
-.media-logos span{font-size:10px!important}
-.ft-logo{font-size:14px}
+@media(max-width:900px){
+.preview-grid{grid-template-columns:1fr;max-width:500px}
+.testimonials-grid{column-count:1}
+.testimonial-caption{padding:16px}
+.about-container{grid-template-columns:1fr;gap:32px}
+.host-compact{flex-direction:column;text-align:center}
+.host-info{text-align:center}
 }
 
-/* Small phones */
-@media(max-width:480px){
-.hero{padding:36px 0 32px}
-.hero h1{font-size:clamp(29px,9.6vw,42px)}
+@media(max-width:600px){
+.hero{padding:40px 0 32px}
+.hero-title{font-size:28px}
 .hero-sub{font-size:16px}
-.hero-badge{font-size:11px;padding:5px 12px}
-section{padding:40px 0}
-.section-title{font-size:clamp(28px,8vw,38px)}
-.container{padding:0 16px}
-
-.learn-item{padding:16px;gap:12px}
-.learn-item .num{width:32px;height:32px;font-size:13px}
-.learn-item h4{font-size:14px}
-.learn-item p{font-size:13px}
-
-.final-cta .btn-primary{padding:18px 40px;min-width:280px}
-
-/* Countdown responsive */
-.countdown{gap:8px}
-.countdown-unit{min-width:50px}
-.countdown-num{font-size:28px;padding:6px 8px;min-width:48px;color:var(--text-primary);background:#fff}
-.countdown-label-sm{font-size:9px}
-}
-
-/* Centered CTA - applies to all screen sizes */
-.hero-cta{text-align:center;margin-top:48px;padding-bottom:40px}
-
-/* Countdown Timer */
-.countdown-container{margin-bottom:32px}
-.countdown-label{font-size:14px;font-weight:600;color:rgba(255,255,255,0.6);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px}
-.countdown{display:flex;justify-content:center;gap:16px;margin-bottom:8px}
-.countdown-unit{display:flex;flex-direction:column;align-items:center;min-width:60px}
-.countdown-num{font-family:var(--font-display);font-size:clamp(36px,5vw,48px);color:var(--text-primary);line-height:1;background:#fff;padding:8px 12px;border-radius:var(--radius);min-width:60px}
-.countdown-label-sm{font-size:11px;color:rgba(255,255,255,0.5);margin-top:6px;text-transform:uppercase;letter-spacing:0.5px;font-weight:600}
-.hero-cta .register-btn{width:auto;min-width:340px;padding:22px 56px;margin:0 auto}
-.hero-cta .form-urgency{justify-content:center;margin-top:16px;color:rgba(255,255,255,0.7)}
-.hero-cta .form-urgency strong{color:#007a52}
-.hero-cta .seats-bar{width:320px;margin:12px auto 0;height:6px;background:rgba(255,255,255,0.2);border-radius:3px;overflow:hidden}
-.hero-cta .seats-bar .fill{height:100%;background:linear-gradient(to right,var(--accent),#00996b);border-radius:3px;width:78%}
-
-/* Desktop sidebar layout */
-@media(min-width:769px){
-.hero-image{max-width:600px;margin:0 auto 40px}
-.hero-image img{width:100%;height:auto;border-radius:var(--radius);display:block}
+.cta-button{padding:16px 32px}
+.cta-button-main{font-size:18px}
+.preview-section,.testimonials-section,.about-section{padding:60px 0}
+.preview-box{padding:24px 20px}
 }
 </style>
 </head>
 <body>
 
-<!-- TOP STRIP -->
-<div class="top-strip">FREE Live Workshop With 8-Figure Investor, Preston Seo</div>
+<!-- BANNER -->
+<div class="banner">
+FREE LIVE WORKSHOP WITH PRESTON SEO | 6M+ Followers
+</div>
 
 <!-- HERO -->
-<header class="hero">
+<section class="hero">
 <div class="container">
-<h1>Make <span class="hl-yellow">$2,500/Month</span> from Airbnb</h1>
-<h2 style="font-size:clamp(22px,3.5vw,40px);margin-top:12px;font-weight:700;text-align:center;"><span class="hl-green">Without Owning Property</span></h2>
-<p class="hero-sub">The free 5-step workshop that shows you how to replace your income with short-term rental cash flow — even with a full-time job and zero real estate experience.</p>
+<h1 class="hero-title">
+The STR Tax Loophole That Saves You <span class="highlight">$40K/Year</span>
+</h1>
+<p class="hero-sub">How to legally slash your tax bill using short-term rentals — even if you've never owned one.</p>
 
-<div class="hero-image">
-<img src="preston fam rail.avif" alt="Preston with family at a train station" width="1000" height="750" fetchpriority="high" decoding="async">
-</div>
+<a href="#register" class="cta-button">
+<span class="cta-button-main">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+Save My Spot — It's Free
+</span>
+<span class="cta-button-sub">Friday, April 17th @ 7 PM EST</span>
+</a>
 
-<div class="hero-cta">
-<div class="countdown-container">
-<p class="countdown-label">Workshop starts in:</p>
-<div class="countdown">
-<div class="countdown-unit">
-<span class="countdown-num" id="countdown-days">00</span>
-<span class="countdown-label-sm">Days</span>
+<!-- HOST BIO COMPACT -->
+<div class="host-compact">
+<img src="../str/preston-headshot.jpg" alt="Preston Seo" class="host-avatar" width="160" height="160">
+<div class="host-info">
+<div class="host-name">Preston Seo</div>
+<div class="host-desc">8-figure investor and educator helping high-income earners keep more of what they make through STR tax strategies. 6M+ followers across socials.</div>
 </div>
-<div class="countdown-unit">
-<span class="countdown-num" id="countdown-hours">00</span>
-<span class="countdown-label-sm">Hours</span>
-</div>
-<div class="countdown-unit">
-<span class="countdown-num" id="countdown-minutes">00</span>
-<span class="countdown-label-sm">Minutes</span>
-</div>
-<div class="countdown-unit">
-<span class="countdown-num" id="countdown-seconds">00</span>
-<span class="countdown-label-sm">Seconds</span>
-</div>
-</div>
-</div>
-
-<button class="btn-primary register-btn" onclick="openRegistrationPopup()"><span class="btn-main">Register Now</span><span class="btn-sub">Friday, April 17th @ 7 PM EST</span></button>
-</div>
-</div>
-</header>
-
-<!-- AS FEATURED IN -->
-<section class="as-featured">
-<div class="container">
-<p class="as-featured-heading">As Featured In:</p>
-<div class="as-featured-row">
-<div class="user-avatars">
-<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
-<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
-<img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48" decoding="async">
-</div>
-<div class="trustpilot-mini">
-<span>Excellent</span>
-<div class="stars">
-<span class="star">★</span>
-<span class="star">★</span>
-<span class="star">★</span>
-<span class="star">★</span>
-<span class="star">★</span>
-</div>
-<span class="logo">Trustpilot</span>
-</div>
-</div>
-<div class="media-logos">
-<img src="af204c7a353d959657f10645474ff2c1.webp" alt="Featured in major media outlets" width="746" height="82" decoding="async" style="max-height:48px;width:auto;object-fit:contain">
 </div>
 </div>
 </section>
 
-<!-- LEARNING DETAILS -->
-<section>
+<!-- PREVIEW SECTION -->
+<section class="preview-section">
 <div class="container">
-<h1 class="section-title" style="margin-bottom:32px;text-align:center">What You'll Learn</h1>
+<h2 class="preview-title">
+Here's A Preview Of What You'll Learn <span class="accent">For FREE</span>
+</h2>
 
-<div class="learn-grid">
-<div class="learn-item"><div class="num">1</div><div><h4>How to find high profit deals in any market</h4><p>I'll show you the exact tools and filters I use to spot profitable units in under 10 minutes — even if you've never done this before.</p></div></div>
-<div class="learn-item"><div class="num">2</div><div><h4>How to run everything remotely</h4><p>My system for managing properties from anywhere using cheap virtual help — so the income becomes truly passive.</p></div></div>
-<div class="learn-item"><div class="num">3</div><div><h4>The tax loophole that saves me $40K+ per year</h4><p>How short-term rentals unlock massive tax advantages that W-2 employees never get access to.</p></div></div>
-<div class="learn-item"><div class="num">4</div><div><h4>Automation that runs while you sleep</h4><p>The hiring templates and checklists that make your business operate without you touching it daily.</p></div></div>
+<div class="preview-grid">
+<div class="preview-box">
+<div class="preview-icon">✓</div>
+<h3>How cost segregation and the STR loophole can wipe out $40K+ in taxable income, even in your first year</h3>
+</div>
+
+<div class="preview-box">
+<div class="preview-icon">✓</div>
+<h3>The exact property criteria to find STRs that cash flow AND generate massive write-offs</h3>
+</div>
+
+<div class="preview-box">
+<div class="preview-icon">✓</div>
+<h3>Why most CPAs miss this strategy and how to make sure yours doesn't cost you thousands</h3>
+</div>
 </div>
 </div>
 </section>
@@ -321,84 +218,94 @@ section{padding:40px 0}
 <!-- TESTIMONIALS -->
 <section class="testimonials-section">
 <div class="container">
-<div class="testimonials-header">
-<h2 class="section-title">Here's some results from<br>my students</h2>
-</div>
+<h2 class="testimonials-title">
+Here's Some Results From<br><span class="accent">My Students</span>
+</h2>
+
 <div class="testimonials-grid">
 <div class="testimonial-card">
-<img src="testimonial-01.webp" alt="$5,500/month net profit" loading="lazy" width="480" height="326" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-01.webp" alt="$5,500/month net profit" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$5,500/month net profit</div>
 <div class="testimonial-quote">"Just hit $5,500/month in net profit last month! So stoked to see how this thing performs in the summer months."</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-02.webp" alt="Matthew Ellis — first deal, first week" loading="lazy" width="1488" height="578" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-02.webp" alt="Matthew Ellis — first deal, first week" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Matthew Ellis</div>
 <div class="testimonial-highlight">First deal in 1 week — $3-4K/month</div>
 <div class="testimonial-quote">"I'm about a week in and just locked up my first deal. Which should net me about $3-4K profit per month!"</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-03.webp" alt="Johnny Abarra — first Airbnb Arbitrage property" loading="lazy" width="1504" height="858" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-03.webp" alt="Johnny Abarra — first STR Arbitrage property" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Johnny Abarra</div>
 <div class="testimonial-highlight">$1,500/month from first property</div>
 <div class="testimonial-quote">"Just signed a 2-year lease with the landlord! This property will cash flow about $1,500/month after expenses!"</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-04.webp" alt="$11K booking, $8,500 profit" loading="lazy" width="436" height="498" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-04.webp" alt="$11K booking, $8,500 profit" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$11,000 booking — $8,500 profit</div>
 <div class="testimonial-quote">"Going well. Got a booking for over $11,000 recently. Going to be a record month. $8,500 profit for the next month."</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-05.png" alt="Josh Szentes — $9K cashflow" loading="lazy" width="976" height="607" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-05.png" alt="Josh Szentes — $9K cashflow" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Josh Szentes</div>
 <div class="testimonial-highlight">$9,000/month cash flow</div>
 <div class="testimonial-quote">"March we were 91% occupied averaging $164/night. Cash flow was about $9K."</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-06.png" alt="Chad Grecsek — $10K gross in 2 months" loading="lazy" width="1166" height="188" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-06.png" alt="Chad Grecsek — $10K gross in 2 months" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Chad Grecsek</div>
 <div class="testimonial-highlight">$10K gross revenue in 2 months</div>
 <div class="testimonial-quote">"So far so good. 10K in gross revenue over two months with some good reviews in and advanced bookings."</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-07.png" alt="Sam Becze — bookings in <24 hours" loading="lazy" width="1510" height="390" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-07.png" alt="Sam Becze — bookings in <24 hours" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Sam Becze</div>
 <div class="testimonial-highlight">Bookings covering rent in under 24 hours</div>
 <div class="testimonial-quote">"Less than 24 hours after going live on our first property we had multiple bookings, enough to more than cover rent for the month!"</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-08.webp" alt="Dustin Cotten — nearly $60K best month" loading="lazy" width="1619" height="943" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-08.webp" alt="Dustin Cotten — nearly $60K best month" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Dustin Cotten</div>
 <div class="testimonial-highlight">Almost $60K in a single month, 7 properties</div>
 <div class="testimonial-quote">"1 year & 10 months into this journey and we are coming off of our best month. 7 properties yielding a little shy of $60,000 net."</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-09.png" alt="Brian O'Leary — $3,000/mo, 450% cash on cash" loading="lazy" width="1510" height="510" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-09.png" alt="Brian O'Leary — $3,000/mo, 450% cash on cash" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Brian O'Leary</div>
 <div class="testimonial-highlight">$3,000/month — 450%+ cash on cash return</div>
 <div class="testimonial-quote">"Locked up the property AND went live in 2 weeks. Cash flowing $3,000/mo at an insane 450%+ cash on cash return."</div>
 </div>
 </div>
+
 <div class="testimonial-card">
-<img src="testimonial-10.webp" alt="$10K/month cash flow on first property" loading="lazy" width="1466" height="362" decoding="async" fetchpriority="low">
+<img src="../str/testimonial-10.webp" alt="$10K/month cash flow on first property" loading="lazy">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$10,000/month cash flow — first property</div>
@@ -409,46 +316,40 @@ section{padding:40px 0}
 </div>
 </section>
 
-<!-- MID-PAGE CTA -->
-<section style="background:var(--text-primary);padding:60px 0;text-align:center">
-<div class="container">
-<button class="btn-primary register-btn" onclick="openRegistrationPopup()" style="max-width:400px;margin:0 auto"><span class="btn-main">Register Now</span><span class="btn-sub">Friday, April 17th @ 7 PM EST</span></button>
-</div>
-</section>
-
-<!-- ABOUT PRESTON -->
+<!-- ABOUT HOST EXPANDED -->
 <section class="about-section">
 <div class="container">
-<div style="text-align:center">
-<div class="section-tag">Your Instructor</div>
-<h2 class="section-title">Preston Seo</h2>
-<p class="section-sub" style="margin:0 auto">From his parents' basement to a multi-million dollar Airbnb portfolio across 4 states.</p>
+<div class="about-container">
+<div class="about-image">
+<img src="../str/preston-family-optimized.webp" alt="Preston Seo with his family" loading="lazy">
 </div>
 <div class="about-content">
-<div class="about-image">
-<img src="preston-family-optimized.webp" alt="Preston Seo with his family" loading="lazy" width="1800" height="2400" decoding="async" fetchpriority="low">
-</div>
-<div class="about-text">
-<p>Preston Seo is a Korean-American entrepreneur and real estate investor who built an <strong>8-figure portfolio</strong> using the exact A.C.R.E.S. Framework he teaches in this workshop.</p>
-<p>After watching his immigrant parents work 14-16 hour days and nearly lose their home to foreclosure, Preston committed to building a different life. He replaced <strong>100% of his and his wife's $380K corporate income</strong> through short-term rentals — and now helps others do the same.</p>
-<p>His students include nurses, corporate employees, dentists, military veterans, and people in their 20s through their 50s.</p>
-<p>With the right systems in place, Preston manages his entire portfolio remotely — giving him the freedom to be at his kids' games, take his wife out on Tuesday afternoons, and build a business that works around his life instead of consuming it.</p>
+<div class="about-tag">About Your Host</div>
+<h2 class="about-name">Preston Seo</h2>
+<p class="about-text">Preston Seo is a Korean-American entrepreneur and real estate investor who built an <strong>8-figure portfolio</strong> using the exact A.C.R.E.S. Framework he teaches in this workshop.</p>
+<p class="about-text">After watching his immigrant parents work 14-16 hour days and nearly lose their home to foreclosure, Preston committed to building a different life. He replaced <strong>100% of his and his wife's $380K corporate income</strong> through short-term rentals — and now helps others do the same.</p>
+<p class="about-text">His students include nurses, corporate employees, dentists, military veterans, and people in their 20s through their 50s.</p>
 </div>
 </div>
 </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="final-cta">
+<!-- SECOND CTA -->
+<section class="second-cta" id="register">
 <div class="container">
-<div class="section-tag" style="color:#007a52">Don't Wait for "Perfect Timing"</div>
-<h2 class="section-title">A Year From Now, You'll Wish<br>You Started Today</h2>
-<p class="section-sub">Every month you wait is $2,500 to $5,000 in cash flow that doesn't come back. The math doesn't care about your feelings.</p>
-<button class="btn-primary register-btn" onclick="openRegistrationPopup()"><span class="btn-main">Register Now</span><span class="btn-sub">Friday, April 17th @ 7 PM EST</span></button>
+<h2 class="second-cta-question">Will You Be Joining Us?</h2>
+<a href="#" class="cta-button" onclick="openRegistrationPopup(); return false;">
+<span class="cta-button-main">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+Yes, I Want To Attend!
+</span>
+<span class="cta-button-sub">Friday, April 17th @ 7 PM EST</span>
+</a>
 </div>
 </section>
 
-<footer>
+<!-- FOOTER -->
+<footer class="footer">
 <div class="container">
 <p>&copy; 2026 Legacy Investing Show. All rights reserved. Results depend on effort, market, and execution. This is not financial or tax advice.</p>
 </div>
@@ -460,68 +361,7 @@ function openRegistrationPopup(){
 // to trigger any third-party popup/form software
 console.log('Registration popup triggered');
 }
-
-// Countdown Timer
-function updateCountdown() {
-    const now = new Date();
-    const currentDay = now.getDay();
-    const currentHour = now.getHours();
-    
-    // Workshop day: Friday (5) at 7 PM EST
-    // For simplicity, we'll use local time (assuming user is in EST or they understand the time)
-    // In production, you'd want to convert 7 PM EST to local time
-    
-    const workshopDays = [5]; // Friday
-    const workshopHour = 19; // 7 PM
-    
-    // Find next workshop
-    let targetDate = new Date(now);
-    let daysUntilWorkshop = 0;
-    let found = false;
-    
-    // Check if there's a workshop today and if it hasn't started yet
-    if (workshopDays.includes(currentDay) && currentHour < workshopHour) {
-        targetDate.setHours(workshopHour, 0, 0, 0);
-        found = true;
-    } else {
-        // Find next workshop day
-        for (let i = 1; i <= 7; i++) {
-            const checkDay = (currentDay + i) % 7;
-            if (workshopDays.includes(checkDay)) {
-                daysUntilWorkshop = i;
-                targetDate.setDate(now.getDate() + i);
-                targetDate.setHours(workshopHour, 0, 0, 0);
-                found = true;
-                break;
-            }
-        }
-    }
-    
-    if (!found) return;
-    
-    const diff = targetDate - now;
-    
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-    
-    const daysEl = document.getElementById('countdown-days');
-    const hoursEl = document.getElementById('countdown-hours');
-    const minutesEl = document.getElementById('countdown-minutes');
-    const secondsEl = document.getElementById('countdown-seconds');
-    
-    if (daysEl) daysEl.textContent = String(days).padStart(2, '0');
-    if (hoursEl) hoursEl.textContent = String(hours).padStart(2, '0');
-    if (minutesEl) minutesEl.textContent = String(minutes).padStart(2, '0');
-    if (secondsEl) secondsEl.textContent = String(seconds).padStart(2, '0');
-}
-
-// Start countdown when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-});
 </script>
+
 </body>
 </html>
