@@ -112,7 +112,8 @@ img{max-width:100%;display:block}
 .preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin:0 auto}
 .preview-box{background:var(--white);border-radius:12px;padding:32px 24px;box-shadow:0 2px 8px rgba(0,0,0,0.05);border:1px solid var(--gray-200);transition:all 0.2s ease}
 .preview-box:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
-.preview-icon{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--white);font-size:24px}
+.preview-icon{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--white)}
+.preview-icon svg{width:24px;height:24px;display:block}
 .preview-box h3{font-family:var(--font-display);font-size:17px;font-weight:700;color:var(--gray-900);margin-bottom:12px;line-height:1.4}
 .preview-box p{font-size:14px;color:var(--gray-600);line-height:1.6}
 
@@ -215,17 +216,29 @@ Here's A Preview Of What You'll Learn <span class="accent">For FREE</span>
 
 <div class="preview-grid">
 <div class="preview-box">
-<div class="preview-icon">&#10003;</div>
+<div class="preview-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
 <h3>How cost segregation and the STR loophole can wipe out $40K+ in taxable income, even in your first year</h3>
 </div>
 
 <div class="preview-box">
-<div class="preview-icon">&#10003;</div>
+<div class="preview-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
 <h3>The exact property criteria to find STRs that cash flow AND generate massive write-offs</h3>
 </div>
 
 <div class="preview-box">
-<div class="preview-icon">&#10003;</div>
+<div class="preview-icon" aria-hidden="true">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M5 13l4 4L19 7"></path>
+</svg>
+</div>
 <h3>Why most CPAs miss this strategy and how to make sure yours doesn't cost you thousands</h3>
 </div>
 </div>
@@ -372,5 +385,4 @@ Here's Some Results From<br><span class="accent">My Students</span>
 
 </body>
 </html>
-
 
