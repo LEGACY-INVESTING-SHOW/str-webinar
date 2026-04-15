@@ -80,6 +80,45 @@ img{max-width:100%;display:block}
 .cta-button-main svg{width:24px;height:24px}
 .cta-button-sub{font-size:14px;font-weight:500;opacity:0.9}
 
+/* --- REGISTRATION MODAL --- */
+body.modal-open{overflow:hidden}
+.registration-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(15,23,42,0.82);backdrop-filter:blur(10px);z-index:1000;opacity:0;pointer-events:none;transition:opacity 0.25s ease}
+.registration-modal.is-open{opacity:1;pointer-events:auto}
+.registration-modal-panel{position:relative;width:min(100%,960px);max-height:min(92vh,900px);overflow:auto;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border:1px solid rgba(16,185,129,0.18);border-radius:24px;box-shadow:0 30px 80px rgba(15,23,42,0.32)}
+.registration-modal-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border:none;border-radius:50%;background:rgba(15,23,42,0.08);color:var(--gray-900);font-size:28px;line-height:1;cursor:pointer;transition:background 0.2s ease,transform 0.2s ease}
+.registration-modal-close:hover{background:rgba(15,23,42,0.14);transform:scale(1.04)}
+.registration-modal-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,420px)}
+.registration-modal-copy{padding:56px 44px 44px;background:
+radial-gradient(circle at top left,rgba(52,211,153,0.16),transparent 42%),
+linear-gradient(160deg,var(--black) 0%,#13233d 55%,#0f172a 100%);
+color:var(--white)}
+.registration-modal-kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.registration-modal-title{margin-top:22px;font-family:var(--font-display);font-size:clamp(30px,4vw,40px);line-height:1.08}
+.registration-modal-title strong{color:var(--green-light)}
+.registration-modal-sub{margin-top:18px;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82)}
+.registration-modal-points{margin-top:24px;display:grid;gap:14px}
+.registration-modal-point{display:flex;align-items:flex-start;gap:12px;font-size:15px;line-height:1.6;color:rgba(255,255,255,0.9)}
+.registration-modal-point-check{flex:none;width:24px;height:24px;border-radius:50%;background:rgba(16,185,129,0.18);border:1px solid rgba(52,211,153,0.45);display:flex;align-items:center;justify-content:center;color:var(--green-light);font-size:14px;font-weight:700}
+.registration-modal-proof{margin-top:28px;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12)}
+.registration-modal-proof-label{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.62)}
+.registration-modal-proof-text{margin-top:10px;font-size:17px;line-height:1.55;color:var(--white)}
+.registration-modal-form{padding:56px 36px 36px}
+.registration-modal-card{background:var(--white);border:1px solid var(--gray-200);border-radius:20px;padding:28px;box-shadow:0 18px 40px rgba(15,23,42,0.08)}
+.registration-modal-form-title{font-family:var(--font-display);font-size:28px;line-height:1.15;color:var(--gray-900)}
+.registration-modal-form-title strong{color:var(--green-dark)}
+.registration-modal-form-sub{margin-top:10px;font-size:15px;line-height:1.6;color:var(--gray-600)}
+.registration-modal-form-shell{margin-top:24px}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 form{display:grid;gap:14px}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]){width:100%;border:1px solid var(--gray-300);border-radius:14px;padding:16px 18px;font:600 16px var(--font-body);color:var(--gray-900);background:#f8fafc;transition:border-color 0.2s ease,box-shadow 0.2s ease,background 0.2s ease}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#94a3b8}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]):focus{outline:none;border-color:var(--green);background:var(--white);box-shadow:0 0 0 4px rgba(16,185,129,0.14)}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:64px;border:none;border-radius:14px;background:linear-gradient(135deg,var(--orange) 0%,#fb8c3c 100%);box-shadow:0 14px 26px rgba(249,115,22,0.28);padding:16px 20px;font:700 18px var(--font-display);letter-spacing:0.2px;color:var(--white);cursor:pointer;transition:transform 0.2s ease,box-shadow 0.2s ease,filter 0.2s ease}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 18px 30px rgba(249,115,22,0.34);filter:saturate(1.05)}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:0.85;cursor:wait;transform:none}
+.registration-modal-note{margin-top:16px;font-size:12px;line-height:1.6;color:var(--gray-500)}
+.registration-modal-note strong{color:var(--gray-700)}
+.registration-modal-note a,.registration-modal-form-sub code{color:var(--green-dark);font-weight:700;text-decoration:none}
+
 /* --- DATE --- */
 .hero-date{margin-top:20px;font-size:15px;color:var(--gray-500);font-weight:500}
 
@@ -142,6 +181,9 @@ img{max-width:100%;display:block}
 .about-container{grid-template-columns:1fr;gap:32px}
 .host-compact{flex-direction:column;text-align:center}
 .host-info{text-align:center}
+.registration-modal{padding:18px}
+.registration-modal-inner{grid-template-columns:1fr}
+.registration-modal-copy,.registration-modal-form{padding:36px 28px}
 }
 
 @media(max-width:600px){
@@ -152,6 +194,11 @@ img{max-width:100%;display:block}
 .cta-button-main{font-size:18px}
 .preview-section,.testimonials-section,.about-section{padding:60px 0}
 .preview-box{padding:24px 20px}
+.registration-modal-panel{border-radius:20px}
+.registration-modal-copy,.registration-modal-form{padding:28px 20px}
+.registration-modal-card{padding:22px 18px}
+.registration-modal-form-title{font-size:24px}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68{font-size:16px}
 }
 </style>
 </head>
@@ -170,7 +217,7 @@ The STR Tax Loophole That Saves You <span class="highlight">$40K/Year</span>
 </h1>
 <p class="hero-sub">How to legally slash your tax bill using short-term rentals — even if you've never owned one.</p>
 
-<a href="#register" class="cta-button">
+<a href="#" class="cta-button" onclick="openRegistrationPopup(); return false;">
 <span class="cta-button-main">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
 Save My Spot — It's Free
@@ -334,6 +381,70 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 </section>
 
+<div class="registration-modal" id="registration-modal" aria-hidden="true">
+<div class="registration-modal-panel" role="dialog" aria-modal="true" aria-labelledby="registration-modal-title">
+<button class="registration-modal-close" type="button" aria-label="Close registration popup" onclick="closeRegistrationPopup()">&times;</button>
+<div class="registration-modal-inner">
+<div class="registration-modal-copy">
+<div class="registration-modal-kicker">Free Live Workshop</div>
+<h2 class="registration-modal-title" id="registration-modal-title">Save your seat for the <strong>STR Tax Workshop</strong></h2>
+<p class="registration-modal-sub">Enter your name and email below to reserve your spot and get the private workshop access details.</p>
+<div class="registration-modal-points">
+<div class="registration-modal-point">
+<span class="registration-modal-point-check">✓</span>
+<span>Learn how the STR loophole can potentially erase $40K+ of taxable income.</span>
+</div>
+<div class="registration-modal-point">
+<span class="registration-modal-point-check">✓</span>
+<span>See the exact property criteria Preston uses to find cash-flowing tax-saving deals.</span>
+</div>
+<div class="registration-modal-point">
+<span class="registration-modal-point-check">✓</span>
+<span>Get the workshop details delivered straight to your inbox so you do not miss it.</span>
+</div>
+</div>
+<div class="registration-modal-proof">
+<div class="registration-modal-proof-label">Hosted By Preston Seo</div>
+<div class="registration-modal-proof-text">8-figure investor and educator helping high-income earners keep more of what they make with STR tax strategies.</div>
+</div>
+</div>
+<div class="registration-modal-form">
+<div class="registration-modal-card">
+<h3 class="registration-modal-form-title">Reserve your spot. <strong>It&rsquo;s free.</strong></h3>
+<p class="registration-modal-form-sub">Use the form below to register. After submission, Kartra can redirect visitors to your confirmation page at <code>str.managemoney101.com/registered</code>.</p>
+<div class="registration-modal-form-shell">
+<div class="form_class_eb160de1de89d9058fcb0b968dbbbd68" data-form_id="eb160de1de89d9058fcb0b968dbbbd68">
+ 
+ <form method="post" action="https://app.kartra.com/process/add_lead/OdhExXbl4Ma4" target="_top" class="form_class_OdhExXbl4Ma4 js_kartra_trackable_object" data-kt-type="optin" data-kt-value="OdhExXbl4Ma4" data-kt-owner="8g8M14vk" accept-charset="UTF-8">
+ <input type="text" class="" placeholder="" name="aaddress_url" value="" style="display: none; position: absolute; left: -9999px;" aria-hidden="true" tabindex="-1">
+<input type="text" class="js_kartra_santitation" data-santitation-type="front_name" placeholder="First name..." name="first_name" value="">
+<input type="text" class="js_kartra_santitation" data-santitation-type="email" placeholder="Email..." name="email" value="">
+<div class="js_captcha_wrapper"></div>
+<button class='submit_button_eb160de1de89d9058fcb0b968dbbbd68' onclick="var element = this; element.form.submit(); element.setAttribute('disabled', true); setTimeout(function(){element.removeAttribute('disabled');}, 1000);" type="submit">Register Now - It&#039;s Free</button>
+</form>
+<script>window.jQuery || document.write('<script src="https://app.kartra.com/js/node_modules/kartra-jquery/jquery-1.11.3/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="https://app.kartra.com/resources/js/analytics/8g8M14vk"></script>
+<script src="https://app.kartra.com//resources/js/optin_front_javascript?form_id=eb160de1de89d9058fcb0b968dbbbd68&optin_hash=OdhExXbl4Ma4&khoi=8g8M14vk"></script>
+<script>
+ if (typeof {"vendor_time_format":"12h","sanitation_rules":{"numeric":"[0-9]","numeric_1_30":"[0-9]","decimal":"[0-9\\.]","domain":"[a-zA-Z0-9\\-\\_\\&\\?\\.\\:\\\/\\=$\\+\\!\\*\\'\\(\\)\\;\\@\\#\\~\\[\\]\\%\\,\\`\\{\\}]","email":"[a-zA-Z0-9\\+\\=\\-\\_\\.\\@$]","letters":"[a-zA-Z\\ \\\u00e0\\\u00e2\\\u00e4\\\u00f4\\\u00e9\\\u00e8\\\u00eb\\\u00ea\\\u00ef\\\u00ee\\\u00e7\\\u00f9\\\u00fb\\\u00fc\\\u00ff\\\u00e6\\\u0153\\\u00c0\\\u00c2\\\u00c4\\\u00d4\\\u00c9\\\u00c8\\\u00cb\\\u00ca\\\u00cf\\\u00ce\\\u0178\\\u00c7\\\u00d9\\\u00db\\\u00dc\\\u00c6\\\u0152\\\u00e4\\\u00f6\\\u00fc\\\u00df\\\u00c4\\\u00d6\\\u00dc\\\u0105\\\u0107\\\u0119\\\u0142\\\u0144\\\u00f3\\\u015b\\\u017a\\\u017c\\\u0104\\\u0106\\\u0118\\\u0141\\\u0143\\\u00d3\\\u015a\\\u0179\\\u017b\\\u0117\\\u0116\\\u012f\\\u012e\\\u0173\\\u0173\\\u0172\\\u016b\\\u016a\\\u00e0\\\u00e8\\\u00e9\\\u00ec\\\u00ed\\\u00ee\\\u00f2\\\u00f3\\\u00f9\\\u00fa\\\u00c0\\\u00c8\\\u00c9\\\u00cc\\\u00cd\\\u00ce\\\u00d2\\\u00d3\\\u00d9\\\u00da\\\u00e1\\\u00e9\\\u00ed\\\u00f1\\\u00f3\\\u00fa\\\u00fc\\\u00c1\\\u00c9\\\u00cd\\\u00d1\\\u00d3\\\u00da\\\u00dc\\\u00e4\\\u00f6\\\u00e5\\\u00c4\\\u00d6\\\u00c5\\\u00e6\\\u00f8\\\u00e5\\\u00c6\\\u00d8\\\u00c5\\\u0102\\\u00c2\\\u00ce\\\u0218\\\u021a\\\u0103\\\u00e2\\\u00ee\\\u0219\\\u021b\\\u00e3\\\u00c3\\\u0451\\\u0401\\\u044a\\\u042a\\\u044f\\\u042f\\\u0448\\\u0428\\\u0435\\\u0415\\\u0440\\\u0420\\\u0442\\\u0422\\\u044b\\\u042b\\\u0443\\\u0423\\\u0438\\\u0418\\\u043e\\\u041e\\\u043f\\\u041F\\\u044e\\\u042E\\\u0449\\\u0429\\\u044d\\\u042D\\\u0430\\\u0410\\\u0441\\\u0421\\\u0434\\\u0414\\\u0444\\\u0424\\\u0433\\\u0413\\\u0447\\\u0427\\\u0439\\\u0419\\\u043a\\\u041A\\\u043b\\\u041B\\\u044c\\\u042C\\\u0436\\\u0416\\\u0437\\\u0417\\\u0445\\\u0425\\\u0446\\\u0426\\\u0432\\\u0412\\\u0431\\\u0411\\\u043d\\\u041D\\\u043c\\\u041C\\\u03b8\\\u0398\\\u03c9\\\u03a9\\\u03b5\\\u0395\\\u03c1\\\u03a1\\\u03c4\\\u03a4\\\u03c8\\\u03a8\\\u03c5\\\u03a5\\\u03b9\\\u0399\\\u03bf\\\u039F\\\u03c0\\\u03a0\\\u03b1\\\u0391\\\u03c3\\\u03a3\\\u03b4\\\u0394\\\u03c6\\\u03a6\\\u03b3\\\u0393\\\u03b7\\\u0397\\\u03c2\\\u03c2\\\u03ba\\\u039A\\\u03bb\\\u039B\\\u03b6\\\u0396\\\u03c7\\\u03a7\\\u03be\\\u039E\\\u03b2\\\u0392\\\u03bd\\\u039D\\\u03bc\\\u039C\\\u03ac\\\u03ad\\\u03ae\\\u03af\\\u03ca\\\u0390\\\u03cc\\\u03cd\\\u03cb\\\u03b0\\\u03ce\\\u00c1\\\u00c4\\\u010C\\\u010E\\\u00C9\\\u00CD\\\u0139\\\u013D\\\u0147\\\u00D3\\\u00D4\\\u0154\\\u0160\\\u0164\\\u00DA\\\u00DD\\\u017D\\\u00E1\\\u00E4\\\u010D\\\u010F\\\u00E9\\\u00ED\\\u013A\\\u013E\\\u0148\\\u00F3\\\u00F4\\\u0155\\\u0161\\\u0165\\\u00FA\\\u00FD\\\u017E\\\u00E1\\\u010D\\\u010F\\\u00E9\\\u011B\\\u00ED\\\u0148\\\u00F3\\\u0159\\\u0161\\\u0165\\\u00FA\\\u016F\\\u00FD\\\u017E\\\u00C1\\\u010C\\\u010E\\\u00C9\\\u011A\\\u00CD\\\u0147\\\u00D3\\\u0158\\\u0160\\\u0164\\\u00DA\\\u016E\\\u00DD\\\u017D]","letters_no_space":"[a-zA-Z\\\u00e0\\\u00e2\\\u00e4\\\u00f4\\\u00e9\\\u00e8\\\u00eb\\\u00ea\\\u00ef\\\u00ee\\\u00e7\\\u00f9\\\u00fb\\\u00fc\\\u00ff\\\u00e6\\\u0153\\\u00c0\\\u00c2\\\u00c4\\\u00d4\\\u00c9\\\u00c8\\\u00cb\\\u00ca\\\u00cf\\\u00ce\\\u0178\\\u00c7\\\u00d9\\\u00db\\\u00dc\\\u00c6\\\u0152\\\u00e4\\\u00f6\\\u00fc\\\u00df\\\u00c4\\\u00d6\\\u00dc\\\u0105\\\u0107\\\u0119\\\u0142\\\u0144\\\u00f3\\\u015b\\\u017a\\\u017c\\\u0104\\\u0106\\\u0118\\\u0141\\\u0143\\\u00d3\\\u015A\\\u0179\\\u017B\\\u0117\\\u0116\\\u012F\\\u012E\\\u0173\\\u0173\\\u0172\\\u016B\\\u016A\\\u00E0\\\u00E8\\\u00E9\\\u00EC\\\u00ED\\\u00EE\\\u00F2\\\u00F3\\\u00F9\\\u00FA\\\u00C0\\\u00C8\\\u00C9\\\u00CC\\\u00CD\\\u00CE\\\u00D2\\\u00D3\\\u00D9\\\u00DA\\\u00E1\\\u00E9\\\u00ED\\\u00F1\\\u00F3\\\u00FA\\\u00FC\\\u00C1\\\u00C9\\\u00CD\\\u00D1\\\u00D3\\\u00DA\\\u00DC\\\u00E4\\\u00F6\\\u00E5\\\u00C4\\\u00D6\\\u00C5\\\u00E6\\\u00F8\\\u00E5\\\u00C6\\\u00D8\\\u00C5\\\u0102\\\u00C2\\\u00CE\\\u0218\\\u021A\\\u0103\\\u00E2\\\u00EE\\\u0219\\\u021B\\\u00E3\\\u00C3\\\u0451\\\u0401\\\u044A\\\u042A\\\u044F\\\u042F\\\u0448\\\u0428\\\u0435\\\u0415\\\u0440\\\u0420\\\u0442\\\u0422\\\u044B\\\u042B\\\u0443\\\u0423\\\u0438\\\u0418\\\u043E\\\u041E\\\u043F\\\u041F\\\u044E\\\u042E\\\u0449\\\u0429\\\u044D\\\u042D\\\u0430\\\u0410\\\u0441\\\u0421\\\u0434\\\u0414\\\u0444\\\u0424\\\u0433\\\u0413\\\u0447\\\u0427\\\u0439\\\u0419\\\u043A\\\u041A\\\u043B\\\u041B\\\u044C\\\u042C\\\u0436\\\u0416\\\u0437\\\u0417\\\u0445\\\u0425\\\u0446\\\u0426\\\u0432\\\u0412\\\u0431\\\u0411\\\u043D\\\u041D\\\u043C\\\u041C\\\u03B8\\\u0398\\\u03C9\\\u03A9\\\u03B5\\\u0395\\\u03C1\\\u03A1\\\u03C4\\\u03A4\\\u03C8\\\u03A8\\\u03C5\\\u03A5\\\u03B9\\\u0399\\\u03BF\\\u039F\\\u03C0\\\u03A0\\\u03B1\\\u0391\\\u03C3\\\u03A3\\\u03B4\\\u0394\\\u03C6\\\u03A6\\\u03B3\\\u0393\\\u03B7\\\u0397\\\u03C2\\\u03C2\\\u03BA\\\u039A\\\u03BB\\\u039B\\\u03B6\\\u0396\\\u03C7\\\u03A7\\\u03BE\\\u039E\\\u03B2\\\u0392\\\u03BD\\\u039D\\\u03BC\\\u039C\\\u03AC\\\u03AD\\\u03AE\\\u03AF\\\u03CA\\\u0390\\\u03CC\\\u03CD\\\u03CB\\\u03B0\\\u03CE\\\u00C1\\\u00C4\\\u010C\\\u010E\\\u00C9\\\u00CD\\\u0139\\\u013D\\\u0147\\\u00D3\\\u00D4\\\u0154\\\u0160\\\u0164\\\u00DA\\\u00DD\\\u017D\\\u00E1\\\u00E4\\\u010D\\\u010F\\\u00E9\\\u00ED\\\u013A\\\u013E\\\u0148\\\u00F3\\\u00F4\\\u0155\\\u0161\\\u0165\\\u00FA\\\u00FD\\\u017E\\\u00E1\\\u010D\\\u010F\\\u00E9\\\u011B\\\u00ED\\\u0148\\\u00F3\\\u0159\\\u0161\\\u0165\\\u00FA\\\u016F\\\u00FD\\\u017E\\\u00C1\\\u010C\\\u010E\\\u00C9\\\u011A\\\u00CD\\\u0147\\\u00D3\\\u0158\\\u0160\\\u0164\\\u00DA\\\u016E\\\u00DD\\\u017D]","front_name":"[\\p{L}0-9\\-'.\\s]"}} !== 'undefined') {
+ window.jsVars = window.jQuery.extend(window.jsVars, {"vendor_time_format":"12h","sanitation_rules":{"numeric":"[0-9]","numeric_1_30":"[0-9]","decimal":"[0-9\\.]","domain":"[a-zA-Z0-9\\-\\_\\&\\?\\.\\:\\\/\\=$\\+\\!\\*\\'\\(\\)\\;\\@\\#\\~\\[\\]\\%\\,\\`\\{\\}]","email":"[a-zA-Z0-9\\+\\=\\-\\_\\.\\@$]","letters":"[a-zA-Z\\ \\\u00e0\\\u00e2\\\u00e4\\\u00f4\\\u00e9\\\u00e8\\\u00eb\\\u00ea\\\u00ef\\\u00ee\\\u00e7\\\u00f9\\\u00fb\\\u00fc\\\u00ff\\\u00e6\\\u0153\\\u00c0\\\u00c2\\\u00c4\\\u00d4\\\u00c9\\\u00c8\\\u00cb\\\u00ca\\\u00cf\\\u00ce\\\u0178\\\u00c7\\\u00d9\\\u00db\\\u00dc\\\u00c6\\\u0152\\\u00e4\\\u00f6\\\u00fc\\\u00df\\\u00c4\\\u00d6\\\u00dc\\\u0105\\\u0107\\\u0119\\\u0142\\\u0144\\\u00f3\\\u015b\\\u017a\\\u017c\\\u0104\\\u0106\\\u0118\\\u0141\\\u0143\\\u00d3\\\u015A\\\u0179\\\u017B\\\u0117\\\u0116\\\u012F\\\u012E\\\u0173\\\u0173\\\u0172\\\u016B\\\u016A\\\u00E0\\\u00E8\\\u00E9\\\u00EC\\\u00ED\\\u00EE\\\u00F2\\\u00F3\\\u00F9\\\u00FA\\\u00C0\\\u00C8\\\u00C9\\\u00CC\\\u00CD\\\u00CE\\\u00D2\\\u00D3\\\u00D9\\\u00DA\\\u00E1\\\u00E9\\\u00ED\\\u00F1\\\u00F3\\\u00FA\\\u00FC\\\u00C1\\\u00C9\\\u00CD\\\u00D1\\\u00D3\\\u00DA\\\u00DC\\\u00E4\\\u00F6\\\u00E5\\\u00C4\\\u00D6\\\u00C5\\\u00E6\\\u00F8\\\u00E5\\\u00C6\\\u00D8\\\u00C5\\\u0102\\\u00C2\\\u00CE\\\u0218\\\u021A\\\u0103\\\u00E2\\\u00EE\\\u0219\\\u021B\\\u00E3\\\u00C3\\\u0451\\\u0401\\\u044A\\\u042A\\\u044F\\\u042F\\\u0448\\\u0428\\\u0435\\\u0415\\\u0440\\\u0420\\\u0442\\\u0422\\\u044B\\\u042B\\\u0443\\\u0423\\\u0438\\\u0418\\\u043E\\\u041E\\\u043F\\\u041F\\\u044E\\\u042E\\\u0449\\\u0429\\\u044D\\\u042D\\\u0430\\\u0410\\\u0441\\\u0421\\\u0434\\\u0414\\\u0444\\\u0424\\\u0433\\\u0413\\\u0447\\\u0427\\\u0439\\\u0419\\\u043A\\\u041A\\\u043B\\\u041B\\\u044C\\\u042C\\\u0436\\\u0416\\\u0437\\\u0417\\\u0445\\\u0425\\\u0446\\\u0426\\\u0432\\\u0412\\\u0431\\\u0411\\\u043D\\\u041D\\\u043C\\\u041C\\\u03B8\\\u0398\\\u03C9\\\u03A9\\\u03B5\\\u0395\\\u03C1\\\u03A1\\\u03C4\\\u03A4\\\u03C8\\\u03A8\\\u03C5\\\u03A5\\\u03B9\\\u0399\\\u03BF\\\u039F\\\u03C0\\\u03A0\\\u03B1\\\u0391\\\u03C3\\\u03A3\\\u03B4\\\u0394\\\u03C6\\\u03A6\\\u03B3\\\u0393\\\u03B7\\\u0397\\\u03C2\\\u03C2\\\u03BA\\\u039A\\\u03BB\\\u039B\\\u03B6\\\u0396\\\u03C7\\\u03A7\\\u03BE\\\u039E\\\u03B2\\\u0392\\\u03BD\\\u039D\\\u03BC\\\u039C\\\u03AC\\\u03AD\\\u03AE\\\u03AF\\\u03CA\\\u0390\\\u03CC\\\u03CD\\\u03CB\\\u03B0\\\u03CE\\\u00C1\\\u00C4\\\u010C\\\u010E\\\u00C9\\\u00CD\\\u0139\\\u013D\\\u0147\\\u00D3\\\u00D4\\\u0154\\\u0160\\\u0164\\\u00DA\\\u00DD\\\u017D\\\u00E1\\\u00E4\\\u010D\\\u010F\\\u00E9\\\u00ED\\\u013A\\\u013E\\\u0148\\\u00F3\\\u00F4\\\u0155\\\u0161\\\u0165\\\u00FA\\\u00FD\\\u017E\\\u00E1\\\u010D\\\u010F\\\u00E9\\\u011B\\\u00ED\\\u0148\\\u00F3\\\u0159\\\u0161\\\u0165\\\u00FA\\\u016F\\\u00FD\\\u017E\\\u00C1\\\u010C\\\u010E\\\u00C9\\\u011A\\\u00CD\\\u0147\\\u00D3\\\u0158\\\u0160\\\u0164\\\u00DA\\\u016E\\\u00DD\\\u017D]","letters_no_space":"[a-zA-Z\\\u00e0\\\u00e2\\\u00e4\\\u00f4\\\u00e9\\\u00e8\\\u00eb\\\u00ea\\\u00ef\\\u00ee\\\u00e7\\\u00f9\\\u00fb\\\u00fc\\\u00ff\\\u00e6\\\u0153\\\u00c0\\\u00c2\\\u00c4\\\u00d4\\\u00c9\\\u00c8\\\u00cb\\\u00ca\\\u00cf\\\u00ce\\\u0178\\\u00c7\\\u00d9\\\u00db\\\u00dc\\\u00c6\\\u0152\\\u00e4\\\u00f6\\\u00fc\\\u00df\\\u00c4\\\u00d6\\\u00dc\\\u0105\\\u0107\\\u0119\\\u0142\\\u0144\\\u00f3\\\u015b\\\u017a\\\u017c\\\u0104\\\u0106\\\u0118\\\u0141\\\u0143\\\u00d3\\\u015A\\\u0179\\\u017B\\\u0117\\\u0116\\\u012F\\\u012E\\\u0173\\\u0173\\\u0172\\\u016B\\\u016A\\\u00E0\\\u00E8\\\u00E9\\\u00EC\\\u00ED\\\u00EE\\\u00F2\\\u00F3\\\u00F9\\\u00FA\\\u00C0\\\u00C8\\\u00C9\\\u00CC\\\u00CD\\\u00CE\\\u00D2\\\u00D3\\\u00D9\\\u00DA\\\u00E1\\\u00E9\\\u00ED\\\u00F1\\\u00F3\\\u00FA\\\u00FC\\\u00C1\\\u00C9\\\u00CD\\\u00D1\\\u00D3\\\u00DA\\\u00DC\\\u00E4\\\u00F6\\\u00E5\\\u00C4\\\u00D6\\\u00C5\\\u00E6\\\u00F8\\\u00E5\\\u00C6\\\u00D8\\\u00C5\\\u0102\\\u00C2\\\u00CE\\\u0218\\\u021A\\\u0103\\\u00E2\\\u00EE\\\u0219\\\u021B\\\u00E3\\\u00C3\\\u0451\\\u0401\\\u044A\\\u042A\\\u044F\\\u042F\\\u0448\\\u0428\\\u0435\\\u0415\\\u0440\\\u0420\\\u0442\\\u0422\\\u044B\\\u042B\\\u0443\\\u0423\\\u0438\\\u0418\\\u043E\\\u041E\\\u043F\\\u041F\\\u044E\\\u042E\\\u0449\\\u0429\\\u044D\\\u042D\\\u0430\\\u0410\\\u0441\\\u0421\\\u0434\\\u0414\\\u0444\\\u0424\\\u0433\\\u0413\\\u0447\\\u0427\\\u0439\\\u0419\\\u043A\\\u041A\\\u043B\\\u041B\\\u044C\\\u042C\\\u0436\\\u0416\\\u0437\\\u0417\\\u0445\\\u0425\\\u0446\\\u0426\\\u0432\\\u0412\\\u0431\\\u0411\\\u043D\\\u041D\\\u043C\\\u041C\\\u03B8\\\u0398\\\u03C9\\\u03A9\\\u03B5\\\u0395\\\u03C1\\\u03A1\\\u03C4\\\u03A4\\\u03C8\\\u03A8\\\u03C5\\\u03A5\\\u03B9\\\u0399\\\u03BF\\\u039F\\\u03C0\\\u03A0\\\u03B1\\\u0391\\\u03C3\\\u03A3\\\u03B4\\\u0394\\\u03C6\\\u03A6\\\u03B3\\\u0393\\\u03B7\\\u0397\\\u03C2\\\u03C2\\\u03BA\\\u039A\\\u03BB\\\u039B\\\u03B6\\\u0396\\\u03C7\\\u03A7\\\u03BE\\\u039E\\\u03B2\\\u0392\\\u03BD\\\u039D\\\u03BC\\\u039C\\\u03AC\\\u03AD\\\u03AE\\\u03AF\\\u03CA\\\u0390\\\u03CC\\\u03CD\\\u03CB\\\u03B0\\\u03CE\\\u00C1\\\u00C4\\\u010C\\\u010E\\\u00C9\\\u00CD\\\u0139\\\u013D\\\u0147\\\u00D3\\\u00D4\\\u0154\\\u0160\\\u0164\\\u00DA\\\u00DD\\\u017D\\\u00E1\\\u00E4\\\u010D\\\u010F\\\u00E9\\\u00ED\\\u013A\\\u013E\\\u0148\\\u00F3\\\u00F4\\\u0155\\\u0161\\\u0165\\\u00FA\\\u00FD\\\u017E\\\u00E1\\\u010D\\\u010F\\\u00E9\\\u011B\\\u00ED\\\u0148\\\u00F3\\\u0159\\\u0161\\\u0165\\\u00FA\\\u016F\\\u00FD\\\u017E\\\u00C1\\\u010C\\\u010E\\\u00C9\\\u011A\\\u00CD\\\u0147\\\u00D3\\\u0158\\\u0160\\\u0164\\\u00DA\\\u016E\\\u00DD\\\u017D]","front_name":"[\\p{L}0-9\\-'.\\s]"}}});
+ var script = document.createElement('script');
+ script.type = 'text/javascript';
+ script.src = 'https://app.kartra.com/js/santitation.js';
+ script.charset = 'utf-8';
+ script.className = 'js_dynamic-script-from-optin-form-generator';
+ document.getElementsByTagName('body')[0].appendChild(script);
+ kartra_checkout_jquery = window.jQuery;
+ }
+</script>
+</div>
+</div>
+<p class="registration-modal-note"><strong>Redirect note:</strong> once you set the success redirect in Kartra, visitors can be sent straight to <a href="https://str.managemoney101.com/registered">str.managemoney101.com/registered</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
 <!-- SECOND CTA -->
 <section class="second-cta" id="register">
 <div class="container">
@@ -356,11 +467,39 @@ Yes, I Want To Attend!
 </footer>
 
 <script>
+var registrationModal = document.getElementById('registration-modal');
+var registrationFirstField = registrationModal ? registrationModal.querySelector('input[name="first_name"]') : null;
+
 function openRegistrationPopup(){
-// External popup integration - this function can be customized
-// to trigger any third-party popup/form software
-console.log('Registration popup triggered');
+if(!registrationModal){return;}
+registrationModal.classList.add('is-open');
+registrationModal.setAttribute('aria-hidden','false');
+document.body.classList.add('modal-open');
+if(registrationFirstField){
+setTimeout(function(){registrationFirstField.focus();},150);
 }
+}
+
+function closeRegistrationPopup(){
+if(!registrationModal){return;}
+registrationModal.classList.remove('is-open');
+registrationModal.setAttribute('aria-hidden','true');
+document.body.classList.remove('modal-open');
+}
+
+if(registrationModal){
+registrationModal.addEventListener('click',function(event){
+if(event.target === registrationModal){
+closeRegistrationPopup();
+}
+});
+}
+
+document.addEventListener('keydown',function(event){
+if(event.key === 'Escape' && registrationModal && registrationModal.classList.contains('is-open')){
+closeRegistrationPopup();
+}
+});
 </script>
 
 </body>
