@@ -251,30 +251,13 @@ Live Workshop — No Replay
 </div>
 </div>
 
-<div class="workshop-schedule" id="next-session-container">
-<!-- Only ONE session will be shown here - the next upcoming one -->
-<div class="schedule-item active">
-<div class="schedule-dot"></div>
-<div class="schedule-text">
-<div class="day" id="next-session-day">Loading...</div>
-<div class="time" id="next-session-time">--:--</div>
-</div>
-<span class="schedule-badge">Next Live Session</span>
-</div>
-</div>
-
-<div class="time-display">
-<div class="label">Your Local Time</div>
-<div class="local-time" id="local-time">--:--</div>
-<div class="timezone" id="timezone">Detecting...</div>
-</div>
-
 <button class="add-calendar-btn" onclick="addToCalendar()">
 <span>📅</span>
 Add to Calendar
 </button>
-<p class="calendar-note">Reminders: 24hrs & 1hr before</p>
+<p class="calendar-note">Workshops run Tuesday, Thursday & Sunday at 7 PM EST</p>
 </div>
+
 </div>
 </div>
 </header>
@@ -283,7 +266,6 @@ Add to Calendar
 <section class="video-library-section">
 <div class="container">
 <div class="video-library-header">
-<div class="library-badge">📚 Pre-Workshop Training</div>
 <h2>Watch These Before the Live Call</h2>
 <p class="sub">These short videos answer the most common questions and prepare you to hit the ground running</p>
 </div>
@@ -487,124 +469,43 @@ Critical Action Items
 </footer>
 
 <script>
-// Detect user's local time and next upcoming session
-function updateLocalTime() {
-    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    const now = new Date();
-    const currentDay = now.getDay(); // 0 = Sunday, 1 = Monday, 2 = Tuesday, etc.
-    
-    // Workshop days: Tuesday (2), Thursday (4), Sunday (0)
-    // Determine next upcoming session
-    let nextSessionDay;
-    let nextSessionName;
-    
-    if (currentDay === 0) {
-        // Sunday -> show Sunday (today's session)
-        nextSessionDay = 0;
-        nextSessionName = 'Sunday';
-    } else if (currentDay === 1) {
-        // Monday -> show Tuesday
-        nextSessionDay = 2;
-        nextSessionName = 'Tuesday';
-    } else if (currentDay === 2) {
-        // Tuesday -> show Tuesday (today's session)
-        nextSessionDay = 2;
-        nextSessionName = 'Tuesday';
-    } else if (currentDay === 3) {
-        // Wednesday -> show Thursday
-        nextSessionDay = 4;
-        nextSessionName = 'Thursday';
-    } else if (currentDay === 4) {
-        // Thursday -> show Thursday (today's session)
-        nextSessionDay = 4;
-        nextSessionName = 'Thursday';
-    } else if (currentDay === 5) {
-        // Friday -> show Sunday
-        nextSessionDay = 0;
-        nextSessionName = 'Sunday';
-    } else if (currentDay === 6) {
-        // Saturday -> show Sunday
-        nextSessionDay = 0;
-        nextSessionName = 'Sunday';
-    }
-    
-    // Create date for next session at 7 PM EST
-    const nextSessionDate = new Date();
-    const daysUntilNext = (nextSessionDay - currentDay + 7) % 7;
-    nextSessionDate.setDate(now.getDate() + daysUntilNext);
-    nextSessionDate.setHours(19, 0, 0, 0); // 7:00 PM EST
-    
-    // Convert 7 PM EST to user's local time
-    const localTimeString = nextSessionDate.toLocaleTimeString('en-US', {
-        hour: 'numeric',
-        minute: '2-digit',
-        timeZone: userTimezone,
-        hour12: true
-    });
-    
-    // Update the display
-    const dayEl = document.getElementById('next-session-day');
-    const timeEl = document.getElementById('next-session-time');
-    const localTimeDisplay = document.getElementById('local-time');
-    const timezoneDisplay = document.getElementById('timezone');
-    
-    if (dayEl) dayEl.textContent = nextSessionName + ' Session';
-    if (timeEl) timeEl.textContent = localTimeString + ' your time';
-    if (localTimeDisplay) localTimeDisplay.textContent = localTimeString;
-    if (timezoneDisplay) timezoneDisplay.textContent = userTimezone.replace(/_/g, ' ');
-}
-
 // Add to Calendar function
 function addToCalendar() {
-    const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    const now = new Date();
-    const currentDay = now.getDay();
-    
-    // Determine next session (same logic as display)
-    let nextSessionDay;
-    let nextSessionName;
-    
-    if (currentDay === 0) {
-        nextSessionDay = 0; nextSessionName = 'Sunday';
-    } else if (currentDay === 1) {
-        nextSessionDay = 2; nextSessionName = 'Tuesday';
-    } else if (currentDay === 2) {
-        nextSessionDay = 2; nextSessionName = 'Tuesday';
-    } else if (currentDay === 3) {
-        nextSessionDay = 4; nextSessionName = 'Thursday';
-    } else if (currentDay === 4) {
-        nextSessionDay = 4; nextSessionName = 'Thursday';
-    } else if (currentDay === 5) {
-        nextSessionDay = 0; nextSessionName = 'Sunday';
-    } else if (currentDay === 6) {
-        nextSessionDay = 0; nextSessionName = 'Sunday';
-    }
-    
-    // Get local time string
-    const nextSessionDate = new Date();
-    const daysUntilNext = (nextSessionDay - currentDay + 7) % 7;
-    nextSessionDate.setDate(now.getDate() + daysUntilNext);
-    nextSessionDate.setHours(19, 0, 0, 0);
-    
-    const localTimeString = nextSessionDate.toLocaleTimeString('en-US', {
-        hour: 'numeric',
-        minute: '2-digit',
-        timeZone: userTimezone,
-        hour12: true
-    });
-    
     const event = {
         title: 'Free Airbnb STR Workshop - Legacy Investing Show',
-        description: 'Join Preston Seo for a live workshop on building a profitable Airbnb business.\n\nYou will learn:\n- How to find profitable markets\n- Landlord negotiation scripts\n- Remote setup systems\n- STR tax advantages\n- Automation strategies\n\nZoom link will be emailed separately.',
+        description: 'Join Preston Seo for a live workshop on building a profitable Airbnb business.\n\nYou will learn:\n- How to find profitable markets\n- Landlord negotiation scripts\n- Remote setup systems\n- STR tax advantages\n- Automation strategies\n\nWorkshops run every Tuesday, Thursday & Sunday at 7:00 PM EST\n\nZoom link will be emailed separately.',
         location: 'Online via Zoom',
         startTime: '19:00',
         duration: 'PT2H'
     };
     
-    // For now, show an alert with instructions
-    alert('Calendar integration coming soon!\n\nYour Next Session:\n• ' + nextSessionName + ' at ' + localTimeString + '\n• 7:00 PM EST\n• Duration: 2 hours\n\nNote: Workshops run every Tuesday, Thursday & Sunday. We recommend setting up a recurring event for all three days.');
+    // Simple .ics file generation
+    const now = new Date();
+    const formatDate = (d) => d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
     
-    console.log('Add to calendar:', event);
+    const icsContent = [
+        'BEGIN:VCALENDAR',
+        'VERSION:2.0',
+        'PRODID:-//Legacy Investing Show//STR Workshop//EN',
+        'BEGIN:VEVENT',
+        'SUMMARY:' + event.title,
+        'DESCRIPTION:' + event.description.replace(/\n/g, '\\n'),
+        'LOCATION:' + event.location,
+        'DTSTART:' + formatDate(now),
+        'DURATION:' + event.duration,
+        'END:VEVENT',
+        'END:VCALENDAR'
+    ].join('\n');
+    
+    const blob = new Blob([icsContent], { type: 'text/calendar' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'str-workshop.ics';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
 }
 
 // FAQ Accordion
@@ -626,7 +527,6 @@ function initFaq() {
 
 // Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
-    updateLocalTime();
     initFaq();
 });
 </script>
