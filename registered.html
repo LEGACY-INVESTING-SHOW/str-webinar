@@ -123,7 +123,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 .video-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,0.1)}
 .video-thumb{aspect-ratio:16/10;background:linear-gradient(135deg,#2a2a2a 0%,var(--text-primary) 100%);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:200px}
 .video-thumb::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0,122,82,0.15) 0%,transparent 70%)}
-.video-num{position:absolute;top:16px;left:16px;width:40px;height:40px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:22px;font-weight:600;z-index:1}
+.video-num{position:absolute;top:16px;left:16px;width:40px;height:40px;background:var(--accent);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:22px;font-weight:600;z-index:10}
 .video-play{width:72px;height:72px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform 0.2s;z-index:1;position:relative}
 .video-play:hover{transform:scale(1.1)}
 .video-play::after{content:'';width:0;height:0;border-left:24px solid var(--accent);border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
@@ -294,9 +294,9 @@ Add to Calendar
 
 <div class="video-grid">
 <div class="video-card">
-<div class="video-thumb">
+<div class="video-thumb" style="padding:0;background:#000">
 <div class="video-num">1</div>
-<div class="video-play"></div>
+<iframe src="https://player.vimeo.com/video/1183511816?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0"></iframe>
 </div>
 <div class="video-info">
 <h4>How Much Time Does This Actually Take?</h4>
@@ -305,9 +305,9 @@ Add to Calendar
 </div>
 
 <div class="video-card">
-<div class="video-thumb">
+<div class="video-thumb" style="padding:0;background:#000">
 <div class="video-num">2</div>
-<div class="video-play"></div>
+<iframe src="https://player.vimeo.com/video/1183512674?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0"></iframe>
 </div>
 <div class="video-info">
 <h4>What If My City Has Strict Airbnb Rules?</h4>
@@ -316,9 +316,9 @@ Add to Calendar
 </div>
 
 <div class="video-card">
-<div class="video-thumb">
+<div class="video-thumb" style="padding:0;background:#000">
 <div class="video-num">3</div>
-<div class="video-play"></div>
+<iframe src="https://player.vimeo.com/video/1183513367?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0"></iframe>
 </div>
 <div class="video-info">
 <h4>I Don't Have Money to Buy Property</h4>
@@ -327,9 +327,9 @@ Add to Calendar
 </div>
 
 <div class="video-card">
-<div class="video-thumb">
+<div class="video-thumb" style="padding:0;background:#000">
 <div class="video-num">4</div>
-<div class="video-play"></div>
+<iframe src="https://player.vimeo.com/video/1183515483?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0"></iframe>
 </div>
 <div class="video-info">
 <h4>The Tax Play Your CPA Isn't Telling You About</h4>
@@ -338,9 +338,9 @@ Add to Calendar
 </div>
 
 <div class="video-card">
-<div class="video-thumb">
+<div class="video-thumb" style="padding:0;background:#000">
 <div class="video-num">5</div>
-<div class="video-play"></div>
+<iframe src="https://player.vimeo.com/video/1183516824?title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:0"></iframe>
 </div>
 <div class="video-info">
 <h4>I'm Starting From Absolute Zero</h4>
