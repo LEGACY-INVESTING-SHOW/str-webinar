@@ -82,19 +82,21 @@ img{max-width:100%;display:block}
 
 /* --- REGISTRATION MODAL --- */
 body.modal-open{overflow:hidden}
-.registration-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(15,23,42,0.82);backdrop-filter:blur(10px);z-index:1000;opacity:0;pointer-events:none;transition:opacity 0.25s ease}
+.registration-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(6,95,70,0.92);z-index:1000;opacity:0;pointer-events:none;transition:opacity 0.25s ease}
 .registration-modal.is-open{opacity:1;pointer-events:auto}
-.registration-modal-panel{position:relative;width:min(100%,540px);max-height:min(90vh,760px);overflow:auto;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border:1px solid rgba(16,185,129,0.18);border-radius:24px;box-shadow:0 30px 80px rgba(15,23,42,0.32);padding:68px 28px 28px}
-.registration-modal-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border:none;border-radius:50%;background:rgba(15,23,42,0.08);color:var(--gray-900);font-size:28px;line-height:1;cursor:pointer;transition:background 0.2s ease,transform 0.2s ease}
-.registration-modal-close:hover{background:rgba(15,23,42,0.14);transform:scale(1.04)}
+.registration-modal-panel{position:relative;width:min(100%,880px);max-height:min(90vh,760px);overflow:auto;background:var(--white);border:1px solid rgba(15,23,42,0.12);border-radius:4px;box-shadow:0 30px 80px rgba(15,23,42,0.32);padding:72px 60px 60px}
+.registration-modal-close{position:absolute;top:18px;right:18px;width:42px;height:42px;border:none;border-radius:50%;background:rgba(15,23,42,0.08);color:var(--gray-900);font-size:28px;line-height:1;cursor:pointer;transition:background 0.2s ease}
+.registration-modal-close:hover{background:rgba(15,23,42,0.14)}
 .registration-modal-inner{display:block}
-.registration-modal-form-shell{background:var(--white);border:1px solid var(--gray-200);border-radius:20px;padding:26px;box-shadow:0 18px 40px rgba(15,23,42,0.08)}
-.form_class_eb160de1de89d9058fcb0b968dbbbd68 form{display:grid;gap:14px}
-.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]){width:100%;border:1px solid var(--gray-300);border-radius:14px;padding:16px 18px;font:600 16px var(--font-body);color:var(--gray-900);background:#f8fafc;transition:border-color 0.2s ease,box-shadow 0.2s ease,background 0.2s ease}
-.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#94a3b8}
-.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]):focus{outline:none;border-color:var(--green);background:var(--white);box-shadow:0 0 0 4px rgba(16,185,129,0.14)}
-.submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:64px;border:none;border-radius:14px;background:linear-gradient(135deg,var(--orange) 0%,#fb8c3c 100%);box-shadow:0 14px 26px rgba(249,115,22,0.28);padding:16px 20px;font:700 18px var(--font-display);letter-spacing:0.2px;color:var(--white);cursor:pointer;transition:transform 0.2s ease,box-shadow 0.2s ease,filter 0.2s ease}
-.submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 18px 30px rgba(249,115,22,0.34);filter:saturate(1.05)}
+.registration-modal-form-shell{max-width:100%}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 form{display:grid;gap:26px}
+.kartra-field-group{display:grid;gap:10px}
+.kartra-field-label{font-size:13px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:#17325c}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]){width:100%;border:1px solid #c6ced9;border-radius:0;padding:18px 20px;font:500 17px var(--font-body);color:#17325c;background:var(--white);transition:border-color 0.2s ease,box-shadow 0.2s ease}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#5477a3}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]):focus{outline:none;border-color:#8aa8c8;box-shadow:0 0 0 3px rgba(84,119,163,0.12)}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:88px;border:none;border-radius:0;background:#ff6a2a;box-shadow:0 5px 0 #cc4f19,0 18px 32px rgba(255,106,42,0.22);padding:18px 20px;font:800 22px var(--font-display);letter-spacing:1.8px;text-transform:uppercase;color:#111111;cursor:pointer;transition:transform 0.2s ease,box-shadow 0.2s ease,filter 0.2s ease}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 6px 0 #cc4f19,0 22px 36px rgba(255,106,42,0.28);filter:saturate(1.04)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:0.85;cursor:wait;transform:none}
 
 /* --- DATE --- */
@@ -170,10 +172,9 @@ body.modal-open{overflow:hidden}
 .cta-button-main{font-size:18px}
 .preview-section,.testimonials-section,.about-section{padding:60px 0}
 .preview-box{padding:24px 20px}
-.registration-modal-panel{border-radius:20px}
-.registration-modal-panel{padding:62px 18px 18px}
-.registration-modal-form-shell{padding:18px}
-.submit_button_eb160de1de89d9058fcb0b968dbbbd68{font-size:16px}
+.registration-modal-panel{padding:62px 20px 28px}
+.form_class_eb160de1de89d9058fcb0b968dbbbd68 form{gap:22px}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68{min-height:76px;font-size:16px;letter-spacing:1.2px}
 }
 </style>
 </head>
@@ -365,8 +366,14 @@ Here's Some Results From<br><span class="accent">My Students</span>
  
  <form method="post" action="https://app.kartra.com/process/add_lead/OdhExXbl4Ma4" target="_top" class="form_class_OdhExXbl4Ma4 js_kartra_trackable_object" data-kt-type="optin" data-kt-value="OdhExXbl4Ma4" data-kt-owner="8g8M14vk" accept-charset="UTF-8">
  <input type="text" class="" placeholder="" name="aaddress_url" value="" style="display: none; position: absolute; left: -9999px;" aria-hidden="true" tabindex="-1">
-<input type="text" class="js_kartra_santitation" data-santitation-type="front_name" placeholder="First name..." name="first_name" value="">
-<input type="text" class="js_kartra_santitation" data-santitation-type="email" placeholder="Email..." name="email" value="">
+<div class="kartra-field-group">
+<label class="kartra-field-label" for="kartra-first-name">Name</label>
+<input id="kartra-first-name" type="text" class="js_kartra_santitation" data-santitation-type="front_name" placeholder="John Doe" name="first_name" value="">
+</div>
+<div class="kartra-field-group">
+<label class="kartra-field-label" for="kartra-email">Email Address</label>
+<input id="kartra-email" type="text" class="js_kartra_santitation" data-santitation-type="email" placeholder="you@example.com" name="email" value="">
+</div>
 <div class="js_captcha_wrapper"></div>
 <button class='submit_button_eb160de1de89d9058fcb0b968dbbbd68' onclick="var element = this; element.form.submit(); element.setAttribute('disabled', true); setTimeout(function(){element.removeAttribute('disabled');}, 1000);" type="submit">Register Now - It&#039;s Free</button>
 </form>
