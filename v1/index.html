@@ -84,30 +84,11 @@ img{max-width:100%;display:block}
 body.modal-open{overflow:hidden}
 .registration-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(15,23,42,0.82);backdrop-filter:blur(10px);z-index:1000;opacity:0;pointer-events:none;transition:opacity 0.25s ease}
 .registration-modal.is-open{opacity:1;pointer-events:auto}
-.registration-modal-panel{position:relative;width:min(100%,960px);max-height:min(92vh,900px);overflow:auto;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border:1px solid rgba(16,185,129,0.18);border-radius:24px;box-shadow:0 30px 80px rgba(15,23,42,0.32)}
+.registration-modal-panel{position:relative;width:min(100%,540px);max-height:min(90vh,760px);overflow:auto;background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%);border:1px solid rgba(16,185,129,0.18);border-radius:24px;box-shadow:0 30px 80px rgba(15,23,42,0.32);padding:68px 28px 28px}
 .registration-modal-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border:none;border-radius:50%;background:rgba(15,23,42,0.08);color:var(--gray-900);font-size:28px;line-height:1;cursor:pointer;transition:background 0.2s ease,transform 0.2s ease}
 .registration-modal-close:hover{background:rgba(15,23,42,0.14);transform:scale(1.04)}
-.registration-modal-inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,420px)}
-.registration-modal-copy{padding:56px 44px 44px;background:
-radial-gradient(circle at top left,rgba(52,211,153,0.16),transparent 42%),
-linear-gradient(160deg,var(--black) 0%,#13233d 55%,#0f172a 100%);
-color:var(--white)}
-.registration-modal-kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.14);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
-.registration-modal-title{margin-top:22px;font-family:var(--font-display);font-size:clamp(30px,4vw,40px);line-height:1.08}
-.registration-modal-title strong{color:var(--green-light)}
-.registration-modal-sub{margin-top:18px;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82)}
-.registration-modal-points{margin-top:24px;display:grid;gap:14px}
-.registration-modal-point{display:flex;align-items:flex-start;gap:12px;font-size:15px;line-height:1.6;color:rgba(255,255,255,0.9)}
-.registration-modal-point-check{flex:none;width:24px;height:24px;border-radius:50%;background:rgba(16,185,129,0.18);border:1px solid rgba(52,211,153,0.45);display:flex;align-items:center;justify-content:center;color:var(--green-light);font-size:14px;font-weight:700}
-.registration-modal-proof{margin-top:28px;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12)}
-.registration-modal-proof-label{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.62)}
-.registration-modal-proof-text{margin-top:10px;font-size:17px;line-height:1.55;color:var(--white)}
-.registration-modal-form{padding:56px 36px 36px}
-.registration-modal-card{background:var(--white);border:1px solid var(--gray-200);border-radius:20px;padding:28px;box-shadow:0 18px 40px rgba(15,23,42,0.08)}
-.registration-modal-form-title{font-family:var(--font-display);font-size:28px;line-height:1.15;color:var(--gray-900)}
-.registration-modal-form-title strong{color:var(--green-dark)}
-.registration-modal-form-sub{margin-top:10px;font-size:15px;line-height:1.6;color:var(--gray-600)}
-.registration-modal-form-shell{margin-top:24px}
+.registration-modal-inner{display:block}
+.registration-modal-form-shell{background:var(--white);border:1px solid var(--gray-200);border-radius:20px;padding:26px;box-shadow:0 18px 40px rgba(15,23,42,0.08)}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 form{display:grid;gap:14px}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]){width:100%;border:1px solid var(--gray-300);border-radius:14px;padding:16px 18px;font:600 16px var(--font-body);color:var(--gray-900);background:#f8fafc;transition:border-color 0.2s ease,box-shadow 0.2s ease,background 0.2s ease}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#94a3b8}
@@ -115,9 +96,6 @@ color:var(--white)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:64px;border:none;border-radius:14px;background:linear-gradient(135deg,var(--orange) 0%,#fb8c3c 100%);box-shadow:0 14px 26px rgba(249,115,22,0.28);padding:16px 20px;font:700 18px var(--font-display);letter-spacing:0.2px;color:var(--white);cursor:pointer;transition:transform 0.2s ease,box-shadow 0.2s ease,filter 0.2s ease}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 18px 30px rgba(249,115,22,0.34);filter:saturate(1.05)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:0.85;cursor:wait;transform:none}
-.registration-modal-note{margin-top:16px;font-size:12px;line-height:1.6;color:var(--gray-500)}
-.registration-modal-note strong{color:var(--gray-700)}
-.registration-modal-note a,.registration-modal-form-sub code{color:var(--green-dark);font-weight:700;text-decoration:none}
 
 /* --- DATE --- */
 .hero-date{margin-top:20px;font-size:15px;color:var(--gray-500);font-weight:500}
@@ -182,8 +160,6 @@ color:var(--white)}
 .host-compact{flex-direction:column;text-align:center}
 .host-info{text-align:center}
 .registration-modal{padding:18px}
-.registration-modal-inner{grid-template-columns:1fr}
-.registration-modal-copy,.registration-modal-form{padding:36px 28px}
 }
 
 @media(max-width:600px){
@@ -195,9 +171,8 @@ color:var(--white)}
 .preview-section,.testimonials-section,.about-section{padding:60px 0}
 .preview-box{padding:24px 20px}
 .registration-modal-panel{border-radius:20px}
-.registration-modal-copy,.registration-modal-form{padding:28px 20px}
-.registration-modal-card{padding:22px 18px}
-.registration-modal-form-title{font-size:24px}
+.registration-modal-panel{padding:62px 18px 18px}
+.registration-modal-form-shell{padding:18px}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68{font-size:16px}
 }
 </style>
@@ -385,33 +360,6 @@ Here's Some Results From<br><span class="accent">My Students</span>
 <div class="registration-modal-panel" role="dialog" aria-modal="true" aria-labelledby="registration-modal-title">
 <button class="registration-modal-close" type="button" aria-label="Close registration popup" onclick="closeRegistrationPopup()">&times;</button>
 <div class="registration-modal-inner">
-<div class="registration-modal-copy">
-<div class="registration-modal-kicker">Free Live Workshop</div>
-<h2 class="registration-modal-title" id="registration-modal-title">Save your seat for the <strong>STR Tax Workshop</strong></h2>
-<p class="registration-modal-sub">Enter your name and email below to reserve your spot and get the private workshop access details.</p>
-<div class="registration-modal-points">
-<div class="registration-modal-point">
-<span class="registration-modal-point-check">✓</span>
-<span>Learn how the STR loophole can potentially erase $40K+ of taxable income.</span>
-</div>
-<div class="registration-modal-point">
-<span class="registration-modal-point-check">✓</span>
-<span>See the exact property criteria Preston uses to find cash-flowing tax-saving deals.</span>
-</div>
-<div class="registration-modal-point">
-<span class="registration-modal-point-check">✓</span>
-<span>Get the workshop details delivered straight to your inbox so you do not miss it.</span>
-</div>
-</div>
-<div class="registration-modal-proof">
-<div class="registration-modal-proof-label">Hosted By Preston Seo</div>
-<div class="registration-modal-proof-text">8-figure investor and educator helping high-income earners keep more of what they make with STR tax strategies.</div>
-</div>
-</div>
-<div class="registration-modal-form">
-<div class="registration-modal-card">
-<h3 class="registration-modal-form-title">Reserve your spot. <strong>It&rsquo;s free.</strong></h3>
-<p class="registration-modal-form-sub">Use the form below to register. After submission, Kartra can redirect visitors to your confirmation page at <code>str.managemoney101.com/registered</code>.</p>
 <div class="registration-modal-form-shell">
 <div class="form_class_eb160de1de89d9058fcb0b968dbbbd68" data-form_id="eb160de1de89d9058fcb0b968dbbbd68">
  
@@ -437,9 +385,6 @@ Here's Some Results From<br><span class="accent">My Students</span>
  kartra_checkout_jquery = window.jQuery;
  }
 </script>
-</div>
-</div>
-<p class="registration-modal-note"><strong>Redirect note:</strong> once you set the success redirect in Kartra, visitors can be sent straight to <a href="https://str.managemoney101.com/registered">str.managemoney101.com/registered</a>.</p>
 </div>
 </div>
 </div>
