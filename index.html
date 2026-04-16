@@ -23,12 +23,20 @@ head.appendChild(script);
 <meta name="description" content="Join Preston Seo's free workshop and learn the STR tax loophole that can save you $40K+ per year. Register now - it's free.">
 
 <link rel="canonical" href="https://str.managemoney101.com/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" href="str/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="str/fonts/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="str/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="str/fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="dns-prefetch" href="//app.kartra.com">
+<link rel="dns-prefetch" href="//d2uolguxr56s4e.cloudfront.net">
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;src:url('str/fonts/inter-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url('str/fonts/poppins-600-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:700;font-display:swap;src:url('str/fonts/poppins-700-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:800;font-display:swap;src:url('str/fonts/poppins-800-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 
 :root{
 --black:#0F172A;
@@ -84,6 +92,7 @@ img{max-width:100%;display:block}
 .register-sub{max-width:760px;margin:0 auto 40px;font-size:clamp(21px,2.6vw,28px);line-height:1.35;color:#D1FAE5}
 .register-sub strong{color:var(--white)}
 .registration-form-shell{max-width:780px;margin:0 auto;background:var(--white);border:1px solid rgba(15,23,42,0.12);padding:48px 40px 40px;box-shadow:0 28px 60px rgba(15,23,42,0.22);text-align:left}
+.kartra_optin_containereb160de1de89d9058fcb0b968dbbbd68:empty{display:block;min-height:320px}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 form{display:grid;gap:26px}
 .kartra-field-group{display:grid;gap:10px;text-align:left}
 .kartra-field-label{display:block;font-size:13px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;color:#17325c;text-align:left;justify-self:start}
@@ -153,6 +162,10 @@ img{max-width:100%;display:block}
 .trustpilot-mini .star{width:20px;height:20px;background:#00B67A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border-radius:2px}
 .trustpilot-mini .logo{font-weight:700;color:#00B67A}
 .media-logos{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;padding:12px 20px}
+.testimonials-section,.about-section,.register-section{content-visibility:auto}
+.testimonials-section{contain-intrinsic-size:1600px}
+.about-section{contain-intrinsic-size:960px}
+.register-section{contain-intrinsic-size:720px}
 
 /* --- FOOTER --- */
 .footer{background:var(--black);color:var(--gray-400);padding:40px 0;text-align:center;font-size:13px}
@@ -185,6 +198,7 @@ img{max-width:100%;display:block}
 .register-title{font-size:38px}
 .register-sub{font-size:20px}
 .registration-form-shell{padding:28px 20px}
+.kartra_optin_containereb160de1de89d9058fcb0b968dbbbd68:empty{min-height:260px}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 form{gap:22px}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68{min-height:76px;font-size:16px;letter-spacing:1.2px}
 .as-featured{padding:16px 12px}
@@ -222,7 +236,7 @@ Save My Spot - It's Free
 
 <!-- HOST BIO COMPACT -->
 <div class="host-compact">
-<img src="str/preston-headshot.jpg" alt="Preston Seo" class="host-avatar" width="160" height="160">
+<img src="str/preston-headshot.jpg" alt="Preston Seo" class="host-avatar" width="160" height="160" decoding="async">
 <div class="host-info">
 <div class="host-name">Preston Seo</div>
 <div class="host-desc">8-figure investor and educator helping high-income earners build wealth and slash their tax bill through short-term rental strategies. 6M+ followers across socials.</div>
@@ -256,7 +270,7 @@ Save My Spot - It's Free
 </div>
 </div>
 <div class="media-logos">
-<img src="af204c7a353d959657f10645474ff2c1.webp" alt="Featured in major media outlets" width="746" height="82" decoding="async" style="max-height:48px;width:auto;object-fit:contain">
+<img src="af204c7a353d959657f10645474ff2c1.webp" alt="Featured in major media outlets" width="746" height="82" decoding="async" loading="lazy" fetchpriority="low" style="max-height:48px;width:auto;object-fit:contain">
 </div>
 </div>
 </section>
@@ -308,7 +322,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 
 <div class="testimonials-grid">
 <div class="testimonial-card">
-<img src="str/testimonial-01.webp" alt="$5,500/month net profit" loading="lazy">
+<img src="str/testimonial-01.webp" alt="$5,500/month net profit" loading="lazy" decoding="async" fetchpriority="low" width="480" height="326">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$5,500/month net profit</div>
@@ -317,7 +331,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-02.webp" alt="Matthew Ellis - first deal, first week" loading="lazy">
+<img src="str/testimonial-02.webp" alt="Matthew Ellis - first deal, first week" loading="lazy" decoding="async" fetchpriority="low" width="1488" height="578">
 <div class="testimonial-caption">
 <div class="testimonial-name">Matthew Ellis</div>
 <div class="testimonial-highlight">First deal in 1 week - $3-4K/month</div>
@@ -326,7 +340,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-03.webp" alt="Johnny Abarra - first STR Arbitrage property" loading="lazy">
+<img src="str/testimonial-03.webp" alt="Johnny Abarra - first STR Arbitrage property" loading="lazy" decoding="async" fetchpriority="low" width="1504" height="858">
 <div class="testimonial-caption">
 <div class="testimonial-name">Johnny Abarra</div>
 <div class="testimonial-highlight">$1,500/month from first property</div>
@@ -335,7 +349,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-04.webp" alt="$11K booking, $8,500 profit" loading="lazy">
+<img src="str/testimonial-04.webp" alt="$11K booking, $8,500 profit" loading="lazy" decoding="async" fetchpriority="low" width="436" height="498">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$11,000 booking - $8,500 profit</div>
@@ -344,7 +358,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-05.png" alt="Josh Szentes - $9K cashflow" loading="lazy">
+<img src="str/testimonial-05.png" alt="Josh Szentes - $9K cashflow" loading="lazy" decoding="async" fetchpriority="low" width="976" height="607">
 <div class="testimonial-caption">
 <div class="testimonial-name">Josh Szentes</div>
 <div class="testimonial-highlight">$9,000/month cash flow</div>
@@ -353,7 +367,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-06.png" alt="Chad Grecsek - $10K gross in 2 months" loading="lazy">
+<img src="str/testimonial-06.png" alt="Chad Grecsek - $10K gross in 2 months" loading="lazy" decoding="async" fetchpriority="low" width="1166" height="188">
 <div class="testimonial-caption">
 <div class="testimonial-name">Chad Grecsek</div>
 <div class="testimonial-highlight">$10K gross revenue in 2 months</div>
@@ -362,7 +376,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-07.png" alt="Sam Becze - bookings in under 24 hours" loading="lazy">
+<img src="str/testimonial-07.png" alt="Sam Becze - bookings in under 24 hours" loading="lazy" decoding="async" fetchpriority="low" width="1510" height="390">
 <div class="testimonial-caption">
 <div class="testimonial-name">Sam Becze</div>
 <div class="testimonial-highlight">Bookings covering rent in under 24 hours</div>
@@ -371,7 +385,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-08.webp" alt="Dustin Cotten - nearly $60K best month" loading="lazy">
+<img src="str/testimonial-08.webp" alt="Dustin Cotten - nearly $60K best month" loading="lazy" decoding="async" fetchpriority="low" width="1619" height="943">
 <div class="testimonial-caption">
 <div class="testimonial-name">Dustin Cotten</div>
 <div class="testimonial-highlight">Almost $60K in a single month, 7 properties</div>
@@ -380,7 +394,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-09.png" alt="Brian O'Leary - $3,000/mo, 450% cash on cash" loading="lazy">
+<img src="str/testimonial-09.png" alt="Brian O'Leary - $3,000/mo, 450% cash on cash" loading="lazy" decoding="async" fetchpriority="low" width="1510" height="510">
 <div class="testimonial-caption">
 <div class="testimonial-name">Brian O'Leary</div>
 <div class="testimonial-highlight">$3,000/month - 450%+ cash on cash return</div>
@@ -389,7 +403,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </div>
 
 <div class="testimonial-card">
-<img src="str/testimonial-10.webp" alt="$10K/month cash flow on first property" loading="lazy">
+<img src="str/testimonial-10.webp" alt="$10K/month cash flow on first property" loading="lazy" decoding="async" fetchpriority="low" width="1466" height="362">
 <div class="testimonial-caption">
 <div class="testimonial-name">Student Win</div>
 <div class="testimonial-highlight">$10,000/month cash flow - first property</div>
@@ -405,7 +419,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 <div class="container">
 <div class="about-container">
 <div class="about-image">
-<img src="str/preston-family-optimized.webp" alt="Preston Seo with his family" loading="lazy">
+<img src="str/preston-family-700.webp" srcset="str/preston-family-700.webp 700w, str/preston-family-1000.webp 1000w, str/preston-family-optimized.webp 1800w" sizes="(max-width: 900px) calc(100vw - 48px), 476px" alt="Preston Seo with his family" loading="lazy" decoding="async" fetchpriority="low" width="1000" height="1333">
 </div>
 <div class="about-content">
 <div class="about-tag">About Your Host</div>
@@ -425,10 +439,49 @@ Here's Some Results From<br><span class="accent">My Students</span>
 <p class="register-sub">April 17th Friday @ <strong>7 PM EST</strong></p>
 <div class="registration-form-shell">
 <div class="kartra_optin_containereb160de1de89d9058fcb0b968dbbbd68"></div>
-<script src="https://app.kartra.com/optin/OdhExXbl4Ma4"></script>
 </div>
 </div>
 </section>
+
+<script>
+(function() {
+  var formLoaded = false;
+  var formUrl = 'https://app.kartra.com/optin/OdhExXbl4Ma4';
+  var registerSection = document.getElementById('register');
+  var fallbackTimer;
+
+  function loadKartraForm() {
+    if (formLoaded) return;
+    formLoaded = true;
+    if (fallbackTimer) window.clearTimeout(fallbackTimer);
+    var formScript = document.createElement('script');
+    formScript.src = formUrl;
+    formScript.async = true;
+    formScript.fetchPriority = 'low';
+    document.body.appendChild(formScript);
+  }
+
+  document.querySelectorAll('a[href="#register"]').forEach(function(link) {
+    ['click', 'pointerenter', 'touchstart'].forEach(function(eventName) {
+      link.addEventListener(eventName, loadKartraForm, { once: true, passive: true });
+    });
+  });
+
+  if ('IntersectionObserver' in window && registerSection) {
+    var observer = new IntersectionObserver(function(entries) {
+      if (entries.some(function(entry) { return entry.isIntersecting; })) {
+        loadKartraForm();
+        observer.disconnect();
+      }
+    }, { rootMargin: '600px 0px' });
+    observer.observe(registerSection);
+  }
+
+  window.addEventListener('load', function() {
+    fallbackTimer = window.setTimeout(loadKartraForm, 3000);
+  }, { once: true });
+})();
+</script>
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -439,4 +492,3 @@ Here's Some Results From<br><span class="accent">My Students</span>
 
 </body>
 </html>
-
