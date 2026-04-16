@@ -27,6 +27,8 @@ head.appendChild(script);
 <link rel="preload" href="str/fonts/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="str/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="str/fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://app.kartra.com" crossorigin>
+<link rel="preconnect" href="https://d2uolguxr56s4e.cloudfront.net" crossorigin>
 <link rel="dns-prefetch" href="//app.kartra.com">
 <link rel="dns-prefetch" href="//d2uolguxr56s4e.cloudfront.net">
 
@@ -448,17 +450,28 @@ Here's Some Results From<br><span class="accent">My Students</span>
   var formLoaded = false;
   var formUrl = 'https://app.kartra.com/optin/OdhExXbl4Ma4';
   var registerSection = document.getElementById('register');
+  var hardTimer;
   var fallbackTimer;
+  var idleHandle;
 
   function loadKartraForm() {
     if (formLoaded) return;
     formLoaded = true;
+    if (hardTimer) window.clearTimeout(hardTimer);
     if (fallbackTimer) window.clearTimeout(fallbackTimer);
+    if (idleHandle && 'cancelIdleCallback' in window) window.cancelIdleCallback(idleHandle);
     var formScript = document.createElement('script');
     formScript.src = formUrl;
     formScript.async = true;
-    formScript.fetchPriority = 'low';
     document.body.appendChild(formScript);
+  }
+
+  function scheduleEarlyLoad() {
+    if (formLoaded) return;
+    hardTimer = window.setTimeout(loadKartraForm, 1200);
+    if ('requestIdleCallback' in window) {
+      idleHandle = window.requestIdleCallback(loadKartraForm, { timeout: 1000 });
+    }
   }
 
   document.querySelectorAll('a[href="#register"]').forEach(function(link) {
@@ -473,8 +486,14 @@ Here's Some Results From<br><span class="accent">My Students</span>
         loadKartraForm();
         observer.disconnect();
       }
-    }, { rootMargin: '600px 0px' });
+    }, { rootMargin: '1400px 0px' });
     observer.observe(registerSection);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', scheduleEarlyLoad, { once: true });
+  } else {
+    scheduleEarlyLoad();
   }
 
   window.addEventListener('load', function() {
