@@ -264,7 +264,7 @@ section{padding:40px 0}
 </div>
 </div>
 
-<button class="btn-primary register-btn" onclick="openRegistrationPopup()"><span class="btn-main">Register Now</span><span class="btn-sub">Friday, April 17th @ 7 PM EST</span></button>
+<button class="btn-primary register-btn" onclick="openRegistrationPopup()"><span class="btn-main">Register Now</span><span class="btn-sub">Sunday, April 19th @ 2 PM EST</span></button>
 </div>
 </div>
 </header>
@@ -407,7 +407,7 @@ section{padding:40px 0}
 <!-- MID-PAGE CTA -->
 <section style="background:var(--text-primary);padding:60px 0;text-align:center">
 <div class="container">
-<button class="btn-primary register-btn" onclick="openRegistrationPopup()" style="max-width:400px;margin:0 auto"><span class="btn-main">Register Now</span><span class="btn-sub">Friday, April 17th @ 7 PM EST</span></button>
+<button class="btn-primary register-btn" onclick="openRegistrationPopup()" style="max-width:400px;margin:0 auto"><span class="btn-main">Register Now</span><span class="btn-sub">Sunday, April 19th @ 2 PM EST</span></button>
 </div>
 </section>
 
@@ -439,7 +439,7 @@ section{padding:40px 0}
 <div class="section-tag" style="color:#007a52">Don't Wait for "Perfect Timing"</div>
 <h2 class="section-title">A Year From Now, You'll Wish<br>You Started Today</h2>
 <p class="section-sub">Every month you wait is $2,500 to $5,000 in cash flow that doesn't come back. The math doesn't care about your feelings.</p>
-<button class="btn-primary register-btn" onclick="openRegistrationPopup()"><span class="btn-main">Register Now</span><span class="btn-sub">Friday, April 17th @ 7 PM EST</span></button>
+<button class="btn-primary register-btn" onclick="openRegistrationPopup()"><span class="btn-main">Register Now</span><span class="btn-sub">Sunday, April 19th @ 2 PM EST</span></button>
 </div>
 </section>
 
@@ -462,37 +462,8 @@ function updateCountdown() {
     const currentDay = now.getDay();
     const currentHour = now.getHours();
     
-    // Workshop day: Friday (5) at 7 PM EST
-    // For simplicity, we'll use local time (assuming user is in EST or they understand the time)
-    // In production, you'd want to convert 7 PM EST to local time
-    
-    const workshopDays = [5]; // Friday
-    const workshopHour = 19; // 7 PM
-    
-    // Find next workshop
-    let targetDate = new Date(now);
-    let daysUntilWorkshop = 0;
-    let found = false;
-    
-    // Check if there's a workshop today and if it hasn't started yet
-    if (workshopDays.includes(currentDay) && currentHour < workshopHour) {
-        targetDate.setHours(workshopHour, 0, 0, 0);
-        found = true;
-    } else {
-        // Find next workshop day
-        for (let i = 1; i <= 7; i++) {
-            const checkDay = (currentDay + i) % 7;
-            if (workshopDays.includes(checkDay)) {
-                daysUntilWorkshop = i;
-                targetDate.setDate(now.getDate() + i);
-                targetDate.setHours(workshopHour, 0, 0, 0);
-                found = true;
-                break;
-            }
-        }
-    }
-    
-    if (!found) return;
+    // Workshop date: Sunday, April 19, 2026 at 2 PM Eastern Time.
+    const targetDate = new Date('2026-04-19T18:00:00Z');
     
     const diff = targetDate - now;
     
