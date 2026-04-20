@@ -195,6 +195,7 @@ img{max-width:100%;display:block}
 .cta-button{padding:16px 32px}
 .cta-button-main{font-size:18px}
 .preview-section,.testimonials-section,.about-section{padding:60px 0}
+.testimonials-section,.about-section{content-visibility:visible;contain-intrinsic-size:auto}
 .preview-box{padding:24px 20px}
 .register-section{padding:60px 0 72px}
 .register-title{font-size:38px}
@@ -466,6 +467,39 @@ Here's Some Results From<br><span class="accent">My Students</span>
     document.body.appendChild(formScript);
   }
 
+  function updateRegisterHash() {
+    if (window.location.hash === '#register') return;
+    if (window.history && window.history.pushState) {
+      window.history.pushState(null, '', '#register');
+    } else {
+      window.location.hash = '#register';
+    }
+  }
+
+  function scrollToRegisterAfterLayout() {
+    if (!registerSection) return;
+    var attempts = 0;
+
+    function runScroll() {
+      registerSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      attempts += 1;
+      if (attempts < 4) {
+        window.setTimeout(function() {
+          window.requestAnimationFrame(runScroll);
+        }, attempts === 1 ? 120 : 260);
+      }
+    }
+
+    window.requestAnimationFrame(runScroll);
+  }
+
+  function handleRegisterNavigation(event) {
+    if (event) event.preventDefault();
+    loadKartraForm();
+    updateRegisterHash();
+    scrollToRegisterAfterLayout();
+  }
+
   function scheduleEarlyLoad() {
     if (formLoaded) return;
     hardTimer = window.setTimeout(loadKartraForm, 1200);
@@ -475,7 +509,8 @@ Here's Some Results From<br><span class="accent">My Students</span>
   }
 
   document.querySelectorAll('a[href="#register"]').forEach(function(link) {
-    ['click', 'pointerenter', 'touchstart'].forEach(function(eventName) {
+    link.addEventListener('click', handleRegisterNavigation);
+    ['pointerenter', 'touchstart'].forEach(function(eventName) {
       link.addEventListener(eventName, loadKartraForm, { once: true, passive: true });
     });
   });
@@ -499,6 +534,18 @@ Here's Some Results From<br><span class="accent">My Students</span>
   window.addEventListener('load', function() {
     fallbackTimer = window.setTimeout(loadKartraForm, 3000);
   }, { once: true });
+
+  if (window.location.hash === '#register') {
+    loadKartraForm();
+    scrollToRegisterAfterLayout();
+  }
+
+  window.addEventListener('hashchange', function() {
+    if (window.location.hash === '#register') {
+      loadKartraForm();
+      scrollToRegisterAfterLayout();
+    }
+  });
 })();
 </script>
 
