@@ -397,7 +397,7 @@ Critical Action Items
 <div class="faq-item">
 <div class="faq-question">Will there be a replay if I can't make it live?</div>
 <div class="faq-answer">
-<p><strong>No — this is live only.</strong> Preston only gives the calculators, templates, and resources to people who show up live. This isn't a recording. We run these workshops multiple times per week (Tuesday, Thursday, Sunday at 7 PM EST), so pick a time that works for you and block it off.</p>
+<p><strong>No — this is live only.</strong> Preston only gives the calculators, templates, and resources to people who show up live. This isn't a recording. The next live workshop is Sunday, April 19th @ 2 PM EST, so block it off now.</p>
 </div>
 </div>
 
@@ -472,39 +472,20 @@ Critical Action Items
 function addToCalendar() {
     const event = {
         title: 'Free Airbnb STR Workshop - Legacy Investing Show',
-        description: 'Join Preston Seo for a live workshop on building a profitable Airbnb business.\n\nYou will learn:\n- How to find profitable markets\n- Landlord negotiation scripts\n- Remote setup systems\n- STR tax advantages\n- Automation strategies\n\nWorkshops run every Tuesday, Thursday & Sunday at 7:00 PM EST\n\nZoom link will be emailed separately.',
-        location: 'Online via Zoom',
-        startTime: '19:00',
-        duration: 'PT2H'
+        description: 'Join Preston Seo for a live workshop on building a profitable Airbnb business.\n\nYou will learn:\n- How to find profitable markets\n- Landlord negotiation scripts\n- Remote setup systems\n- STR tax advantages\n- Automation strategies\n\nLive on Sunday, April 19th @ 2:00 PM EST\n\nZoom link will be emailed separately.',
+        location: 'Online via Zoom'
     };
-    
-    // Simple .ics file generation
-    const now = new Date();
+
+    const eventStart = new Date('2026-04-19T18:00:00Z');
+    const eventEnd = new Date(eventStart.getTime() + 1 * 60 * 60 * 1000);
     const formatDate = (d) => d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    
-    const icsContent = [
-        'BEGIN:VCALENDAR',
-        'VERSION:2.0',
-        'PRODID:-//Legacy Investing Show//STR Workshop//EN',
-        'BEGIN:VEVENT',
-        'SUMMARY:' + event.title,
-        'DESCRIPTION:' + event.description.replace(/\n/g, '\\n'),
-        'LOCATION:' + event.location,
-        'DTSTART:' + formatDate(now),
-        'DURATION:' + event.duration,
-        'END:VEVENT',
-        'END:VCALENDAR'
-    ].join('\n');
-    
-    const blob = new Blob([icsContent], { type: 'text/calendar' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'str-workshop.ics';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    const googleCalendarUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+        + '&text=' + encodeURIComponent(event.title)
+        + '&dates=' + formatDate(eventStart) + '/' + formatDate(eventEnd)
+        + '&details=' + encodeURIComponent(event.description)
+        + '&location=' + encodeURIComponent(event.location);
+
+    window.open(googleCalendarUrl, '_blank', 'noopener');
 }
 
 // FAQ Accordion
