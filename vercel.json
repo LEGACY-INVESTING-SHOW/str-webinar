@@ -9,6 +9,22 @@
     {
       "source": "/registered",
       "destination": "/registered.html"
+    },
+    {
+      "source": "/arbitrage",
+      "destination": "/arbitrage.html"
+    },
+    {
+      "source": "/ownership",
+      "destination": "/ownership.html"
+    },
+    {
+      "source": "/str-arbitrage",
+      "destination": "/str-arbitrage.html"
+    },
+    {
+      "source": "/str-ownership",
+      "destination": "/str-ownership.html"
     }
   ]
 }
