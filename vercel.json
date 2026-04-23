@@ -15,8 +15,16 @@
       "destination": "/arbitrage.html"
     },
     {
+      "source": "/airbnb-arbitrage",
+      "destination": "/airbnb-arbitrage.html"
+    },
+    {
       "source": "/ownership",
       "destination": "/ownership.html"
+    },
+    {
+      "source": "/ownership-breakdown",
+      "destination": "/ownership-breakdown.html"
     },
     {
       "source": "/str-arbitrage",
