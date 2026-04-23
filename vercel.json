@@ -25,6 +25,14 @@
     {
       "source": "/str-ownership",
       "destination": "/str-ownership.html"
+    },
+    {
+      "source": "/pre-call",
+      "destination": "/pre-call.html"
+    },
+    {
+      "source": "/slides",
+      "destination": "/slides.html"
     }
   ]
 }
