@@ -93,8 +93,8 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
 .host-badge span{display:block;font-size:13px;color:#555;margin-top:3px}
 
 .band{background:#e9e5dc;padding:74px 0 66px}
-.proof-layout{display:grid;grid-template-columns:minmax(0,.78fr) minmax(480px,1.22fr);gap:34px;align-items:start}
-.proof-copy{position:sticky;top:22px}
+.proof-layout{display:block}
+.proof-copy{display:flex;justify-content:center;margin:30px 0 0}
 .mega-title{font-family:var(--display);font-size:clamp(38px,4.8vw,64px);line-height:1.02;letter-spacing:0;font-weight:800;max-width:610px;margin:0 0 20px;text-align:left}
 .circle-word{position:relative;display:inline-block}
 .circle-word::after{content:"";position:absolute;left:-10%;right:-10%;top:48%;height:48%;border:4px solid var(--accent);border-radius:50%;transform:rotate(-6deg);pointer-events:none}
@@ -102,6 +102,9 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
 .proof-line{font-family:var(--display);font-size:clamp(24px,2.8vw,34px);line-height:1.12;font-weight:800;margin:0 0 24px;max-width:540px}
 .band .button{min-width:min(100%,430px);border-radius:7px;min-height:74px;padding:18px 26px;font-size:20px;line-height:1.15}
 .proof-board{display:grid;gap:18px}
+.proof-gallery{columns:3 280px;column-gap:18px}
+.proof-shot{display:block;break-inside:avoid;margin:0 0 18px;background:#fff;border:1px solid #ded8cf;border-radius:14px;overflow:hidden;box-shadow:0 18px 38px rgba(0,0,0,.1)}
+.proof-shot img{width:100%;height:auto;object-fit:contain;background:#fff}
 .proof-feature{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(230px,.92fr);gap:18px;align-items:center;background:#fff;border:1px solid #ddd6cb;border-radius:14px;padding:14px;box-shadow:0 22px 46px rgba(0,0,0,.11)}
 .proof-frame{display:block;background:#fff;border:1px solid #e7ded1;border-radius:10px;overflow:hidden}
 .proof-frame img{width:100%;height:auto;object-fit:contain;object-position:center;background:#fff}
@@ -168,11 +171,12 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
   .hero-grid,.form-grid{grid-template-columns:1fr}
   .hero-card{width:min(100%,430px)}
   .host-badge{left:14px}
-  .proof-layout,.proof-feature{grid-template-columns:1fr}
+  .proof-feature{grid-template-columns:1fr}
   .proof-copy{position:static}
   .mega-title,.band-copy,.proof-line{text-align:center;margin-left:auto;margin-right:auto}
   .proof-feature{max-width:680px;margin:0 auto}
   .proof-cards{grid-template-columns:1fr}
+  .proof-gallery{columns:2 260px}
   .learn-grid{grid-template-columns:1fr}
   .form-copy{position:static}
 }
@@ -191,6 +195,8 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
   .host-badge{position:relative;left:auto;bottom:auto;margin:-42px auto 0;width:calc(100% - 32px)}
   .band{padding:48px 0}
   .band .button{width:100%;min-width:0;font-size:19px}
+  .proof-copy{margin:22px 0 0}
+  .proof-gallery{columns:1}
   .proof-frame{min-height:250px}
   .proof-card img{height:220px}
   .learn{padding:48px 0}
@@ -208,9 +214,9 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">Free live STR wealth workshop</div>
-        <h1>Build <span class="accent">short-term rental income</span> while keeping more of what you earn</h1>
-        <p class="subhead">Preston Seo breaks down the A.C.R.E.S. framework for evaluating, funding, launching, and operating short-term rentals with a focus on cash flow, tax strategy, and long-term wealth.</p>
+        <div class="eyebrow">Free live training for W-2 earners</div>
+        <h1>How high earners use <span class="accent">one STR</span> to write off $50K–$150K against W-2 income</h1>
+        <p class="subhead">Preston Seo walks through the exact property criteria, tax rules, and IRS requirements that let short-term rental losses offset active income—while still generating cash flow.</p>
         <div class="event-strip" aria-label="Workshop date and time">
           <span class="event-date">This Sunday, April 26</span>
           <span class="event-time">2:00 PM EST</span>
@@ -238,41 +244,48 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
 
   <section class="band">
     <div class="wrap proof-layout">
+      <div class="proof-board" aria-label="Student screenshot proof">
+        <div class="proof-gallery">
+          <figure class="proof-shot large">
+            <img src="str/testimonial-01.webp" alt="$5,500 monthly net profit student message screenshot" width="480" height="326" decoding="async">
+          </figure>
+          <figure class="proof-shot tall">
+            <img src="str/testimonial-05.png" alt="Josh Szentes student message about nine thousand dollars cash flow" width="976" height="607" decoding="async">
+          </figure>
+          <figure class="proof-shot wide">
+            <img src="stories/02-preston-posted-student-wins/images/085-luis-franco-1-700-mo-cash-flow-student-win-1-700-mo-cash.png" alt="Student win screenshot about seventeen hundred dollars monthly cash flow" width="1496" height="497" loading="lazy" decoding="async">
+          </figure>
+          <figure class="proof-shot mid">
+            <img src="str/testimonial-04.webp" alt="$11,000 booking and $8,500 profit student message screenshot" width="436" height="498" decoding="async">
+          </figure>
+          <figure class="proof-shot mid">
+            <img src="str/testimonial-09.png" alt="Brian O'Leary student win about three thousand dollars per month and cash on cash return" width="1510" height="510" decoding="async">
+          </figure>
+          <figure class="proof-shot wide">
+            <img src="str/testimonial-02.webp" alt="Student screenshot about short-term rental cash flow" width="1488" height="578" loading="lazy" decoding="async">
+          </figure>
+          <figure class="proof-shot mid">
+            <img src="str/testimonial-03.webp" alt="Student screenshot about STR performance and bookings" width="1504" height="858" loading="lazy" decoding="async">
+          </figure>
+          <figure class="proof-shot wide">
+            <img src="str/testimonial-06.png" alt="Student message screenshot about rental progress" width="1166" height="188" loading="lazy" decoding="async">
+          </figure>
+          <figure class="proof-shot wide">
+            <img src="str/testimonial-07.png" alt="Student message screenshot about STR cash flow" width="1510" height="390" loading="lazy" decoding="async">
+          </figure>
+          <figure class="proof-shot wide">
+            <img src="str/testimonial-08.webp" alt="Student screenshot about short-term rental results" width="1619" height="943" loading="lazy" decoding="async">
+          </figure>
+          <figure class="proof-shot wide">
+            <img src="str/testimonial-10.webp" alt="Student message screenshot about short-term rental progress" width="1466" height="362" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+
       <div class="proof-copy">
-        <h2 class="mega-title">Students are applying the STR framework in the real world.</h2>
-        <p class="band-copy">The workshop walks through the practical steps behind these student-reported wins: finding a viable property, running the numbers, getting live, and improving the listing.</p>
-        <div class="proof-line">Student-reported wins from messages and posts.</div>
         <a href="#register" class="button">
           <span>Reserve My Free Seat</span>
         </a>
-      </div>
-
-      <div class="proof-board" aria-label="Student screenshot proof">
-        <article class="proof-feature">
-          <div class="proof-frame">
-            <img src="str/testimonial-01.webp" alt="$5,500 monthly net profit student message screenshot" width="480" height="326" decoding="async">
-          </div>
-          <div class="proof-caption">
-            <div class="tag">Student message</div>
-            <h3>$5,500/month net profit reported.</h3>
-            <p>A student shared this update after applying the STR operating and optimization process.</p>
-          </div>
-        </article>
-
-        <div class="proof-cards">
-          <article class="proof-card">
-            <img src="str/testimonial-05.png" alt="Josh Szentes student message about nine thousand dollars cash flow" width="976" height="607" decoding="async">
-            <div><b>$9K cash flow month</b><span>Student reported strong performance while still working on the listing.</span></div>
-          </article>
-          <article class="proof-card">
-            <img src="str/testimonial-04.webp" alt="$11,000 booking and $8,500 profit student message screenshot" width="436" height="498" decoding="async">
-            <div><b>$11K booking</b><span>Student message reporting a record month and projected profit.</span></div>
-          </article>
-          <article class="proof-card">
-            <img src="str/testimonial-09.png" alt="Brian O'Leary student win about three thousand dollars per month and cash on cash return" width="1510" height="510" decoding="async">
-            <div><b>$3,000/mo reported</b><span>Student update after locking up and launching a property.</span></div>
-          </article>
-        </div>
       </div>
     </div>
   </section>
