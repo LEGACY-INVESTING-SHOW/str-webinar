@@ -1,6 +1,35 @@
 {
   "version": 2,
   "public": true,
+  "headers": [
+    {
+      "source": "/str/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/stories/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
@@ -25,6 +54,10 @@
     {
       "source": "/ownership-breakdown",
       "destination": "/ownership-breakdown.html"
+    },
+    {
+      "source": "/hph-style-registration",
+      "destination": "/hph-style-registration.html"
     },
     {
       "source": "/str-arbitrage",
