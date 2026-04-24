@@ -20,8 +20,8 @@ head.appendChild(script);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f4efe5">
-<title>Free STR Tax Workshop: How W-2 Earners Legally Wipe Out Up To $48K Of Their Tax Bill | Legacy Investing Show</title>
-<meta name="description" content="If you earn $150K+ on a W-2, the IRS takes around $52K a year. See the one short-term rental strategy Preston Seo uses to legally cut that down to $3,842. Free live workshop.">
+<title>How One Property Cut My W-2 Tax Bill From $52,317 To $3,842 In One Year | Legacy Investing Show</title>
+<meta name="description" content="A real property, real numbers, and a real tax return. See line by line how Preston Seo turned one short-term rental into a $48,475 write-off that legally erased almost his entire W-2 tax bill.">
 
 <link rel="icon" href="data:,">
 <link rel="canonical" href="https://str.managemoney101.com/">
@@ -116,24 +116,27 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
 .mini-nav-item span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
 
 .breakdown-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
-.video-panel{background:var(--navy);color:#fffaf1;min-height:350px;display:grid;grid-template-columns:.86fr 1.14fr;align-items:stretch;box-shadow:var(--shadow)}
-.video-ledger{background:#fffaf1;color:var(--ink);margin:18px;padding:22px;border:1px solid var(--line)}
-.video-ledger h3,.file-card h3,.register-copy h2{font-family:var(--display)}
-.ledger-row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:11px 0;font-size:14px}
-.ledger-row:last-child{border-bottom:0;font-weight:800;color:var(--green)}
-.ledger-row b{font-family:var(--display)}
-.video-face{position:relative;background:linear-gradient(rgba(9,21,34,.16),rgba(9,21,34,.68)),url('str/preston-headshot.jpg') center/cover;min-height:300px}
-.play{position:absolute;inset:0;margin:auto;width:74px;height:74px;border-radius:50%;background:#fffaf1;color:var(--navy);display:grid;place-items:center;box-shadow:0 20px 40px rgba(0,0,0,.25)}
-.play svg{width:31px;height:31px;margin-left:4px}
-.file-stack{display:grid;gap:16px}
-.file-card{background:#fffaf1;border:1px solid var(--line);padding:24px;box-shadow:0 16px 36px rgba(39,31,20,.08)}
-.file-card h3{font-size:18px;margin-bottom:14px}
+.file-card{background:#fffaf1;border:1px solid var(--line);padding:28px;box-shadow:0 16px 36px rgba(39,31,20,.08);position:relative}
+.file-card h3,.register-copy h2{font-family:var(--display)}
+.file-card h3{font-size:20px;margin-bottom:18px;line-height:1.2}
+.file-card .card-label{display:inline-block;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--green);background:#eaf5ef;padding:5px 10px;margin-bottom:14px}
+.ledger-row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:13px 0;font-size:15px}
+.ledger-row b{font-family:var(--display);font-size:18px}
+.ledger-row.total{border-top:2px solid var(--navy);border-bottom:0;margin-top:4px;padding-top:16px;font-weight:800}
+.ledger-row.total b{font-size:22px}
+.ledger-row.savings{margin-top:14px;background:#eaf5ef;padding:14px 12px;border:1px solid #b9dcc6;border-bottom:1px solid #b9dcc6;color:var(--green-dark)}
+.ledger-row.savings b{font-size:22px;color:var(--green)}
 .metric-list{display:grid;gap:10px}
-.metric{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding-bottom:10px;border-bottom:1px dashed #d9cab6}
+.metric{display:flex;align-items:baseline;justify-content:space-between;gap:18px;padding-bottom:12px;border-bottom:1px dashed #d9cab6}
 .metric span{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.metric b{font-family:var(--display);font-size:21px}
+.metric b{font-family:var(--display);font-size:22px}
 .metric.positive b{color:var(--green)}
 .metric.negative b{color:var(--red)}
+.context-card{margin-top:22px;background:var(--navy);color:#fffaf1;padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;box-shadow:var(--shadow)}
+.context-card .mark{width:54px;height:54px;border:2px solid var(--gold);display:grid;place-items:center;color:var(--gold);flex:0 0 auto}
+.context-card .mark svg{width:30px;height:30px}
+.context-card h3{font-family:var(--display);font-size:20px;margin-bottom:8px;color:#fffaf1}
+.context-card p{color:#d8cbb8;font-size:15px;line-height:1.55}
 
 .tax-return{display:grid;grid-template-columns:.92fr 1.08fr;gap:32px;align-items:center}
 .return-paper{background:#fff;border:1px solid #c9c9c9;padding:30px;box-shadow:var(--shadow);position:relative}
@@ -146,14 +149,26 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
 .return-line b{font-family:var(--display)}
 .return-line.highlight{background:#ecf7ef;margin:4px -10px 0;padding:12px 10px;border-bottom:0;color:var(--green)}
 .return-line.highlight span,.return-line.highlight b{color:var(--green)}
-.compare{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;border:1px solid var(--line);background:#fffaf1}
-.compare-col{padding:24px}
-.compare h3{font-family:var(--display);font-size:18px;margin-bottom:14px}
-.compare ul{list-style:none;display:grid;gap:10px;color:#4f5965;font-size:15px}
-.compare li{display:flex;gap:9px}
-.bad{color:var(--red);font-weight:800}
-.good{color:var(--green);font-weight:800}
-.vs{display:grid;place-items:center;background:var(--navy);color:#fffaf1;font-family:var(--display);font-weight:800;padding:0 18px}
+.compare{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+.compare-col{position:relative;padding:28px 26px 30px;background:#fffaf1;border:1px solid var(--line);box-shadow:0 14px 34px rgba(39,31,20,.08)}
+.compare-col--loss{background:#fbf2e9;border-color:#e9d3be}
+.compare-col--loss::before,.compare-col--win::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
+.compare-col--loss::before{background:var(--red)}
+.compare-col--win::before{background:var(--green)}
+.compare-tag{display:inline-flex;align-items:center;gap:7px;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;margin-bottom:14px}
+.compare-tag--loss{background:rgba(196,63,49,.1);color:var(--red)}
+.compare-tag--win{background:#eaf5ef;color:var(--green-dark)}
+.compare h3{font-family:var(--display);font-size:22px;line-height:1.15;margin-bottom:6px}
+.compare-stat{font-family:var(--display);font-size:28px;font-weight:800;line-height:1.05;margin-bottom:4px;letter-spacing:-.01em}
+.compare-stat--loss{color:var(--red)}
+.compare-stat--win{color:var(--green)}
+.compare-caption{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;padding-bottom:18px;border-bottom:1px dashed #d9cab6}
+.compare ul{list-style:none;display:grid;gap:12px;color:#39434e;font-size:15px;line-height:1.5}
+.compare li{display:flex;gap:12px;align-items:flex-start}
+.compare li .icon{flex:0 0 auto;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:13px;font-weight:800;margin-top:1px}
+.compare li .icon-bad{background:var(--red);color:#fffaf1}
+.compare li .icon-good{background:var(--green);color:#fffaf1}
+.vs{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fffaf1;font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.08em;box-shadow:0 8px 22px rgba(9,21,34,.25),0 0 0 6px var(--paper)}
 
 .proof-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
 .proof-card{background:#fffaf1;border:1px solid var(--line);overflow:hidden}
@@ -215,10 +230,9 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
   .receipt div:last-child{border-bottom:0}
   .section{padding:52px 0}
   .mini-nav{grid-template-columns:1fr}
-  .video-panel{grid-template-columns:1fr}
-  .video-face{min-height:240px}
-  .compare{grid-template-columns:1fr}
-  .vs{padding:12px}
+  .context-card{grid-template-columns:1fr;padding:22px;gap:14px}
+  .compare{grid-template-columns:1fr;gap:32px}
+  .vs{position:relative;left:auto;top:auto;transform:none;margin:-6px auto}
   .proof-grid{grid-template-columns:1fr}
   .proof-card img{height:190px}
   .registration-form-shell{padding:24px 18px}
@@ -244,14 +258,14 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
     <div class="wrap hero-grid">
       <div>
         <div class="eyebrow">For W-2 Earners Making $150K+</div>
-        <h1>One short-term rental could legally erase up to $48,475 off your tax bill this year. <span class="tax-drop">Your CPA probably never mentioned it.</span></h1>
-        <p class="hero-copy">You work hard. You earn well. Then April shows up and the IRS takes a bigger cut than you get to keep. On this free workshop, Preston shows you the exact loophole wealthy investors use to turn one property into a legal tax shield, with the property numbers and the tax return math side by side.</p>
+        <h1>How one property cut my W-2 tax bill from $52,317 to $3,842. <span class="tax-drop">In a single tax year.</span></h1>
+        <p class="hero-copy">A real property. Real numbers. A real tax return. I'll walk you through the exact line-by-line math most CPAs won't touch — and the quiet IRS rule that makes every dollar of it legal.</p>
         <div class="hero-actions">
           <a href="#register" class="button button-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
             Reserve My Free Seat
           </a>
-          <a href="#breakdown" class="button button-quiet">Show Me The Math First</a>
+          <a href="#breakdown" class="button button-quiet">Show Me The Numbers</a>
         </div>
         <div class="host-strip">
           <img src="str/preston-headshot.jpg" alt="Preston Seo" width="108" height="108" decoding="async">
@@ -275,56 +289,58 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
 
   <section class="section" id="breakdown">
     <div class="wrap">
-      <h2 class="section-title">See the exact numbers before you even register.</h2>
-      <p class="section-lede">No fluff. No hype. Walk through the same real property file Preston teaches inside the workshop: what you pay, what it earns, what you write off, and what lands on your tax return.</p>
+      <div class="eyebrow">What you'll see on this page</div>
+      <h2 class="section-title">Every dollar. Every deduction. Every line on the tax return.</h2>
+      <p class="section-lede">No theory. No guru promises. One real property file, broken open so you can read the math yourself — before you decide whether to save a seat on the workshop.</p>
       <div class="mini-nav">
         <div class="mini-nav-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h14v-9.5"></path></svg>
-          <div><b>The property</b><span>Purchase price, down payment, and total cash in.</span></div>
+          <div><b>The property</b><span>Purchase price, down payment, cash to close.</span></div>
         </div>
         <div class="mini-nav-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5"></path><path d="M4 19h16"></path><path d="M8 16v-4"></path><path d="M12 16V8"></path><path d="M16 16v-6"></path></svg>
-          <div><b>The cash flow</b><span>Nightly revenue, expenses, and what hits your bank.</span></div>
+          <div><b>The cash flow</b><span>What it earns, what it costs, what hits your account.</span></div>
         </div>
         <div class="mini-nav-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10"></path><path d="M8.5 10c0-1.7 1.4-3 3.5-3s3.5 1.3 3.5 3-1.4 2.5-3.5 2.5S8.5 13.8 8.5 15.5 9.9 18 12 18s3.5-1.1 3.5-2.5"></path></svg>
-          <div><b>The tax shield</b><span>Depreciation, bonus depreciation, and W-2 offset.</span></div>
+          <div><b>The tax shield</b><span>Depreciation, bonus depreciation, W-2 offset.</span></div>
         </div>
         <div class="mini-nav-item">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M4 10h16"></path></svg>
-          <div><b>The playbook</b><span>How to structure, document, and operate it legally.</span></div>
+          <div><b>The playbook</b><span>How to structure, document, and stay IRS clean.</span></div>
         </div>
       </div>
 
       <div class="breakdown-grid">
-        <div class="video-panel" aria-label="Four minute breakdown preview">
-          <div class="video-ledger">
-            <h3>The 4-minute tax shield breakdown</h3>
-            <div class="ledger-row"><span>Depreciation</span><b>$39,272</b></div>
-            <div class="ledger-row"><span>Bonus depreciation</span><b>$7,012</b></div>
-            <div class="ledger-row"><span>Other write-offs</span><b>$2,191</b></div>
-            <div class="ledger-row"><span>Total deductions</span><b>$48,475</b></div>
-            <div class="ledger-row"><span>Estimated tax savings</span><b>$15,512</b></div>
-          </div>
-          <div class="video-face">
-            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
-          </div>
+        <div class="file-card">
+          <span class="card-label">Tax Shield</span>
+          <h3>How $48,475 came off the tax bill</h3>
+          <div class="ledger-row"><span>Depreciation</span><b>$39,272</b></div>
+          <div class="ledger-row"><span>Bonus depreciation</span><b>$7,012</b></div>
+          <div class="ledger-row"><span>Other write-offs</span><b>$2,191</b></div>
+          <div class="ledger-row total"><span>Total deductions</span><b>$48,475</b></div>
+          <div class="ledger-row savings"><span>Estimated tax savings</span><b>$15,512</b></div>
         </div>
 
-        <div class="file-stack">
-          <div class="file-card">
-            <h3>The full property file</h3>
-            <div class="metric-list">
-              <div class="metric"><span>Cash to close</span><b>$166,341</b></div>
-              <div class="metric"><span>Annual rental revenue</span><b>$84,058</b></div>
-              <div class="metric negative"><span>Annual operating expenses</span><b>$56,283</b></div>
-              <div class="metric positive"><span>Net cash flow (Year 1)</span><b>$27,775</b></div>
-            </div>
+        <div class="file-card">
+          <span class="card-label">Property File</span>
+          <h3>The cash flow behind the deductions</h3>
+          <div class="metric-list">
+            <div class="metric"><span>Cash to close</span><b>$166,341</b></div>
+            <div class="metric"><span>Annual rental revenue</span><b>$84,058</b></div>
+            <div class="metric negative"><span>Annual operating expenses</span><b>($56,283)</b></div>
+            <div class="metric positive"><span>Net cash flow (Year 1)</span><b>$27,775</b></div>
           </div>
-          <div class="file-card">
-            <h3>Why short-term rentals are different</h3>
-            <p>Long-term rentals are passive in the eyes of the IRS. The losses get trapped and cannot touch your W-2 income. A properly structured short-term rental is treated as active when the owner materially participates, which is why the deductions are allowed to flow against your W-2 tax bill.</p>
-          </div>
+        </div>
+      </div>
+
+      <div class="context-card">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
+        </span>
+        <div>
+          <h3>Why a short-term rental is taxed differently than a long-term one</h3>
+          <p>Long-term rentals are passive in the eyes of the IRS — the losses get trapped and can't touch your W-2 income. A correctly structured short-term rental, where the owner materially participates, is treated as active. That one distinction is why the deductions flow straight against your W-2 tax bill instead of sitting on the shelf.</p>
         </div>
       </div>
     </div>
@@ -345,24 +361,31 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
         </div>
       </div>
       <div>
+        <div class="eyebrow">Traditional view vs how savvy investors see it</div>
         <h2 class="section-title">A $52,317 tax bill turns into $3,842. Legally.</h2>
-        <p class="section-lede">This is where social media posts stop and the real mechanics start. On the workshop Preston walks you through average guest stay rules, the 7-day test, material participation, cost segregation studies, bonus depreciation, and the paper trail the IRS expects to see.</p>
+        <p class="section-lede">This is where social-media explainers stop and the real mechanics start. On the workshop I'll walk you through the 7-day test, material participation, cost segregation, bonus depreciation, and the exact paper trail the IRS expects to see.</p>
         <div class="compare">
-          <div class="compare-col">
+          <div class="compare-col compare-col--loss">
+            <span class="compare-tag compare-tag--loss">Taxed as passive</span>
             <h3>Long-term rental</h3>
+            <div class="compare-stat compare-stat--loss">$0</div>
+            <div class="compare-caption">offset against your W-2</div>
             <ul>
-              <li><span class="bad">X</span> Losses are passive and trapped</li>
-              <li><span class="bad">X</span> Cannot offset your W-2 income</li>
-              <li><span class="bad">X</span> Locked out of the material participation rule</li>
+              <li><span class="icon icon-bad">✕</span> Losses are passive. They sit trapped on the return.</li>
+              <li><span class="icon icon-bad">✕</span> Cannot offset your W-2 income — period.</li>
+              <li><span class="icon icon-bad">✕</span> Locked out of the material participation rule.</li>
             </ul>
           </div>
-          <div class="vs">VS</div>
-          <div class="compare-col">
+          <div class="vs" aria-hidden="true">VS</div>
+          <div class="compare-col compare-col--win">
+            <span class="compare-tag compare-tag--win">Taxed as active</span>
             <h3>Short-term rental</h3>
+            <div class="compare-stat compare-stat--win">$48,475</div>
+            <div class="compare-caption">flowing straight against your W-2</div>
             <ul>
-              <li><span class="good">✓</span> Treated as active under IRS rules</li>
-              <li><span class="good">✓</span> Write off depreciation, bonus depreciation, and real expenses</li>
-              <li><span class="good">✓</span> Deductions flow directly against your W-2 tax bill</li>
+              <li><span class="icon icon-good">✓</span> Treated as active under the IRS short-term rental rules.</li>
+              <li><span class="icon icon-good">✓</span> Depreciation, bonus depreciation, and real expenses all in play.</li>
+              <li><span class="icon icon-good">✓</span> Deductions flow straight against your W-2 tax bill.</li>
             </ul>
           </div>
         </div>
@@ -372,8 +395,9 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
 
   <section class="section">
     <div class="wrap">
-      <h2 class="section-title">Real people. Real numbers. Real tax bills going down.</h2>
-      <p class="section-lede">Every student starts somewhere. Results vary by market, property, capital, execution, and your personal tax situation. These are screenshots and messages from real students who applied what Preston teaches.</p>
+      <div class="eyebrow">What other high earners are saying</div>
+      <h2 class="section-title">Real people. Real properties. Real tax bills dropping.</h2>
+      <p class="section-lede">Screenshots and messages from students who actually ran the play. Your numbers depend on your market, your property, your financing, and your tax picture — but these are what's possible when the strategy is executed correctly.</p>
       <div class="proof-grid">
         <article class="proof-card">
           <img src="stories/01-self-reported-wins/images/065-josh-szentes-9k.png" alt="Josh Szentes screenshot showing occupancy and about nine thousand dollars in cash flow" decoding="async" width="976" height="607">
@@ -418,17 +442,17 @@ h1{font-family:var(--display);font-size:clamp(42px,5.6vw,72px);line-height:.98;l
   <section class="register-section" id="register">
     <div class="wrap register-grid">
       <div class="register-copy">
-        <div class="eyebrow">Free live workshop · Limited seats</div>
-        <h2>Save your seat. See the property, the deductions, and the tax return in one hour.</h2>
-        <p>On the live workshop, Preston walks through the exact deal structure, the IRS rules that make it legal, the records you need to keep, and the step-by-step path for high-income earners who want their first property working for them this year.</p>
+        <div class="eyebrow">Free live training · Seats are limited</div>
+        <h2>See exactly how I did this. On our free live training.</h2>
+        <p>In one hour I'll walk you through the deal structure, the IRS rules that keep it clean, the records you need to keep, and the exact path for high-income W-2 earners who want one property pulling weight on their tax return this year.</p>
         <div class="date-card">
           <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M4 10h16"></path></svg> Thursday, April 23rd</div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 7 PM EST · Live online workshop</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 7 PM EST · Live online training</div>
         </div>
       </div>
       <div class="registration-form-shell">
         <div class="form-kicker">Reserve your free seat</div>
-        <div class="form-title">Enter your name and email. Get your link to Preston's live STR tax workshop.</div>
+        <div class="form-title">Yes, save my seat for the live STR tax training.</div>
         <div class="kartra_optin_containereb160de1de89d9058fcb0b968dbbbd68"></div>
         <p class="secure-note">Your information stays private. We never share or sell it. Unsubscribe anytime.</p>
       </div>
