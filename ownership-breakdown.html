@@ -222,10 +222,11 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]){width:100%;border:1px solid #c7b8a1;border-radius:0;padding:16px 17px;font:600 16px var(--body);color:var(--ink);background:#fff;transition:border-color .2s ease,box-shadow .2s ease}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#8a7f71}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]):focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,137,33,.16)}
-.submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:72px;border:none;border-radius:6px;background:var(--green);box-shadow:0 6px 0 var(--green-dark),0 18px 32px rgba(20,122,77,.25);padding:17px 18px;font:800 18px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#fffaf1;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
-.submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 7px 0 var(--green-dark),0 22px 36px rgba(20,122,77,.32);filter:saturate(1.04)}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:72px;border:none;border-radius:6px;background:var(--green);box-shadow:none;padding:17px 18px;font:800 18px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#fffaf1;cursor:pointer;transition:filter .18s ease}
+.submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{filter:saturate(1.04)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:.82;cursor:wait;transform:none}
-.registration-form-shell input[type="submit"],.registration-form-shell [class*="submit"]{background:var(--green)!important;border-color:var(--green)!important;border-radius:6px!important;box-shadow:0 6px 0 var(--green-dark),0 18px 32px rgba(20,122,77,.22)!important;color:#fffaf1!important;font-family:var(--display)!important;font-weight:800!important}
+.registration-form-shell input[type="submit"],.registration-form-shell [class*="submit"]{background:var(--green)!important;border-color:var(--green)!important;border-radius:6px!important;box-shadow:none!important;color:#fffaf1!important;font-family:var(--display)!important;font-weight:800!important}
+.registration-form-shell [class*="submit"] *{box-shadow:none!important}
 .secure-note{font-size:12px;color:#776b5d;text-align:center;margin-top:14px}
 
 .footer{background:#07101a;color:#b8c0c8;padding:34px 0;text-align:center;font-size:12px}
