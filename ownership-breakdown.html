@@ -133,37 +133,75 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 .context-card h3{font-family:var(--display);font-size:20px;margin-bottom:8px;color:#fffaf1}
 .context-card p{color:#d8cbb8;font-size:15px;line-height:1.55}
 
-.tax-return{display:grid;grid-template-columns:.92fr 1.08fr;gap:32px;align-items:center}
-.return-paper{background:#fff;border:1px solid #c9c9c9;padding:30px;box-shadow:var(--shadow);position:relative}
-.return-paper::after{content:"TAX RETURN REVEAL";position:absolute;top:18px;right:-18px;transform:rotate(7deg);border:2px solid var(--green);color:var(--green);font-family:var(--display);font-size:12px;font-weight:800;letter-spacing:.12em;padding:8px 12px;background:#fff}
-.return-head{display:flex;justify-content:space-between;align-items:start;border-bottom:2px solid #222;padding-bottom:12px;margin-bottom:18px;font-family:var(--display)}
-.return-head small{display:block;color:var(--muted);font-family:var(--body);font-weight:600}
-.return-lines{display:grid;gap:12px}
-.return-line{display:grid;grid-template-columns:1fr auto;gap:20px;padding-bottom:10px;border-bottom:1px solid #ddd}
-.return-line span{color:#4f5965}
-.return-line b{font-family:var(--display)}
-.return-line.highlight{background:#ecf7ef;margin:4px -10px 0;padding:12px 10px;border-bottom:0;color:var(--green)}
-.return-line.highlight span,.return-line.highlight b{color:var(--green)}
-.compare{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
-.compare-col{position:relative;padding:28px 26px 30px;background:#fffaf1;border:1px solid var(--line);box-shadow:0 14px 34px rgba(39,31,20,.08)}
-.compare-col--loss{background:#fbf2e9;border-color:#e9d3be}
-.compare-col--loss::before,.compare-col--win::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px}
-.compare-col--loss::before{background:var(--red)}
-.compare-col--win::before{background:var(--green)}
-.compare-tag{display:inline-flex;align-items:center;gap:7px;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;margin-bottom:14px}
-.compare-tag--loss{background:rgba(196,63,49,.1);color:var(--red)}
-.compare-tag--win{background:#eaf5ef;color:var(--green-dark)}
-.compare h3{font-family:var(--display);font-size:22px;line-height:1.15;margin-bottom:6px}
-.compare-stat{font-family:var(--display);font-size:28px;font-weight:800;line-height:1.05;margin-bottom:4px;letter-spacing:-.01em}
+.impact-graphic{position:relative;background:#fffaf1;border:1px solid var(--line);padding:36px 32px 40px;box-shadow:0 24px 60px rgba(39,31,20,.12)}
+.impact-graphic::before{content:"Tax return visual";position:absolute;top:-14px;left:32px;background:var(--gold);color:var(--navy);font-family:var(--display);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;box-shadow:0 4px 10px rgba(0,0,0,.15)}
+.impact-title{font-family:var(--display);font-size:clamp(30px,3.8vw,48px);line-height:1.05;text-align:center;text-transform:uppercase;color:var(--navy);letter-spacing:-.01em;margin:0 auto 10px;max-width:760px}
+.impact-subtitle{text-align:center;color:#4f5965;font-size:16px;margin:0 auto 36px;max-width:680px}
+.impact-forms{display:grid;grid-template-columns:1fr 58px 1fr;gap:22px;align-items:center;position:relative}
+.impact-form{position:relative;background:#fff;border:1px solid #dcd3c6;padding:34px 28px 28px;box-shadow:0 8px 16px rgba(39,31,20,.03)}
+.impact-form::before{content:"";position:absolute;inset:4px -5px -5px 4px;border:1px solid #e1d8cd;background:#fff;z-index:-1;box-shadow:0 12px 24px rgba(39,31,20,.06)}
+.impact-form--after{border:1px solid #b9dcc6}
+.impact-form--after::before{border:1px solid #cfebd9;background:#fcfffb}
+.impact-label{position:absolute;top:-15px;left:-10px;display:inline-flex;align-items:center;justify-content:center;padding:7px 15px;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#fff;box-shadow:2px 4px 12px rgba(0,0,0,.18)}
+.impact-label--bad{background:var(--red)}
+.impact-label--good{background:var(--green)}
+.impact-form-head{font-family:var(--display);font-size:25px;font-weight:800;line-height:1;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--ink)}
+.impact-form-head small{display:block;font-family:var(--display);font-size:10px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;margin-top:6px}
+.impact-lines{display:grid;gap:0}
+.impact-line{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;padding:12px 0;border-bottom:1px dashed #e3ded5;font-size:14px;color:#4f5965}
+.impact-line:last-child{border-bottom:0}
+.impact-line b{font-family:var(--display);font-size:16px;color:var(--ink);text-align:right}
+.impact-line.is-loss{background:#fff8df;padding:12px;margin:4px -12px;border:1px dashed #e5d89d;color:var(--red)}
+.impact-line.is-loss b{color:var(--red)}
+.impact-line.is-zero{background:#ecf7ef;padding:12px;margin:4px -12px;border:1px dashed #b9dcc6;color:var(--green-dark)}
+.impact-line.is-zero b{color:var(--green)}
+.impact-arrow{position:relative;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--navy);color:#e4b55d;box-shadow:0 0 0 8px var(--paper),0 12px 28px rgba(9,21,34,.22);z-index:2}
+.impact-arrow svg{width:26px;height:26px}
+.impact-schedule{margin-top:22px;border:1px dashed #dcd3c6;background:#fffcf2;padding:18px}
+.impact-schedule strong{display:block;font-family:var(--display);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:var(--gold);margin-bottom:6px}
+.impact-finale{margin-top:48px;background:#fff;border:1px solid #dcd3c6;box-shadow:0 24px 48px rgba(39,31,20,.12);position:relative;overflow:visible}
+.impact-finale-numbers{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch}
+.impact-finale-side{padding:28px 24px;text-align:center;background:#fdf9f2;align-content:center}
+.impact-finale-side span{display:block;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.impact-finale-side b{font-family:var(--display);font-size:clamp(22px,2.6vw,28px);line-height:1;display:inline-block}
+.impact-finale-side em{display:block;font-style:normal;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+.impact-finale-side--before b{color:var(--red);text-decoration:line-through;text-decoration-thickness:3px;text-decoration-color:rgba(196,63,49,.5)}
+.impact-finale-side--after b{color:var(--green)}
+.impact-finale-hero{background:var(--navy);color:#fffaf1;padding:36px 42px;text-align:center;min-width:220px;position:relative;box-shadow:0 12px 36px rgba(9,21,34,.25),0 0 0 1px var(--navy)}
+.impact-finale-hero::before{content:"";position:absolute;inset:6px;border:1px solid rgba(228,181,93,.25);pointer-events:none}
+.impact-finale-hero span{display:block;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:#e4b55d;margin-bottom:12px}
+.impact-finale-hero strong{display:block;font-family:var(--display);font-size:clamp(32px,4vw,46px);font-weight:800;letter-spacing:-.015em;line-height:1;color:#fff}
+.impact-finale-hero em{display:block;font-style:normal;font-size:11px;color:#d8cbb8;margin-top:12px;letter-spacing:.05em}
+.impact-finale-note{display:flex;gap:20px;align-items:center;padding:26px 32px;background:#fff;border-top:1px solid var(--line)}
+.impact-finale-dot{width:56px;height:56px;border-radius:50%;background:#eaf5ef;color:var(--green);display:grid;place-items:center;font-family:var(--display);font-size:24px;font-weight:800;flex-shrink:0}
+.impact-finale-note b{display:block;font-family:var(--display);font-size:17px;color:var(--navy);margin-bottom:5px}
+.impact-finale-note p{font-size:14px;color:#39434e;line-height:1.5;margin:0}
+
+.compare-section-header{text-align:center;max-width:760px;margin:0 auto 48px}
+.compare-section-header .eyebrow{justify-content:center}
+.compare-section-header .eyebrow::before{display:none}
+.compare-section-header .section-title{margin:0 auto 16px}
+.compare-section-header .section-lede{margin:0 auto}
+.compare{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px;margin:0 auto}
+.compare-col{background:#fff;border:1px solid var(--line);box-shadow:0 24px 48px rgba(39,31,20,.12);display:flex;flex-direction:column}
+.compare-header{padding:28px 30px 24px;border-bottom:1px solid var(--line);background:#fffaf1;position:relative}
+.compare-col--loss .compare-header{border-top:5px solid var(--red)}
+.compare-col--win .compare-header{border-top:5px solid var(--green)}
+.compare-tag{display:inline-block;font-family:var(--display);font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px;padding:4px 0}
+.compare-tag--loss{color:var(--red)}
+.compare-tag--win{color:var(--green)}
+.compare h3{font-family:var(--display);font-size:24px;line-height:1.15;margin-bottom:8px}
+.compare-stat{font-family:var(--display);font-size:34px;font-weight:800;line-height:1.05;margin-bottom:8px;letter-spacing:-.01em}
 .compare-stat--loss{color:var(--red)}
 .compare-stat--win{color:var(--green)}
-.compare-caption{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:18px;padding-bottom:18px;border-bottom:1px dashed #d9cab6}
-.compare ul{list-style:none;display:grid;gap:12px;color:#39434e;font-size:15px;line-height:1.5}
-.compare li{display:flex;gap:12px;align-items:flex-start}
-.compare li .icon{flex:0 0 auto;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:13px;font-weight:800;margin-top:1px}
-.compare li .icon-bad{background:var(--red);color:#fffaf1}
-.compare li .icon-good{background:var(--green);color:#fffaf1}
-.vs{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fffaf1;font-family:var(--display);font-weight:800;font-size:14px;letter-spacing:.08em;box-shadow:0 8px 22px rgba(9,21,34,.25),0 0 0 6px var(--paper)}
+.compare-caption{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.compare-body{padding:30px 30px}
+.compare-body ul{list-style:none;display:grid;gap:18px;color:#39434e;font-size:15px;line-height:1.55}
+.compare-body li{display:flex;gap:14px;align-items:flex-start}
+.compare-body li .icon{flex:0 0 auto;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-size:13px;font-weight:800;margin-top:2px}
+.compare-body li .icon-bad{background:var(--red);color:#fffaf1}
+.compare-body li .icon-good{background:var(--green);color:#fffaf1}
+.vs{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#e4b55d;font-family:var(--display);font-weight:800;font-size:16px;letter-spacing:.08em;box-shadow:0 8px 24px rgba(9,21,34,.25),0 0 0 8px var(--paper)}
 
 .proof-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .proof-card{background:#fffaf1;border:1px solid var(--line);overflow:hidden}
@@ -203,7 +241,7 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 .footer p{max-width:880px;margin:0 auto}
 
 @media(max-width:980px){
-  .hero-grid,.breakdown-grid,.tax-return,.register-grid{grid-template-columns:1fr}
+  .hero-grid,.breakdown-grid,.register-grid{grid-template-columns:1fr}
   .proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .proof-card img{height:250px}
   .case-board{transform:none}
@@ -226,6 +264,13 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
   .receipt div:last-child{border-bottom:0}
   .section{padding:52px 0}
   .context-card{grid-template-columns:1fr;padding:22px;gap:14px}
+  .impact-graphic{padding:26px 20px}
+  .impact-forms{grid-template-columns:1fr; gap:36px; margin-top:28px;}
+  .impact-arrow{margin:0 auto;transform:rotate(90deg)}
+  .impact-finale-numbers{grid-template-columns:1fr}
+  .impact-finale-hero{padding:24px 20px;min-width:0}
+  .impact-finale-note{flex-direction:column;align-items:flex-start;gap:14px;padding:20px}
+  .impact-finale-dot{width:46px;height:46px;font-size:20px}
   .compare{grid-template-columns:1fr;gap:32px}
   .vs{position:relative;left:auto;top:auto;transform:none;margin:-6px auto}
   .proof-grid{grid-template-columns:1fr}
@@ -317,42 +362,109 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
     </div>
   </section>
 
+  <!-- SECTION: Tax Return Visual (full-width) -->
   <section class="section">
-    <div class="wrap tax-return">
-      <div class="return-paper">
-        <div class="return-head">
-          <div>Form 1040 Snapshot<small>For workshop illustration only</small></div>
-          <div>2026</div>
+    <div class="wrap">
+      <div class="impact-graphic" aria-label="Short-term rental tax impact graphic">
+        <h2 class="impact-title">One short-term rental. Big tax impact.</h2>
+        <p class="impact-subtitle">Real case-file numbers from Preston's return: the property kept cash flowing while the deductions moved against W-2 income.</p>
+
+        <div class="impact-forms">
+          <div class="impact-form">
+            <span class="impact-label impact-label--bad">Without STR</span>
+            <div class="impact-form-head">Form 1040<small>Before the short-term rental deduction</small></div>
+            <div class="impact-lines">
+              <div class="impact-line"><span>W-2 income</span><b>$150K+</b></div>
+              <div class="impact-line"><span>STR deductions</span><b>$0</b></div>
+              <div class="impact-line"><span>Deduction flow-through</span><b>$0</b></div>
+              <div class="impact-line"><span>Federal tax bill</span><b>$52,317</b></div>
+            </div>
+          </div>
+
+          <div class="impact-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+          </div>
+
+          <div class="impact-form impact-form--after">
+            <span class="impact-label impact-label--good">With 1 STR</span>
+            <div class="impact-form-head">Form 1040<small>After active STR treatment</small></div>
+            <div class="impact-lines">
+              <div class="impact-line"><span>W-2 tax bill before strategy</span><b>$52,317</b></div>
+              <div class="impact-line is-loss"><span>STR deductions</span><b>($48,475)</b></div>
+              <div class="impact-line is-zero"><span>Estimated tax bill after</span><b>$3,842</b></div>
+            </div>
+            <div class="impact-schedule">
+              <strong>Schedule E style breakdown</strong>
+              <div class="impact-line"><span>Depreciation</span><b>$39,272</b></div>
+              <div class="impact-line"><span>Bonus depreciation</span><b>$7,012</b></div>
+              <div class="impact-line"><span>Other write-offs</span><b>$2,191</b></div>
+            </div>
+          </div>
         </div>
-        <div class="return-lines">
-          <div class="return-line"><span>W-2 tax bill before strategy</span><b>$52,317</b></div>
-          <div class="return-line"><span>STR depreciation deductions</span><b>($48,475)</b></div>
-          <div class="return-line"><span>Cash-flowing asset remains</span><b>$2,950/mo</b></div>
-          <div class="return-line highlight"><span>Estimated tax bill after strategy</span><b>$3,842</b></div>
+
+        <div class="impact-finale">
+          <div class="impact-finale-numbers">
+            <div class="impact-finale-side impact-finale-side--before">
+              <span>Was owed</span>
+              <b>$52,317</b>
+              <em>W-2 tax before STR</em>
+            </div>
+            <div class="impact-finale-hero">
+              <span>Kept in the pocket</span>
+              <strong>$48,475</strong>
+              <em>Year 1 savings against W-2</em>
+            </div>
+            <div class="impact-finale-side impact-finale-side--after">
+              <span>Actually owed</span>
+              <b>$3,842</b>
+              <em>W-2 tax after STR</em>
+            </div>
+          </div>
+          <div class="impact-finale-note">
+            <span class="impact-finale-dot" aria-hidden="true">$</span>
+            <div>
+              <b>Big write-off. Cash-flowing asset.</b>
+              <p>Same property kept producing $2,950/month in net cash flow while generating $48,475 in year-one deductions against W-2 income.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
+    </div>
+  </section>
+
+  <!-- SECTION: IRS Treatment Comparison (LTR vs STR) -->
+  <section class="section">
+    <div class="wrap">
+      <div class="compare-section-header">
         <div class="eyebrow">How the IRS treats the same property two different ways</div>
         <h2 class="section-title">How a $52,317 tax bill shrinks to $3,842 without breaking a single IRS rule.</h2>
         <p class="section-lede">Most social media breakdowns stop before they get to this part. On the workshop I'll cover the 7-day test, material participation, cost segregation, bonus depreciation, and the exact paper trail the IRS expects to see when they pull your return.</p>
-        <div class="compare">
-          <div class="compare-col compare-col--loss">
+      </div>
+      <div class="compare">
+        <div class="compare-col compare-col--loss">
+          <div class="compare-header">
             <span class="compare-tag compare-tag--loss">Taxed as passive</span>
             <h3>Long-term rental</h3>
             <div class="compare-stat compare-stat--loss">$0</div>
             <div class="compare-caption">offset against your W-2</div>
+          </div>
+          <div class="compare-body">
             <ul>
               <li><span class="icon icon-bad">✕</span> Passive losses sit trapped on your return with nowhere to go.</li>
               <li><span class="icon icon-bad">✕</span> The losses can't be applied against your W-2 income.</li>
               <li><span class="icon icon-bad">✕</span> Material participation rules are off the table for this category.</li>
             </ul>
           </div>
-          <div class="vs" aria-hidden="true">VS</div>
-          <div class="compare-col compare-col--win">
+        </div>
+        <div class="vs" aria-hidden="true">VS</div>
+        <div class="compare-col compare-col--win">
+          <div class="compare-header">
             <span class="compare-tag compare-tag--win">Taxed as active</span>
             <h3>Short-term rental</h3>
             <div class="compare-stat compare-stat--win">$48,475</div>
             <div class="compare-caption">flowing directly against your W-2</div>
+          </div>
+          <div class="compare-body">
             <ul>
               <li><span class="icon icon-good">✓</span> Treated as active under IRS short-term rental exceptions.</li>
               <li><span class="icon icon-good">✓</span> Depreciation, bonus depreciation, and real expenses all apply.</li>
