@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f4efe5">
-<title>How One Property Created $112,415 in Estimated Tax Savings | Legacy Investing Show</title>
-<meta name="description" content="Preston Seo walks through one short-term rental line by line — the purchase price, cash flow, cost segregation study, and estimated tax savings from one real property.">
+<title>How One Property Created $112,415 in Tax Savings | Legacy Investing Show</title>
+<meta name="description" content="Preston Seo walks through one short-term rental line by line — the purchase price, cash flow, cost segregation study, and tax savings from one real property.">
 
 <link rel="icon" href="data:,">
 <link rel="canonical" href="https://str.managemoney101.com/ownership-breakdown">
-<link rel="preload" href="str/ownership-house-760.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="preload" href="str/ownership-case-house.jpg" as="image" type="image/jpeg" fetchpriority="high">
 <link rel="preload" href="str/fonts/poppins-600-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="str/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="str/fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -44,7 +44,7 @@
 }
 
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.55}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.55;overflow-x:hidden}
 body::before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(20,122,77,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(20,122,77,.045) 1px,transparent 1px);background-size:38px 38px}
 img{max-width:100%;display:block}
 a{color:inherit}
@@ -84,8 +84,7 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 .host-strip strong{display:block;color:var(--ink);font-family:var(--display);font-size:15px}
 
 .case-board{position:relative;background:#fffdf6;border:1px solid #cddbc7;box-shadow:var(--shadow);padding:16px;border-radius:8px}
-.case-board::before{content:"Real case file";position:absolute;top:-13px;left:26px;background:var(--green);color:#fffaf1;font-family:var(--display);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
-.property-photo{position:relative;min-height:250px;background:linear-gradient(135deg,rgba(11,31,24,.52),rgba(11,31,24,.04)),url('str/ownership-house-760.webp') center/cover;border:1px solid var(--line);border-radius:6px 6px 0 0}
+.property-photo{position:relative;min-height:250px;background:linear-gradient(135deg,rgba(11,31,24,.26),rgba(11,31,24,.02)),url('str/ownership-case-house.jpg') center/cover;border:1px solid var(--line);border-radius:6px 6px 0 0;overflow:hidden}
 .property-tag{position:absolute;top:14px;right:14px;background:rgba(11,31,24,.9);color:#fffaf1;padding:12px 14px;min-width:210px;border-radius:6px}
 .property-tag strong{display:block;font-family:var(--display);font-size:16px}
 .property-tag span{font-size:12px;color:#d8cbb8}
@@ -94,7 +93,19 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 .receipt div:last-child{border-right:0}
 .receipt b{display:block;font-family:var(--display);font-size:21px;line-height:1.1}
 .receipt span{display:block;margin-top:4px;font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-.tax-stamp{display:inline-flex;margin-top:12px;background:#fff;border:2px solid var(--green);color:var(--green);font-family:var(--display);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:10px 13px;box-shadow:0 10px 30px rgba(39,31,20,.13)}
+
+.as-featured{background:#f0ece3;padding:28px 0;border-bottom:1px solid var(--line)}
+.as-featured-heading{text-align:center;font-size:18px;color:#5c5f5b;margin-bottom:16px;font-weight:600}
+.as-featured-row{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.user-avatars{display:flex;align-items:center}
+.avatar{width:48px;height:48px;border-radius:50%;border:3px solid var(--white);margin-left:-12px;object-fit:cover;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.avatar:first-child{margin-left:0}
+.trustpilot-mini{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;color:var(--ink)}
+.trustpilot-mini .stars{display:flex;gap:2px}
+.trustpilot-mini .star{width:20px;height:20px;background:#00b67a;color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;border-radius:2px}
+.trustpilot-mini .logo{font-weight:800;color:#00b67a}
+.media-logos{display:flex;align-items:center;justify-content:center;padding:12px 20px}
+.media-logos img{max-height:48px;width:auto;object-fit:contain}
 
 .section{padding:58px 0;border-bottom:1px solid var(--line)}
 .section-title{font-family:var(--display);font-size:clamp(28px,3.5vw,42px);line-height:1.08;max-width:760px;margin-bottom:14px}
@@ -220,6 +231,11 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 .kartra-field-group{display:grid;gap:7px;text-align:left}
 .kartra-field-label{display:block;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark);text-align:left}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]){width:100%;border:1px solid #c7b8a1;border-radius:0;padding:16px 17px;font:600 16px var(--body);color:var(--ink);background:#fff;transition:border-color .2s ease,box-shadow .2s ease}
+.registration-form-shell select,
+.registration-form-shell [role="combobox"]{max-width:100%!important;min-width:112px!important;text-overflow:clip!important;white-space:nowrap!important}
+.registration-form-shell [class*="country"],
+.registration-form-shell [class*="phone"],
+.registration-form-shell [class*="Phone"]{min-width:0!important;max-width:100%!important}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#8a7f71}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]):focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,137,33,.16)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:72px;border:none;border-radius:6px;background:var(--green);box-shadow:none;padding:17px 18px;font:800 18px var(--display);letter-spacing:.08em;text-transform:uppercase;color:#fffaf1;cursor:pointer;transition:filter .18s ease}
@@ -240,23 +256,23 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
   .register-copy{position:static}
 }
 @media(max-width:680px){
-  .wrap{width:min(100% - 28px,1160px)}
+  .wrap{width:calc(100vw - 28px);max-width:calc(100vw - 28px)}
+  .hero-grid,.hero-grid > *, .breakdown-grid,.breakdown-grid > *, .register-grid,.register-grid > *{min-width:0}
   .topbar-inner{height:auto;padding:16px 0;align-items:flex-start;flex-direction:column;gap:8px}
-  .nav-note{text-align:left}
+  .nav-note{text-align:left;overflow-wrap:break-word}
   .hero{padding:42px 0 34px}
-  h1{font-size:36px}
-  .hero-copy{font-size:17px}
+  h1{width:100%;max-width:100%;font-size:30px;overflow-wrap:anywhere}
+  .hero-copy{max-width:100%;font-size:16px;overflow-wrap:break-word}
   .webinar-date{width:100%;justify-content:space-between;gap:10px;padding:11px 13px}
   .webinar-date span{font-size:13px}
-  .countdown-grid{gap:8px}
-  .countdown-card{min-height:76px;padding:9px 5px}
-  .countdown-card b{font-size:31px}
-  .countdown-card span{font-size:9px;letter-spacing:.1em}
+  .countdown-grid{width:calc(100vw - 28px);max-width:calc(100vw - 28px);grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .countdown-card{min-height:72px;padding:9px 4px}
+  .countdown-card b{font-size:25px}
+  .countdown-card span{font-size:8px;letter-spacing:.08em}
   .button{width:100%;padding-left:16px;padding-right:16px}
   .case-board{padding:12px}
   .property-photo{min-height:220px}
   .property-tag{left:12px;right:12px;top:12px;min-width:0}
-  .tax-stamp{position:static;display:inline-block;margin-top:12px;transform:rotate(-2deg)}
   .receipt{grid-template-columns:1fr}
   .receipt div{border-right:0;border-bottom:1px solid var(--line)}
   .receipt div:last-child{border-bottom:0}
@@ -273,7 +289,21 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
   .vs{position:relative;left:auto;top:auto;transform:none;margin:-6px auto}
   .proof-grid{grid-template-columns:1fr}
   .proof-card img{height:190px}
+  .as-featured{padding:22px 12px}
+  .as-featured-heading{font-size:15px;margin-bottom:12px}
+  .as-featured-row{gap:10px;margin-bottom:14px}
+  .avatar{width:34px;height:34px;border-width:2px;margin-left:-7px}
+  .trustpilot-mini{width:100%;justify-content:center;font-size:12px;gap:6px}
+  .trustpilot-mini .star{width:14px;height:14px;font-size:9px}
+  .media-logos{padding:8px 6px}
+  .media-logos img{width:100%;max-width:calc(100vw - 40px);max-height:none}
   .registration-form-shell{padding:24px 18px}
+  .registration-form-shell form,
+  .registration-form-shell form > *,
+  .registration-form-shell [class*="phone"]{max-width:100%!important}
+  .registration-form-shell form > *:has(select){display:grid!important;grid-template-columns:minmax(118px,1fr)!important;gap:10px!important}
+  .registration-form-shell select,
+  .registration-form-shell [role="combobox"]{min-width:118px!important;font-size:14px!important}
   .form-title{font-size:23px}
 }
 </style>
@@ -281,7 +311,7 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
 <body>
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <div class="nav-note">Free live masterclass with <strong>Preston Seo</strong> &middot; Sunday, April 26 @ 2 PM EST</div>
+    <div class="nav-note">Free live masterclass with <strong>Preston Seo</strong> &middot; Tuesday, April 28 @ 7 PM EST</div>
   </div>
 </header>
 
@@ -289,12 +319,12 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">For high-income W-2 earners</div>
-        <h1>One $835,000 STR. $4,500/mo cash flow. <span class="tax-drop">$112,415 in estimated tax savings.</span></h1>
+        <div class="eyebrow">For high-income earners</div>
+        <h1>One $835,000 STR. $4,500/mo cash flow. <span class="tax-drop">$112,415 in tax savings.</span></h1>
         <p class="hero-copy">Preston breaks down the actual property, the cost segregation numbers, and the short-term rental rules that made the tax result possible.</p>
-        <div class="webinar-countdown" aria-label="Webinar starts this Sunday, April 26 at 2:00 PM EST">
-          <div class="webinar-date"><strong>This Sunday, April 26</strong><span>2:00 PM EST</span></div>
-          <div class="countdown-grid" data-countdown data-target="2026-04-26T14:00:00-04:00">
+        <div class="webinar-countdown" aria-label="Webinar starts Tuesday, April 28 at 7:00 PM EST">
+          <div class="webinar-date"><strong>Tuesday, April 28</strong><span>7:00 PM EST</span></div>
+          <div class="countdown-grid" data-countdown data-target="2026-04-28T19:00:00-04:00">
             <div class="countdown-card"><b data-time-unit="days">00</b><span>Days</span></div>
             <div class="countdown-card"><b data-time-unit="hours">00</b><span>Hours</span></div>
             <div class="countdown-card"><b data-time-unit="minutes">00</b><span>Minutes</span></div>
@@ -321,29 +351,57 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
         <div class="receipt">
           <div><b>$835,000</b><span>Purchase price</span></div>
           <div><b>$4,500/mo</b><span>Net cash flow</span></div>
-          <div><b>$112,415</b><span>Estimated tax savings</span></div>
+          <div><b>$112,415</b><span>Tax savings</span></div>
         </div>
-        <div class="tax-stamp">Document-backed example</div>
       </aside>
+    </div>
+  </section>
+
+  <section class="as-featured" aria-label="Trustpilot and media mentions">
+    <div class="wrap">
+      <p class="as-featured-heading">As Featured In:</p>
+      <div class="as-featured-row">
+        <div class="user-avatars">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&amp;h=100&amp;fit=crop&amp;crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&amp;h=100&amp;fit=crop&amp;crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&amp;h=100&amp;fit=crop&amp;crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&amp;h=100&amp;fit=crop&amp;crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&amp;h=100&amp;fit=crop&amp;crop=face" alt="Student" class="avatar" loading="lazy" width="48" height="48">
+        </div>
+        <div class="trustpilot-mini">
+          <span>Excellent</span>
+          <div class="stars" aria-hidden="true">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="logo">Trustpilot</span>
+        </div>
+      </div>
+      <div class="media-logos">
+        <img src="af204c7a353d959657f10645474ff2c1.webp" alt="Featured in major media outlets" width="746" height="82" loading="lazy" decoding="async">
+      </div>
     </div>
   </section>
 
   <section class="section" id="breakdown">
     <div class="wrap">
       <div class="eyebrow">The case file</div>
-      <h2 class="section-title">The numbers checked against the tax document.</h2>
-      <p class="section-lede">The tax-savings figure comes from the depreciation increase shown in the study: $303,824 multiplied by the estimated 37.0% tax rate equals $112,415 after rounding.</p>
+      <h2 class="section-title">$303,824 in added depreciation × 37.0% tax rate = $112,415 in tax savings.</h2>
+      <p class="section-lede">The tax document shows the depreciation increase: $303,824. Apply the 37.0% tax rate, round the result, and the savings comes to $112,415.</p>
 
       <div class="breakdown-grid">
         <div class="file-card">
           <span class="card-label">Tax Impact</span>
-          <h3>How the $112,415 estimate was calculated</h3>
+          <h3>How the $112,415 was calculated</h3>
           <div class="ledger-row"><span>Building cost basis</span><b>$799,922</b></div>
           <div class="ledger-row"><span>Current-method depreciation</span><b>$7,703</b></div>
           <div class="ledger-row"><span>Cost segregation depreciation</span><b>$311,527</b></div>
           <div class="ledger-row"><span>Increase in depreciation</span><b>$303,824</b></div>
-          <div class="ledger-row total"><span>Estimated tax rate</span><b>37.0%</b></div>
-          <div class="ledger-row savings"><span>Estimated tax savings</span><b>$112,415</b></div>
+          <div class="ledger-row total"><span>Tax rate</span><b>37.0%</b></div>
+          <div class="ledger-row savings"><span>Tax savings</span><b>$112,415</b></div>
         </div>
 
         <div class="file-card">
@@ -353,7 +411,7 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
             <div class="metric"><span>Purchase price</span><b>$835,000</b></div>
             <div class="metric"><span>Building cost basis</span><b>$799,922</b></div>
             <div class="metric"><span>Land / non-building allocation</span><b>$35,078</b></div>
-            <div class="metric positive"><span>Projected monthly revenue</span><b>$13,728</b></div>
+            <div class="metric positive"><span>Monthly revenue</span><b>$13,728</b></div>
             <div class="metric negative"><span>Debt, taxes, insurance</span><b>($6,813)</b></div>
             <div class="metric negative"><span>Cleaning, utilities, platform fees</span><b>($2,415)</b></div>
             <div class="metric positive"><span>Monthly net cash flow</span><b>$4,500</b></div>
@@ -366,8 +424,8 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v4"></path><path d="M12 16h.01"></path></svg>
         </span>
         <div>
-          <h3>The workshop is about the rules, not a magic loophole.</h3>
-          <p>Preston covers the short-term rental exception, material participation, cost segregation, bonus depreciation, and the records needed before a deduction can be used against W-2 income.</p>
+          <h3>The tax result comes from following the rules correctly.</h3>
+          <p>Preston covers the short-term rental exception, material participation, cost segregation, bonus depreciation, and the records needed to support deductions against active income.</p>
         </div>
       </div>
     </div>
@@ -426,8 +484,8 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
         <h2>See the full STR tax strategy live.</h2>
         <p>Get the deal structure, IRS rule checklist, and records Preston used before filing this case.</p>
         <div class="date-card">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M4 10h16"></path></svg> Sunday, April 26</div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 2 PM EST · Live online training</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M4 10h16"></path></svg> Tuesday, April 28</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 7 PM EST · Live online training</div>
         </div>
       </div>
       <div class="registration-form-shell">
