@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://tracking.managemoney101.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQ4R2LKP');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+var head = document.head;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257ae8a5117ba5d7b516261da603bc86a49c0c42f398c619e251026c05&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
+head.appendChild(script);
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
@@ -347,8 +363,8 @@ Tue, April 28
 (function() {
   'use strict';
   var formLoaded = false;
-  var gtmLoaded = false;
-  var trackingLoaded = false;
+  var gtmLoaded = true;
+  var trackingLoaded = true;
   var formUrl = 'https://app.kartra.com/optin/OdhExXbl4Ma4';
   var registerSection = document.getElementById('register');
   var hardTimer, idleHandle;
@@ -371,27 +387,11 @@ Tue, April 28
   }
 
   function loadGtm() {
-    if (gtmLoaded) return;
-    gtmLoaded = true;
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0];
-      var j=d.createElement(s);
-      var dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
-      j.src='https://tracking.managemoney101.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KQ4R2LKP');
+    return;
   }
 
   function loadTracking() {
-    if (trackingLoaded || !document.body) return;
-    trackingLoaded = true;
-    var s=document.createElement('script');
-    s.src='https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257ae8a5117ba5d7b516261da603bc86a49c0c42f398c619e251026c05&tag=!clicked&ref_url='+encodeURIComponent(document.URL);
-    s.async=true;
-    document.body.appendChild(s);
+    return;
   }
 
   function loadKartraForm() {
