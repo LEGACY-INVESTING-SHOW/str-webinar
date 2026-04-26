@@ -60,6 +60,10 @@
       "destination": "/sstr.html"
     },
     {
+      "source": "/advertorial11",
+      "destination": "/advertorial11.html"
+    },
+    {
       "source": "/str-arbitrage",
       "destination": "/str-arbitrage.html"
     },
