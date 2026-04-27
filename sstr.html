@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google Tag Manager -->
@@ -165,12 +165,25 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
 .registration-form-shell [class*="country"],
 .registration-form-shell [class*="phone"],
 .registration-form-shell [class*="Phone"]{min-width:0!important;max-width:100%!important}
+.registration-form-shell button:not([type="submit"]){
+  background:#fff!important;
+  border:1px solid #cfc7bc!important;
+  border-radius:6px!important;
+  color:#111!important;
+  font-family:var(--body)!important;
+  font-weight:600!important;
+  box-shadow:none!important;
+  min-height:58px!important;
+  padding:14px 16px!important;
+  text-align:left!important;
+}
+.registration-form-shell button:not([type="submit"]) *{color:inherit!important}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"])::placeholder{color:#80776c}
 .form_class_eb160de1de89d9058fcb0b968dbbbd68 input:not([type="hidden"]):focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(20,92,67,.16)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:72px;border:none;border-radius:7px;background:var(--green);box-shadow:0 14px 28px rgba(20,92,67,.22);padding:17px 18px;font:800 18px var(--display);letter-spacing:.06em;text-transform:uppercase;color:#fff;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 18px 34px rgba(20,92,67,.28);filter:saturate(1.04)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:.82;cursor:wait;transform:none}
-.registration-form-shell button,
+.registration-form-shell button[type="submit"],
 .registration-form-shell input[type="submit"],
 .registration-form-shell [class*="submit_button"]{
   background:var(--accent)!important;
@@ -210,7 +223,8 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
   .registration-form-shell form > *:has(select) > *,
   .registration-form-shell form > *:has([role="combobox"]) > *,
   .registration-form-shell select,
-  .registration-form-shell [role="combobox"]{
+  .registration-form-shell [role="combobox"],
+  .registration-form-shell button:not([type="submit"]){
     width:100%!important;
     min-width:0!important;
     max-width:100%!important;
@@ -257,7 +271,8 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
   .registration-form-shell form > *:has(select),
   .registration-form-shell form > *:has([role="combobox"]){display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
   .registration-form-shell select,
-  .registration-form-shell [role="combobox"]{min-width:118px!important;font-size:14px!important}
+  .registration-form-shell [role="combobox"],
+  .registration-form-shell button:not([type="submit"]){min-width:118px!important;font-size:14px!important}
   .form-title{font-size:24px}
 }
 </style>
@@ -272,7 +287,7 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
         <h1>How high earners use <span class="accent">one STR</span> to write off $50K-$150K+ against their income</h1>
         <p class="subhead">Preston Seo walks through the exact property criteria, tax rules, and IRS requirements that can let short-term rental losses offset active income while still generating cash flow.</p>
         <div class="event-strip" aria-label="Workshop date and time">
-          <span class="event-date">Tuesday, April 28</span>
+          <span class="event-date">Wednesday, April 29</span>
           <span class="event-time">7:00 PM EST</span>
         </div>
         <div class="countdown" data-countdown aria-label="Countdown to the workshop">
@@ -384,7 +399,7 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
       <div class="learn-grid">
         <article class="learn-item">
           <b>Find deals that cash flow from month one</b>
-          <p>How to analyze markets, calculate real expenses, and spot the properties that perform—not the ones that just look good on paper.</p>
+          <p>How to analyze markets, calculate real expenses, and spot the properties that performâ€”not the ones that just look good on paper.</p>
         </article>
         <article class="learn-item">
           <b>Use STR tax rules to offset active income</b>
@@ -406,7 +421,7 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
         <p>Enter your name and email below. The registration form will send the event details and next steps.</p>
         <div class="date-card">
           <div>Free live online workshop</div>
-          <div class="event-date-line">Tuesday, April 28 at 7:00 PM EST</div>
+          <div class="event-date-line">Wednesday, April 29 at 7:00 PM EST</div>
           <div>Hosted by Preston Seo</div>
         </div>
       </div>
@@ -430,7 +445,7 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
 <script>
 (function() {
   'use strict';
-  var target = new Date('2026-04-28T19:00:00-04:00').getTime();
+  var target = new Date('2026-04-29T19:00:00-04:00').getTime();
   var countdown = document.querySelector('[data-countdown]');
   if (!countdown) return;
 
