@@ -41,7 +41,11 @@
     },
     {
       "source": "/arbitrage",
-      "destination": "/arbitrage.html"
+      "destination": "/a-arbitrage.html"
+    },
+    {
+      "source": "/a-arbitrage",
+      "destination": "/a-arbitrage.html"
     },
     {
       "source": "/airbnb-arbitrage",
