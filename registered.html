@@ -24,6 +24,7 @@ head.appendChild(script);
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -104,8 +105,10 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 .time-display .local-time{font-family:var(--font-display);font-size:32px;color:var(--text-primary);line-height:1}
 .time-display .timezone{font-size:13px;color:var(--text-secondary);margin-top:4px}
 
-.add-calendar-btn{width:100%;padding:16px;background:var(--accent);color:#fff;border:none;border-radius:var(--radius);font-family:var(--font-body);font-size:15px;font-weight:800;cursor:pointer;letter-spacing:0.3px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px;transition:background 0.2s}
-.add-calendar-btn:hover{background:var(--accent-hover)}
+.custom-button{display:inline-block;position:relative;width:100%;padding:16px 24px 16px 44px;background-color:#FFD700;color:#000;font-weight:700;text-align:center;text-decoration:none;border-radius:4px;font-size:16px;font-family:sans-serif;cursor:pointer;min-width:160px}
+.custom-button:hover{background-color:#FFC300}
+.addeventatc .addeventatc_icon,
+.addeventatc .addevent-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%)}
 .calendar-note{font-size:12px;color:var(--text-muted);text-align:center;margin-top:12px;line-height:1.5}
 
 /* --- VIDEO LIBRARY --- */
@@ -251,10 +254,12 @@ Live Workshop &mdash; No Replay
 </div>
 </div>
 
-<button class="add-calendar-btn" onclick="addToCalendar()">
-<span>&#128197;</span>
+<a title="Add to Calendar"
+   class="addeventatc custom-button"
+   data-id="nndy6f5snltl"
+   target="_blank">
 Add to Calendar
-</button>
+</a>
 </div>
 
 </div>
@@ -468,26 +473,6 @@ Critical Action Items
 </footer>
 
 <script>
-// Add to Calendar function
-function addToCalendar() {
-    const event = {
-        title: 'Free Airbnb STR Workshop - Legacy Investing Show',
-        description: 'Join Preston Seo for a live workshop on building a profitable Airbnb business.\n\nYou will learn:\n- How to find profitable markets\n- Landlord negotiation scripts\n- Remote setup systems\n- STR tax advantages\n- Automation strategies\n\nLive on Tuesday, May 19th @ 7:00 PM EST\n\nZoom link will be emailed separately.',
-        location: 'Online via Zoom'
-    };
-
-    const eventStart = new Date('2026-05-19T23:00:00Z');
-    const eventEnd = new Date(eventStart.getTime() + 1 * 60 * 60 * 1000);
-    const formatDate = (d) => d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    const googleCalendarUrl = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
-        + '&text=' + encodeURIComponent(event.title)
-        + '&dates=' + formatDate(eventStart) + '/' + formatDate(eventEnd)
-        + '&details=' + encodeURIComponent(event.description)
-        + '&location=' + encodeURIComponent(event.location);
-
-    window.open(googleCalendarUrl, '_blank', 'noopener');
-}
-
 // FAQ Accordion
 function initFaq() {
     const faqItems = document.querySelectorAll('.faq-item');
