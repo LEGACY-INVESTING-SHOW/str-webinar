@@ -1046,8 +1046,9 @@
       <div class="container hero-grid">
         <div>
           <span class="eyebrow">Call booked</span>
-          <h1>You're in. Here's what happens next.</h1>
+          <h1 data-booking-headline>You're in. Here's what happens next.</h1>
           <p class="hero-lede">Watch the short video, confirm the invite, and use the call to decide which path makes sense for your situation.</p>
+          <p class="hero-lede" data-booking-personalization hidden></p>
           <div class="intent-stack" aria-label="Three steps to prepare for the call">
             <div class="intent-card">
               <span>1. Confirm</span>
@@ -1081,7 +1082,7 @@
         <div>
           <span class="eyebrow">Don't skip this</span>
           <h2>Confirm it now, while you're here.</h2>
-          <p>Takes 60 seconds. It's the difference between a call that happens and one that disappears into your inbox.</p>
+          <p data-booking-email-note>Takes 60 seconds. It's the difference between a call that happens and one that disappears into your inbox.</p>
           <div class="steps">
             <div class="step-card"><p><strong>1. Find the invite.</strong><br />In your inbox (check spam too). Subject line says Legacy Investing Show.</p></div>
             <div class="step-card"><p><strong>2. Hit accept.</strong><br />Add to calendar and set a 10-min reminder.</p></div>
@@ -1466,6 +1467,43 @@
   </footer>
 
   <script>
+    const bookingParams = new URLSearchParams(window.location.search);
+    const bookingName = bookingParams.get('Name') || bookingParams.get('name') || '';
+    const bookingEmail = bookingParams.get('Email') || bookingParams.get('email') || '';
+
+    const normalizeWhitespace = (value) => value.replace(/\s+/g, ' ').trim();
+    const safeName = normalizeWhitespace(bookingName);
+    const safeEmail = normalizeWhitespace(bookingEmail);
+    const firstName = safeName.split(' ')[0];
+
+    if (firstName) {
+      const headline = document.querySelector('[data-booking-headline]');
+      const personalization = document.querySelector('[data-booking-personalization]');
+
+      if (headline) {
+        headline.textContent = `${firstName}, you're in. Here's what happens next.`;
+      }
+
+      if (personalization) {
+        personalization.hidden = false;
+        personalization.textContent = `We saved your session under ${safeName}. Watch the short video, confirm the invite, and come ready to make a real decision on the call.`;
+      }
+    }
+
+    if (safeEmail) {
+      const emailNote = document.querySelector('[data-booking-email-note]');
+
+      if (emailNote) {
+        emailNote.textContent = `Takes 60 seconds. Look for the invite at ${safeEmail} and confirm it now so the call doesn't disappear into your inbox.`;
+      }
+    }
+
+    window.bookingLead = {
+      name: safeName,
+      email: safeEmail,
+      firstName
+    };
+
     // Handle FAQ aria-expanded updates
     document.querySelectorAll('.faq-text details').forEach(detail => {
       detail.addEventListener('toggle', (e) => {
