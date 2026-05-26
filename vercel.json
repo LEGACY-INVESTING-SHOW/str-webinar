@@ -28,6 +28,15 @@
           "value": "public, max-age=31556952, immutable"
         }
       ]
+    },
+    {
+      "source": "/airbnbcallconfirmation/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
     }
   ],
   "rewrites": [
@@ -66,6 +75,10 @@
     {
       "source": "/advertorial11",
       "destination": "/advertorial11.html"
+    },
+    {
+      "source": "/airbnbcallconfirmation",
+      "destination": "/airbnbcallconfirmation/index.html"
     },
     {
       "source": "/str-arbitrage",
