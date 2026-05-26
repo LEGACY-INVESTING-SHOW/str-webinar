@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your 1-On-1 Session Is Booked | Legacy Investing Show</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+/* ===== RESET + BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background: #ffffff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+/* ===== VARIABLES ===== */
+:root {
+  --black: #1a1a1a;
+  --white: #ffffff;
+  --off-white: #fafafa;
+  --cream: #f5f1e8;
+  --gold: #d4af37;
+  --gold-dark: #b8941f;
+  --gold-light: #ecd58c;
+  --gold-tint: rgba(212, 175, 55, 0.08);
+  --text: #1a1a1a;
+  --text-muted: #6b6b6b;
+  --border: #e8e8e8;
+  --border-dark: rgba(255,255,255,0.12);
+  --max-width: 1100px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  color: var(--black);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+h1 { font-size: clamp(1.85rem, 5vw, 3.25rem); font-weight: 900; letter-spacing: -0.03em; }
+h2 { font-size: clamp(1.75rem, 3.8vw, 2.5rem); font-weight: 800; }
+h3 { font-size: clamp(1.25rem, 2.6vw, 1.6rem); font-weight: 800; }
+h4 { font-size: 1.1rem; font-weight: 700; }
+p { font-size: 1.0625rem; color: var(--text); }
+@media (min-width: 768px) { p { font-size: 1.125rem; } }
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+/* ===== UTILITY ===== */
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+.eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.text-center { text-align: center; }
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 72px 0;
+}
+@media (min-width: 768px) { section { padding: 96px 0; } }
+section.cream { background: var(--cream); }
+section.black { background: var(--black); color: var(--white); }
+section.black h1, section.black h2, section.black h3, section.black p {
+  color: var(--white);
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 24px;
+}
+.hero-logo {
+  width: 220px;
+  margin: 0 auto 56px;
+  display: block;
+}
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero h1 { margin-bottom: 24px; }
+.hero-sub {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--text-muted);
+  font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .hero-sub { font-size: 1.25rem; }
+}
+
+/* ===== STEP HEADER ===== */
+.step-label {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+section h2 { margin-bottom: 32px; }
+
+/* ===== VIDEO PLACEHOLDER ===== */
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #2a2a2a 0%, #0a0a0a 100%);
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  border: 1px solid rgba(212,175,55,0.15);
+}
+.video-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(212,175,55,0.08) 0%, transparent 60%);
+}
+.video-placeholder .play-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 32px rgba(212,175,55,0.35);
+  transition: transform 0.2s;
+}
+.video-placeholder:hover .play-icon { transform: scale(1.05); }
+.video-placeholder .play-icon::before {
+  content: '';
+  width: 0; height: 0;
+  border-left: 22px solid var(--black);
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  margin-left: 6px;
+}
+.video-placeholder .placeholder-label {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* ===== CONFIRM CARD (Step 2) ===== */
+.confirm-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 32px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+}
+.confirm-card p { margin-bottom: 14px; }
+.confirm-card p:last-child { margin-bottom: 0; }
+.reply-key {
+  display: inline-block;
+  padding: 3px 12px;
+  background: var(--gold);
+  color: var(--black);
+  font-weight: 700;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+/* ===== OFFER OVERVIEW ===== */
+.offer-overview { text-align: center; }
+.offer-overview .lead {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+@media (min-width: 768px) {
+  .offer-overview .lead { font-size: 1.15rem; line-height: 1.55; }
+}
+.offer-overview .lead.lead-em {
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .offer-overview .lead.lead-em { font-size: 1.05rem; }
+}
+.offer-overview h2 {
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+.offer-bullets {
+  list-style: none;
+  max-width: 600px;
+  margin: 40px auto 0;
+  text-align: left;
+}
+.offer-bullets li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+}
+.offer-bullets li:last-child { border-bottom: none; }
+.offer-bullets li::before {
+  content: '✓';
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--gold);
+  color: var(--black);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* ===== GUARANTEES (Black section) ===== */
+.guarantees-section { text-align: center; }
+.guarantees-section h2 { margin-bottom: 16px; }
+.guarantees-section .intro {
+  max-width: 700px;
+  margin: 0 auto 56px;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.125rem;
+}
+.guarantee-list {
+  display: grid;
+  gap: 32px;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .guarantee-list { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+}
+.guarantee {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,175,55,0.25);
+  border-radius: 12px;
+  padding: 40px 28px 32px;
+  position: relative;
+  text-align: left;
+}
+.guarantee-number {
+  position: absolute;
+  top: -24px;
+  left: 28px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(212,175,55,0.3);
+}
+.guarantee h3 {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+.guarantee p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== FAQ GRID (video tiles) ===== */
+.faq-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 40px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .faq-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.faq-tile {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #2a2a2a 0%, #0a0a0a 100%);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid rgba(212,175,55,0.15);
+}
+.faq-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+.faq-tile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(212,175,55,0.12) 0%, transparent 50%);
+}
+.faq-tile-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+  line-height: 1.25;
+  max-width: 82%;
+}
+.faq-tile-play {
+  align-self: flex-end;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.faq-tile-play::before {
+  content: '';
+  width: 0; height: 0;
+  border-left: 14px solid var(--black);
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  margin-left: 3px;
+}
+
+/* ===== FAQ ACCORDION ===== */
+.faq-accordion-wrap {
+  margin-top: 80px;
+}
+.faq-accordion-wrap h3 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.faq-accordion {
+  max-width: 820px;
+  margin: 0 auto;
+  border-top: 1px solid var(--border);
+}
+.faq-accordion details {
+  border-bottom: 1px solid var(--border);
+}
+.faq-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--black);
+  transition: color 0.15s;
+  line-height: 1.3;
+}
+.faq-accordion summary:hover { color: var(--gold-dark); }
+.faq-accordion summary::-webkit-details-marker { display: none; }
+.faq-accordion summary::after {
+  content: '+';
+  color: var(--gold);
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+.faq-accordion details[open] summary::after { content: '−'; }
+.faq-accordion .faq-body { padding: 4px 0 28px 0; }
+.faq-accordion .faq-body p { margin-bottom: 14px; font-size: 1.0625rem; }
+.faq-accordion .faq-body p:last-child { margin-bottom: 0; }
+.faq-accordion .faq-body ul {
+  margin: 12px 0 16px 0;
+  padding-left: 0;
+  list-style: none;
+}
+.faq-accordion .faq-body ul li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  font-size: 1.0625rem;
+}
+.faq-accordion .faq-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.faq-accordion .faq-body ol {
+  margin: 12px 0 16px 24px;
+  font-size: 1.0625rem;
+}
+.faq-accordion .faq-body ol li { padding: 4px 0; }
+.faq-accordion .faq-body strong { font-weight: 700; }
+
+/* ===== CALENDAR INVITE IMAGE ===== */
+.calendar-invite {
+  max-width: 760px;
+  margin: 40px auto 0;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.14);
+  background: var(--white);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.calendar-invite img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== INSTRUCTION CHECKLIST ===== */
+.checklist {
+  list-style: none;
+  max-width: 720px;
+  margin: 40px auto 0;
+}
+.checklist li {
+  padding: 18px 0 18px 44px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 24px;
+  height: 24px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.checklist li::after {
+  content: '✓';
+  position: absolute;
+  left: 6px;
+  top: 19px;
+  color: var(--black);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* ===== TESTIMONIALS - VIDEO TIER ===== */
+.testimonials .container { max-width: 1200px; }
+.testimonials h2 { text-align: center; margin-bottom: 16px; }
+.testimonials-subline {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  max-width: 600px;
+  margin: 0 auto 56px;
+}
+.testimonials-video-grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .testimonials-video-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.video-tile {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.video-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+.vt-thumb {
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #2a2a2a 0%, #0a0a0a 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.vt-thumb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(212,175,55,0.08) 0%, transparent 60%);
+}
+.vt-play {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.vt-play::before {
+  content: '';
+  width: 0; height: 0;
+  border-left: 16px solid var(--black);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 4px;
+}
+.vt-placeholder-label {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.vt-thumb iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 2;
+}
+.vt-info { padding: 20px 22px 24px; }
+.vt-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.vt-role {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.vt-quote {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* ===== IMAGE WALL (Grid w/ captions on top) ===== */
+.image-wall-band {
+  background: #ecf1f5;
+  padding: 64px 0 80px;
+  margin-top: 72px;
+}
+@media (min-width: 768px) {
+  .image-wall-band { padding: 80px 0 96px; }
+}
+.image-wall-band h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-style: italic;
+  color: var(--black);
+}
+.image-wall-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+@media (min-width: 640px) {
+  .image-wall-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .image-wall-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+}
+.iw-tile {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 26px 24px 24px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.iw-tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+.iw-caption-top {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.4;
+  margin-bottom: 22px;
+  letter-spacing: -0.005em;
+}
+@media (min-width: 1024px) {
+  .iw-caption-top { font-size: 1.0625rem; min-height: 76px; }
+}
+.iw-stat {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--black);
+}
+.iw-image-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+.iw-image-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 64px 24px;
+}
+.site-footer h3 {
+  color: var(--white);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.site-footer p {
+  color: rgba(255,255,255,0.6);
+  font-size: 0.9rem;
+}
+.site-footer .footer-meta {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ===== STAT CALLOUT ===== */
+.stat-callout {
+  background: var(--cream);
+  border-left: 4px solid var(--gold);
+  padding: 28px 32px;
+  margin: 56px auto 0;
+  max-width: 760px;
+  border-radius: 0 8px 8px 0;
+}
+.stat-callout p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--black);
+  line-height: 1.4;
+  margin: 0;
+}
+.stat-callout .stat-num {
+  color: var(--gold-dark);
+  font-weight: 700;
+  font-style: normal;
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-logo"><img src="IMAGES/logo.webp" alt="The Legacy Investing Show" /></div>
+    <h1>Your 1-On-1 Session Is Booked.</h1>
+    <p class="hero-sub">Complete the 3 steps below to lock in your slot. Unconfirmed bookings get released.</p>
+  </div>
+</header>
+
+<!-- ===== STEP 1: WATCH VIDEO ===== -->
+<section>
+  <div class="container">
+    <span class="step-label">Step 01</span>
+    <h2>Watch This Video Below Before The Call.</h2>
+    <div class="video-placeholder">
+      <div class="play-icon"></div>
+      <div class="placeholder-label">[ Confirmation Video — ~4–5 min ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 2: CONFIRM YOUR CALL ===== -->
+<section class="cream">
+  <div class="container">
+    <span class="step-label">Step 02</span>
+    <h2>Confirm Your Call.</h2>
+    <div class="confirm-card">
+      <p>Search your inbox for <strong>"Invitation"</strong>. Click <strong>"Add to calendar"</strong> and select <strong>"Yes"</strong>.</p>
+      <p>Reply to the booking email with <span class="reply-key">Yes</span> so my team knows you're locked in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FULL OVERVIEW ===== -->
+<section>
+  <div class="container offer-overview">
+    <h2>Full Overview Of Our Offer And How Everything Works.</h2>
+    <p class="lead">The same system I used to build a $15M portfolio. 4,700+ operators across the country are running it right now to build cash flow, cut their tax bills, and own STR assets that pay them in three ways at once.</p>
+    <p class="lead lead-em"><em>Two routes to choose from, the same wealth foundation underneath both, and a team behind every operator.</em></p>
+    <div class="video-placeholder" style="margin-top: 48px;">
+      <div class="play-icon"></div>
+      <div class="placeholder-label">[ Overview Video / Pre-Call Asset ]</div>
+    </div>
+    <ul class="offer-bullets">
+      <li>Without becoming a real estate expert</li>
+      <li>Without quitting your day job</li>
+      <li>Without overpaying in taxes another year</li>
+      <li>Without doing it alone</li>
+    </ul>
+    <div class="stat-callout">
+      <p><span class="stat-num">4,700+</span> operators across the country. <span class="stat-num">$50M+</span> in self-reported net worth gains. Every one of them started exactly where you're sitting today.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3 GUARANTEES (Black) ===== -->
+<section class="black">
+  <div class="container guarantees-section">
+    <h2>What We Guarantee.</h2>
+    <p class="intro">So we have three guarantees that get signed between you and me the day you enroll, and each one takes a specific kind of risk off your shoulders.</p>
+    <div class="guarantee-list">
+      <div class="guarantee">
+        <div class="guarantee-number">1</div>
+        <h3>DealCheck</h3>
+        <p>Before you sign any deal, our team reviews the numbers with you and tells you whether to move on it or walk away. No cap on how many you submit.</p>
+      </div>
+      <div class="guarantee">
+        <div class="guarantee-number">2</div>
+        <h3>ROI Lock</h3>
+        <p>If you've done the work with your coach and you're still not cash flowing by the end of your coaching term, we keep coaching you for free until you are.</p>
+      </div>
+      <div class="guarantee">
+        <div class="guarantee-number">3</div>
+        <h3>Launch</h3>
+        <p>If you complete onboarding and stay on the deal submission schedule your coach sets, you'll have a coach-approved deal in front of you within 90 days. If we miss, your coaching extends free until we deliver.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 3: FAQS ===== -->
+<section>
+  <div class="container">
+    <span class="step-label">Step 03</span>
+    <h2>Most Common Questions.</h2>
+
+    <!-- Video tiles -->
+    <div class="faq-grid">
+      <div class="faq-tile"><div class="faq-tile-q">Bridge Method or Ownership. How do I know which one is right for me?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">I have a full-time job. Do I have time for this?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">I've never done real estate before. Will this work for me?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">How much money do I need to start?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">What if I live in a city with STR restrictions?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">What if I follow the system and it doesn't work? What's your guarantee?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">What if my spouse isn't on board yet?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">What about competition from existing Airbnbs?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">What if landlords won't say yes to me?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">What does your team actually handle for me?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">How much time will this take once a property is up and running?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">Does the wealth foundation apply if I'm just a W-2 earner?</div><div class="faq-tile-play"></div></div>
+      <div class="faq-tile"><div class="faq-tile-q">Are financing options available for the program itself?</div><div class="faq-tile-play"></div></div>
+    </div>
+
+    <!-- Text accordion -->
+    <div class="faq-accordion-wrap">
+      <h3>If videos aren't your thing, read the answers below.</h3>
+      <div class="faq-accordion">
+
+        <details>
+          <summary>Bridge Method or Ownership. How do I know which one is right for me?</summary>
+          <div class="faq-body">
+            <p>Both routes work. Your advisor figures out which one fits your situation on the call.</p>
+            <p><strong>Bridge Method is the right move if</strong> you want to build cash flow fast without tying up $50K to $150K in a down payment, you're comfortable starting without a property in your name, and your goal in the next 12 months is replacing or supplementing income, not maximizing tax savings.</p>
+            <p>Typical numbers: $10K to $25K to launch your first unit. Around $2,500 a month in net profit per property. Three of them stacked puts you at roughly $7,500 a month alongside your day job. Most Bridge Method clients then graduate to Ownership inside 18 to 24 months, once they've built the cash flow and operational reps.</p>
+            <p><strong>Ownership is the right move if</strong> your tax bill is the biggest leak in your finances, you have $50K to $150K of capital available for a down payment, and you're a high earner ($150K+) where cost segregation makes the real difference.</p>
+            <p>Typical numbers on a $500K to $750K property: $23K+ in year-one cash flow, $55K to $75K in year-one tax savings through the STR loophole and 100% bonus depreciation, plus equity. For a high earner, the tax savings on a single property can exceed the down payment itself.</p>
+            <p>Bring honest numbers to the call. Your capital, tax bracket, and time horizon. Your advisor will walk you through which route the math actually supports for you right now.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>I have a full-time job. Do I have time for this?</summary>
+          <div class="faq-body">
+            <p>Yes. Most of the operators we work with run this alongside a full-time job. That's the norm here.</p>
+            <p><strong>Time breakdown:</strong></p>
+            <ul>
+              <li><strong>Setup phase of first property:</strong> 3 to 5 hours a week. Market research, landlord conversations (Bridge Method) or property review with our team (Ownership), the furnishing process, and getting the listing live.</li>
+              <li><strong>Ongoing per property:</strong> About 1 hour a week once the systems are in place.</li>
+            </ul>
+            <p>The reason it stays at one hour is because most of the work gets delegated or automated through the program:</p>
+            <ul>
+              <li><strong>Furniture:</strong> Order from the theme-based furniture lists I built. No research, just pick the items.</li>
+              <li><strong>Setup:</strong> $200 handyman for amenities. Movers for unboxing and assembly. Cleaner verifies the work.</li>
+              <li><strong>Photos and descriptions:</strong> Outsourced through our vetted photographer network. Description templates inside the curriculum.</li>
+              <li><strong>Guest communication:</strong> Your VA handles it through automated messaging.</li>
+              <li><strong>Pricing:</strong> Dynamic pricing software adjusts rates automatically.</li>
+              <li><strong>Cleaning:</strong> Vetted cleaner on schedule.</li>
+            </ul>
+            <p>95% of my own portfolio runs without me. You get the same SOPs that make that possible.</p>
+            <p><strong>Real examples:</strong></p>
+            <ul>
+              <li><strong>Rob:</strong> Marketing director, two kids, corporate role. Three properties cash flowing $13,500 a month on roughly 2 hours a week.</li>
+              <li><strong>Kirk:</strong> Full-time nurse, regular 12-hour shifts. Three units, $194,000 in revenue in his first six months.</li>
+              <li><strong>Kayla:</strong> Full-time dentist. Manages her Airbnb alongside the clinic.</li>
+              <li><strong>Monique:</strong> Grandmother in her 50s with 16 grandkids. $1,800/month from a converted part of her home.</li>
+            </ul>
+            <p>The bigger question is whether you have the right system to make the time you do have count. That's what the program is built to give you.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>I've never done real estate before. Will this work for me?</summary>
+          <div class="faq-body">
+            <p>Yes, and that's actually the most common starting point inside the program. Almost nobody we work with had real estate experience before they joined.</p>
+            <p><strong>Real examples:</strong></p>
+            <ul>
+              <li><strong>Lindsey</strong> came from insurance, zero real estate background. Used our landlord scripts and closed the first landlord she pitched. $17,500 in bookings her first week.</li>
+              <li><strong>Brian</strong> was a software engineer. Signed his first lease on day 13. Now at 5 properties.</li>
+              <li><strong>Brian O'Leary</strong> (different Brian), also a software engineer, is making $5,000 a month in cash flow.</li>
+              <li><strong>Kiana</strong> spent a decade in finance, last role at JPMorgan Chase. No real estate at all before her first Airbnb. Now runs two in Scottsdale.</li>
+              <li><strong>Dustin Cotten:</strong> Corporate sales, no business background, recently pulled $55,000 in a single month with 7 Airbnbs.</li>
+            </ul>
+            <p>The framework is built for beginners. Your dedicated coach walks you through every decision. The team handles the parts that take experience to get right:</p>
+            <ul>
+              <li>The underwriting on every deal you're considering</li>
+              <li>The entity structure setup</li>
+              <li>The lender and CPA introductions</li>
+              <li>The tax strategy coordination with our CPA partners</li>
+              <li>The negotiation support</li>
+            </ul>
+            <p>What the program assumes from you is the willingness to follow a process you didn't design. Everything else, we have a system for.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How much money do I need to start?</summary>
+          <div class="faq-body">
+            <p>It depends on the route.</p>
+            <p><strong>Bridge Method: $10,000 to $25,000 in total capital.</strong> That covers:</p>
+            <ul>
+              <li>Security deposit on the unit</li>
+              <li>First month's rent to the landlord</li>
+              <li>Furnishing package for the property</li>
+              <li>A small runway for the first 4 to 6 weeks of operation</li>
+            </ul>
+            <p>You don't need a mortgage or a down payment to start.</p>
+            <p><strong>Ownership: $50,000 to $150,000 depending on the property and loan structure.</strong> That covers:</p>
+            <ul>
+              <li>Down payment</li>
+              <li>Closing costs</li>
+              <li>Furnishing and launch costs (furniture, photos, listing setup)</li>
+            </ul>
+            <p>The part most people don't realize is that you may not have to use your own savings for either route. Inside the program:</p>
+            <ul>
+              <li>We help you set up an LLC (you pay state fees only)</li>
+              <li>We open business banking accounts with you</li>
+              <li>Our internal bank reps walk you through accessing 0% interest business credit on a brand new LLC</li>
+              <li>If you're not at 680+ credit yet, we give you a custom plan to boost your score 100+ points</li>
+            </ul>
+            <p>A lot of operators inside the program fund their first deal entirely through 0% interest business credit without touching their personal savings. Others use a mix.</p>
+            <p>Your advisor will walk through both capital paths on the call and tell you which fits your situation right now.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What if I live in a city with STR restrictions?</summary>
+          <div class="faq-body">
+            <p>Restrictions are real in some markets but they're almost never a dealbreaker. Most of what gets written online about STR regulation is outdated, oversimplified, or specific to one neighborhood that doesn't apply to the rest of the market.</p>
+            <p>The bigger reframe: you don't have to operate in your home city.</p>
+            <p>I run Airbnbs across Arizona, Virginia, Tennessee, and Florida from my house in Utah. A good portion of the operators inside the program do the same thing. Units 500 to 2,000 miles away from where they actually live. Remote setup is a standard piece of the curriculum, including:</p>
+            <ul>
+              <li>Building a reliable team of cleaners, handymen, and movers in any market</li>
+              <li>Furnishing a property without setting foot in it (handyman moves furniture in, movers assemble, cleaner verifies)</li>
+              <li>Tools and software for managing units from anywhere</li>
+              <li>The Schlage keyless lock and Ring camera tech stack</li>
+              <li>Automated guest messaging through your PMS</li>
+              <li>A cleaner SOP that runs without you</li>
+            </ul>
+            <p><strong>For markets that do have restrictions:</strong></p>
+            <ul>
+              <li>Our deal review process catches the regulation issue before you sign anything</li>
+              <li>If a market is hostile to STR, we tell you and point you toward better-fit markets</li>
+              <li>For markets with permit pathways, we walk you through the process</li>
+              <li>For restricted markets where 30-day-plus stays are legal, we teach the mid-term rental playbook that pulls steady demand from traveling nurses, insurance relocations, and corporate housing</li>
+            </ul>
+            <p>If you're worried about a specific city, bring it to the call. Your advisor will tell you straight whether the market works.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What if I follow the system and it doesn't work? What's your guarantee?</summary>
+          <div class="faq-body">
+            <p>That's the right question to ask. Inside the program, you don't carry that risk by yourself. So we have three guarantees that get signed between you and me the day you enroll, and each one takes a specific kind of risk off your shoulders.</p>
+            <p>The first one is the <strong>DealCheck Guarantee</strong>. What it means is our team reviews every deal you're considering, whether it's a Bridge Method lease or an Ownership purchase offer, before you sign anything. If the numbers don't work, we tell you and you walk away. If they do, we greenlight it with the financing path and the entity structure mapped out so you know what happens next.</p>
+            <p>The second one is the <strong>ROI Lock Guarantee</strong>. If you've done the work with your coach and you're still not cash flowing by the end of your coaching term, we keep coaching you for free until you are. Same coach, same team, no additional charge.</p>
+            <p>The third one is the <strong>Launch Guarantee</strong>. If you complete onboarding and stay on the deal submission schedule your coach sets, you'll have a coach-approved deal in front of you within 90 days. If we miss that timeline, your coaching extends at no extra charge until we deliver.</p>
+            <p>Layered on top of those three, every Bridge Method lease also has a structural safety net: an <strong>exit clause</strong> we help you negotiate with the landlord up front. If the numbers stop working on a unit for any reason, you have a way to walk without being on the hook for 12 months of rent. Most operators never need it. It sits there in case something goes sideways.</p>
+            <p>We can put our names on the three guarantees because the system and the team behind every operator are built to deliver them. The only way it doesn't work is if you stop showing up.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What if my spouse isn't on board yet?</summary>
+          <div class="faq-body">
+            <p>You don't have to do this alone, and you definitely don't want to.</p>
+            <p><strong>The cleanest path:</strong></p>
+            <ol>
+              <li>Get them on the application call with you. When both of you hear the same numbers at the same time, your partner asks their own questions and the decision becomes something you make together. Most decisions like this fall apart in the kitchen two nights after the call because one of you sat through it and the other is hearing it secondhand.</li>
+              <li>If the slot doesn't work for both of you, message your advisor and we'll move it.</li>
+            </ol>
+            <p><strong>If your spouse isn't ready to commit time to the call yet:</strong></p>
+            <ul>
+              <li>Email us and we'll send them the workshop replay so they can watch it on their own time</li>
+              <li>That usually does the heavy lifting before any back-and-forth at home</li>
+            </ul>
+            <p><strong>Built into the offer:</strong></p>
+            <ul>
+              <li>Family membership is included at no extra cost</li>
+              <li>When you enroll, your spouse or partner gets full access to the curriculum, the community, and the coaching calls alongside you</li>
+              <li>They can sit in on coaching calls, ask questions inside the community, and use the implementation toolkit themselves</li>
+            </ul>
+            <p>The program assumes this is a household project, so it's set up to work for both of you from day one.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What about competition from existing Airbnbs?</summary>
+          <div class="faq-body">
+            <p>Demand is huge and growing. Over two million people stay in an Airbnb on any given night, and demand keeps outpacing supply in the markets we operate in.</p>
+            <p>The piece most people miss about competition: the competitive set that actually affects you is the 10 or so units in the same submarket and price tier as your property. Not every Airbnb in the country.</p>
+            <p>The way you win against those 10 units is by being in the top 5% of operators in your market. The program gives you the toolkit:</p>
+            <ul>
+              <li><strong>Top 500 Markets database</strong> ranked by demand, regulation, and seasonality</li>
+              <li><strong>Free AirDNA access</strong> (the best STR market research tool out there)</li>
+              <li><strong>Airbnb Market Matrix</strong> with cash flow and occupancy data on every major market</li>
+              <li><strong>Pre-vetted property database</strong> with properties our team has already analyzed</li>
+              <li><strong>Furniture supplier membership</strong> at 50-80% off Amazon and Wayfair pricing (no commission to us, just the relationship)</li>
+              <li><strong>Interior designer access</strong> to the same designers behind 50+ top-ranked Airbnbs across the country</li>
+              <li><strong>11 Golden Rules of SEO Blueprint</strong> for listing optimization (this is what flips occupancy from the 40-50% most underperforming hosts run at to 75% and above)</li>
+              <li><strong>Guest experience SOPs</strong> that earn 5-star reviews and a Superhost badge inside 90 days</li>
+            </ul>
+            <p>One more thing worth knowing. The community itself is collaborative, not competitive. One of our operators, Nicole, was moving cities and offered all her furniture at half price to another operator in the community who was setting up a unit. Another operator who figured out a funding play shared the playbook openly. You're not competing with the people inside the program. You're competing with the 10 other Airbnbs in your zip code that don't have any of this.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>What if landlords won't say yes to me?</summary>
+          <div class="faq-body">
+            <p>Most operators were nervous about the landlord conversation before they did the first one. The fear usually goes away once they've used the scripts on a few calls.</p>
+            <p>Three things make the scripts work:</p>
+            <p><strong>1. Who you're calling.</strong></p>
+            <ul>
+              <li>Property owners in markets we've already analyzed</li>
+              <li>Price ranges where the math works for both sides</li>
+              <li>Our 500-market database gives you the starting list</li>
+              <li>Your coach helps you build the actual target list</li>
+              <li>Pre-approach: the team will pitch landlords on whether they're open to Airbnb arbitrage before you spend time on a call. If they're open, we connect you directly</li>
+            </ul>
+            <p><strong>2. What you say.</strong></p>
+            <ul>
+              <li>Exact scripts I use myself, structured around the landlord's actual problems (vacancies, late rent, property damage), not yours</li>
+              <li>Objection handling for every common pushback</li>
+              <li>Your coach roleplays the pitch with you before you make the first real one</li>
+              <li>Some coaches will get on the call with the landlord directly as a reference once you're close to a yes</li>
+            </ul>
+            <p><strong>3. The volume math.</strong></p>
+            <ul>
+              <li>For every 5 to 10 landlord conversations using our scripts, most operators get 1 yes</li>
+              <li>Some operators close their first pitch. Lindsey, Jenna, and Kayla all did</li>
+              <li>Jenna won out over 400 other applicants on a single property because she came across as the most professional and easiest to work with</li>
+            </ul>
+            <p><strong>Two more pieces that make the conversation easier:</strong></p>
+            <ul>
+              <li>The pitch isn't a sell, it's a partnership offer. You're handing the landlord free property management (a service they'd usually pay 10% of gross rent for), guaranteed monthly rent, and a property kept in better condition than long-term tenant turnover usually produces.</li>
+              <li>Most landlords don't have the time or ability to run an Airbnb themselves. If they did, they'd be doing it. You're solving the gap.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>What does your team actually handle for me?</summary>
+          <div class="faq-body">
+            <p>More than most people expect, and that's the reason a lot of our operators run this alongside a full-time job.</p>
+            <p><strong>On the Bridge Method side, the team handles:</strong></p>
+            <ul>
+              <li>Pre-approach to landlords (we pitch them on whether they're open to Airbnb arbitrage before you spend time on a call)</li>
+              <li>Deal review on every set of numbers before you sign anything</li>
+              <li>Lease negotiation support including the scripts, coach roleplay, and reference calls where your coach gets on the phone with the landlord directly</li>
+              <li>Full ops setup: listings across Airbnb, VRBO, and Booking.com, dynamic pricing configuration, PMS setup, automated guest messaging, calendar sync</li>
+              <li>The full SOP set: cleaner playbooks, guest communication templates, emergency response procedures</li>
+              <li>VA hiring scripts and training SOPs so guest comms get offloaded once you're live</li>
+            </ul>
+            <p><strong>On the Ownership side, the team handles:</strong></p>
+            <ul>
+              <li>Buy box definition and market selection</li>
+              <li>Sourcing and underwriting 5 to 10 deals that match your criteria</li>
+              <li>Offer strategy, inspection coordination, financing path, and negotiation support</li>
+              <li>Entity structure setup and cost segregation coordination with our CPA partners</li>
+              <li>DSCR lender introductions with lenders who actually understand STR income</li>
+              <li>Full ops buildout: all platform listings, your direct booking website, the full tech stack</li>
+              <li>A 30-day check-in and a 90-day performance review with your coach after launch</li>
+            </ul>
+            <p><strong>What you handle:</strong></p>
+            <ul>
+              <li>The key decisions: which property, which market, which lender, which deal to move on</li>
+              <li>Final approval before anything gets signed</li>
+              <li>The landlord pitch on Bridge Method (with the script, roleplay, and reference support behind you)</li>
+              <li>Spot-checking the weekly metrics once everything's running</li>
+            </ul>
+            <p>That breakdown is why most operators only put in 3 to 5 hours a week during the setup of their first property and about 1 hour a week per property after it's running. You make the calls. The team handles the build-out.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>How much time will this take once a property is up and running?</summary>
+          <div class="faq-body">
+            <p>About an hour a week per property.</p>
+            <p>Once the systems are in place, you're not doing day-to-day operations:</p>
+            <ul>
+              <li><strong>Guest communication:</strong> Your VA handles it through automated messaging templates</li>
+              <li><strong>Pricing:</strong> Dynamic pricing software adjusts your nightly rates automatically based on demand, seasonality, and competitor pricing</li>
+              <li><strong>Turnovers:</strong> Your cleaner runs them on schedule from the SOP you set up</li>
+              <li><strong>Repairs under $500:</strong> Your handyman (anything above goes back to the landlord on Bridge Method or to your reserve on Ownership)</li>
+              <li><strong>Your job:</strong> Review the weekly metrics, approve anything flagged, glance at the calendar</li>
+            </ul>
+            <p>Most operators run between one and five properties. Even at five units, you're at roughly five hours a week of your time.</p>
+            <p>Two VAs at $4 to $6 an hour run my own multi-million dollar portfolio. That's the model the program teaches you to build, and everything you need is in the curriculum:</p>
+            <ul>
+              <li>VA hiring scripts and interview questions</li>
+              <li>Training SOPs and onboarding guides</li>
+              <li>Role definitions and weekly check-in templates</li>
+              <li>Onlinejobs.ph posting templates that pull in qualified candidates</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Does the wealth foundation apply if I'm just a W-2 earner?</summary>
+          <div class="faq-body">
+            <p>That's exactly who it was built for. Many of our biggest results come from people who walked in with one job, no business, and no real estate yet.</p>
+            <p><strong>The five pillars work for W-2 earners the same way they work for self-employed people:</strong></p>
+            <ol>
+              <li><strong>Tax optimization.</strong> Strategies that work without owning a business.</li>
+              <li><strong>Debt and credit leverage.</strong> Restructure high-interest debt, access 0% business credit on a new LLC.</li>
+              <li><strong>Income acceleration.</strong> Strategies to add cash flow alongside your existing job.</li>
+              <li><strong>Savings and investing.</strong> What to actually do with capital so it grows.</li>
+              <li><strong>Entity structure and protection.</strong> LLC setup, trust planning, asset protection.</li>
+            </ol>
+            <p>Even before you launch your first STR, the foundation does real work for you. Specific tax wins available to W-2 earners right now:</p>
+            <ul>
+              <li><strong>401(k) or Solo 401(k) maxed out:</strong> ~$4,004 a year in tax savings</li>
+              <li><strong>IRA contributions with backdoor Roth strategy:</strong> ~$1,540 a year</li>
+              <li><strong>HSA properly used (triple-tax advantage):</strong> ~$913 a year</li>
+              <li><strong>STR loophole (once you have your first property):</strong> $55,000 to $75,000 a year on a $500K-$750K property</li>
+            </ul>
+            <p>That's $6,500+ a year in W-2-side tax wins available before you own a single STR. Once you do, the STR loophole layered on top compounds the result fast.</p>
+            <p>Most W-2 earners feel stuck because nobody ever showed them how to keep more of what they're already making. The program does that, then layers the STR side on top.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Are financing options available for the program itself?</summary>
+          <div class="faq-body">
+            <p>Yes. Multiple payment paths so the program investment doesn't sit between you and the result:</p>
+            <ul>
+              <li><strong>Third-party financing at 0% interest</strong> for 6 to 12 months if you qualify. Your advisor walks you through what that looks like for your situation on the call.</li>
+              <li><strong>Business credit</strong> if you've already built that up. Some operators use available business credit to cover the program and pay it off during the intro window before any interest hits.</li>
+              <li><strong>Standard payment plans</strong> with monthly installments if neither of the above fits.</li>
+            </ul>
+            <p>There's also a tax angle worth bringing up with your CPA. If you have or plan to form an LLC for your STR activity, your investment in the program may qualify as a deductible business expense under <strong>IRC Section 162</strong>. The net out-of-pocket cost after structuring can land meaningfully lower than the sticker price.</p>
+            <p>Capital shouldn't be the thing that stops you. Bring your situation to the call and your advisor will lay out the payment paths that fit.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 4: CONFIRM WITH ENROLLMENT TEAM ===== -->
+<section class="cream">
+  <div class="container">
+    <span class="step-label">Step 04</span>
+    <h2>Confirm Your Call With My Enrollment Team.</h2>
+    <p style="max-width: 720px;">You'll receive a calendar invite via email (Google, Apple, or Outlook). It will look just like the one shown below.</p>
+
+    <!-- Calendar invite (real Gmail screenshot) -->
+    <div class="calendar-invite">
+      <img src="IMAGES/calendar.png" alt="Calendar invite from Michael Murphy at Legacy Investing Show" />
+    </div>
+
+    <ul class="checklist">
+      <li><strong>Accept the invite</strong> and add it to your calendar so you don't forget. Set a reminder 10 minutes before.</li>
+      <li><strong>Save the Zoom link</strong> in your email so you can access the call at the right time.</li>
+      <li>This call could be step #1 toward completely changing your finances. <strong>Reply "I'll be there!"</strong> to my email to lock it in.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== STEP 5: TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container">
+    <span class="step-label">Step 05</span>
+    <h2>Client Transformations.</h2>
+    <p class="testimonials-subline">Different starting points. Different lives. Same A.C.R.E.S. system.</p>
+
+    <!-- Video tier -->
+    <div class="testimonials-video-grid">
+
+      <div class="video-tile">
+        <div class="vt-thumb">
+          <iframe src="https://youtu.be/RphvRaiELn4?si=vJt8xfQtiQt1d9C5" title="Dustin testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="vt-info">
+          <div class="vt-name">Dustin</div>
+          <div class="vt-role">Corporate Sales → 7 properties, $56K/mo net</div>
+          <div class="vt-quote">"Signed my first lease 31 days after joining. Quit corporate."</div>
+        </div>
+      </div>
+
+      <div class="video-tile">
+        <div class="vt-thumb">
+          <iframe src="https://www.youtube.com/embed/W_JewQK4LJc" title="Rob testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="vt-info">
+          <div class="vt-name">Rob</div>
+          <div class="vt-role">Marketing Director · Kept the day job</div>
+          <div class="vt-quote">"3 properties, $13,500/month, about 2 hours a week."</div>
+        </div>
+      </div>
+
+      <div class="video-tile">
+        <div class="vt-thumb">
+          <iframe src="https://www.youtube.com/embed/DvTfbzphZjo" title="Kirk testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="vt-info">
+          <div class="vt-name">Kirk</div>
+          <div class="vt-role">Full-Time Nurse, 12-Hour Shifts</div>
+          <div class="vt-quote">"$194,000 in revenue in my first 6 months around my shifts."</div>
+        </div>
+      </div>
+
+      <div class="video-tile">
+        <div class="vt-thumb">
+          <iframe src="https://www.youtube.com/embed/2T1M3T9YbkM" title="Kiana testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="vt-info">
+          <div class="vt-name">Kiana</div>
+          <div class="vt-role">Ex-JPMorgan Chase · Now Full-Time</div>
+          <div class="vt-quote">"Left finance for this. Two Airbnbs in Scottsdale."</div>
+        </div>
+      </div>
+
+      <div class="video-tile">
+        <div class="vt-thumb">
+          <iframe src="https://www.youtube.com/embed/fNpdiiyr1JU" title="Tom Morgan testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="vt-info">
+          <div class="vt-name">Tom Morgan</div>
+          <div class="vt-role">First Arbitrage Listing · $21K in 2 Weeks</div>
+          <div class="vt-quote">"Our first arbitrage listing, $21K in bookings in less than 2 weeks."</div>
+        </div>
+      </div>
+
+      <div class="video-tile">
+        <div class="vt-thumb">
+          <iframe src="https://www.youtube.com/embed/-A4Pe5M0iUU" title="Lindsey testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="vt-info">
+          <div class="vt-name">Lindsey</div>
+          <div class="vt-role">Came from Insurance · Zero Experience</div>
+          <div class="vt-quote">"$17,500 in bookings my first week."</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Image wall (full-bleed band) -->
+  <div class="image-wall-band">
+    <div class="container">
+      <h3>...And Even More Case Studies</h3>
+      <div class="image-wall-grid">
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Our student, Wendy Sanchez, received <span class="iw-stat">$744,000 in bookings</span> with 737 nights booked within 12 months!</div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/1176022157192wendy_sanchez.png" alt="Wendy Sanchez Airbnb insights. 737 nights booked, $744K booking value" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Rob Saag's 3 properties produce <span class="iw-stat">$13,500/mo in cashflow</span> (performance snapshot below)</div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/rob saag.jpeg" alt="Rob Saag Airbnb income report. $29,293 gross, $27,275 net" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">With <span class="iw-stat">$12,000 in the first week</span>, Fred Dobler's property is on a trajectory of generating <span class="iw-stat">$110K-$130K a year</span></div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/fred dobler.png" alt="Fred Dobler new listing, $12K in first week, projected $110-130K per year" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Tyler and Jenna's 2 properties surpassed <span class="iw-stat">$100,000+ in revenue in first year</span></div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/tyler and jenna.png" alt="Tyler &amp; Jenna message. $100K in bookings, projecting $160-200K year-end" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Tom Morgan's first property generated <span class="iw-stat">~$21,000 within 2 weeks</span> of going live</div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/tom morgan.png" alt="Tom Morgan community post, $20,000+ in bookings on first arbitrage listing" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Josh Szentes' properties are <span class="iw-stat">cashflowing at $9,000/mo</span></div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/josh szentes.png" alt="Josh Szentes message. 91% occupancy, $164 per night, ~$9K cashflow" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Kirk Gran, a full-time nurse, generated <span class="iw-stat">$194,287 in 6 months</span> from his 3 properties</div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/kirk gran.png" alt="Kirk Gran community post, $194,287 total revenue YTD" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Chad's property generated <span class="iw-stat">$9,046.99 within 30 days</span>!</div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/chad.png" alt="Chad STR dashboard. $9,046 revenue, 75% occupancy, $1,005 per reservation" />
+          </div>
+        </div>
+
+        <div class="iw-tile">
+          <div class="iw-caption-top">Kayla Fike, a dentist, signed her <span class="iw-stat">first deal within 16 days</span>!</div>
+          <div class="iw-image-wrap">
+            <img src="IMAGES/kayla.webp" alt="Kayla Fike, won my first landlord pitch" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <h3>See you on the call.</h3>
+  <p>Show up on time. Bring your partner if you have one. Come ready to be honest about where you actually are.</p>
+  <div class="footer-meta">Legacy Investing Show · 2026</div>
+</footer>
+
+</body>
+</html>

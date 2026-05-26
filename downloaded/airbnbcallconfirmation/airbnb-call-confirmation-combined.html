@@ -1,0 +1,1478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Airbnb Call Is Booked | Legacy Investing Show</title>
+  <meta name="description" content="Airbnb strategy call confirmation page with show-up instructions, call prep, program context, student proof, and FAQ answers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" />
+  <style>
+    /* ─── Accessibility ─── */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 100;
+    }
+    .skip-link:focus { top: 0; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ─── Variables ─── */
+    :root {
+      --ink: #141210;
+      --body: #3d3a35;
+      --muted: #6b6860;
+      --paper: #faf9f6;
+      --soft: #f3f1ec;
+      --panel: #ffffff;
+      --line: #e2dfd8;
+      --accent: #2a6e4e;
+      --accent-light: #e8f3ed;
+      --accent-strong: #1d5438;
+      --gold: #9a7820;
+      --gold-soft: #fdf6e3;
+      --dark: #141210;
+      --dark-surface: #1e1c18;
+      --radius: 10px;
+      --shadow-sm: 0 2px 8px rgba(20,18,16,.06);
+      --shadow-md: 0 8px 30px rgba(20,18,16,.08);
+      --shadow-lg: 0 20px 50px rgba(20,18,16,.12);
+      --ease: cubic-bezier(.16,1,.3,1);
+    }
+
+    /* ─── Reset & Base ─── */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-padding-top: 70px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--body);
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      font-size: 16.5px;
+      line-height: 1.65;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img, iframe { display: block; max-width: 100%; }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    ::selection {
+      background: var(--accent-light);
+      color: var(--accent-strong);
+    }
+
+    /* ─── Typography ─── */
+    h1, h2, h3 {
+      margin: 0;
+      color: var(--ink);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      max-width: 720px;
+      font-size: clamp(40px, 5.2vw, 66px);
+      line-height: 1.05;
+    }
+
+    h2 {
+      max-width: 760px;
+      margin-bottom: 18px;
+      font-size: clamp(30px, 3.4vw, 48px);
+      line-height: 1.1;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: clamp(19px, 1.6vw, 24px);
+      line-height: 1.22;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: var(--body);
+      font-size: clamp(15.5px, 1.15vw, 17.5px);
+      line-height: 1.65;
+      max-width: 64ch;
+    }
+
+    /* ─── Layout ─── */
+    section {
+      padding: clamp(56px, 7vw, 92px) 20px;
+    }
+
+    .container,
+    .topbar-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .narrow {
+      max-width: 760px;
+      margin-inline: auto;
+    }
+
+    /* ─── Topbar ─── */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(0,0,0,.07);
+      background: rgba(250,249,246,.92);
+      backdrop-filter: blur(16px) saturate(1.6);
+      -webkit-backdrop-filter: blur(16px) saturate(1.6);
+      color: var(--ink);
+    }
+
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .topbar-status {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      color: var(--muted);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      font-family: 'Inter', sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links a:hover { color: var(--ink); }
+
+    .nav-links .nav-cta {
+      min-height: 36px;
+      display: inline-flex;
+      align-items: center;
+      padding: 0 16px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .nav-links .nav-cta:hover {
+      background: var(--accent-strong);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      margin: 5px 0;
+      background: var(--ink);
+    }
+
+    /* ─── Eyebrow / Labels ─── */
+    .eyebrow,
+    .mini-label,
+    .offer-card span,
+    .guarantee-card span,
+    .timeline-item span,
+    .intent-card span {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin: 0 0 14px;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .14em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 1px;
+    }
+
+    /* ─── Hero ─── */
+    .hero {
+      min-height: 0;
+      display: block;
+      padding: clamp(56px, 7vw, 96px) 20px clamp(50px, 6vw, 80px);
+      background: linear-gradient(170deg, var(--soft) 0%, var(--paper) 55%, var(--gold-soft) 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(300px, .78fr);
+      gap: clamp(34px, 5vw, 68px);
+      align-items: center;
+    }
+
+    .hero-lede {
+      max-width: 640px;
+      margin: 20px 0 0;
+      color: var(--body);
+      font-size: clamp(17px, 1.5vw, 21px);
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 0;
+    }
+
+    /* ─── Buttons ─── */
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(42,110,78,.18);
+    }
+
+    .button:hover {
+      background: var(--accent-strong);
+      border-color: var(--accent-strong);
+      box-shadow: 0 6px 20px rgba(42,110,78,.22);
+    }
+
+    .button:active {
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+      box-shadow: none;
+      border-color: var(--accent);
+    }
+
+    .button.secondary:hover {
+      background: var(--accent-light);
+      color: var(--accent-strong);
+    }
+
+    /* ─── Intent Stack ─── */
+    .intent-stack {
+      max-width: 680px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-top: 36px;
+      border-top: 1px solid var(--line);
+    }
+
+    .intent-card {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: 108px minmax(0, 1fr);
+      gap: 18px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      background: transparent;
+    }
+
+    .intent-card p {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.42;
+    }
+
+    /* ─── Media ─── */
+    .media-shell {
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.12);
+      border-radius: var(--radius);
+      background: oklch(24% 0.011 74);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .media-shell iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 0;
+    }
+
+    .video-note {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+      padding: 13px 0 0;
+    }
+
+    .video-note strong {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .05em;
+    }
+
+    .video-note p {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.42;
+    }
+
+    /* ─── Confirm Band ─── */
+    .confirm-band {
+      background: var(--paper);
+      color: var(--body);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .confirm-grid,
+    .split,
+    .program-layout {
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(0, 1fr);
+      gap: clamp(34px, 6vw, 72px);
+      align-items: start;
+    }
+
+    .steps {
+      display: grid;
+      gap: 0;
+      margin-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    .step-card {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      line-height: 1.55;
+    }
+
+    .step-card strong {
+      font-family: 'Inter', sans-serif;
+      color: var(--accent);
+    }
+
+    .commitment-box {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow-md);
+    }
+
+    .commitment-box:hover {
+      box-shadow: var(--shadow-lg);
+    }
+
+    .commitment-copy {
+      padding: clamp(22px, 3vw, 32px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .commitment-copy p {
+      color: var(--muted);
+    }
+
+    .commitment-script {
+      border: 1px solid rgba(42,110,78,.2);
+      border-radius: 8px;
+      background: var(--accent-light);
+      color: var(--accent-strong);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 18px;
+      margin-top: 16px;
+    }
+
+    .confirmation-shot {
+      background: var(--panel);
+    }
+
+    .confirmation-shot img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* ─── Light Sections ─── */
+    .cream,
+    .program-band {
+      background: var(--soft);
+    }
+
+    /* ─── Prep ─── */
+    .point {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .prep-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin-top: clamp(26px, 4vw, 42px);
+      border-top: 1px solid var(--line);
+    }
+
+    .prep-item {
+      padding: 20px 20px 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .prep-item h3 { color: var(--ink); }
+    .prep-item p { margin: 0; font-size: 15px; }
+
+    /* ─── Dark Sections ─── */
+    .dark {
+      background: var(--dark);
+      color: rgba(255,255,255,.82);
+    }
+
+    .dark h2, .dark h3 { color: #fff; }
+    .dark p, .dark li { color: rgba(255,255,255,.78); }
+
+    .dark .eyebrow,
+    .dark .mini-label,
+    .dark .guarantee-card span {
+      color: var(--gold);
+    }
+
+    /* ─── Agenda ─── */
+    .agenda-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 34px;
+      border-top: 1px solid rgba(255,255,255,.14);
+    }
+
+    .agenda-card {
+      padding: 20px 24px 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .agenda-card h3 { color: #fff; }
+    .agenda-card p { color: rgba(255,255,255,.72); font-size: 15px; margin: 0; }
+
+    .resource-callout {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 38px;
+      padding: 28px 0 0;
+      border-top: 1px solid rgba(255,255,255,.14);
+      background: transparent;
+    }
+
+    .resource-callout h3,
+    .resource-callout p {
+      margin-bottom: 4px;
+    }
+
+    .resource-callout .button {
+      background: #fff;
+      color: var(--dark);
+      border-color: #fff;
+      box-shadow: none;
+    }
+
+    .resource-callout .button:hover {
+      background: var(--gold-soft);
+      border-color: var(--gold-soft);
+    }
+
+    /* ─── Path Cards ─── */
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(26px, 5vw, 68px);
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .path-card {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .path-card ul {
+      margin: 14px 0 0;
+      padding-left: 19px;
+      color: var(--body);
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+    }
+
+    .path-card ul li {
+      padding: 3px 0;
+    }
+
+    /* ─── Program ─── */
+    .program-proof {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 32px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .program-proof div {
+      display: block;
+      padding: 17px 18px 18px 0;
+    }
+
+    .program-proof strong {
+      display: block;
+      color: var(--accent);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 2.5vw, 34px);
+      line-height: 1;
+    }
+
+    .program-proof span {
+      display: block;
+      margin-top: 6px;
+      font-family: 'Inter', sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.32;
+    }
+
+    .offer-map {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .offer-card {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      gap: 18px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .offer-card h3 { font-size: 20px; }
+    .offer-card p { font-size: 15px; margin: 0; }
+
+    /* ─── Guarantees ─── */
+    .guarantee-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(18px, 4vw, 46px);
+      margin-top: 30px;
+      border-top: 1px solid rgba(255,255,255,.18);
+    }
+
+    .guarantee-card {
+      padding: 20px 20px 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .guarantee-card h3 { color: #fff; }
+    .guarantee-card p { color: rgba(255,255,255,.72); margin: 0; }
+
+    /* ─── Timeline ─── */
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline-item {
+      padding: 18px 18px 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-item h3 { color: var(--ink); }
+    .timeline-item p { font-size: 15px; margin: 0; }
+
+    .timeline-context {
+      margin-top: 26px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline-proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(16px, 2.4vw, 26px);
+      margin-top: 26px;
+    }
+
+    .timeline-proof-card {
+      margin: 0;
+    }
+
+    .timeline-proof-card img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .timeline-proof-card figcaption {
+      margin-top: 8px;
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 750;
+      line-height: 1.35;
+    }
+
+    /* ─── Proof Section ─── */
+    .proof-ledger {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+      margin: 28px 0 36px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .proof-stat {
+      padding: 20px 18px 20px 0;
+    }
+
+    .proof-stat strong {
+      display: block;
+      font-family: 'Playfair Display', Georgia, serif;
+      color: var(--accent);
+      font-size: clamp(28px, 3vw, 38px);
+      line-height: 1;
+    }
+
+    .proof-stat span {
+      display: block;
+      margin-top: 6px;
+      font-family: 'Inter', sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1.32;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(18px, 2.5vw, 28px);
+      margin-top: 34px;
+    }
+
+    .video-card {
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .video-card .media-shell {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .video-body {
+      padding: 14px 0 0;
+    }
+
+    .video-body h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .video-body p {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .proof-wall {
+      column-count: 3;
+      column-gap: clamp(22px, 3vw, 34px);
+      margin-top: 36px;
+    }
+
+    .proof-card {
+      display: flex;
+      flex-direction: column-reverse;
+      break-inside: avoid;
+      margin: 0 0 clamp(24px, 3vw, 36px);
+      background: transparent;
+    }
+
+    .proof-card img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      object-fit: contain;
+    }
+
+    .proof-card:hover img {
+      box-shadow: var(--shadow-md);
+    }
+
+    .proof-copy {
+      margin-top: 10px;
+      padding: 0;
+      border: 0;
+      min-height: 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 14.5px;
+      font-weight: 650;
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    .proof-copy span {
+      color: var(--accent);
+      font-weight: 750;
+    }
+
+    /* ─── FAQ ─── */
+    .faq-text {
+      max-width: 800px;
+      margin-top: 42px;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-text details {
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .faq-text summary {
+      position: relative;
+      padding: 22px 40px 22px 0;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .faq-text summary:hover { color: var(--accent); }
+
+    .faq-text summary::-webkit-details-marker { display: none; }
+
+    .faq-text summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: 22px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--soft);
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .faq-text details[open] summary::after {
+      content: "−";
+      background: var(--accent-light);
+    }
+
+    .faq-text details p {
+      padding: 0 0 22px;
+      color: var(--muted);
+      font-size: 15.5px;
+      max-width: 640px;
+    }
+
+    /* ─── Final CTA ─── */
+    .final {
+      background: linear-gradient(160deg, var(--dark) 0%, #1a2418 50%, var(--accent-strong) 100%);
+      text-align: center;
+      padding: clamp(64px, 8vw, 110px) 20px;
+    }
+
+    .final h2, .final p {
+      color: #fff;
+      margin-inline: auto;
+    }
+
+    .final .eyebrow {
+      justify-content: center;
+      color: var(--gold);
+    }
+
+    .final .button {
+      background: #fff;
+      color: var(--dark);
+      border-color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,.2);
+    }
+
+    .final .button:hover {
+      background: var(--gold-soft);
+      border-color: var(--gold-soft);
+      box-shadow: 0 8px 30px rgba(0,0,0,.28);
+    }
+
+    .final .button.secondary {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255,255,255,.4);
+      box-shadow: none;
+    }
+
+    .final .button.secondary:hover {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(255,255,255,.6);
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      padding: 28px 20px;
+      background: var(--dark);
+      color: rgba(255,255,255,.5);
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+
+    /* ─── Focus ─── */
+    .button:focus-visible,
+    .nav-links a:focus-visible,
+    .faq-text summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    /* ─── Tablet (≤ 980px) ─── */
+    @media (max-width: 980px) {
+      .mobile-menu-btn { display: block; }
+      
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--paper);
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hero-grid,
+      .confirm-grid,
+      .split,
+      .program-layout,
+      .path-grid,
+      .resource-callout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .agenda-grid,
+      .prep-strip,
+      .guarantee-grid,
+      .timeline,
+      .timeline-proof-grid,
+      .proof-ledger,
+      .video-grid,
+      .program-proof {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .proof-wall { column-count: 2; }
+    }
+
+    /* ─── Mobile (≤ 640px) ─── */
+    @media (max-width: 640px) {
+      section { padding: 44px 16px; }
+
+      .container,
+      .topbar-inner,
+      .narrow,
+      .hero-grid {
+        width: min(100% - 36px, 1120px);
+      }
+
+      .topbar { padding: 12px 16px; }
+      .brand { font-size: 16px; }
+      .topbar-status { font-size: 10.5px; }
+
+      h1 { font-size: clamp(34px, 10vw, 44px); }
+      h2 { font-size: clamp(26px, 7.5vw, 34px); }
+
+      .hero { padding: 44px 16px 38px; }
+
+      .hero-actions,
+      .final .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button { width: 100%; justify-content: center; }
+
+      .intent-card,
+      .offer-card,
+      .video-note {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 4px;
+      }
+
+      .agenda-grid,
+      .prep-strip,
+      .guarantee-grid,
+      .timeline,
+      .timeline-proof-grid,
+      .proof-ledger,
+      .video-grid,
+      .program-proof {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .proof-wall { column-count: 1; }
+
+      .proof-card img { border-radius: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#">Legacy Investing Show</a>
+      <span class="topbar-status">Session confirmed</span>
+    </div>
+  </header>
+
+  <main id="main-content" role="main">
+    <!-- ── Hero ── -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Call booked</span>
+          <h1>You're in. Here's what happens next.</h1>
+          <p class="hero-lede">Watch the short video, confirm the invite, and use the call to decide which path makes sense for your situation.</p>
+          <div class="intent-stack" aria-label="Three steps to prepare for the call">
+            <div class="intent-card">
+              <span>1. Confirm</span>
+              <p>Hit reply on the calendar invite. One word: "Yes." Takes two seconds.</p>
+            </div>
+            <div class="intent-card">
+              <span>2. Show up</span>
+              <p>On time, with your actual numbers, and whatever's actually holding you back.</p>
+            </div>
+            <div class="intent-card">
+              <span>3. Decide</span>
+              <p>Bridge, Ownership, Concierge, or a clear reason to wait.</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="media-shell">
+            <iframe src="https://app.kartra.com/external_video/vimeo/1060957094?badge=0" title="Watch this before your Airbnb call" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="video-note">
+            <strong>3:10</strong>
+            <p>Watch this first so the call can stay focused on your path, your constraints, and the decision in front of you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Confirm ── -->
+    <section id="confirm" class="confirm-band">
+      <div class="container confirm-grid">
+        <div>
+          <span class="eyebrow">Don't skip this</span>
+          <h2>Confirm it now, while you're here.</h2>
+          <p>Takes 60 seconds. It's the difference between a call that happens and one that disappears into your inbox.</p>
+          <div class="steps">
+            <div class="step-card"><p><strong>1. Find the invite.</strong><br />In your inbox (check spam too). Subject line says Legacy Investing Show.</p></div>
+            <div class="step-card"><p><strong>2. Hit accept.</strong><br />Add to calendar and set a 10-min reminder.</p></div>
+            <div class="step-card"><p><strong>3. Reply "yes."</strong><br />Send the quick reply so the team knows you're coming.</p></div>
+          </div>
+        </div>
+        <div class="commitment-box">
+          <div class="commitment-copy">
+            <span class="mini-label">Pro tip</span>
+            <h3>Not sure what to say?</h3>
+            <p>Copy this, paste it, hit send. Shows you're serious and saves your spot.</p>
+            <div class="commitment-script">Yes, I'll be on the call. Looking forward to it.</div>
+          </div>
+          <div class="confirmation-shot">
+            <img src="assets/live-proof/1421368490760Untitled_design__85__2.png" alt="Example call confirmation message and calendar acceptance instructions" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Prep ── -->
+    <section id="prep" class="cream">
+      <div class="container split">
+        <div>
+          <span class="eyebrow">Quick prep</span>
+          <h2>Four things to think about before we talk.</h2>
+        </div>
+        <div class="point">
+          <h3>What we'll figure out together.</h3>
+          <p>Whether Ascension, Concierge, or neither is the right move based on your capital, available time, market options, and appetite for help.</p>
+        </div>
+      </div>
+      <div class="container prep-strip">
+        <div class="prep-item">
+          <h3>Capital</h3>
+          <p>Your real range for getting started, including setup costs.</p>
+        </div>
+        <div class="prep-item">
+          <h3>Capacity</h3>
+          <p>What you can personally handle and what needs to be taken off your plate.</p>
+        </div>
+        <div class="prep-item">
+          <h3>Goal</h3>
+          <p>The result that would make this worth pursuing over the next year.</p>
+        </div>
+        <div class="prep-item">
+          <h3>Biggest concern</h3>
+          <p>Whatever's keeping you on the fence. Bring it up first.</p>
+        </div>
+      </div>
+      <div class="container">
+        <p style="margin-top:24px;"><strong>Lead with the hard part.</strong> Money concerns, time crunch, skeptical partner, fear of getting it wrong — that's the stuff we actually need to talk about.</p>
+      </div>
+    </section>
+
+    <!-- ── What We'll Cover ── -->
+    <section id="expect" class="dark">
+      <div class="container">
+        <span class="eyebrow">What we'll cover</span>
+        <h2>This call is about your situation, not a rehash of the webinar.</h2>
+        <p>We'll use the call to narrow the decision: the path that fits, the support you need, the first move to make, and the risks to clear before money is on the line.</p>
+        <div class="agenda-grid">
+          <article class="agenda-card">
+            <h3>Your path</h3>
+            <p>Bridge, Ownership, Concierge, or a clear pass for now.</p>
+          </article>
+          <article class="agenda-card">
+            <h3>Your starting point</h3>
+            <p>Capital, credit, schedule, and the constraints that shape the plan.</p>
+          </article>
+          <article class="agenda-card">
+            <h3>Your market</h3>
+            <p>Whether your city works, or whether nearby and remote markets deserve a look.</p>
+          </article>
+          <article class="agenda-card">
+            <h3>The help you want</h3>
+            <p>Coaching, deal review, setup help, or a more done-for-you acquisition path.</p>
+          </article>
+          <article class="agenda-card">
+            <h3>The risks</h3>
+            <p>Lease terms, regulations, deal quality, cash reserves, and what needs a second look.</p>
+          </article>
+          <article class="agenda-card">
+            <h3>The next move</h3>
+            <p>If it makes sense, you'll know what happens after the call.</p>
+          </article>
+        </div>
+        <div class="resource-callout">
+          <div>
+            <h3>A few examples before we talk.</h3>
+            <p>Student screenshots and videos are below if you want more context.</p>
+          </div>
+          <a class="button" href="#proof">See student results</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Bridge or Ownership ── -->
+    <section id="routes" class="cream">
+      <div class="container">
+        <span class="eyebrow">Routes</span>
+        <h2>Pick the route before you spend money.</h2>
+        <p>Most people come in thinking there is one Airbnb path. The call sorts the route before you spend money: lower-capital Bridge, ownership, or Concierge if you want more of the acquisition and setup handled.</p>
+        <div class="path-grid">
+          <article class="path-card">
+            <span class="mini-label">Bridge</span>
+            <h3>Lease first, keep startup capital lower.</h3>
+            <p>Bridge uses rental arbitrage: lease a property, furnish it, list it, and keep the spread after expenses.</p>
+            <ul>
+              <li>Typical launch capital: $10K to $25K</li>
+              <li>Team support on landlord outreach, deal review, scripts, roleplay, and references</li>
+              <li>Common target: around $2,500/month net cash flow when the deal and execution line up</li>
+            </ul>
+          </article>
+          <article class="path-card">
+            <span class="mini-label">Ownership</span>
+            <h3>Buy the asset and build the tax/equity side.</h3>
+            <p>Ownership is for people who want the property in their name and want cash flow, equity, depreciation, and more control.</p>
+            <ul>
+              <li>Typical capital range: $50K to $150K, depending on the property and loan structure</li>
+              <li>Concierge support can include buy box, sourcing, underwriting, lender and CPA intros, and launch setup</li>
+              <li>Best fit when tax strategy and long-term ownership matter as much as monthly cash flow</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Program ── -->
+    <section id="program" class="program-band">
+      <div class="container program-layout">
+        <div>
+          <span class="eyebrow">If it's a fit</span>
+          <h2>Implementation support comes next.</h2>
+          <p>The program is built around the parts that take time, judgment, and follow-through: finding the right market, reviewing deals before you sign, handling landlord conversations, setting up the listing, and getting operations ready for guests.</p>
+          <div class="program-proof" aria-label="Program proof points">
+            <div><strong>4,700+</strong><span>Students in the program</span></div>
+            <div><strong>4,000+</strong><span>Active hosts in the community</span></div>
+          </div>
+        </div>
+        <div class="offer-map" aria-label="Program support areas">
+          <article class="offer-card">
+            <span>Coach</span>
+            <div>
+              <h3>1-on-1 STR coach</h3>
+              <p>Guidance on your market, your numbers, and the decisions in front of you.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Review</span>
+            <div>
+              <h3>Deal review before you sign</h3>
+              <p>Second set of eyes on the numbers, the market, and the red flags.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Bridge</span>
+            <div>
+              <h3>Landlord outreach support</h3>
+              <p>Scripts, roleplay, references, and support for getting the first yes.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Buy</span>
+            <div>
+              <h3>Concierge acquisition help</h3>
+              <p>For buyers, the team can source, underwrite, and help coordinate the path to close.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Setup</span>
+            <div>
+              <h3>Launch setup</h3>
+              <p>Listing design, furnishing guidance, photos, pricing, cleaners, guest messaging, and operations.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Systems</span>
+            <div>
+              <h3>Tools behind the work</h3>
+              <p>Top-market data, underwriting sheets, tax checklists, cleaner SOPs, guest templates, AI advisor access, and vendor guidance.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Remote</span>
+            <div>
+              <h3>Built for remote operation</h3>
+              <p>Cleaner, handyman, mover, pricing, lock, camera, and guest-message systems so the property can run without you living nearby.</p>
+            </div>
+          </article>
+          <article class="offer-card">
+            <span>Family</span>
+            <div>
+              <h3>Bring your spouse into the decision</h3>
+              <p>If they will be involved, bring them to the call so you hear the same numbers and ask questions together.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Guarantees ── -->
+    <section class="dark">
+      <div class="container">
+        <span class="eyebrow">Before money is on the line</span>
+        <h2>Three checks so you don't guess with your money.</h2>
+        <p>No one can promise a result. The point is to catch obvious mistakes before money is on the line.</p>
+        <div class="guarantee-grid">
+          <article class="guarantee-card">
+            <span>DealCheck</span>
+            <h3>We review before you sign.</h3>
+            <p>Weak deals get called out early. Strong ones get a clear explanation before you move forward.</p>
+          </article>
+          <article class="guarantee-card">
+            <span>Milestones</span>
+            <h3>Hit the milestones, we stay with you.</h3>
+            <p>If you do the work and still aren't cash flowing, coaching continues at no extra cost.</p>
+          </article>
+          <article class="guarantee-card">
+            <span>Launch</span>
+            <h3>Built for 90 days.</h3>
+            <p>Finish onboarding, submit deals on time, and the system is designed to get an underwritten opportunity in front of you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Timeline ── -->
+    <section id="timeline" class="cream">
+      <div class="container">
+        <span class="eyebrow">12-week path</span>
+        <h2>Getting to a real listing beats collecting more notes.</h2>
+        <p>A first property has to reach meaningful monthly cash flow fast enough to justify the work. On the call, we check your market, capital, and support level against that 12-week path.</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span>Weeks 1-2</span>
+            <h3>Pick the lane</h3>
+            <p>Bridge, Ownership, or Concierge. Set the budget, market, and buy box.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Weeks 3-5</span>
+            <h3>Source and vet</h3>
+            <p>Landlord outreach or acquisition search, underwriting, market checks, and deal review.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Weeks 6-9</span>
+            <h3>Lock and set up</h3>
+            <p>Lease or close, furnishing plan, photos, listing build, pricing, cleaners, and guest systems.</p>
+          </article>
+          <article class="timeline-item">
+            <span>Weeks 10-12</span>
+            <h3>Launch and adjust</h3>
+            <p>Go live, watch the first bookings, tighten pricing, and fix operational gaps early.</p>
+          </article>
+        </div>
+        <div class="timeline-context">
+          <h3>Student journeys from the timeline page.</h3>
+          <p>A few of the original journey screenshots are below so the first-12-weeks frame is tied to real paths, not just a planning outline.</p>
+          <div class="timeline-proof-grid">
+            <figure class="timeline-proof-card">
+              <img src="assets/timeline-proof/rob-airbnb-journey.png" alt="Rob Airbnb journey timeline screenshot" loading="lazy" />
+              <figcaption>Rob's Airbnb journey</figcaption>
+            </figure>
+            <figure class="timeline-proof-card">
+              <img src="assets/timeline-proof/kiana-airbnb-journey.png" alt="Kiana Airbnb journey timeline screenshot" loading="lazy" />
+              <figcaption>Kiana's Airbnb journey</figcaption>
+            </figure>
+            <figure class="timeline-proof-card">
+              <img src="assets/timeline-proof/darryl-airbnb-journey.png" alt="Darryl Airbnb journey timeline screenshot" loading="lazy" />
+              <figcaption>Darryl's Airbnb journey</figcaption>
+            </figure>
+            <figure class="timeline-proof-card">
+              <img src="assets/timeline-proof/tom-morgan-airbnb-journey.png" alt="Tom Morgan Airbnb journey timeline screenshot" loading="lazy" />
+              <figcaption>Tom Morgan's Airbnb journey</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Student Proof (merged) ── -->
+    <section id="proof" class="cream">
+      <div class="container">
+        <span class="eyebrow">Student results</span>
+        <h2>Student screenshots from inside the program.</h2>
+        <div class="proof-ledger" aria-label="Proof highlights">
+          <div class="proof-stat"><strong>$744K</strong><span>One student's total bookings</span></div>
+          <div class="proof-stat"><strong>737</strong><span>Nights booked in one student snapshot</span></div>
+          <div class="proof-stat"><strong>$35K</strong><span>Bookings reported in 30 days</span></div>
+          <div class="proof-stat"><strong>$100K+</strong><span>Revenue, two properties</span></div>
+        </div>
+        <div class="video-grid">
+          <article class="video-card"><div class="media-shell"><iframe src="https://app.kartra.com/external_video/youtube/W_JewQK4LJc?feature=shared" title="Rob student testimonial" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><div class="video-body"><h3>Rob</h3><p>Marketing director, kids, built it around limited hours.</p></div></article>
+          <article class="video-card"><div class="media-shell"><iframe src="https://app.kartra.com/external_video/youtube/2T1M3T9YbkM?feature=shared" title="Kiana student testimonial" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><div class="video-body"><h3>Kiana</h3><p>Left finance, started STRs. This is what it looked like.</p></div></article>
+          <article class="video-card"><div class="media-shell"><iframe src="https://app.kartra.com/external_video/youtube/fNpdiiyr1JU?feature=shared" title="Tom Morgan testimonial" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe></div><div class="video-body"><h3>Tom Morgan</h3><p>First listing, bookings came fast.</p></div></article>
+        </div>
+        <div class="proof-wall">
+          <article class="proof-card"><p class="proof-copy">Wendy Sanchez: <span>$744,000 in bookings</span> and 737 nights booked.</p><img src="assets/live-proof/1176022157192wendy_sanchez.png" alt="Wendy Sanchez Airbnb booking example" /></article>
+          <article class="proof-card"><p class="proof-copy">Tyler and Jenna: <span>$100,000+ in revenue</span> across two properties.</p><img src="assets/live-proof/1036179199712tyler__100k.png" alt="Tyler and Jenna Airbnb revenue example" /></article>
+          <article class="proof-card"><p class="proof-copy">Community member: progress after following the steps inside the program.</p><img src="assets/live-proof/1120766321397Untitled__1_.png" alt="Student Airbnb progress example" /></article>
+          <article class="proof-card"><p class="proof-copy">Rob Saag: one property, <span>roughly $29K net</span>.</p><img src="assets/live-proof/306373616059rob_29k__1__copy.jpeg" alt="Rob Saag Airbnb income example" /></article>
+          <article class="proof-card"><p class="proof-copy">Tom Morgan: <span>$20,000+ in bookings</span> on his first arbitrage listing.</p><img src="assets/live-proof/1307075957936tom_morgan__20k.png" alt="Tom Morgan first arbitrage listing example" /></article>
+          <article class="proof-card"><p class="proof-copy">Chad: <span>$9,046.99 in 30 days</span> from one property.</p><img src="assets/live-proof/841565646085chad.png" alt="Chad short-term rental income example" /></article>
+          <article class="proof-card"><p class="proof-copy">Fred Dobler: <span>$12,000 in the first week</span>, projected $110K–$130K.</p><img src="assets/live-proof/103214819897fred_dobler.png" alt="Fred Dobler Airbnb result example" /></article>
+          <article class="proof-card"><p class="proof-copy">Josh Szentes: properties bringing in around <span>$9,000 a month</span>.</p><img src="assets/live-proof/21236277259szentes_9k.png" alt="Josh Szentes monthly cash flow example" /></article>
+          <article class="proof-card"><p class="proof-copy">Kayla Fike: first landlord yes, then momentum.</p><img src="assets/live-proof/31007463_16854829911d5kayla_ss.webp" alt="Kayla Fike landlord outreach example" /></article>
+          <article class="proof-card"><p class="proof-copy">Self-reported update: <span>$5,500/month net profit</span> after launching.</p><img src="assets/story-proof/001-5-500-month-net-profit.png" alt="Student message reporting $5,500 per month net profit" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">Monique: <span>$1,800/month cash flow</span> from her first Airbnb.</p><img src="assets/story-proof/006-1-800-cash-flow.jpeg" alt="Student message reporting $1,800 per month cash flow" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">Matthew Ellis: <span>first deal locked up</span> after about a week in the program.</p><img src="assets/story-proof/010-matthew-ellis-got-my-first-deal-got-my-1st-one.png" alt="Matthew Ellis first deal student screenshot" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">First-week numbers: <span>close to $4K/month cash flow</span> on Matthew's deal.</p><img src="assets/story-proof/060-matthew-ellis-4k-cash-flow-first-week.png" alt="Student screenshot estimating close to $4K monthly cash flow" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">Darryl Sobering: <span>first arbitrage lease signed</span>.</p><img src="assets/story-proof/076-first-deal-signed-the-lease-first-deal-just-signed.png" alt="Student community post about signing first arbitrage lease" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">Brian O'Leary: <span>$27,612.60 booking</span> shown inside Airbnb.</p><img src="assets/story-proof/087-brian-oleary-27k-booking.png" alt="Brian O'Leary Airbnb booking screenshot" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">Separate Brian update: property live in two weeks with <span>$3,000/month projected cash flow</span>.</p><img src="assets/story-proof/020-brian-oleary-3-000-mo.png" alt="Student win post for Brian O'Leary projected cash flow" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">First property example: <span>$10K/month projected cash flow</span>.</p><img src="assets/story-proof/057-10k-cash-flow-student-win-10k-month-cash-flow.jpeg" alt="Student win screenshot reporting $10K monthly cash flow projection" loading="lazy" /></article>
+          <article class="proof-card"><p class="proof-copy">Student wins post: <span>$35K in bookings in 30 days</span>.</p><img src="assets/story-proof/079-multiple-students-student-wins-35k-in-30-days-35k.png" alt="Student wins screenshot reporting $35K in bookings in 30 days" loading="lazy" /></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section id="faq">
+      <div class="container">
+        <span class="eyebrow">Rather read?</span>
+        <h2>The questions everyone asks before the call.</h2>
+        <div class="faq-text">
+          <details open>
+            <summary aria-expanded="true">I've never done real estate. Can I do this?</summary>
+            <p>Most people start without real estate experience. The support is built around the parts beginners should not guess on: underwriting, entity structure, lender and CPA intros, tax strategy, landlord conversations, and negotiation support.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">I work full time. When do I do this?</summary>
+            <p>Plan for a heavier setup phase and a lighter operating phase. The source material frames the first property at roughly 3 to 5 hours a week during setup, then about 1 hour a week once the cleaner, pricing, messaging, and guest systems are in place.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">How much to start?</summary>
+            <p>Bridge is generally the lower-capital path: $10K to $25K for deposit, first month's rent, furnishing, and runway. Ownership depends on the property and loan structure, with $50K to $150K as a typical range. Concierge requires more because the team is sourcing, underwriting, coordinating acquisition, and helping with launch.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">My city has Airbnb rules.</summary>
+            <p>Your home city is not the only option. The program material includes remote setup, market selection, regulation checks, mid-term rental options, cleaners, handymen, keyless locks, cameras, and automated guest messaging. Bring the city you're worried about and we'll pressure-test it.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">My partner isn't convinced.</summary>
+            <p>Have them join the call so you both hear the same details at the same time.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">Is this a sales call?</summary>
+            <p>If the program fits, your advisor will say so. Either way, you'll leave knowing whether this works for you.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">What does the team actually help with?</summary>
+            <p>Bridge support can include landlord pre-approach, deal review, lease negotiation support, scripts, roleplay, reference calls, listing setup, dynamic pricing, PMS setup, calendar sync, cleaner SOPs, and guest messaging. Ownership and Concierge support can include buy box definition, sourcing, underwriting, financing path, lender and CPA introductions, entity setup, direct booking site, and performance reviews after launch.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">What if I do the work and still get stuck?</summary>
+            <p>That's what the coaching and program guardrails are for. We'll cover the details on the call.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">What if landlords won't say yes?</summary>
+            <p>Landlord yes starts with the right target list and a better pitch. Market targeting, pre-approach, scripts, objection handling, coach roleplay, and reference support all make the conversation more professional. The goal is to present a partnership, not beg for permission.</p>
+          </details>
+          <details>
+            <summary aria-expanded="false">What happens after the call?</summary>
+            <p>If it makes sense, onboarding starts, your STR coach is assigned, and the first plan is built around your route. Bridge starts with market and landlord targets. Ownership and Concierge start with buy box, sourcing, underwriting, and the path to closing. Launch support covers listing buildout, pricing, cleaners, messaging, and early performance checks.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Final CTA ── -->
+    <section class="final">
+      <div class="container">
+        <span class="eyebrow">Last step</span>
+        <h2>Confirm the invite now, then come to the call ready to make a real decision.</h2>
+        <p class="narrow">No prep deck or polished plan required. Be on time, bring the honest version of where you are, and we’ll walk through the options from there.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="margin:0;color:inherit;font-size:inherit;">Legacy Investing Show | Airbnb Call Confirmation</p>
+  </footer>
+
+  <script>
+    // Handle FAQ aria-expanded updates
+    document.querySelectorAll('.faq-text details').forEach(detail => {
+      detail.addEventListener('toggle', (e) => {
+        const summary = detail.querySelector('summary');
+        summary.setAttribute('aria-expanded', detail.open);
+      });
+    });
+  </script>
+</body>
+</html>
