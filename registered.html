@@ -24,7 +24,6 @@ head.appendChild(script);
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-<script src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" defer></script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -108,13 +107,6 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text-primary)
 .calendar-button-wrap{text-align:center}
 .custom-button{display:inline-flex;align-items:center;justify-content:center;position:relative;padding:14px 28px 14px 52px;background:#FFD700 !important;color:#000 !important;font-weight:800;text-align:center;text-decoration:none !important;border-radius:4px;font-size:15px;font-family:var(--font-body);cursor:pointer;min-width:228px;box-shadow:0 8px 20px rgba(255,195,0,0.28) !important;border:1px solid rgba(0,0,0,0.06) !important;transition:background-color 0.2s,transform 0.2s,box-shadow 0.2s}
 .custom-button:hover{background:#FFC300 !important;transform:translateY(-1px);box-shadow:0 10px 24px rgba(255,195,0,0.32) !important}
-a.addeventatc.custom-button,
-.addeventatc.custom-button{background:#FFD700 !important;color:#000 !important;text-decoration:none !important;box-shadow:0 8px 20px rgba(255,195,0,0.28) !important;border:1px solid rgba(0,0,0,0.06) !important}
-a.addeventatc.custom-button:hover,
-.addeventatc.custom-button:hover{background:#FFC300 !important}
-.addeventatc.custom-button .addeventatc_icon,
-.addeventatc.custom-button .addevent-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%)}
-.addeventatc_dropdown{z-index:30}
 .calendar-note{font-size:12px;color:var(--text-muted);text-align:center;margin-top:12px;line-height:1.5}
 
 /* --- VIDEO LIBRARY --- */
@@ -262,11 +254,12 @@ Live Workshop &mdash; No Replay
 </div>
 
 <div class="calendar-button-wrap">
-<a title="Add to Calendar"
-   class="addeventatc custom-button"
-   data-id="nndy6f5snltl"
-   target="_blank">
-Add to Calendar
+<a title="Add to Google Calendar"
+   class="custom-button"
+   href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=STR%20Workshop%20with%20Preston%20Seo&amp;dates=20260604T230000Z%2F20260605T003000Z&amp;details=Your%20Zoom%20link%20and%20workshop%20details%20are%20in%20your%20email%20from%20Preston%20Seo%20%28preston%40legacyinvestingshow.com%29.&amp;location=Online&amp;ctz=America%2FNew_York"
+   target="_blank"
+   rel="noopener noreferrer">
+Add to Google Calendar
 </a>
 </div>
 </div>
