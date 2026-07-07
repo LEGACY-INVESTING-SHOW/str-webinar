@@ -21,7 +21,7 @@ head.appendChild(script);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#f3efe8">
 <title>Success Stories | Legacy Investing Show</title>
-<meta name="description" content="Listen to what our students have to say. Real screenshots, video testimonials, and proof from Preston Seo's STR community.">
+<meta name="description" content="Listen to what our students have to say through two student success story videos from Preston Seo's STR community.">
 <link rel="canonical" href="https://str.managemoney101.com/successstories">
 <link rel="preload" href="str/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="str/fonts/poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -93,19 +93,12 @@ a{color:inherit}
 .eyebrow{
   display:inline-flex;
   align-items:center;
-  gap:12px;
   font-family:var(--display);
   font-size:12px;
   font-weight:700;
   letter-spacing:.18em;
   text-transform:uppercase;
   color:var(--green);
-}
-.eyebrow::before{
-  content:"";
-  width:44px;
-  height:2px;
-  background:var(--green);
 }
 h1,h2,h3{
   font-family:var(--display);
@@ -119,47 +112,21 @@ h1{
   line-height:.98;
   font-weight:800;
 }
-.hero p{
-  max-width:760px;
-  margin:22px auto 0;
-  font-size:20px;
-  line-height:1.65;
-  color:var(--muted);
-}
-
 .wall{
-  columns:3 280px;
-  column-gap:18px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
   padding:0 28px;
 }
 .card{
-  display:inline-block;
-  width:100%;
-  margin:0 0 18px;
   background:var(--card);
   border:1px solid var(--line);
   border-radius:18px;
   overflow:hidden;
   box-shadow:0 12px 28px rgba(16,12,8,.05);
-  break-inside:avoid;
-}
-.card img{
-  width:100%;
-  height:auto;
-  background:#fff;
 }
 .card-body{
   padding:18px 20px 20px;
-}
-.card-tag{
-  display:inline-block;
-  margin-bottom:10px;
-  font-family:var(--display);
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-  color:var(--green);
 }
 .card h3{
   font-size:24px;
@@ -184,60 +151,6 @@ h1{
   display:block;
 }
 
-.cta{
-  margin:28px 28px 0;
-  padding:36px 34px;
-  border-radius:18px;
-  background:var(--navy);
-  display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
-  gap:24px;
-  align-items:center;
-}
-.cta-copy h2{
-  color:#fff;
-  font-size:clamp(30px,4vw,48px);
-}
-.cta-copy p{
-  margin-top:12px;
-  max-width:720px;
-  font-size:17px;
-  line-height:1.65;
-  color:rgba(255,255,255,.72);
-}
-.cta-actions{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  min-width:250px;
-}
-.button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:56px;
-  padding:16px 22px;
-  text-decoration:none;
-  font-family:var(--display);
-  font-size:14px;
-  font-weight:700;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  border:1px solid transparent;
-  transition:transform .18s ease,background .18s ease,border-color .18s ease;
-}
-.button:hover{transform:translateY(-1px)}
-.button-primary{
-  background:var(--green);
-  color:#fff;
-}
-.button-primary:hover{background:var(--green-dark)}
-.button-secondary{
-  border-color:rgba(255,255,255,.18);
-  color:#fff;
-}
-.button-secondary:hover{background:rgba(255,255,255,.08)}
-
 footer{
   padding:22px 28px 0;
   text-align:center;
@@ -249,14 +162,7 @@ footer{
   .page{width:min(100% - 24px,1160px);margin:16px auto}
   .topbar{padding:16px 18px}
   .hero{padding:54px 18px 40px}
-  .hero p{font-size:18px}
-  .wall{padding:0 18px;columns:2 240px}
-  .cta{
-    margin:24px 18px 0;
-    padding:28px 22px;
-    grid-template-columns:1fr;
-  }
-  .cta-actions{min-width:0}
+  .wall{grid-template-columns:1fr;padding:0 18px}
 }
 
 @media(max-width:560px){
@@ -265,13 +171,10 @@ footer{
   .topbar a{display:none}
   .hero{padding:46px 14px 34px}
   .eyebrow{font-size:11px}
-  .eyebrow::before{width:34px}
   h1{font-size:clamp(36px,14vw,58px)}
-  .hero p{font-size:17px}
-  .wall{padding:0 14px;columns:1}
+  .wall{padding:0 14px}
   .card h3{font-size:22px}
-  .card p,.cta-copy p{font-size:15px}
-  .cta{margin:20px 14px 0;padding:24px 18px}
+  .card p{font-size:15px}
 }
 </style>
 </head>
@@ -279,46 +182,21 @@ footer{
   <main class="page">
     <div class="topbar">
       <div class="brand">Legacy Investing <span>Show</span></div>
-      <a href="/ownership">See workshop paths</a>
     </div>
 
     <section class="hero">
       <div class="eyebrow">Success Stories</div>
       <h1>Listen To What Our Students Have To Say</h1>
-      <p>Real screenshots, real bookings, real leases signed, and real community wins from students building short-term rental businesses with Preston Seo.</p>
     </section>
 
     <section class="wall" aria-label="Student success story wall">
-      <article class="card">
-        <img src="stories/01-self-reported-wins/images/080-best-month-yet-60-000-bookings-best-month-yet.png" alt="Dustin Cotten best month screenshot showing nearly sixty thousand dollars net" width="1619" height="943" fetchpriority="high" decoding="async">
-      </article>
-
       <article class="card">
         <div class="video-shell">
           <iframe src="https://player.vimeo.com/video/1207905955?title=0&amp;byline=0&amp;portrait=0" title="Student success story video one" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
-          <span class="card-tag">Video Testimonial</span>
-          <h3>Student story one</h3>
-          <p>A featured student video placed right into the testimonial wall so it feels like part of the proof, not a separate section.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="stories/01-self-reported-wins/images/016-johnny-abarra-first-airbnb-arbitrage-property.png" alt="Johnny Abarra first Airbnb arbitrage property screenshot" width="1504" height="858" loading="lazy" decoding="async">
-        <div class="card-body">
-          <span class="card-tag">First Property</span>
-          <h3>Johnny Abarra</h3>
-          <p>Signed a 2-year lease on his first property and projected about $1,500 per month in cash flow.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="stories/01-self-reported-wins/images/001-5-500-month-net-profit.png" alt="Student message showing five thousand five hundred dollars in monthly net profit" width="480" height="326" loading="lazy" decoding="async">
-        <div class="card-body">
-          <span class="card-tag">Monthly Profit</span>
-          <h3>$5,500 net profit</h3>
-          <p>A clean self-reported screenshot showing strong monthly profit after launch.</p>
+          <h3>Student Success Story</h3>
+          <p>Hear directly from one of our students about their experience and results.</p>
         </div>
       </article>
 
@@ -327,59 +205,10 @@ footer{
           <iframe src="https://player.vimeo.com/video/1207909593?title=0&amp;byline=0&amp;portrait=0" title="Student success story video two" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
         <div class="card-body">
-          <span class="card-tag">Video Testimonial</span>
-          <h3>Student story two</h3>
-          <p>The second video sits inside the same masonry flow as the screenshots, which keeps the whole page feeling simple and cohesive.</p>
+          <h3>Another Student Story</h3>
+          <p>A second testimonial with more firsthand perspective on the program and the journey.</p>
         </div>
       </article>
-
-      <article class="card">
-        <img src="stories/02-preston-posted-student-wins/images/020-brian-oleary-3-000-mo.png" alt="Brian O'Leary student win screenshot showing around three thousand dollars monthly cash flow" width="1510" height="510" loading="lazy" decoding="async">
-        <div class="card-body">
-          <span class="card-tag">Coach-Posted Win</span>
-          <h3>Brian O'Leary</h3>
-          <p>Locked up the property, went live in 2 weeks, and posted around $3,000 per month in cash flow.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="stories/01-self-reported-wins/images/054-11k-booking-8500-profit.png" alt="Student screenshot showing an eleven thousand dollar booking and eighty five hundred dollar profit" width="436" height="498" loading="lazy" decoding="async">
-        <div class="card-body">
-          <span class="card-tag">Record Month</span>
-          <h3>$11K booking, $8,500 profit</h3>
-          <p>A strong screenshot that shows both top-line booking volume and bottom-line result in one glance.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="stories/01-self-reported-wins/images/075-sam-becze-multiple-bookings-in-24-hours-first-property-we-have-had-multiple.png" alt="Sam Becze screenshot about multiple bookings within twenty four hours" width="1510" height="390" loading="lazy" decoding="async">
-        <div class="card-body">
-          <span class="card-tag">Fast Start</span>
-          <h3>Bookings in under 24 hours</h3>
-          <p>One of the clearest early-momentum testimonials in the library.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="stories/01-self-reported-wins/images/087-brian-oleary-27k-booking.png" alt="Brian O'Leary screenshot showing a twenty seven thousand dollar booking" width="1490" height="516" loading="lazy" decoding="async">
-        <div class="card-body">
-          <span class="card-tag">Large Booking</span>
-          <h3>$27,612 booking</h3>
-          <p>A booking screenshot that quickly shows the upside once a property is live and dialed in.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="cta">
-      <div class="cta-copy">
-        <h2>Want the path behind the proof?</h2>
-        <p>These screenshots are the outcome. The next move is choosing which workshop path fits best: ownership for the cash-flow-plus-tax angle, or arbitrage for the lower-capital bridge method.</p>
-      </div>
-
-      <div class="cta-actions">
-        <a href="/ownership" class="button button-primary">See Ownership Path</a>
-        <a href="/airbnb-arbitrage" class="button button-secondary">See Arbitrage Path</a>
-      </div>
     </section>
 
     <footer>
