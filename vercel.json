@@ -88,6 +88,10 @@
       "destination": "/str-ownership.html"
     },
     {
+      "source": "/successstories",
+      "destination": "/successstories.html"
+    },
+    {
       "source": "/pre-call",
       "destination": "/pre-call.html"
     },
