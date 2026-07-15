@@ -490,6 +490,77 @@ Here's Some Results From<br><span class="accent">My Students</span>
     return url.toString();
   }
 
+  function getTrackingParamValue(key) {
+    var value = '';
+
+    try {
+      value = new URLSearchParams(window.location.search).get(key) || '';
+    } catch (error) {}
+
+    if (value) {
+      try {
+        window.sessionStorage.setItem('str_' + key, value);
+      } catch (error) {}
+      return value;
+    }
+
+    try {
+      return window.sessionStorage.getItem('str_' + key) || '';
+    } catch (error) {}
+
+    return '';
+  }
+
+  function fillAndHideTrackingFields() {
+    ['utm_source', 'utm_campaign'].forEach(function(key) {
+      var value = getTrackingParamValue(key);
+      var fields = document.querySelectorAll('input, textarea');
+
+      fields.forEach(function(field) {
+        var fieldText = [
+          field.name,
+          field.id,
+          field.getAttribute('placeholder'),
+          field.getAttribute('aria-label'),
+          field.getAttribute('data-name'),
+          field.getAttribute('data-field')
+        ].join(' ').toLowerCase();
+
+        if (fieldText.indexOf(key) === -1) return;
+
+        if (value) {
+          field.value = value;
+          field.setAttribute('value', value);
+          field.dispatchEvent(new Event('input', { bubbles: true }));
+          field.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+
+        var container = field.parentElement || field;
+        if (container.parentElement && container.parentElement.children.length === 1 && container.parentElement !== document.body && container.parentElement.tagName !== 'FORM') {
+          container = container.parentElement;
+        }
+        container.style.display = 'none';
+      });
+    });
+  }
+
+  function watchTrackingFields() {
+    fillAndHideTrackingFields();
+
+    if (!('MutationObserver' in window)) {
+      window.setTimeout(fillAndHideTrackingFields, 1000);
+      window.setTimeout(fillAndHideTrackingFields, 3000);
+      return;
+    }
+
+    var observer = new MutationObserver(fillAndHideTrackingFields);
+    observer.observe(registerSection || document.body, { childList: true, subtree: true });
+    window.setTimeout(function() {
+      fillAndHideTrackingFields();
+      observer.disconnect();
+    }, 10000);
+  }
+
   function loadKartraForm() {
     if (formLoaded) return;
     formLoaded = true;
@@ -500,6 +571,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
     formScript.src = getTrackedFormUrl();
     formScript.async = true;
     document.body.appendChild(formScript);
+    watchTrackingFields();
   }
 
   function updateRegisterHash() {
