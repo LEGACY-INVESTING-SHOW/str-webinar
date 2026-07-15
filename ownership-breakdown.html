@@ -527,10 +527,47 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
   var gtmLoaded = true;
   var trackingLoaded = true;
   var formUrl = 'https://app.kartra.com/optin/OdhExXbl4Ma4';
+  var trackingParamKeys = [
+    'utm_source',
+    'utm_medium',
+    'utm_campaign',
+    'utm_term',
+    'utm_content',
+    'fbclid',
+    'gclid',
+    'gbraid',
+    'wbraid',
+    'msclkid'
+  ];
   var registerSection = document.getElementById('register');
   var hardTimer;
   var idleHandle;
   var canAutoloadForm = window.matchMedia && window.matchMedia('(min-width: 981px)').matches;
+
+  function getTrackedFormUrl() {
+    var url = new URL(formUrl);
+    var pageParams = new URLSearchParams(window.location.search);
+
+    trackingParamKeys.forEach(function(key) {
+      var value = pageParams.get(key);
+
+      if (value) {
+        try {
+          window.sessionStorage.setItem('str_' + key, value);
+        } catch (error) {}
+      } else {
+        try {
+          value = window.sessionStorage.getItem('str_' + key);
+        } catch (error) {}
+      }
+
+      if (value) {
+        url.searchParams.set(key, value);
+      }
+    });
+
+    return url.toString();
+  }
 
   function scheduleCallback(callback, delay) {
     if ('requestIdleCallback' in window) {
@@ -562,7 +599,7 @@ h1{font-family:var(--display);font-size:clamp(34px,3.7vw,52px);line-height:1.06;
     if (idleHandle && 'cancelIdleCallback' in window) window.cancelIdleCallback(idleHandle);
     window.requestAnimationFrame(function() {
       var formScript = document.createElement('script');
-      formScript.src = formUrl;
+      formScript.src = getTrackedFormUrl();
       formScript.async = true;
       document.body.appendChild(formScript);
     });
