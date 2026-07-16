@@ -188,6 +188,15 @@ h1{font-family:var(--display);font-size:clamp(42px,4.25vw,60px);line-height:1.02
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 7px 0 var(--orange-dark),0 22px 36px rgba(224,90,26,.32);filter:saturate(1.04)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:.82;cursor:wait;transform:none}
 .secure-note{font-size:12px;color:#776b5d;text-align:center;margin-top:14px}
+#register.registration-popup{position:fixed!important;inset:0;z-index:99999;display:flex!important;align-items:flex-start;justify-content:center;background:rgba(7,16,26,.82);padding:24px;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease;content-visibility:visible!important;contain-intrinsic-size:auto!important;min-height:100vh!important}
+#register.registration-popup.is-open{opacity:1;visibility:visible;pointer-events:auto}
+body.registration-modal-active{overflow:hidden}
+#register.registration-popup .wrap,#register.registration-popup .container{width:min(720px,100%);margin:auto;display:block!important}
+#register.registration-popup .form-grid,#register.registration-popup .register-grid{display:block!important;width:100%}
+#register.registration-popup .form-copy,#register.registration-popup .register-copy,#register.registration-popup .register-title,#register.registration-popup .register-sub{display:none!important}
+#register.registration-popup .registration-form-shell,#register.registration-popup.signup-box{position:relative;width:min(680px,100%);max-height:calc(100vh - 48px);overflow-y:auto;margin:auto!important;padding-top:58px!important}
+.registration-modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:0;border-radius:999px;background:var(--navy);color:#fffaf1;font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center;z-index:2}
+.registration-modal-close:hover{background:var(--green)}
 
 .footer{background:#07101a;color:#b8c0c8;padding:34px 0;text-align:center;font-size:12px}
 .footer p{max-width:880px;margin:0 auto}
@@ -416,7 +425,7 @@ h1{font-family:var(--display);font-size:clamp(42px,4.25vw,60px);line-height:1.02
     </div>
   </section>
 
-  <section class="register-section" id="register">
+  <section class="register-section registration-popup" id="register">
     <div class="wrap register-grid">
       <div class="register-copy">
         <div class="eyebrow">Free live workshop &middot; Limited seats</div>
@@ -464,6 +473,72 @@ h1{font-family:var(--display);font-size:clamp(42px,4.25vw,60px);line-height:1.02
   var hardTimer;
   var fallbackTimer;
   var idleHandle;
+
+  function setupRegistrationModal() {
+    if (!registerSection || registerSection.dataset.modalReady === 'true') return;
+    registerSection.dataset.modalReady = 'true';
+    registerSection.classList.add('registration-popup');
+    registerSection.setAttribute('role', 'dialog');
+    registerSection.setAttribute('aria-modal', 'true');
+    registerSection.setAttribute('aria-label', 'Workshop registration');
+
+    var modalPanel = registerSection.querySelector('.registration-form-shell') || registerSection;
+    if (!modalPanel.querySelector('.registration-modal-close')) {
+      var closeButton = document.createElement('button');
+      closeButton.type = 'button';
+      closeButton.className = 'registration-modal-close';
+      closeButton.setAttribute('aria-label', 'Close registration form');
+      closeButton.innerHTML = '&times;';
+      closeButton.addEventListener('click', closeRegistrationModal);
+      modalPanel.insertBefore(closeButton, modalPanel.firstChild);
+    }
+
+    registerSection.addEventListener('click', function(event) {
+      if (event.target === registerSection) closeRegistrationModal();
+    });
+  }
+
+  function openRegistrationModal() {
+    if (!registerSection) return;
+    setupRegistrationModal();
+    registerSection.classList.add('is-open');
+    document.body.classList.add('registration-modal-active');
+    if (window.history && window.history.pushState && window.location.hash !== '#register') {
+      window.history.pushState(null, '', '#register');
+    }
+    loadKartraForm();
+  }
+
+  function closeRegistrationModal() {
+    if (!registerSection) return;
+    registerSection.classList.remove('is-open');
+    document.body.classList.remove('registration-modal-active');
+    if (window.history && window.history.replaceState && window.location.hash === '#register') {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+
+  setupRegistrationModal();
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest ? event.target.closest('a[href="#register"]') : null;
+    if (!link) return;
+    event.preventDefault();
+    event.stopPropagation();
+    openRegistrationModal();
+  }, true);
+
+  window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') closeRegistrationModal();
+  });
+
+  if (window.location.hash === '#register') {
+    window.setTimeout(openRegistrationModal, 0);
+  }
+
+  window.addEventListener('hashchange', function() {
+    if (window.location.hash === '#register') openRegistrationModal();
+  });
 
   function getTrackedFormUrl() {
     var url = new URL(formUrl);

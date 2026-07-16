@@ -104,6 +104,15 @@ img{max-width:100%;display:block}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68{width:100%;display:inline-flex;align-items:center;justify-content:center;min-height:88px;border:none;border-radius:0;background:#ff6a2a;box-shadow:0 5px 0 #cc4f19,0 18px 32px rgba(255,106,42,0.22);padding:18px 20px;font:800 22px var(--font-display);letter-spacing:1.8px;text-transform:uppercase;color:#111111;cursor:pointer;transition:transform 0.2s ease,box-shadow 0.2s ease,filter 0.2s ease}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:hover{transform:translateY(-1px);box-shadow:0 6px 0 #cc4f19,0 22px 36px rgba(255,106,42,0.28);filter:saturate(1.04)}
 .submit_button_eb160de1de89d9058fcb0b968dbbbd68:disabled{opacity:0.85;cursor:wait;transform:none}
+#register.registration-popup{position:fixed!important;inset:0;z-index:99999;display:flex!important;align-items:flex-start;justify-content:center;background:rgba(6,78,59,.82);padding:24px;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease;content-visibility:visible!important;contain-intrinsic-size:auto!important;min-height:100vh!important}
+#register.registration-popup.is-open{opacity:1;visibility:visible;pointer-events:auto}
+body.registration-modal-active{overflow:hidden}
+#register.registration-popup .wrap,#register.registration-popup .container{width:min(720px,100%);margin:auto;display:block!important}
+#register.registration-popup .form-grid,#register.registration-popup .register-grid{display:block!important;width:100%}
+#register.registration-popup .form-copy,#register.registration-popup .register-copy,#register.registration-popup .register-title,#register.registration-popup .register-sub{display:none!important}
+#register.registration-popup .registration-form-shell,#register.registration-popup.signup-box{position:relative;width:min(680px,100%);max-height:calc(100vh - 48px);overflow-y:auto;margin:auto!important;padding-top:58px!important}
+.registration-modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:0;border-radius:999px;background:#064E3B;color:#fff;font-size:24px;line-height:1;cursor:pointer;display:grid;place-items:center;z-index:2}
+.registration-modal-close:hover{background:#083f31}
 
 /* --- DATE --- */
 .hero-date{margin-top:20px;font-size:15px;color:var(--gray-500);font-weight:500}
@@ -381,7 +390,7 @@ Here's Some Results From<br><span class="accent">My Students</span>
 </section>
 
 <!-- SECOND CTA -->
-<section class="register-section" id="register">
+<section class="register-section registration-popup" id="register">
 <div class="container">
 <h2 class="register-title">Save Your Seat</h2>
 <p class="register-sub">Sunday, July 19th @ <strong>2 PM EST</strong></p>
@@ -411,6 +420,72 @@ Here's Some Results From<br><span class="accent">My Students</span>
   var hardTimer;
   var fallbackTimer;
   var idleHandle;
+
+  function setupRegistrationModal() {
+    if (!registerSection || registerSection.dataset.modalReady === 'true') return;
+    registerSection.dataset.modalReady = 'true';
+    registerSection.classList.add('registration-popup');
+    registerSection.setAttribute('role', 'dialog');
+    registerSection.setAttribute('aria-modal', 'true');
+    registerSection.setAttribute('aria-label', 'Workshop registration');
+
+    var modalPanel = registerSection.querySelector('.registration-form-shell') || registerSection;
+    if (!modalPanel.querySelector('.registration-modal-close')) {
+      var closeButton = document.createElement('button');
+      closeButton.type = 'button';
+      closeButton.className = 'registration-modal-close';
+      closeButton.setAttribute('aria-label', 'Close registration form');
+      closeButton.innerHTML = '&times;';
+      closeButton.addEventListener('click', closeRegistrationModal);
+      modalPanel.insertBefore(closeButton, modalPanel.firstChild);
+    }
+
+    registerSection.addEventListener('click', function(event) {
+      if (event.target === registerSection) closeRegistrationModal();
+    });
+  }
+
+  function openRegistrationModal() {
+    if (!registerSection) return;
+    setupRegistrationModal();
+    registerSection.classList.add('is-open');
+    document.body.classList.add('registration-modal-active');
+    if (window.history && window.history.pushState && window.location.hash !== '#register') {
+      window.history.pushState(null, '', '#register');
+    }
+    loadKartraForm();
+  }
+
+  function closeRegistrationModal() {
+    if (!registerSection) return;
+    registerSection.classList.remove('is-open');
+    document.body.classList.remove('registration-modal-active');
+    if (window.history && window.history.replaceState && window.location.hash === '#register') {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+
+  setupRegistrationModal();
+
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest ? event.target.closest('a[href="#register"]') : null;
+    if (!link) return;
+    event.preventDefault();
+    event.stopPropagation();
+    openRegistrationModal();
+  }, true);
+
+  window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') closeRegistrationModal();
+  });
+
+  if (window.location.hash === '#register') {
+    window.setTimeout(openRegistrationModal, 0);
+  }
+
+  window.addEventListener('hashchange', function() {
+    if (window.location.hash === '#register') openRegistrationModal();
+  });
 
   function getTrackedFormUrl() {
     var url = new URL(formUrl);
