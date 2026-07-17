@@ -141,6 +141,10 @@ h1{font-family:var(--display);font-size:clamp(40px,4.7vw,66px);line-height:1.08;
 .learn-item{border-top:5px solid var(--gold);background:#fff;border-radius:8px;padding:24px 22px;box-shadow:0 14px 28px rgba(0,0,0,.07)}
 .learn-item b{display:block;font-family:var(--display);font-size:20px;line-height:1.18;margin-bottom:9px}
 .learn-item p{color:#454545;font-size:15px}
+.learn-cta{max-width:820px;margin:34px auto 0;padding:24px 28px;border:1px solid rgba(190,144,47,.42);border-radius:18px;background:linear-gradient(135deg,#fffdf7 0%,#f3ead7 100%);box-shadow:0 20px 48px rgba(16,47,36,.12);display:flex;align-items:center;justify-content:space-between;gap:22px;text-align:left}
+.learn-cta-copy{font-size:16px;color:#19364f;line-height:1.45}
+.learn-cta-copy b{display:block;font-family:var(--display);font-size:24px;line-height:1.1;color:#061a2f;margin-bottom:6px}
+.learn-cta .button{flex:0 0 auto;min-width:260px;min-height:58px;padding:15px 24px;font-size:16px;box-shadow:0 14px 28px rgba(20,92,67,.18)}
 
 .form-section{background:linear-gradient(180deg,#0b241b 0%,#071711 100%);color:#fff;padding:74px 0}
 .form-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(360px,1.1fr);gap:38px;align-items:start}
@@ -264,6 +268,8 @@ body.registration-modal-active{overflow:hidden}
   .learn{padding:48px 0}
   .media-card{border-radius:18px}
   .media-card img{aspect-ratio:auto;object-fit:contain}
+  .learn-cta{flex-direction:column;text-align:center;align-items:stretch;padding:22px 18px}
+  .learn-cta .button{width:100%;min-width:0}
   .as-featured{padding:22px 12px}
   .as-featured-heading{font-size:15px;margin-bottom:12px}
   .as-featured-row{gap:10px;margin-bottom:14px}
@@ -422,6 +428,16 @@ body.registration-modal-active{overflow:hidden}
           <b>How the STR tax loophole can cut tens of thousands off your W-2 tax bill</b>
           <p>How ownership, cost segregation, and STR rules can work together when the property and tax situation qualify.</p>
         </article>
+      </div>
+
+      <div class="learn-cta">
+        <div class="learn-cta-copy">
+          <b>Want Preston to walk you through it live?</b>
+          Sunday, July 19 at 2:00 PM EST. Free seat, live online workshop.
+        </div>
+        <a href="#register" class="button">
+          <span>Save My Seat</span>
+        </a>
       </div>
     </div>
   </section>
