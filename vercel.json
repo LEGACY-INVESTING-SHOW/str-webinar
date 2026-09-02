@@ -72,6 +72,10 @@
       "destination": "/sstr.html"
     },
     {
+      "source": "/next-50k",
+      "destination": "/next-50k.html"
+    },
+    {
       "source": "/advertorial11",
       "destination": "/advertorial11.html"
     },
