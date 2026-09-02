@@ -62,6 +62,7 @@ h2 em,h1 em{font-style:normal;color:var(--green)}
 h3{font-family:var(--sans);font-weight:600;letter-spacing:-.01em}
 p{text-wrap:pretty}
 .kicker{display:block;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.kicker-sentence{text-transform:none;letter-spacing:0;font-size:16px;font-weight:600}
 .lede{font-size:clamp(17px,1.35vw,19px);color:var(--ink-2);max-width:58ch;line-height:1.6}
 
 .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 22px;border:1px solid transparent;border-radius:10px;text-decoration:none;font-family:var(--sans);font-size:15px;font-weight:600;letter-spacing:-.005em;cursor:pointer;transition:background .18s ease,border-color .18s ease,transform .18s ease,box-shadow .18s ease}
@@ -345,14 +346,27 @@ body.registration-modal-active .sticky-cta{display:none!important}
   body{padding-bottom:0}
   .footer{padding-bottom:calc(40px + 76px)}
   .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9000;background:rgba(251,250,247,.92);backdrop-filter:blur(10px);border-top:1px solid var(--hair);padding:10px 16px calc(10px + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:12px;transition:transform .25s ease,opacity .25s ease}
-  .head,.head h2,.case-head>div,.fit>div,.covers-list li,.irs-grid>div:first-child,.final .wrap>div:first-child,.case-scale,.case-map p{text-align:center}
-  .head h2,.head .lede,.case-head .lede,.case-scale,.final p{margin-left:auto;margin-right:auto}
+  main .section,.irs,.final,.trust{text-align:center}
+  .head h2,.lede,.case-scale,.final p,.irs p,.case-map p,.also,.proof-note{margin-left:auto;margin-right:auto}
+  .head h2{max-width:none}
+  .irs h2,.case-head h2{max-width:none}
+  .kicker{display:block}
   .covers-list .n{margin-left:auto;margin-right:auto}
-  .fit-list{margin-left:auto;margin-right:auto;text-align:left}
-  .note{text-align:left}
+  .fit-list{margin-left:auto;margin-right:auto}
+  .fit-list li{display:flex;justify-content:center;align-items:flex-start;gap:10px;text-align:left}
+  .fit-list li>span:last-child{flex:0 1 auto;max-width:300px}
+  .note{border-left:0;border-top:2px solid var(--green);padding:16px 0 0}
+  .flow-label{text-align:center}
+  .job,.book,.shot,.faq{text-align:left}
+  .job h3{text-align:center}
+  .after{justify-content:center}
+  .final-card{text-align:center}
+  .final-card .when{justify-items:center}
   .sticky-cta .when{font-size:13px;font-weight:600;line-height:1.25;color:var(--ink)}
   .sticky-cta .when small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
-  .sticky-cta .button{min-height:44px;padding:10px 16px;font-size:14px}
+  .sticky-cta .button{min-height:44px;padding:10px 16px;font-size:14px;white-space:nowrap;flex:none}
+  .footer{text-align:center}
+  .footer p{margin:0 auto}
 }
 </style>
 </head>
@@ -373,7 +387,6 @@ body.registration-modal-active .sticky-cta{display:none!important}
         <div class="hero-side">
           <div class="when">
             <div class="session-line">
-              <small>Next live session</small>
               <b><span data-session-date>Tuesday, Sep 8</span> at <span data-session-time>7:00 PM EST</span></b>
             </div>
           </div>
@@ -475,7 +488,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
     <div class="wrap">
       <div class="case-head">
         <div>
-          <span class="kicker">Let's break down the numbers on a real property.</span>
+          <span class="kicker kicker-sentence">Let's break down the numbers on a real property.</span>
           <h2><span class="n">$835,000</span> purchase. <span class="n">$4,500</span> a month in net cash flow. <span class="n">$112,415</span> in tax savings.</h2>
           <p class="lede" style="margin-top:18px">The property Preston walks through live, straight from the property file and the cost segregation study.</p>
         </div>
