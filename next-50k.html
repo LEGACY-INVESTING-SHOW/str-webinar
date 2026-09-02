@@ -81,15 +81,10 @@ p{text-wrap:pretty}
 .hero .lede{margin:0;max-width:52ch}
 .hero-side{display:grid;gap:12px;justify-items:start;width:100%;max-width:340px;justify-self:end}
 .hero-side .button{width:100%}
-.session-card{width:100%}
-.session-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;min-width:280px;padding:12px 14px;border:1px solid var(--hair);border-radius:12px;background:#fff;box-shadow:0 10px 30px -18px rgba(15,21,18,.35)}
-.session-card .ico{width:40px;height:40px;border-radius:10px;background:var(--green-soft);color:var(--green);display:grid;place-items:center}
-.session-card .ico svg{width:18px;height:18px}
-.session-card small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
-.session-card b{display:block;font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.02em;color:var(--ink);line-height:1.1}
-.session-card b+span{display:block;font-size:13.5px;font-weight:600;color:var(--green-ink);margin-top:2px}
-.session-card em{font-style:normal;display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink);background:var(--green-soft);padding:6px 9px;border-radius:999px}
-.session-card em i{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(12,122,74,.18)}
+.session-line{display:grid;gap:4px}
+.session-line small{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.session-line b{font-family:var(--display);font-weight:700;font-size:20px;letter-spacing:-.02em;color:var(--ink);line-height:1.15}
+.session-line b span+span,.session-line b [data-session-time]{color:var(--green)}
 .when{width:100%}
 .countdown{display:grid;grid-template-columns:repeat(4,64px);gap:8px}
 .countdown>div{background:#fff;border:1px solid var(--hair);border-radius:10px;padding:10px 6px 8px;text-align:center}
@@ -315,7 +310,6 @@ body.registration-modal-active .sticky-cta{display:none!important}
   .hero-copy{text-align:center}
   .hero-copy h1,.hero-copy .lede{margin-left:auto;margin-right:auto}
   .hero-side{justify-items:center;text-align:center;max-width:none;justify-self:stretch}
-  .session-card{text-align:left}
   .hero h1{font-size:clamp(40px,11vw,48px)}
   .sheet{grid-template-columns:1fr 1fr}
   .sheet-col{padding:16px 14px;display:grid;gap:12px;align-content:start}
@@ -378,14 +372,9 @@ body.registration-modal-active .sticky-cta{display:none!important}
         </div>
         <div class="hero-side">
           <div class="when">
-            <div class="session-card">
-              <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"></rect><path d="M8 3v4M16 3v4M4 10h16"></path></svg></span>
-              <div>
-                <small>Next live session</small>
-                <b data-session-date>Tuesday, Sep 8</b>
-                <span data-session-time>7:00 PM EST</span>
-              </div>
-              <em><i></i>Live</em>
+            <div class="session-line">
+              <small>Next live session</small>
+              <b><span data-session-date>Tuesday, Sep 8</span> at <span data-session-time>7:00 PM EST</span></b>
             </div>
           </div>
           <div class="countdown" data-countdown data-target="2026-09-08T19:00:00-04:00" aria-label="Time until the next live session">
