@@ -16,6 +16,7 @@ script.type = 'text/javascript';
 script.src = "https://t.managemoney101.com/v1/lst/universal-script?ph=99701b257ae8a5117ba5d7b516261da603bc86a49c0c42f398c619e251026c05&tag=!clicked&ref_url=" + encodeURI(document.URL) ;
 head.appendChild(script);
 </script>
+<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -246,35 +247,22 @@ p{text-wrap:pretty}
 .final-card .button{width:100%}
 .final-card .fine{font-size:12.5px;color:var(--muted);text-align:center}
 
-/* register (modal, class names required by the loader) */
+/* register */
 .register-section{padding:0}
-.registration-form-shell{background:#fbfaf7;color:var(--ink);border:1px solid var(--hair);border-radius:var(--r);padding:34px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
-.form-kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:9px}
-.form-title{font-family:var(--display);font-weight:700;font-size:30px;line-height:1.05;margin-bottom:8px;letter-spacing:-.02em}
-.form-when{font-size:14.5px;color:var(--ink-2);margin-bottom:20px}
-.reg-form{display:grid;gap:14px}
-.field{display:grid;gap:6px}
-.field label{font-size:12.5px;font-weight:600;color:var(--ink-2)}
-.field input,.field select{width:100%;min-height:52px;border:1px solid var(--hair-2);border-radius:10px;padding:0 16px;font:500 16px var(--sans);color:var(--ink);background:#fff;transition:border-color .18s ease,box-shadow .18s ease;-webkit-appearance:none;appearance:none}
-.field input::placeholder{color:#a3a89f}
-.field input:focus,.field select:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(12,122,74,.14)}
-.field.invalid input{border-color:#b9452b;box-shadow:0 0 0 3px rgba(185,69,43,.12)}
-.phone{display:grid;grid-template-columns:118px 1fr;gap:8px}
-.phone select{padding-right:34px;background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236f766f' stroke-width='2'><path d='m6 9 6 6 6-6'/></svg>") no-repeat right 12px center/16px}
-.form-error{font-size:13.5px;color:#b9452b;background:#fbeeea;border:1px solid #f0cfc6;border-radius:8px;padding:10px 12px}
-.reg-submit{width:100%;min-height:58px;font-size:16px;position:relative}
-.reg-submit .spinner{display:none;width:18px;height:18px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
-.reg-submit.is-loading [data-label]{opacity:.6}
-.reg-submit.is-loading .spinner{display:inline-block}
-.reg-submit:disabled{cursor:wait}
-@keyframes spin{to{transform:rotate(360deg)}}
-.reg-success{display:grid;justify-items:center;text-align:center;gap:8px;padding:28px 0 12px}
-.reg-success[hidden],.form-error[hidden],.reg-form[hidden]{display:none}
-.reg-success .check{width:52px;height:52px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;margin-bottom:6px}
-.reg-success .check svg{width:24px;height:24px}
-.reg-success b{font-family:var(--display);font-weight:700;font-size:26px;letter-spacing:-.02em}
-.reg-success p{color:var(--ink-2);font-size:15px}
-.secure-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:14px}
+.registration-form-shell{background:#fbfaf7;color:var(--ink);border:1px solid var(--hair);border-radius:10px;padding:48px 42px 40px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.form-title{font-family:var(--display);font-weight:800;font-size:clamp(34px,4.4vw,42px);line-height:1;letter-spacing:-.05em;text-align:center;max-width:12ch;margin:0 auto 14px}
+.form-when{font-size:16px;color:#70766f;text-align:center;margin:0 auto 34px}
+.reg-form{display:grid;gap:20px}
+.field{display:grid;gap:9px}
+.field label{font-size:13px;font-weight:700;color:#59615a;letter-spacing:.06em;text-transform:uppercase}
+.field input{width:100%;min-height:56px;border:1px solid #d9d0bd;border-radius:9px;padding:0 18px;font:500 17px var(--sans);color:var(--ink);background:#fffdf9;transition:border-color .18s ease,box-shadow .18s ease;-webkit-appearance:none;appearance:none}
+.field input::placeholder{color:#8a8d89}
+.field input:focus{outline:none;border-color:#0b573c;box-shadow:0 0 0 3px rgba(12,122,74,.13)}
+.consent-field{display:grid;grid-template-columns:15px 1fr;gap:12px;align-items:start;color:#7d827b;font-size:14px;line-height:1.5;margin-top:2px}
+.consent-field input{width:13px;height:13px;margin-top:4px;accent-color:var(--green)}
+.reg-submit{width:100%;min-height:58px;margin-top:12px;border-radius:999px;background:#dcb956;color:#102119;box-shadow:none;font-size:17px}
+.reg-submit:hover{background:#cfa844;color:#102119}
+.secure-note{font-size:14px;color:#7d827b;text-align:center;margin-top:0}
 #register.registration-popup{position:fixed!important;inset:0;z-index:99999;display:flex!important;align-items:flex-start;justify-content:center;background:rgba(14,20,17,.72);backdrop-filter:blur(4px);padding:24px;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease;content-visibility:visible!important;contain-intrinsic-size:auto!important;min-height:100vh!important}
 #register.registration-popup.is-open{opacity:1;visibility:visible;pointer-events:auto}
 body.registration-modal-active{overflow:hidden}
@@ -282,9 +270,9 @@ body.registration-modal-active .sticky-cta{display:none!important}
 #register.registration-popup .wrap,#register.registration-popup .container{width:min(720px,100%);margin:auto;display:block!important}
 #register.registration-popup .form-grid,#register.registration-popup .register-grid{display:block!important;width:100%}
 #register.registration-popup .form-copy,#register.registration-popup .register-copy,#register.registration-popup .register-title,#register.registration-popup .register-sub{display:none!important}
-#register.registration-popup .registration-form-shell,#register.registration-popup.signup-box{position:relative;width:min(620px,100%);max-height:calc(100vh - 48px);overflow-y:auto;margin:auto!important;padding-top:58px!important}
-.registration-modal-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:1px solid var(--hair-2);border-radius:999px;background:#fff;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center;z-index:2}
-.registration-modal-close:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+#register.registration-popup .registration-form-shell,#register.registration-popup.signup-box{position:relative;width:min(572px,100%);max-height:calc(100vh - 48px);overflow-y:auto;margin:auto!important}
+.registration-modal-close{position:absolute;top:18px;right:22px;width:28px;height:28px;border:0;background:transparent;color:#5c655e;font-size:30px;line-height:1;cursor:pointer;display:grid;place-items:center;z-index:2}
+.registration-modal-close:hover{color:var(--ink)}
 
 .sticky-cta{display:none}
 .sticky-cta.is-hidden{transform:translateY(110%);opacity:0;pointer-events:none}
@@ -343,9 +331,8 @@ body.registration-modal-active .sticky-cta{display:none!important}
   .trust .wrap{justify-content:center;text-align:center}
   .shot .img{height:180px}
   .shot img{max-height:152px}
-  .registration-form-shell{padding:24px 18px}
-  .phone{grid-template-columns:104px 1fr}
-  .form-title{font-size:28px}
+  .registration-form-shell{padding:44px 22px 32px}
+  .form-title{font-size:32px}
   body{padding-bottom:0}
   .footer{padding-bottom:calc(40px + 76px)}
   .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9000;background:rgba(251,250,247,.92);backdrop-filter:blur(10px);border-top:1px solid var(--hair);padding:10px 16px calc(10px + env(safe-area-inset-bottom));align-items:center;justify-content:space-between;gap:12px;transition:transform .25s ease,opacity .25s ease}
@@ -605,45 +592,30 @@ body.registration-modal-active .sticky-cta{display:none!important}
   <section class="register-section" id="register">
     <div class="wrap">
       <div class="registration-form-shell">
-        <div class="form-kicker">Free live workshop</div>
-        <div class="form-title">Save my seat.</div>
-        <p class="form-when"><span data-session-date>Tuesday, Sep 8</span> at <span data-session-time>7:00 PM EST</span>, live online with Preston Seo.</p>
-        <form class="reg-form" id="reg-form" novalidate>
+        <div class="form-title">Where should we send your access link?</div>
+        <p class="form-when">We'll email it after you register.</p>
+        <form action="https://app.kit.com/forms/9784647/subscriptions" class="seva-form formkit-form reg-form" id="reg-form" method="post" data-sv-form="9784647" data-uid="d5dc946660" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":"https://str.managemoney101.com/registered"},"powered_by":{"show":false},"recaptcha":{"enabled":false}},"version":"5"}' min-width="400 500 600 700 800">
           <div class="field">
             <label for="reg-first">First name</label>
-            <input id="reg-first" name="first_name" type="text" autocomplete="given-name" placeholder="Preston" required>
+            <input class="formkit-input" id="reg-first" name="fields[first_name]" type="text" autocomplete="given-name" aria-label="First Name" placeholder="Your first name" required>
           </div>
           <div class="field">
             <label for="reg-email">Email</label>
-            <input id="reg-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required>
+            <input class="formkit-input" id="reg-email" name="email_address" type="email" autocomplete="email" inputmode="email" aria-label="Email Address" placeholder="you@example.com" required>
           </div>
           <div class="field">
             <label for="reg-phone">Phone</label>
-            <div class="phone">
-              <select id="reg-cc" name="country_code" aria-label="Country code">
-                <option value="+1" selected>&#127482;&#127480; +1</option>
-                <option value="+1">&#127464;&#127462; +1</option>
-                <option value="+44">&#127468;&#127463; +44</option>
-                <option value="+61">&#127462;&#127482; +61</option>
-                <option value="+353">&#127470;&#127466; +353</option>
-                <option value="+64">&#127475;&#127487; +64</option>
-                <option value="+52">&#127474;&#127485; +52</option>
-                <option value="+91">&#127470;&#127475; +91</option>
-                <option value="+65">&#127480;&#127468; +65</option>
-                <option value="+971">&#127462;&#127466; +971</option>
-              </select>
-              <input id="reg-phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="(555) 123-4567" required>
-            </div>
+            <input class="formkit-input" id="reg-phone" name="fields[phone_number]" type="tel" autocomplete="tel" inputmode="tel" aria-label="Phone Number" placeholder="(555) 555-5555" required>
           </div>
-          <p class="form-error" data-form-error hidden></p>
-          <button type="submit" class="button button-primary reg-submit"><span data-label>Register Now, It's Free</span><span class="spinner" aria-hidden="true"></span></button>
-          <p class="secure-note">Your information stays private. We never share or sell it. Unsubscribe anytime.</p>
+          <label class="consent-field" for="reg-sms-consent">
+            <input id="reg-sms-consent" name="fields[sms_consent]" type="checkbox" value="yes" required>
+            <span>I agree to receive text reminders about this workshop from Legacy Investing Show. Message and data rates may apply. Reply STOP to opt out anytime.</span>
+          </label>
+          <input type="hidden" name="fields[country_code]" value="+1">
+          <input type="hidden" name="fields[source_page]" value="next-50k">
+          <button type="submit" data-element="submit" class="button button-primary formkit-submit reg-submit"><span>Register Me</span></button>
+          <p class="secure-note">Live on Zoom.</p>
         </form>
-        <div class="reg-success" data-success hidden>
-          <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5 9-10"></path></svg></div>
-          <b>You're in.</b>
-          <p>Sending you to your confirmation page.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -734,11 +706,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
 (function() {
   'use strict';
 
-  // ---- Registration webhook -------------------------------------------
-  // TODO: paste the webhook URL that should receive registrations (JSON POST).
-  var WEBHOOK_URL = '';
-  var CONFIRMATION_URL = '/registered';
-
+  // ---- Registration modal and Kit tracking fields ---------------------
   var trackingParamKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid','gbraid','wbraid','msclkid'];
   var registerSection = document.getElementById('register');
   var form = document.getElementById('reg-form');
@@ -755,7 +723,37 @@ body.registration-modal-active .sticky-cta{display:none!important}
   }
   trackingParamKeys.forEach(getTrackingParamValue);
 
-  // ---- Modal ----------------------------------------------------------
+  function ensureHiddenField(name) {
+    if (!form) return null;
+    var selector = 'input[type="hidden"][name="' + name.replace(/"/g, '\\"') + '"]';
+    var input = form.querySelector(selector);
+    if (!input) {
+      input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      form.appendChild(input);
+    }
+    return input;
+  }
+
+  function populateKitTrackingFields() {
+    if (!form) return;
+    trackingParamKeys.forEach(function(key) {
+      var input = ensureHiddenField('fields[' + key + ']');
+      if (input) input.value = getTrackingParamValue(key);
+    });
+    var sessionDate = (document.querySelector('[data-session-date]') || {}).textContent || '';
+    var sessionTime = (document.querySelector('[data-session-time]') || {}).textContent || '';
+    var pageUrl = ensureHiddenField('fields[page_url]');
+    var referrer = ensureHiddenField('fields[referrer]');
+    var sessionDateField = ensureHiddenField('fields[session_date]');
+    var sessionTimeField = ensureHiddenField('fields[session_time]');
+    if (pageUrl) pageUrl.value = window.location.href;
+    if (referrer) referrer.value = document.referrer || '';
+    if (sessionDateField) sessionDateField.value = sessionDate;
+    if (sessionTimeField) sessionTimeField.value = sessionTime;
+  }
+
   function setupRegistrationModal() {
     if (!registerSection || registerSection.dataset.modalReady === 'true') return;
     registerSection.dataset.modalReady = 'true';
@@ -783,6 +781,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
     setupRegistrationModal();
     registerSection.classList.add('is-open');
     document.body.classList.add('registration-modal-active');
+    populateKitTrackingFields();
     if (window.history && window.history.pushState && window.location.hash !== '#register') {
       window.history.pushState(null, '', '#register');
     }
@@ -820,104 +819,25 @@ body.registration-modal-active .sticky-cta{display:none!important}
     if (window.location.hash === '#register') openRegistrationModal();
   });
 
-  // ---- Form -----------------------------------------------------------
-  function fieldWrap(input) { return input.closest('.field'); }
-
-  function validate() {
-    var ok = true;
+  function persistKitSubmission() {
+    populateKitTrackingFields();
     var first = document.getElementById('reg-first');
     var email = document.getElementById('reg-email');
-    var phone = document.getElementById('reg-phone');
-    [first, email, phone].forEach(function(el) { fieldWrap(el).classList.remove('invalid'); });
-    if (!first.value.trim()) { fieldWrap(first).classList.add('invalid'); ok = false; }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())) { fieldWrap(email).classList.add('invalid'); ok = false; }
-    if (phone.value.replace(/\D/g, '').length < 7) { fieldWrap(phone).classList.add('invalid'); ok = false; }
-    return ok;
-  }
-
-  function showError(message) {
-    var box = form.querySelector('[data-form-error]');
-    box.textContent = message;
-    box.hidden = false;
-  }
-
-  function buildPayload() {
-    var cc = document.getElementById('reg-cc').value;
-    var digits = document.getElementById('reg-phone').value.replace(/\D/g, '');
-    var payload = {
-      first_name: document.getElementById('reg-first').value.trim(),
-      email: document.getElementById('reg-email').value.trim().toLowerCase(),
-      phone: cc + digits,
-      country_code: cc,
-      phone_national: digits,
-      page: 'next-50k',
-      page_url: window.location.href,
-      referrer: document.referrer || '',
-      session_date: (document.querySelector('[data-session-date]') || {}).textContent || '',
-      session_time: (document.querySelector('[data-session-time]') || {}).textContent || '',
-      session_start: (document.querySelector('[data-countdown]') || { getAttribute: function() { return ''; } }).getAttribute('data-target') || '',
-      timezone: (Intl.DateTimeFormat().resolvedOptions().timeZone || ''),
-      submitted_at: new Date().toISOString(),
-      user_agent: navigator.userAgent
-    };
-    trackingParamKeys.forEach(function(key) { payload[key] = getTrackingParamValue(key); });
-    return payload;
-  }
-
-  function send(payload) {
-    if (!WEBHOOK_URL) {
-      console.warn('[next-50k] WEBHOOK_URL is empty. Registration was not sent anywhere.');
-      return Promise.resolve();
-    }
-    return fetch(WEBHOOK_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-      keepalive: true
-    }).then(function(res) {
-      if (!res.ok) throw new Error('Webhook responded ' + res.status);
-    }).catch(function() {
-      // Retry without CORS preflight for endpoints that do not return CORS headers.
-      return fetch(WEBHOOK_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(payload), keepalive: true });
-    });
-  }
-
-  function finish(payload) {
+    var sessionDate = (document.querySelector('[data-session-date]') || {}).textContent || '';
+    var sessionTime = (document.querySelector('[data-session-time]') || {}).textContent || '';
     try {
-      window.sessionStorage.setItem('str_registration', JSON.stringify({ first_name: payload.first_name, email: payload.email }));
+      window.sessionStorage.setItem('str_registration', JSON.stringify({
+        first_name: first ? first.value.trim() : '',
+        email: email ? email.value.trim().toLowerCase() : ''
+      }));
     } catch (error) {}
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'str_registration', page: payload.page, session_date: payload.session_date, session_time: payload.session_time });
-    form.hidden = true;
-    var success = registerSection.querySelector('[data-success]');
-    if (success) success.hidden = false;
-    window.setTimeout(function() { window.location.assign(CONFIRMATION_URL); }, 900);
+    window.dataLayer.push({ event: 'str_registration', page: 'next-50k', session_date: sessionDate, session_time: sessionTime });
   }
 
   if (form) {
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      form.querySelector('[data-form-error]').hidden = true;
-      if (!validate()) {
-        showError('Please check the highlighted fields.');
-        return;
-      }
-      var button = form.querySelector('.reg-submit');
-      button.disabled = true;
-      button.classList.add('is-loading');
-      var payload = buildPayload();
-      send(payload).then(function() {
-        finish(payload);
-      }).catch(function() {
-        button.disabled = false;
-        button.classList.remove('is-loading');
-        showError('Something went wrong. Please try again.');
-      });
-    });
-    ['reg-first', 'reg-email', 'reg-phone'].forEach(function(id) {
-      var el = document.getElementById(id);
-      el.addEventListener('input', function() { fieldWrap(el).classList.remove('invalid'); });
-    });
+    populateKitTrackingFields();
+    form.addEventListener('submit', persistKitSubmission);
   }
 
   // ---- Sticky mobile bar ---------------------------------------------
