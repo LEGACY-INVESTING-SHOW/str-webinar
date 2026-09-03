@@ -263,11 +263,12 @@ p{text-wrap:pretty}
 .reg-submit{width:100%;min-height:58px;margin-top:12px;border-radius:999px;background:#dcb956;color:#102119;box-shadow:none;font-size:17px}
 .reg-submit:hover{background:#cfa844;color:#102119}
 .secure-note{font-size:14px;color:#7d827b;text-align:center;margin-top:0}
-#register.registration-popup{position:fixed!important;inset:0;z-index:99999;display:flex!important;align-items:flex-start;justify-content:center;background:rgba(14,20,17,.72);backdrop-filter:blur(4px);padding:24px;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease;content-visibility:visible!important;contain-intrinsic-size:auto!important;min-height:100vh!important}
+#register.registration-popup{position:fixed!important;inset:0;z-index:99999;display:flex!important;align-items:flex-start;justify-content:center;background:rgba(14,20,17,.86);backdrop-filter:blur(8px);padding:24px;overflow-y:auto;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .18s ease,visibility .18s ease;content-visibility:visible!important;contain-intrinsic-size:auto!important;min-height:100vh!important}
 #register.registration-popup.is-open{opacity:1;visibility:visible;pointer-events:auto}
+#register.registration-popup::before{content:"";position:fixed;inset:0;background:rgba(14,20,17,.18);pointer-events:none}
 body.registration-modal-active{overflow:hidden}
 body.registration-modal-active .sticky-cta{display:none!important}
-#register.registration-popup .wrap,#register.registration-popup .container{width:min(720px,100%);margin:auto;display:block!important}
+#register.registration-popup .wrap,#register.registration-popup .container{position:relative;z-index:1;width:min(720px,100%);margin:auto;display:block!important}
 #register.registration-popup .form-grid,#register.registration-popup .register-grid{display:block!important;width:100%}
 #register.registration-popup .form-copy,#register.registration-popup .register-copy,#register.registration-popup .register-title,#register.registration-popup .register-sub{display:none!important}
 #register.registration-popup .registration-form-shell,#register.registration-popup.signup-box{position:relative;width:min(572px,100%);max-height:calc(100vh - 48px);overflow-y:auto;margin:auto!important}
@@ -594,7 +595,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
       <div class="registration-form-shell">
         <div class="form-title">Where should we send your access link?</div>
         <p class="form-when">We'll email it after you register.</p>
-        <form action="https://app.kit.com/forms/9784647/subscriptions" class="seva-form formkit-form reg-form" id="reg-form" method="post" data-sv-form="9784647" data-uid="d5dc946660" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":"https://str.managemoney101.com/registered"},"powered_by":{"show":false},"recaptcha":{"enabled":false}},"version":"5"}' min-width="400 500 600 700 800">
+        <form action="https://app.kit.com/forms/9784647/subscriptions" class="seva-form formkit-form reg-form" id="reg-form" method="post" target="kit-submit-frame" data-sv-form="9784647" data-uid="d5dc946660" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"Success! Now check your email to confirm your subscription.","redirect_url":"https://str.managemoney101.com/registered"},"powered_by":{"show":false},"recaptcha":{"enabled":false}},"version":"5"}' min-width="400 500 600 700 800">
           <div class="field">
             <label for="reg-first">First name</label>
             <input class="formkit-input" id="reg-first" name="fields[first_name]" type="text" autocomplete="given-name" aria-label="First Name" placeholder="Your first name" required>
@@ -616,6 +617,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
           <button type="submit" data-element="submit" class="button button-primary formkit-submit reg-submit"><span>Register Me</span></button>
           <p class="secure-note">Live on Zoom.</p>
         </form>
+        <iframe name="kit-submit-frame" title="Kit form submission" hidden></iframe>
       </div>
     </div>
   </section>
@@ -707,6 +709,8 @@ body.registration-modal-active .sticky-cta{display:none!important}
   'use strict';
 
   // ---- Registration modal and Kit tracking fields ---------------------
+  var CONFIRMATION_PATH = '/registered';
+  var redirectTimer = null;
   var trackingParamKeys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid','gclid','gbraid','wbraid','msclkid'];
   var registerSection = document.getElementById('register');
   var form = document.getElementById('reg-form');
@@ -754,6 +758,32 @@ body.registration-modal-active .sticky-cta{display:none!important}
     if (sessionTimeField) sessionTimeField.value = sessionTime;
   }
 
+  function buildConfirmationUrl(includeOrigin) {
+    var url;
+    try {
+      url = new URL(CONFIRMATION_PATH, window.location.origin);
+      trackingParamKeys.forEach(function(key) {
+        var value = getTrackingParamValue(key);
+        if (value) url.searchParams.set(key, value);
+      });
+      return includeOrigin ? url.href : url.pathname + url.search;
+    } catch (error) {
+      return CONFIRMATION_PATH;
+    }
+  }
+
+  function syncKitRedirectOption() {
+    if (!form) return;
+    try {
+      var options = JSON.parse(form.getAttribute('data-options') || '{}');
+      options.settings = options.settings || {};
+      options.settings.after_subscribe = options.settings.after_subscribe || {};
+      options.settings.after_subscribe.action = 'redirect';
+      options.settings.after_subscribe.redirect_url = buildConfirmationUrl(true);
+      form.setAttribute('data-options', JSON.stringify(options));
+    } catch (error) {}
+  }
+
   function setupRegistrationModal() {
     if (!registerSection || registerSection.dataset.modalReady === 'true') return;
     registerSection.dataset.modalReady = 'true';
@@ -782,6 +812,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
     registerSection.classList.add('is-open');
     document.body.classList.add('registration-modal-active');
     populateKitTrackingFields();
+    syncKitRedirectOption();
     if (window.history && window.history.pushState && window.location.hash !== '#register') {
       window.history.pushState(null, '', '#register');
     }
@@ -821,6 +852,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
 
   function persistKitSubmission() {
     populateKitTrackingFields();
+    syncKitRedirectOption();
     var first = document.getElementById('reg-first');
     var email = document.getElementById('reg-email');
     var sessionDate = (document.querySelector('[data-session-date]') || {}).textContent || '';
@@ -833,10 +865,20 @@ body.registration-modal-active .sticky-cta{display:none!important}
     } catch (error) {}
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'str_registration', page: 'next-50k', session_date: sessionDate, session_time: sessionTime });
+    var button = form.querySelector('.reg-submit');
+    if (button) {
+      button.disabled = true;
+      button.setAttribute('aria-busy', 'true');
+    }
+    if (redirectTimer) window.clearTimeout(redirectTimer);
+    redirectTimer = window.setTimeout(function() {
+      window.location.assign(buildConfirmationUrl());
+    }, 1200);
   }
 
   if (form) {
     populateKitTrackingFields();
+    syncKitRedirectOption();
     form.addEventListener('submit', persistKitSubmission);
   }
 
