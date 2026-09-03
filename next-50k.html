@@ -380,10 +380,10 @@ body.registration-modal-active .sticky-cta{display:none!important}
         <div class="hero-side">
           <div class="when">
             <div class="session-line">
-              <b><span data-session-date>Tuesday, Sep 8</span> at <span data-session-time>7:00 PM EST</span></b>
+              <b><span data-session-date>Sunday, Sept 6</span> at <span data-session-time>2:00 PM EST</span></b>
             </div>
           </div>
-          <div class="countdown" data-countdown data-target="2026-09-08T19:00:00-04:00" aria-label="Time until the next live session">
+          <div class="countdown" data-countdown data-target="2026-09-06T14:00:00-04:00" aria-label="Time until the next live session">
             <div><b data-time-unit="days">00</b><span>days</span></div>
             <div><b data-time-unit="hours">00</b><span>hrs</span></div>
             <div><b data-time-unit="minutes">00</b><span>min</span></div>
@@ -584,7 +584,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
         <p>Live online with Preston. Your link arrives right after you register.</p>
       </div>
       <div class="final-card">
-        <div class="when"><small>Next live session</small><strong data-session-date>Tuesday, Sep 8</strong><span><span data-session-time>7:00 PM EST</span> &middot; Hosted by Preston Seo</span></div>
+        <div class="when"><small>Next live session</small><strong data-session-date>Sunday, Sept 6</strong><span><span data-session-time>2:00 PM EST</span> &middot; Hosted by Preston Seo</span></div>
         <a href="#register" class="button button-primary">Reserve My Free Seat</a>
       </div>
     </div>
@@ -624,7 +624,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
 </main>
 
 <div class="sticky-cta">
-  <div class="when">Free live workshop<small><span data-session-date>Tuesday, Sep 8</span> &middot; <span data-session-time>7:00 PM EST</span></small></div>
+  <div class="when">Free live workshop<small><span data-session-date>Sunday, Sept 6</span> &middot; <span data-session-time>2:00 PM EST</span></small></div>
   <a href="#register" class="button button-primary">Reserve seat</a>
 </div>
 
@@ -637,11 +637,9 @@ body.registration-modal-active .sticky-cta{display:none!important}
 <script>
 (function() {
   'use strict';
-  // Live schedule in America/New_York: Sunday 2:00 PM, Tuesday 7:00 PM, Thursday 7:00 PM.
+  // Fixed workshop date in America/New_York: Sunday, September 6, 2026 at 2:00 PM.
   var SLOTS = [
-    { day: 0, hour: 14, label: '2:00 PM EST', short: '2 PM EST' },
-    { day: 2, hour: 19, label: '7:00 PM EST', short: '7 PM EST' },
-    { day: 4, hour: 19, label: '7:00 PM EST', short: '7 PM EST' }
+    { day: 0, hour: 14, label: '2:00 PM EST', short: '2 PM EST' }
   ];
   var TZ = 'America/New_York';
   var DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -692,7 +690,7 @@ body.registration-modal-active .sticky-cta{display:none!important}
   }
 
   try {
-    var next = nextSession(new Date());
+    var next = { time: Date.parse('2026-09-06T18:00:00Z'), slot: { label: '2:00 PM EST', short: '2 PM EST' }, dateText: 'Sunday, Sept 6' };
     if (next) {
       setText('[data-session-date]', next.dateText);
       setText('[data-session-time]', next.slot.label);
