@@ -737,6 +737,17 @@ body.registration-modal-active .sticky-cta{display:none!important}
   }
   trackingParamKeys.forEach(getTrackingParamValue);
 
+  function getCookieValue(name) {
+    var prefix = name + '=';
+    var cookies = document.cookie ? document.cookie.split(';') : [];
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (cookie.indexOf(prefix) !== 0) continue;
+      try { return decodeURIComponent(cookie.slice(prefix.length)); } catch (error) { return cookie.slice(prefix.length); }
+    }
+    return '';
+  }
+
   function ensureHiddenField(name) {
     if (!form) return null;
     var selector = 'input[type="hidden"][name="' + name.replace(/"/g, '\\"') + '"]';
@@ -756,6 +767,13 @@ body.registration-modal-active .sticky-cta{display:none!important}
       var input = ensureHiddenField('fields[' + key + ']');
       if (input) input.value = getTrackingParamValue(key);
     });
+    // Kit custom fields for Meta CAPI matching. _fbc only exists after a Meta ad click.
+    var fbp = ensureHiddenField('fields[fbp]');
+    var fbc = ensureHiddenField('fields[fbc]');
+    var fbclid = ensureHiddenField('fields[fbclid]');
+    if (fbp) fbp.value = getCookieValue('_fbp');
+    if (fbc) fbc.value = getCookieValue('_fbc');
+    if (fbclid) fbclid.value = getTrackingParamValue('fbclid');
     var sessionDate = (document.querySelector('[data-session-date]') || {}).textContent || '';
     var sessionTime = (document.querySelector('[data-session-time]') || {}).textContent || '';
     var pageUrl = ensureHiddenField('fields[page_url]');
