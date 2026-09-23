@@ -48,6 +48,14 @@
       "destination": "/registered.html"
     },
     {
+      "source": "/vip",
+      "destination": "/vip.html"
+    },
+    {
+      "source": "/next-door",
+      "destination": "/next-door.html"
+    },
+    {
       "source": "/arbitrage",
       "destination": "/a-arbitrage.html"
     },
