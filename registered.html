@@ -136,12 +136,11 @@ section > .col > h2,section > .wide > h2{font-size:clamp(26px,4.6vw,36px);text-a
 .steps li[aria-current="step"] .n{background:var(--green);border-color:var(--green);color:#fff}
 
 .seat{margin-top:12px;padding:24px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
-.tiles{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
-.tiles div{padding:8px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;font-weight:700}
-.countdown{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:14px;font-size:14px;font-weight:600;color:var(--ink-3)}
-.countdown .t{display:flex;gap:6px}
-.countdown .t span{min-width:46px;padding:6px 4px;border:1px solid var(--line);border-radius:8px;background:#fff;text-align:center;font-family:var(--display);font-size:18px;font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1}
-.countdown .t small{display:block;font-family:var(--body);font-size:10px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em}
+.when{text-align:center}
+.when b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(28px,5.6vw,36px);letter-spacing:-.02em;line-height:1.1}
+.when span{display:block;margin-top:4px;font-size:clamp(19px,3.4vw,22px);font-weight:600;color:var(--ink-2)}
+.countdown{margin-top:14px;text-align:center;font-size:17px;color:var(--ink-2)}
+.countdown b{color:var(--green)}
 .seat .button{margin-top:18px}
 .seat .email{margin-top:12px;font-size:15px;color:var(--ink-2)}
 
@@ -230,15 +229,8 @@ footer p + p{margin-top:10px}
       </ol>
 
       <div class="seat">
-        <div class="tiles">
-          <div data-session-day>Thursday</div>
-          <div data-session-short-date>Sept 24</div>
-          <div data-session-time>7:00 PM EST</div>
-        </div>
-        <div class="countdown" aria-label="Time until the workshop starts">
-          Starts in
-          <div class="t"><span data-cd="d">00<small>days</small></span><span data-cd="h">00<small>hrs</small></span><span data-cd="m">00<small>min</small></span></div>
-        </div>
+        <p class="when"><b data-session-date>Thursday, Sept 24</b><span data-session-time>7:00 PM EST</span></p>
+        <p class="countdown">Starts in <b data-cd-text>a few days</b></p>
         <a class="button" id="calendar-link" href="#" target="_blank" rel="noopener noreferrer">Add it to my calendar</a>
         <p class="email">Your Zoom link is in your email from preston@legacyinvestingshow.com. Check spam if you don't see it in 5 minutes.</p>
       </div>
@@ -263,26 +255,8 @@ footer p + p{margin-top:10px}
     </div>
   </header>
 
-  <section aria-labelledby="proof-title">
-    <div class="wide">
-      <h2 id="proof-title">What Preston's students are saying</h2>
-      <div class="video-grid">
-        <figure><button class="yt" type="button" data-id="DvTfbzphZjo" aria-label="Play: Kirk is making $2k/mo from his first Airbnb while working his full-time job as a nurse"><img src="https://i.ytimg.com/vi/DvTfbzphZjo/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Kirk is making $2k/mo from his first Airbnb while working his full-time job as a nurse</figcaption></figure>
-        <figure><button class="yt" type="button" data-id="2T1M3T9YbkM" aria-label="Play: Kiana replaced her 10-year finance job to become a full-time Airbnb host"><img src="https://i.ytimg.com/vi/2T1M3T9YbkM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Kiana replaced her 10-year finance job to become a full-time Airbnb host</figcaption></figure>
-        <figure><button class="yt" type="button" data-id="5h9iwMgZxjk" aria-label="Play: Rob Saag is making over $100,000/year with his Airbnbs"><img src="https://i.ytimg.com/vi/5h9iwMgZxjk/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Rob Saag is making over $100,000/year with his Airbnbs</figcaption></figure>
-        <figure><button class="yt" type="button" data-id="RphvRaiELn4" aria-label="Play: Dustin has set up a 6-figure income stream with his Airbnbs"><img src="https://i.ytimg.com/vi/RphvRaiELn4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Dustin has set up a 6-figure income stream with his Airbnbs</figcaption></figure>
-      </div>
-      <div class="wall">
-        <figure class="shot"><img src="/stories/01-self-reported-wins/images/010-matthew-ellis-got-my-first-deal-got-my-1st-one.png" alt="Screenshot: Got my 1st one! ~$3-4k profit per month" width="1488" height="578" loading="lazy" decoding="async"><figcaption><b>Matthew Ellis.</b> Got my 1st one! ~$3-4k profit per month</figcaption></figure>
-        <figure class="shot"><img src="/stories/01-self-reported-wins/images/016-johnny-abarra-first-airbnb-arbitrage-property.png" alt="Screenshot: First Airbnb Arbitrage property in the books!!! ~$1500/month cash flow" width="1504" height="858" loading="lazy" decoding="async"><figcaption><b>Johnny Abarra.</b> First Airbnb Arbitrage property in the books!!! ~$1500/month cash flow</figcaption></figure>
-        <figure class="shot"><img src="/stories/01-self-reported-wins/images/051-johnny-abarra-80k-revenue-from-8-properties.png" alt="Screenshot: $80k revenue added to my bottom line" width="744" height="212" loading="lazy" decoding="async"><figcaption><b>Johnny Abarra.</b> $80k revenue added to my bottom line</figcaption></figure>
-        <figure class="shot"><img src="/stories/01-self-reported-wins/images/001-5-500-month-net-profit.png" alt="Screenshot: Just hit $5,500/month in net profit" width="480" height="326" loading="lazy" decoding="async"><figcaption>Just hit $5,500/month in net profit</figcaption></figure>
-        <figure class="shot"><img src="/stories/01-self-reported-wins/images/054-11k-booking-8500-profit.png" alt="Screenshot: Got a booking for over $11,000; $8,500 profit for the next month" width="436" height="498" loading="lazy" decoding="async"><figcaption>Got a booking for over $11,000; $8,500 profit for the next month</figcaption></figure>
-        <figure class="shot"><img src="/stories/01-self-reported-wins/images/053-first-booking-2220-a-month.jpeg" alt="Screenshot: First booking! $2,220-$3,600/month" width="1226" height="484" loading="lazy" decoding="async"><figcaption>First booking! $2,220-$3,600/month</figcaption></figure>
-      </div>
-      <p class="results-note">Results vary by property, financing, taxes, market, and execution.</p>
-    </div>
-  </section>
+
+
 
   <section aria-labelledby="prep-title">
     <div class="wide">
@@ -305,6 +279,26 @@ footer p + p{margin-top:10px}
         <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Join from a laptop</b><span>Preston shares his screen and runs real numbers. Block out 90 minutes and have a notepad ready.</span></div></li>
         <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Bring your partner</b><span>If someone else is part of this decision, have them watch with you.</span></div></li>
       </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="proof-title">
+    <div class="wide">
+      <h2 id="proof-title">What Preston's students are saying</h2>
+      <div class="video-grid">
+        <figure><button class="yt" type="button" data-id="DvTfbzphZjo" aria-label="Play: Kirk is making $2k/mo from his first Airbnb while working his full-time job as a nurse"><img src="https://i.ytimg.com/vi/DvTfbzphZjo/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Kirk is making $2k/mo from his first Airbnb while working his full-time job as a nurse</figcaption></figure>
+        <figure><button class="yt" type="button" data-id="2T1M3T9YbkM" aria-label="Play: Kiana replaced her 10-year finance job to become a full-time Airbnb host"><img src="https://i.ytimg.com/vi/2T1M3T9YbkM/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Kiana replaced her 10-year finance job to become a full-time Airbnb host</figcaption></figure>
+        <figure><button class="yt" type="button" data-id="5h9iwMgZxjk" aria-label="Play: Rob Saag is making over $100,000/year with his Airbnbs"><img src="https://i.ytimg.com/vi/5h9iwMgZxjk/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Rob Saag is making over $100,000/year with his Airbnbs</figcaption></figure>
+        <figure><button class="yt" type="button" data-id="RphvRaiELn4" aria-label="Play: Dustin has set up a 6-figure income stream with his Airbnbs"><img src="https://i.ytimg.com/vi/RphvRaiELn4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async"><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></span></button><figcaption>Dustin has set up a 6-figure income stream with his Airbnbs</figcaption></figure>
+      </div>
+      <div class="wall">
+        <figure class="shot"><img src="/stories/01-self-reported-wins/images/010-matthew-ellis-got-my-first-deal-got-my-1st-one.png" alt="Screenshot: Got my 1st one! ~$3-4k profit per month" width="1488" height="578" loading="lazy" decoding="async"><figcaption><b>Matthew Ellis.</b> Got my 1st one! ~$3-4k profit per month</figcaption></figure>
+        <figure class="shot"><img src="/stories/01-self-reported-wins/images/016-johnny-abarra-first-airbnb-arbitrage-property.png" alt="Screenshot: First Airbnb Arbitrage property in the books!!! ~$1500/month cash flow" width="1504" height="858" loading="lazy" decoding="async"><figcaption><b>Johnny Abarra.</b> First Airbnb Arbitrage property in the books!!! ~$1500/month cash flow</figcaption></figure>
+        <figure class="shot"><img src="/stories/01-self-reported-wins/images/051-johnny-abarra-80k-revenue-from-8-properties.png" alt="Screenshot: $80k revenue added to my bottom line" width="744" height="212" loading="lazy" decoding="async"><figcaption><b>Johnny Abarra.</b> $80k revenue added to my bottom line</figcaption></figure>
+        <figure class="shot"><img src="/stories/01-self-reported-wins/images/001-5-500-month-net-profit.png" alt="Screenshot: Just hit $5,500/month in net profit" width="480" height="326" loading="lazy" decoding="async"><figcaption>Just hit $5,500/month in net profit</figcaption></figure>
+        <figure class="shot"><img src="/stories/01-self-reported-wins/images/054-11k-booking-8500-profit.png" alt="Screenshot: Got a booking for over $11,000; $8,500 profit for the next month" width="436" height="498" loading="lazy" decoding="async"><figcaption>Got a booking for over $11,000; $8,500 profit for the next month</figcaption></figure>
+        <figure class="shot"><img src="/stories/01-self-reported-wins/images/053-first-booking-2220-a-month.jpeg" alt="Screenshot: First booking! $2,220-$3,600/month" width="1226" height="484" loading="lazy" decoding="async"><figcaption>First booking! $2,220-$3,600/month</figcaption></figure>
+      </div>
     </div>
   </section>
 
@@ -360,13 +354,17 @@ footer p + p{margin-top:10px}
   } catch (error) {}
 
   function tick() {
-    var left = Math.max(0, start.getTime() - Date.now());
-    var mins = Math.floor(left / 60000);
-    var parts = { d: Math.floor(mins / 1440), h: Math.floor((mins % 1440) / 60), m: mins % 60 };
-    Object.keys(parts).forEach(function(k) {
-      var el = document.querySelector('[data-cd="' + k + '"]');
-      if (el) el.firstChild.nodeValue = String(parts[k]).padStart(2, '0');
-    });
+    var el = document.querySelector('[data-cd-text]');
+    if (!el) return;
+    var mins = Math.max(0, Math.floor((start.getTime() - Date.now()) / 60000));
+    if (mins === 0) { el.parentNode.textContent = 'Starting now'; return; }
+    var d = Math.floor(mins / 1440), h = Math.floor((mins % 1440) / 60), m = mins % 60;
+    var unit = function(n, w) { return n + ' ' + w + (n === 1 ? '' : 's'); };
+    var parts = [];
+    if (d) parts.push(unit(d, 'day'));
+    if (h) parts.push(unit(h, 'hour'));
+    if (m || !parts.length) parts.push(unit(m, 'minute'));
+    el.textContent = parts.length > 1 ? parts.slice(0, -1).join(', ') + ' and ' + parts[parts.length - 1] : parts[0];
   }
   tick();
   window.setInterval(tick, 15000);
