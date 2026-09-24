@@ -258,9 +258,8 @@ footer p + p{margin-top:10px}
   var TYPEFORM_ID = '';
   // Typeform setup: add a hidden field named vip_id (plus the tracking fields listed below).
   // Use logic jumps to send qualified answers (income $150K+ and cash $50K+) to an ending that
-  // redirects to /registered?vip=qualified&vip_id={{hidden:vip_id}}. Every other ending redirects to
-  // /registered?vip=standard&vip_id={{hidden:vip_id}}. /registered shows the toolkit downloads
-  // for both and fires the Meta events only for qualified.
+  // redirects to /vip-confirmed?vip_id={{hidden:vip_id}} (fires the Meta events). Every other ending
+  // redirects to /registered?vip=standard&vip_id={{hidden:vip_id}} (no events). Both show the toolkit.
   var CONFIRMATION_PATH = '/registered';
 
   var root = document.documentElement;

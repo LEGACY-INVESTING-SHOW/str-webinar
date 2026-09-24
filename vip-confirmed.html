@@ -46,7 +46,7 @@
   } catch (error) {}
 })();
 </script>
-<!-- STR Meta Pixel: Registration Confirmation (LWB + STR) -->
+<!-- STR Meta Pixel: Qualified VIP Confirmation (LWB + STR) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -59,8 +59,7 @@ s.parentNode.insertBefore(t,s)}(window,document,"script",
 fbq("init", "489941607383296");
 fbq("init", "37460083073605271");
 fbq("track", "PageView");
-// Visitors coming back from the /vip Typeform already fired Lead on /vip.
-if (!/[?&]vip=/.test(window.location.search)) fbq("track", "Lead");
+// Lead already fired on /vip. This page fires the qualified events below.
 </script>
 <noscript>
 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=489941607383296&ev=PageView&noscript=1" />
@@ -79,7 +78,8 @@ head.appendChild(script);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>You're In! Confirm Your Spot | Legacy Investing Show</title>
 <meta name="description" content="Your seat is confirmed for the free Airbnb STR Workshop. Watch the welcome video and add the workshop to your calendar.">
-<link rel="canonical" href="https://str.managemoney101.com/registered">
+<link rel="canonical" href="https://str.managemoney101.com/vip-confirmed">
+<meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -385,37 +385,33 @@ footer p + p{margin-top:10px}
 </script>
 
 <script>
-// VIP toolkit: the /vip Typeform ending for non-qualified answers redirects here with ?vip=standard&vip_id=...
+// Qualified VIP confirmation. Only the Typeform ending for qualified answers redirects here:
+// /vip-confirmed?vip_id={{hidden:vip_id}}. Every visit here fires SubmitApplication (standard)
+// and WebinarIntakeForm (custom) once per vip_id, so a Meta custom conversion can also key on this URL.
+// vip_id is the event ID for Conversions API dedupe.
 (function() {
   'use strict';
-  var UNLOCK_KEY = 'str_vip_unlocked';
-
   function getStored(key) {
     try { return window.localStorage.getItem(key) || ''; } catch (error) { return ''; }
   }
   function setStored(key, value) {
     try { window.localStorage.setItem(key, value); } catch (error) {}
   }
-
   var url;
   try { url = new URL(window.location.href); } catch (error) { return; }
-  var result = url.searchParams.get('vip');
-  var returnedId = url.searchParams.get('vip_id');
-
-  if (result === 'qualified' || result === 'standard') {
-    // Qualified answers go to /vip-confirmed, which fires the Meta events. This page only unlocks the toolkit.
-    setStored(UNLOCK_KEY, '1');
-    url.searchParams.delete('vip');
-    url.searchParams.delete('vip_id');
-    if (window.history && window.history.replaceState) window.history.replaceState(null, '', url.toString());
+  var vipId = url.searchParams.get('vip_id') || getStored('str_vip_id') || 'no-id';
+  var firedKey = 'str_vip_fired_' + vipId;
+  if (getStored(firedKey) !== '1' && typeof window.fbq === 'function') {
+    var params = { content_name: 'STR VIP Intake Form', lead_quality: 'qualified' };
+    window.fbq('track', 'SubmitApplication', params, { eventID: 'sa_' + vipId });
+    window.fbq('trackCustom', 'WebinarIntakeForm', params, { eventID: 'wif_' + vipId });
+    setStored(firedKey, '1');
   }
-
-  if (getStored(UNLOCK_KEY) === '1') {
-    document.getElementById('vip-toolkit').hidden = false;
-    var step = document.getElementById('step-vip');
-    step.classList.add('done');
-    step.querySelector('.n').innerHTML = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>';
-  }
+  setStored('str_vip_unlocked', '1');
+  document.getElementById('vip-toolkit').hidden = false;
+  var step = document.getElementById('step-vip');
+  step.classList.add('done');
+  step.querySelector('.n').innerHTML = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>';
 })();
 </script>
 

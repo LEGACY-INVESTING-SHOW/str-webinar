@@ -52,6 +52,10 @@
       "destination": "/vip.html"
     },
     {
+      "source": "/vip-confirmed",
+      "destination": "/vip-confirmed.html"
+    },
+    {
       "source": "/next-door",
       "destination": "/next-door.html"
     },
