@@ -73,7 +73,7 @@ head.appendChild(script);
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You're In! Confirm Your Spot | Legacy Investing Show</title>
+<title>Your Seat Is Saved: Do These 3 Things | Legacy Investing Show</title>
 <meta name="description" content="Your seat is confirmed for the free Airbnb STR Workshop. Watch the welcome video and add the workshop to your calendar.">
 <link rel="canonical" href="https://str.managemoney101.com/registered">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,11 +145,16 @@ section > .col > h2,section > .wide > h2{font-size:clamp(26px,4.6vw,36px);text-a
 .frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .welcome p{margin-top:10px;font-size:15px;color:var(--ink-2)}
 
-.vip-toolkit{margin-top:40px;padding:26px 20px;border:1px solid var(--green);border-radius:16px;background:var(--green-soft);text-align:center}
+.step-card{margin-top:40px}
+.step-tag{display:inline-block;padding:5px 14px;border-radius:999px;background:var(--green);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.step-card h2{margin-top:12px;font-size:clamp(24px,4.2vw,32px)}
+.step-card .seat,.step-card .welcome{margin-top:16px}
+.vip-toolkit,.vip-locked{margin-top:16px;padding:24px 20px;border:1px solid var(--green);border-radius:16px;background:var(--green-soft);text-align:center}
+.vip-locked[hidden]{display:none}
 .vip-toolkit[hidden]{display:none}
 .vip-toolkit h2{font-size:clamp(24px,4vw,30px)}
-.vip-toolkit .note{margin-top:8px;color:var(--ink-2)}
-.vip-toolkit .button{margin-top:18px}
+.vip-toolkit .note,.vip-locked .note{color:var(--ink-2)}
+.vip-toolkit .button,.vip-locked .button{margin-top:18px}
 .vip-files{list-style:none;margin:18px 0 0;padding:0;text-align:left;border-top:1px solid rgba(15,92,63,.2)}
 .vip-files li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 2px;border-bottom:1px solid rgba(15,92,63,.2);font-weight:600;font-size:15px}
 .vip-files .links{display:flex;gap:16px;flex:none}
@@ -215,39 +220,49 @@ footer p + p{margin-top:10px}
   <header class="hero">
     <div class="col">
       <div class="pill"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="8"/><path d="m6.5 10.2 2.3 2.3 4.7-4.9"/></svg>You're registered</div>
-      <h1>Your seat is saved</h1>
-      <p class="sub">Add the workshop to your calendar, then watch my short welcome video.</p>
+      <h1>Your seat is saved. Now do these 3 things.</h1>
+      <p class="sub">The workshop is live on Zoom and there's no replay, so start with step 1.</p>
 
-      <ol class="steps" aria-label="Registration steps">
-        <li class="done"><span class="n"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg></span>Seat saved</li>
-        <li id="step-vip"><span class="n">2</span>Free starter kit</li>
-        <li aria-current="step"><span class="n">3</span>You're in</li>
-      </ol>
-
-      <div class="seat">
-        <p class="when"><b data-session-date>Sunday, Oct 11</b><span data-session-time>2:00 PM EST</span></p>
-        <p class="countdown">Starts in <b data-cd-text>a few days</b></p>
-        <a class="button" id="calendar-link" href="#" target="_blank" rel="noopener noreferrer">Add it to my calendar</a>
-        <p class="email">Your Zoom link is in your email from preston@legacyinvestingshow.com. Check spam if you don't see it in 5 minutes.</p>
+      <div class="step-card" id="step-1">
+        <span class="step-tag">Step 1</span>
+        <h2>Add the workshop to your calendar</h2>
+        <div class="seat">
+          <p class="when"><b data-session-date>Sunday, Oct 11</b><span data-session-time>2:00 PM EST</span></p>
+          <p class="countdown">Starts in <b data-cd-text>a few days</b></p>
+          <a class="button" id="calendar-link" href="#" target="_blank" rel="noopener noreferrer">Add it to my calendar</a>
+          <p class="email">Your Zoom link is in your email from preston@legacyinvestingshow.com. Check spam if you don't see it in 5 minutes.</p>
+        </div>
       </div>
 
-      <div class="welcome">
-        <div class="frame"><iframe src="https://player.vimeo.com/video/1183499587?title=0&byline=0&portrait=0" title="Welcome video from Preston Seo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
-        <p>Watch this first. It covers what to expect and what to do before the workshop.</p>
+      <div class="step-card" id="step-2">
+        <span class="step-tag">Step 2</span>
+        <h2>Download your free starter kit</h2>
+        <!-- Shown when the /vip Typeform is done (?vip=done or saved in this browser) -->
+        <section class="vip-toolkit" id="vip-toolkit" hidden>
+          <p class="note">I use the calculator live in the workshop, so have it open and run the numbers with me. Open the guide first. It shows you how the three tools work together.</p>
+          <a class="button" href="/vip-assets/STR-Research-Toolkit.zip" download>Download all files</a>
+          <ul class="vip-files">
+            <li><span>Start here: the starter kit guide</span><div class="links"><a href="/vip-assets/toolkit/STR-Research-Toolkit-Guide.pdf" target="_blank" rel="noopener">PDF</a></div></li>
+            <li><span>Top 100 U.S. Airbnb markets</span><div class="links"><a href="/vip-assets/toolkit/Top-100-US-STR-Markets.pdf" target="_blank" rel="noopener">PDF</a><a href="/vip-assets/toolkit/Top-100-US-STR-Markets.xlsx" download>Excel</a></div></li>
+            <li><span>The house checklist</span><div class="links"><a href="/vip-assets/toolkit/STR-Buy-Box-Checklist.pdf" target="_blank" rel="noopener">PDF</a><a href="/vip-assets/toolkit/STR-Buy-Box-Checklist.xlsx" download>Excel</a></div></li>
+            <li><span>The Airbnb deal calculator</span><div class="links"><a href="/vip-assets/toolkit/STR-Deal-Analysis-Calculator.xlsx" download>Excel</a></div></li>
+          </ul>
+        </section>
+        <!-- Shown when the kit is not unlocked yet -->
+        <div class="vip-locked" id="vip-locked">
+          <p class="note">Answer 3 quick questions and it's yours: my top 100 Airbnb markets, my house checklist, and the deal calculator I use live in the workshop.</p>
+          <a class="button" href="/vip">Get my free starter kit</a>
+        </div>
       </div>
 
-      <!-- VIP TOOLKIT: shown only after the /vip Typeform -->
-      <section class="vip-toolkit" id="vip-toolkit" hidden>
-        <h2>Your starter kit is ready</h2>
-        <p class="note">Open the guide first. It shows you how to use the three tools together.</p>
-        <a class="button" href="/vip-assets/STR-Research-Toolkit.zip" download>Download all files</a>
-        <ul class="vip-files">
-          <li><span>Start here: the starter kit guide</span><div class="links"><a href="/vip-assets/toolkit/STR-Research-Toolkit-Guide.pdf" target="_blank" rel="noopener">PDF</a></div></li>
-          <li><span>Top 100 U.S. Airbnb markets</span><div class="links"><a href="/vip-assets/toolkit/Top-100-US-STR-Markets.pdf" target="_blank" rel="noopener">PDF</a><a href="/vip-assets/toolkit/Top-100-US-STR-Markets.xlsx" download>Excel</a></div></li>
-          <li><span>The house checklist</span><div class="links"><a href="/vip-assets/toolkit/STR-Buy-Box-Checklist.pdf" target="_blank" rel="noopener">PDF</a><a href="/vip-assets/toolkit/STR-Buy-Box-Checklist.xlsx" download>Excel</a></div></li>
-          <li><span>The Airbnb deal calculator</span><div class="links"><a href="/vip-assets/toolkit/STR-Deal-Analysis-Calculator.xlsx" download>Excel</a></div></li>
-        </ul>
-      </section>
+      <div class="step-card" id="step-3">
+        <span class="step-tag">Step 3</span>
+        <h2>Watch my welcome video</h2>
+        <div class="welcome">
+          <div class="frame"><iframe src="https://player.vimeo.com/video/1183499587?title=0&byline=0&portrait=0" title="Welcome video from Preston Seo" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+          <p>It covers what to expect and what to do before the workshop.</p>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -269,10 +284,10 @@ footer p + p{margin-top:10px}
 
   <section aria-labelledby="todo-title">
     <div class="col">
-      <h2 id="todo-title">Three things to do before the workshop</h2>
+      <h2 id="todo-title">How to get the most out of the workshop</h2>
       <ul class="todo">
         <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Read every email we send</b><span>Your Zoom link and the workshop tools come by email. Add preston@legacyinvestingshow.com to your contacts.</span></div></li>
-        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Join from a laptop</b><span>Preston shares his screen and runs real numbers. Block out 90 minutes and have a notepad ready.</span></div></li>
+        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Join from a laptop</b><span>I share my screen and run real numbers. Block out 90 minutes and have a notepad ready.</span></div></li>
         <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Bring your partner</b><span>If someone else is part of this decision, have them watch with you.</span></div></li>
       </ul>
     </div>
@@ -408,9 +423,7 @@ footer p + p{margin-top:10px}
 
   if (getStored(UNLOCK_KEY) === '1') {
     document.getElementById('vip-toolkit').hidden = false;
-    var step = document.getElementById('step-vip');
-    step.classList.add('done');
-    step.querySelector('.n').innerHTML = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg>';
+    document.getElementById('vip-locked').hidden = true;
   }
 })();
 </script>
