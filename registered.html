@@ -149,12 +149,11 @@ section > .col > h2,section > .wide > h2{font-size:clamp(26px,4.6vw,36px);text-a
 .step-tag{display:inline-block;padding:5px 14px;border-radius:999px;background:var(--green);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .step-card h2{margin-top:12px;font-size:clamp(24px,4.2vw,32px)}
 .step-card .seat,.step-card .welcome{margin-top:16px}
-.vip-toolkit,.vip-locked{margin-top:16px;padding:24px 20px;border:1px solid var(--green);border-radius:16px;background:var(--green-soft);text-align:center}
-.vip-locked[hidden]{display:none}
+.vip-toolkit{margin-top:16px;padding:24px 20px;border:1px solid var(--green);border-radius:16px;background:var(--green-soft);text-align:center}
 .vip-toolkit[hidden]{display:none}
 .vip-toolkit h2{font-size:clamp(24px,4vw,30px)}
-.vip-toolkit .note,.vip-locked .note{color:var(--ink-2)}
-.vip-toolkit .button,.vip-locked .button{margin-top:18px}
+.vip-toolkit .note{color:var(--ink-2)}
+.vip-toolkit .button{margin-top:18px}
 .vip-files{list-style:none;margin:18px 0 0;padding:0;text-align:left;border-top:1px solid rgba(15,92,63,.2)}
 .vip-files li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 2px;border-bottom:1px solid rgba(15,92,63,.2);font-weight:600;font-size:15px}
 .vip-files .links{display:flex;gap:16px;flex:none}
@@ -237,8 +236,7 @@ footer p + p{margin-top:10px}
       <div class="step-card" id="step-2">
         <span class="step-tag">Step 2</span>
         <h2>Download your free starter kit</h2>
-        <!-- Shown when the /vip Typeform is done (?vip=done or saved in this browser) -->
-        <section class="vip-toolkit" id="vip-toolkit" hidden>
+        <section class="vip-toolkit" id="vip-toolkit">
           <p class="note">I use the calculator live in the workshop, so have it open and run the numbers with me. Open the guide first. It shows you how the three tools work together.</p>
           <a class="button" href="/vip-assets/STR-Research-Toolkit.zip" download>Download all files</a>
           <ul class="vip-files">
@@ -248,11 +246,6 @@ footer p + p{margin-top:10px}
             <li><span>The Airbnb deal calculator</span><div class="links"><a href="/vip-assets/toolkit/STR-Deal-Analysis-Calculator.xlsx" download>Excel</a></div></li>
           </ul>
         </section>
-        <!-- Shown when the kit is not unlocked yet -->
-        <div class="vip-locked" id="vip-locked">
-          <p class="note">Answer 3 quick questions and it's yours: my top 100 Airbnb markets, my house checklist, and the deal calculator I use live in the workshop.</p>
-          <a class="button" href="/vip">Get my free starter kit</a>
-        </div>
       </div>
 
       <div class="step-card" id="step-3">
@@ -422,8 +415,7 @@ footer p + p{margin-top:10px}
   }
 
   if (getStored(UNLOCK_KEY) === '1') {
-    document.getElementById('vip-toolkit').hidden = false;
-    document.getElementById('vip-locked').hidden = true;
+    // The starter kit always shows in step 2; this flag only records that the form was done.
   }
 })();
 </script>
