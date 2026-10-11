@@ -46,7 +46,7 @@
   } catch (error) {}
 })();
 </script>
-<!-- STR Meta Pixel: VIP Registration Confirmation (LWB + STR) -->
+<!-- STR Meta Pixel: PageView + Lead (STR only) -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -56,13 +56,18 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,"script",
 "https://connect.facebook.net/en_US/fbevents.js");
-fbq("init", "489941607383296");
 fbq("init", "37460083073605271");
 fbq("track", "PageView");
-fbq("track", "Lead");
+// Lead: the only Lead on the STR funnel. Every /next-door opt-in lands here. A refresh doesn't fire it again.
+(function() {
+  var fired = false;
+  try { fired = localStorage.getItem('str_lead_fired') === '1'; } catch (error) {}
+  if (fired) return;
+  fbq("track", "Lead");
+  try { localStorage.setItem('str_lead_fired', '1'); } catch (error) {}
+})();
 </script>
 <noscript>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=489941607383296&ev=PageView&noscript=1" />
 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=37460083073605271&ev=PageView&noscript=1" />
 </noscript>
 <!-- End STR Meta Pixel -->
@@ -255,11 +260,11 @@ footer p + p{margin-top:10px}
 
   // ---- Settings ---------------------------------------------------------
   // Typeform form ID (the part after /to/ in the form URL). Blank until the form is ready.
-  var TYPEFORM_ID = '';
-  // Typeform setup: add a hidden field named vip_id (plus the tracking fields listed below).
-  // Use logic jumps to send qualified answers (income $150K+ and cash $50K+) to an ending that
-  // redirects to /vip-confirmed?vip_id={{hidden:vip_id}} (fires the Meta events). Every other ending
-  // redirects to /registered?vip=standard&vip_id={{hidden:vip_id}} (no events). Both show the toolkit.
+  var TYPEFORM_ID = 'UO4IKyP9'; // STR VIP Intake (next-door)
+  // Typeform setup: add the hidden fields listed above buildHiddenFields(). Every ending redirects to
+  // /registered?vip=done, which shows the toolkit. No browser event fires after the form. Zapier reads the
+  // Typeform entry, filters for qualified answers (income $150K+ and cash $50K+), and sends
+  // SubmitApplication to the STR pixel through the Conversions API, using vip_id as the event ID.
   var CONFIRMATION_PATH = '/registered';
 
   var root = document.documentElement;
@@ -291,21 +296,35 @@ footer p + p{margin-top:10px}
     return match ? decodeURIComponent(match[1]) : '';
   }
 
-  // Hidden fields to add in Typeform: vip_id, utm_source, utm_medium, utm_campaign, utm_term,
-  // utm_content, fbclid, fbp, fbc, email, first_name.
+  // /next-door saves first name, email, and phone in this tab before it redirects here.
+  function getRegistration() {
+    try { return JSON.parse(window.sessionStorage.getItem('str_registration') || '{}') || {}; } catch (error) { return {}; }
+  }
+
+  // Hidden fields set on Typeform UO4IKyP9: vip_id, email, first_name, phone_number, fbp, fbc, fbclid, user_agent,
+  // utm_source, utm_medium, utm_campaign, utm_term, utm_content.
   function buildHiddenFields() {
     var hidden = { vip_id: getVipId() };
     ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid'].forEach(function(key) {
       var value = getTrackingValue(key);
       if (value) hidden[key] = value;
     });
+    // Email links to /vip can pass ?email=&first_name= when this tab has no saved registration.
     var params = new URLSearchParams(window.location.search);
-    var email = params.get('email');
-    var firstName = params.get('first_name') || params.get('name');
+    var registration = getRegistration();
+    var email = registration.email || params.get('email');
+    var firstName = registration.first_name || params.get('first_name') || params.get('name');
     if (email) hidden.email = email;
     if (firstName) hidden.first_name = firstName;
-    if (getCookie('_fbp')) hidden.fbp = getCookie('_fbp');
-    if (getCookie('_fbc')) hidden.fbc = getCookie('_fbc');
+    if (registration.phone) hidden.phone_number = registration.phone;
+    // The pixel sets _fbp on every visit and _fbc after an ad click. If _fbc is missing but the
+    // click ID came through, build it in Meta's format: fb.1.<timestamp>.<fbclid>.
+    var fbp = getCookie('_fbp');
+    var fbc = getCookie('_fbc') || (hidden.fbclid ? 'fb.1.' + Date.now() + '.' + hidden.fbclid : '');
+    if (fbp) hidden.fbp = fbp;
+    if (fbc) hidden.fbc = fbc;
+    // Meta requires the browser user agent on website events sent through the Conversions API.
+    if (navigator.userAgent) hidden.user_agent = navigator.userAgent;
     return hidden;
   }
 
@@ -341,10 +360,10 @@ footer p + p{margin-top:10px}
         hideHeaders: true,
         redirectTarget: '_top',
         onSubmit: function() {
-          // Fallback if an ending has no redirect: still send them to the toolkit, with no Meta event.
+          // The Typeform ending only has a button, so the page moves them to the toolkit itself.
           setTimeout(function() {
-            window.location.href = CONFIRMATION_PATH + '?vip=standard&vip_id=' + encodeURIComponent(getVipId());
-          }, 4000);
+            window.location.href = CONFIRMATION_PATH + '?vip=done';
+          }, 2500);
         }
       });
     };

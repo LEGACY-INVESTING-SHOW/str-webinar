@@ -46,7 +46,7 @@
   } catch (error) {}
 })();
 </script>
-<!-- STR Meta Pixel: Registration Confirmation (LWB + STR) -->
+<!-- STR Meta Pixel: PageView only. Lead fires on /vip, the one page every opt-in lands on. -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -56,14 +56,10 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,"script",
 "https://connect.facebook.net/en_US/fbevents.js");
-fbq("init", "489941607383296");
 fbq("init", "37460083073605271");
 fbq("track", "PageView");
-// Visitors coming back from the /vip Typeform already fired Lead on /vip.
-if (!/[?&]vip=/.test(window.location.search)) fbq("track", "Lead");
 </script>
 <noscript>
-<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=489941607383296&ev=PageView&noscript=1" />
 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=37460083073605271&ev=PageView&noscript=1" />
 </noscript>
 <!-- End STR Meta Pixel -->
@@ -385,7 +381,7 @@ footer p + p{margin-top:10px}
 </script>
 
 <script>
-// VIP toolkit: the /vip Typeform ending for non-qualified answers redirects here with ?vip=standard&vip_id=...
+// VIP toolkit: every /vip Typeform ending redirects here with ?vip=done.
 (function() {
   'use strict';
   var UNLOCK_KEY = 'str_vip_unlocked';
@@ -402,8 +398,8 @@ footer p + p{margin-top:10px}
   var result = url.searchParams.get('vip');
   var returnedId = url.searchParams.get('vip_id');
 
-  if (result === 'qualified' || result === 'standard') {
-    // Qualified answers go to /vip-confirmed, which fires the Meta events. This page only unlocks the toolkit.
+  if (result) {
+    // Every /vip Typeform ending lands here with ?vip=done. This page only unlocks the toolkit.
     setStored(UNLOCK_KEY, '1');
     url.searchParams.delete('vip');
     url.searchParams.delete('vip_id');
