@@ -51,7 +51,8 @@
      (qualified with $50K+ cash) or ?vip=done (not qualified). Qualified: income $100K+, and $25K+ cash
      or 700+ credit, and starting within 3 months.
      vip=done: no pixel at all, so Meta never learns from people who don't qualify.
-     vip=q: SubmitApplication with a value, once per vip_id. This replaces the Zapier server event. -->
+     vip=q: SubmitApplication and CompleteRegistration, same value, once per vip_id. Value is a relative
+     lead score for Meta (100, or 250 with $50K+ cash), not money. This replaces the Zapier server event. -->
 <script>
 (function() {
   var params;
@@ -79,12 +80,14 @@
   var firedKey = 'str_sa_fired_' + vipId;
   try { if (window.localStorage.getItem(firedKey) === '1') return; } catch (error) {}
   var high = params.get('lvl') === '2';
-  fbq("track", "SubmitApplication", {
+  var data = {
     value: high ? 250 : 100,
     currency: "USD",
     content_name: "STR VIP Intake v2",
     content_category: high ? "v2_lvl2" : "v2_lvl1"
-  }, { eventID: "sa_" + vipId });
+  };
+  fbq("track", "SubmitApplication", data, { eventID: "sa_" + vipId });
+  fbq("track", "CompleteRegistration", data, { eventID: "cr_" + vipId });
   try { window.localStorage.setItem(firedKey, '1'); } catch (error) {}
 })();
 </script>
