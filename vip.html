@@ -46,7 +46,7 @@
   } catch (error) {}
 })();
 </script>
-<!-- STR Meta Pixel: PageView + Lead (STR only) -->
+<!-- STR Meta Pixel: PageView + Lead (STR only), with advanced matching from the /next-door opt-in -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -56,15 +56,36 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window,document,"script",
 "https://connect.facebook.net/en_US/fbevents.js");
-fbq("init", "37460083073605271");
-fbq("track", "PageView");
-// Lead: the only Lead on the STR funnel. Every /next-door opt-in lands here. A refresh doesn't fire it again.
 (function() {
+  // One ID per visitor. The Typeform gets it as a hidden field and /registered uses it for event IDs.
+  var vipId = '';
+  try { vipId = window.localStorage.getItem('str_vip_id') || ''; } catch (error) {}
+  if (!vipId) {
+    vipId = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2);
+    try { window.localStorage.setItem('str_vip_id', vipId); } catch (error) {}
+  }
+  // Advanced matching: /next-door saves first name, email, and phone in this tab before it redirects
+  // here (email links can pass ?email=&first_name= instead). The pixel hashes these before sending.
+  var reg = {};
+  try { reg = JSON.parse(window.sessionStorage.getItem('str_registration') || '{}') || {}; } catch (error) {}
+  var params;
+  try { params = new URLSearchParams(window.location.search); } catch (error) { params = null; }
+  var email = (reg.email || (params && params.get('email')) || '').trim().toLowerCase();
+  var first = (reg.first_name || (params && (params.get('first_name') || params.get('name'))) || '').trim().toLowerCase();
+  var phone = (reg.phone || '').replace(/[^0-9]/g, '');
+  if (phone.length === 10) phone = '1' + phone;
+  var match = { external_id: vipId };
+  if (email) match.em = email;
+  if (phone) match.ph = phone;
+  if (first) match.fn = first;
+  fbq("init", "37460083073605271", match);
+  fbq("track", "PageView");
+  // Lead: the only Lead on the STR funnel. Every /next-door opt-in lands here. A refresh doesn't fire it again.
   var fired = false;
-  try { fired = localStorage.getItem('str_lead_fired') === '1'; } catch (error) {}
+  try { fired = window.localStorage.getItem('str_lead_fired') === '1'; } catch (error) {}
   if (fired) return;
-  fbq("track", "Lead");
-  try { localStorage.setItem('str_lead_fired', '1'); } catch (error) {}
+  fbq("track", "Lead", {}, { eventID: "lead_" + vipId });
+  try { window.localStorage.setItem('str_lead_fired', '1'); } catch (error) {}
 })();
 </script>
 <noscript>

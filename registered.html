@@ -68,14 +68,27 @@
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window,document,"script",
   "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "37460083073605271");
-  fbq("track", "PageView");
-
-  if (vip !== 'q') return;
-  var vipId = params.get('vip_id') || '';
+  var vipId = (params && params.get('vip_id')) || '';
   if (!vipId) {
     try { vipId = window.localStorage.getItem('str_vip_id') || ''; } catch (error) {}
   }
+  // Advanced matching from the /next-door opt-in (saved in this tab). The pixel hashes these before sending.
+  // This is what keeps SubmitApplication match quality high now that the Zapier server event is gone.
+  var reg = {};
+  try { reg = JSON.parse(window.sessionStorage.getItem('str_registration') || '{}') || {}; } catch (error) {}
+  var email = (reg.email || '').trim().toLowerCase();
+  var first = (reg.first_name || '').trim().toLowerCase();
+  var phone = (reg.phone || '').replace(/[^0-9]/g, '');
+  if (phone.length === 10) phone = '1' + phone;
+  var match = {};
+  if (vipId) match.external_id = vipId;
+  if (email) match.em = email;
+  if (phone) match.ph = phone;
+  if (first) match.fn = first;
+  fbq("init", "37460083073605271", match);
+  fbq("track", "PageView");
+
+  if (vip !== 'q') return;
   if (!vipId) vipId = 'no-id-' + Date.now();
   var firedKey = 'str_sa_fired_' + vipId;
   try { if (window.localStorage.getItem(firedKey) === '1') return; } catch (error) {}
