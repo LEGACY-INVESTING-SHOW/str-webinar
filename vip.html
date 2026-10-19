@@ -216,7 +216,7 @@ footer p + p{margin-top:10px}
       </ol>
 
       <section class="apply" id="apply" aria-labelledby="apply-title">
-        <h2 id="apply-title">Answer 3 quick questions to get it</h2>
+        <h2 id="apply-title">Answer 5 quick questions to get it</h2>
         <div class="tf-frame" id="tf-frame">
           <div class="tf-empty" id="tf-empty">Loading the form&hellip;</div>
         </div>
@@ -260,11 +260,13 @@ footer p + p{margin-top:10px}
 
   // ---- Settings ---------------------------------------------------------
   // Typeform form ID (the part after /to/ in the form URL). Blank until the form is ready.
-  var TYPEFORM_ID = 'UO4IKyP9'; // STR VIP Intake (next-door)
-  // Typeform setup: add the hidden fields listed above buildHiddenFields(). Every ending redirects to
-  // /registered?vip=done, which shows the toolkit. No browser event fires after the form. Zapier reads the
-  // Typeform entry, filters for qualified answers (household income $100K+), and sends
-  // SubmitApplication to the STR pixel through the Conversions API, using vip_id as the event ID.
+  var TYPEFORM_ID = 'qL8U1jdy'; // STR VIP Intake v2 (next-door). v1 was UO4IKyP9.
+  // Typeform logic picks the ending and the ending redirects the whole page:
+  //   qualified with $50K+ cash -> /registered?vip=q&lvl=2&vip_id=...
+  //   qualified                 -> /registered?vip=q&vip_id=...
+  //   everyone else             -> /registered?vip=done&vip_id=...
+  // Qualified = household income $100K+, and $25K+ cash or 700+ credit, and starting within 3 months.
+  // /registered fires SubmitApplication in the browser for vip=q. The old Zapier server event is retired.
   var CONFIRMATION_PATH = '/registered';
 
   var root = document.documentElement;
@@ -301,7 +303,7 @@ footer p + p{margin-top:10px}
     try { return JSON.parse(window.sessionStorage.getItem('str_registration') || '{}') || {}; } catch (error) { return {}; }
   }
 
-  // Hidden fields set on Typeform UO4IKyP9: vip_id, email, first_name, phone_number, fbp, fbc, fbclid, user_agent,
+  // Hidden fields set on Typeform qL8U1jdy: vip_id, email, first_name, phone_number, fbp, fbc, fbclid, user_agent,
   // utm_source, utm_medium, utm_campaign, utm_term, utm_content.
   function buildHiddenFields() {
     var hidden = { vip_id: getVipId() };
@@ -360,10 +362,11 @@ footer p + p{margin-top:10px}
         hideHeaders: true,
         redirectTarget: '_top',
         onSubmit: function() {
-          // The Typeform ending only has a button, so the page moves them to the toolkit itself.
+          // The Typeform ending redirects the page itself. This only catches a redirect that never
+          // happens, and sends them to the toolkit without a qualified event.
           setTimeout(function() {
             window.location.href = CONFIRMATION_PATH + '?vip=done';
-          }, 2500);
+          }, 8000);
         }
       });
     };

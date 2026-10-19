@@ -46,18 +46,47 @@
   } catch (error) {}
 })();
 </script>
-<!-- STR Meta Pixel: PageView only. Lead fires on /vip, the one page every opt-in lands on. -->
+<!-- STR Meta Pixel. Lead fires on /vip, the one page every opt-in lands on.
+     The /vip Typeform (qL8U1jdy) sends each person here with ?vip=q (qualified), ?vip=q&lvl=2
+     (qualified with $50K+ cash) or ?vip=done (not qualified). Qualified: income $100K+, and $25K+ cash
+     or 700+ credit, and starting within 3 months.
+     vip=done: no pixel at all, so Meta never learns from people who don't qualify.
+     vip=q: SubmitApplication with a value, once per vip_id. This replaces the Zapier server event. -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,"script",
-"https://connect.facebook.net/en_US/fbevents.js");
-fbq("init", "37460083073605271");
-fbq("track", "PageView");
+(function() {
+  var params;
+  try { params = new URLSearchParams(window.location.search); } catch (error) { params = null; }
+  var vip = params ? params.get('vip') : '';
+  if (vip === 'done') return;
+
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,"script",
+  "https://connect.facebook.net/en_US/fbevents.js");
+  fbq("init", "37460083073605271");
+  fbq("track", "PageView");
+
+  if (vip !== 'q') return;
+  var vipId = params.get('vip_id') || '';
+  if (!vipId) {
+    try { vipId = window.localStorage.getItem('str_vip_id') || ''; } catch (error) {}
+  }
+  if (!vipId) vipId = 'no-id-' + Date.now();
+  var firedKey = 'str_sa_fired_' + vipId;
+  try { if (window.localStorage.getItem(firedKey) === '1') return; } catch (error) {}
+  var high = params.get('lvl') === '2';
+  fbq("track", "SubmitApplication", {
+    value: high ? 250 : 100,
+    currency: "USD",
+    content_name: "STR VIP Intake v2",
+    content_category: high ? "v2_lvl2" : "v2_lvl1"
+  }, { eventID: "sa_" + vipId });
+  try { window.localStorage.setItem(firedKey, '1'); } catch (error) {}
+})();
 </script>
 <noscript>
 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=37460083073605271&ev=PageView&noscript=1" />
@@ -154,6 +183,8 @@ section > .col > h2,section > .wide > h2{font-size:clamp(26px,4.6vw,36px);text-a
 .step-card .countdown{margin-top:6px}
 .step-card .seat .button{margin-top:14px}
 .step-card .seat .email{margin-top:10px}
+.cal-alt{margin-top:10px;text-align:center;font-size:15px}
+.cal-alt a{color:var(--green);font-weight:700}
 .vip-toolkit{margin-top:14px;padding:20px;border:1px solid var(--green);border-radius:16px;background:var(--green-soft);text-align:center}
 .vip-toolkit[hidden]{display:none}
 .vip-toolkit h2{font-size:clamp(24px,4vw,30px)}
@@ -231,7 +262,8 @@ footer p + p{margin-top:10px}
         <div class="seat">
           <p class="when"><b data-session-date>Tuesday, Oct 20</b> at <span data-session-time>7:00 PM EST</span></p>
           <p class="countdown">Starts in <b data-cd-text>a few days</b>. No replay.</p>
-          <a class="button" id="calendar-link" href="#" target="_blank" rel="noopener noreferrer">Add it to my calendar</a>
+          <a class="button" id="calendar-link" href="#" target="_blank" rel="noopener noreferrer">Add it to my Google calendar</a>
+          <p class="cal-alt"><a id="ics-link" href="#" download="str-workshop.ics">Apple or Outlook calendar instead</a></p>
           <p class="email">Your Zoom link is in your email. Check spam if it's not there.</p>
         </div>
       </div>
@@ -279,7 +311,8 @@ footer p + p{margin-top:10px}
     <div class="col">
       <h2 id="todo-title">How to get the most out of the workshop</h2>
       <ul class="todo">
-        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Read every email we send</b><span>Your Zoom link and the workshop tools come by email. Add preston@legacyinvestingshow.com to your contacts.</span></div></li>
+        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Set an alarm on your phone</b><span>Set it for 10 minutes before <span data-session-time>7:00 PM EST</span> on <span data-session-date>Tuesday, Oct 20</span>. A calendar invite is easy to miss. An alarm isn't.</span></div></li>
+        <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Reply to my first email</b><span>Search your inbox for Preston Seo and reply "got it." That tells your email the next ones aren't spam, so your Zoom link and reminders land where you'll see them. Add preston@legacyinvestingshow.com to your contacts too.</span></div></li>
         <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Join from a laptop</b><span>I share my screen and run real numbers. Block out 90 minutes and have a notepad ready.</span></div></li>
         <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 10.5 3.5 3.5 7.5-8"/></svg><div><b>Bring your partner</b><span>If someone else is part of this decision, have them watch with you.</span></div></li>
       </ul>
@@ -355,6 +388,22 @@ footer p + p{margin-top:10px}
     cal.searchParams.set('location', 'Online');
     cal.searchParams.set('ctz', 'America/New_York');
     document.getElementById('calendar-link').href = cal.toString();
+
+    // Apple and Outlook take an .ics file.
+    var ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Legacy Investing Show//STR Workshop//EN', 'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      'UID:str-workshop-' + stamp(start) + '@str.managemoney101.com',
+      'DTSTAMP:' + stamp(new Date()),
+      'DTSTART:' + stamp(start),
+      'DTEND:' + stamp(end),
+      'SUMMARY:STR Workshop with Preston Seo',
+      'DESCRIPTION:Your Zoom link and workshop details are in your email from Preston Seo (preston@legacyinvestingshow.com).',
+      'LOCATION:Online',
+      'BEGIN:VALARM', 'TRIGGER:-PT10M', 'ACTION:DISPLAY', 'DESCRIPTION:STR Workshop starts in 10 minutes', 'END:VALARM',
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    document.getElementById('ics-link').href = 'data:text/calendar;charset=utf-8,' + encodeURIComponent(ics);
   } catch (error) {}
 
   function tick() {
@@ -389,7 +438,7 @@ footer p + p{margin-top:10px}
 </script>
 
 <script>
-// VIP toolkit: every /vip Typeform ending redirects here with ?vip=done.
+// VIP toolkit: every /vip Typeform ending redirects here with ?vip=q or ?vip=done (see the pixel block).
 (function() {
   'use strict';
   var UNLOCK_KEY = 'str_vip_unlocked';
@@ -407,10 +456,11 @@ footer p + p{margin-top:10px}
   var returnedId = url.searchParams.get('vip_id');
 
   if (result) {
-    // Every /vip Typeform ending lands here with ?vip=done. This page only unlocks the toolkit.
+    // The pixel block in <head> already read these. Strip them so a shared or refreshed link stays clean.
     setStored(UNLOCK_KEY, '1');
     url.searchParams.delete('vip');
     url.searchParams.delete('vip_id');
+    url.searchParams.delete('lvl');
     if (window.history && window.history.replaceState) window.history.replaceState(null, '', url.toString());
   }
 
