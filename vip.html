@@ -286,7 +286,8 @@ footer p + p{margin-top:10px}
   //   qualified with $50K+ cash -> /registered?vip=q&lvl=2&vip_id=...
   //   qualified                 -> /registered?vip=q&vip_id=...
   //   everyone else             -> /registered?vip=done&vip_id=...
-  // Qualified = household income $100K+, and $25K+ cash or 700+ credit, and starting within 3 months.
+  // Qualified = household income $100K+, and $10K+ cash or 700+ credit, and starting within 12 months
+  // (anything but "just learning"). Softened Oct 19 from $25K+ cash and within 3 months.
   // /registered fires SubmitApplication in the browser for vip=q. The old Zapier server event is retired.
   var CONFIRMATION_PATH = '/registered';
 
