@@ -86,6 +86,7 @@
   if (phone) match.ph = phone;
   if (first) match.fn = first;
   fbq("init", "37460083073605271", match);
+  fbq("init", "489941607383296", match); // LWB pixel too (10/23): PageView + Lead train the LWB-pixel Schedule ad set
   fbq("track", "PageView");
 
   if (vip !== 'q') return;
@@ -99,13 +100,14 @@
     content_name: "STR VIP Intake v2",
     content_category: high ? "v2_lvl2" : "v2_lvl1"
   };
-  fbq("track", "SubmitApplication", data, { eventID: "sa_" + vipId });
-  fbq("track", "CompleteRegistration", data, { eventID: "cr_" + vipId });
+  fbq("trackSingle", "37460083073605271", "SubmitApplication", data, { eventID: "sa_" + vipId }); // STR pixel only
+  fbq("trackSingle", "37460083073605271", "CompleteRegistration", data, { eventID: "cr_" + vipId }); // STR pixel only
   try { window.localStorage.setItem(firedKey, '1'); } catch (error) {}
 })();
 </script>
 <noscript>
 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=37460083073605271&ev=PageView&noscript=1" />
+<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=489941607383296&ev=PageView&noscript=1" />
 </noscript>
 <!-- End STR Meta Pixel -->
 
